@@ -1,0 +1,9 @@
+{
+  "name": "Portfolio",
+  "version": "0.0.1",
+  "description": "A portfolio",
+  "author": "Eamon White <you.name@example.org>",
+  "dependencies": {
+    "fullpage.js": "*"
+  }
+}
