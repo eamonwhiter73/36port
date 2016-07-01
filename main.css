@@ -100,6 +100,13 @@ a, a:hover, a:active, a:visited, a:focus {
 	text-align: center;
 }
 
+.wpsmall {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
 .demo>p {
 	line-height: 488px;
 	-ms-transform: rotate(-45deg); /* IE 9 */
@@ -114,7 +121,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .techwp {
-	margin-top: 16vh;
+	margin-top:4vh;
 }
 
 .hackaboximgsmall {
@@ -125,6 +132,13 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .hackaboximgcont {
+	position: relative;
+	overflow: hidden;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.wpimgcont {
 	position: relative;
 	overflow: hidden;
 	padding-left: 0;
@@ -195,7 +209,11 @@ a, a:hover, a:active, a:visited, a:focus {
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 	.hackaboximgcont {
-		margin-top: 12vh;
+		margin-top: 10vh;
+	}
+
+	.wpimgcont {
+		margin-top: 7vh;
 	}
 
 	.hacktext {
@@ -222,12 +240,24 @@ a, a:hover, a:active, a:visited, a:focus {
 	.demo>p {
 		line-height: 300px;
 	}
+
+	.techwp {
+		margin-top: 7vh;
+	}
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 	.hackaboximgcont {
 		margin-top: 10vh;
+	}
+
+	.wpimgcont {
+		margin-top: 2vh;
+	}
+
+	.techwp {
+		margin-top: 0vh;
 	}
 
 	.hackaboximg {
@@ -248,6 +278,10 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.hacktext>p {
 		font-size: 1.6vh;
+	}
+
+	.wordtext>p {
+		font-size: 2.4vh;
 	}
 
 	.titlep {
@@ -272,7 +306,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
 	.logo {
 		font-size: 2.9vh;
 	}
@@ -293,12 +327,9 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.demo>p {
-		-ms-transform: rotate(0deg); /* IE 9 */
-	    -webkit-transform: rotate(0deg); /* Safari */
-	    transform: rotate(0deg);
-	    line-height: 50px;
-	    font-size: 6vh;
-	    margin-top: 2vh;
+        transform: none;
+	    line-height: 70px;
+	    font-size: 8vh;
 	}
 
 	.wpimg {
@@ -306,7 +337,15 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.wpsmall {
-		display: block;
+		border-radius: 6px;
+	}
+
+	.wpimgcont {
+		margin-top: 0vh;
+	}
+
+	.techwp {
+		position: relative;
 	}
 
 	.hacktext {
@@ -355,6 +394,9 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.demo>p {
 	    margin-top: 0;
+	    transform: none;
+	    line-height: 60px;
+	    font-size: 7vh;
 	}
 
 	.hackaboximgcont {
@@ -375,6 +417,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.wpsmall {
 		display: block;
+		border-radius: 6px;
 	}
 
 	.hacktext {
