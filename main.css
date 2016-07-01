@@ -141,7 +141,7 @@ a, a:hover, a:active, a:visited, a:focus {
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 	.hackaboximgcont {
-		margin-top: 7vh;
+		margin-top: 12vh;
 	}
 
 	.hacktext {
@@ -150,6 +150,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.hackaboximg {
 		display: block;
+		float: right;
 	}
 
 	.hackaboximgsmall {
