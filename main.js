@@ -3,7 +3,7 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
+        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
         navigation: false,
         navigationPosition: 'right',
         navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide'],

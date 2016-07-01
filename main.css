@@ -24,8 +24,11 @@ nav {
 }
 
 a, a:hover, a:active, a:visited, a:focus {
-	color: #EBEBEB;
 	text-decoration: none;
+}
+
+.menuholder>a, .menuholder>a:hover, .menuholder>a:active, .menuholder>a:visited, .menuholder>a:focus {
+	color: white;
 }
 
 .menubutton {
@@ -64,13 +67,46 @@ a, a:hover, a:active, a:visited, a:focus {
 #wordpress2 {background-color: #255553}
 #wordpress3 {background-color: #444444}
 
-#app1 {background-color: #666666}
+#app1 {background-color: #ffffff}
 #app2 {background-color: #777777}
 #app3 {background-color: #999999}
 
 #skills {background-color: #111111}
 
 #contact {background-color: #222222}
+
+.pcont>p>a, .pcont>p>a:hover, .pcont>p>a:active, .pcont>p>a:visited, .pcont>p>a:focus {
+	color: #AAAAAA;
+}
+
+.pcont>p {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 12pt;
+	text-align: justify;
+}
+
+.vidcont {
+	text-align: center;
+	height: 100vh;
+	margin-top: 2vh;
+}
+
+.vidcont>iframe {
+	border-radius: 6px;
+}
+
+.pcont {
+	margin-top: 20vh;
+}
+
+.techapple {
+	margin-top: 30vh;
+}
+
+.applep {
+	position: relative;
+}
 
 /*HOME*/
 
@@ -303,6 +339,10 @@ a, a:hover, a:active, a:visited, a:focus {
 		line-height: 210px;
 		font-size: 6vh;
 	}
+
+	.pcont {
+		margin-top: 14vh;
+	}
 }
 
 /* Landscape phones and portrait tablets */
@@ -330,6 +370,10 @@ a, a:hover, a:active, a:visited, a:focus {
         transform: none;
 	    line-height: 70px;
 	    font-size: 8vh;
+	    -ms-transform: rotate(-15deg); /* IE 9 */
+	    -webkit-transform: rotate(-15deg); /* Safari */
+	    transform: rotate(-15deg);
+	    margin-top: 2vh;
 	}
 
 	.wpimg {
@@ -377,6 +421,26 @@ a, a:hover, a:active, a:visited, a:focus {
 	    border-width: 32.9px 0 32.9px 32.2px;
 	    border-color: transparent transparent transparent #fff;
 	}
+
+	.appleimg {
+		max-width: 35%;
+		max-height: 35%;
+	}
+
+	.techapple {
+		position: relative;
+		margin-top: 8vh;
+		float: none;
+	}
+
+	.pcont {
+		margin-top: 2vh;
+	}
+
+	.vidcont>iframe {
+		width: 50%;
+		height: 20%;
+	}
 }
 
 /* Portrait phones and smaller */
@@ -388,15 +452,38 @@ a, a:hover, a:active, a:visited, a:focus {
 		text-align: center;
 		font-size: 1.4vh;
 	}
+	
 	.logo {
 		font-size: 2.2vh;
 	}
 
 	.demo>p {
 	    margin-top: 0;
-	    transform: none;
 	    line-height: 60px;
 	    font-size: 7vh;
+	    -ms-transform: rotate(-15deg); /* IE 9 */
+	    -webkit-transform: rotate(-15deg); /* Safari */
+	    transform: rotate(-15deg);
+	}
+
+	.pcont {
+		margin-top: 2vh;
+	}
+
+	.appleimg {
+		max-width: 35%;
+		max-height: 35%;
+	}
+
+	.techapple {
+		position: relative;
+		margin-top: 8vh;
+		float: none;
+	}
+
+	.vidcont>iframe {
+		width: 50%;
+		height: 15%;
 	}
 
 	.hackaboximgcont {
