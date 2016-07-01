@@ -13,6 +13,14 @@ nav {
 	position: relative;
 }
 
+.fp-controlArrow.fp-prev {
+    border-color: #aaa #aaa #aaa #aaa;
+}
+
+.fp-controlArrow.fp-next {
+    border-color: #aaa #aaa #aaa #aaa;
+}
+
 .logo {
 	font-family: 'Satisfy', cursive;
 	color: #EBEBEB;
@@ -21,6 +29,14 @@ nav {
 	vertical-align: middle;
 	line-height: 52px;
 	display: inline-block;
+}
+
+.fp-controlArrow.fp-prev {
+    border-color: transparent #aaa transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #aaa;
 }
 
 a, a:hover, a:active, a:visited, a:focus {
@@ -82,7 +98,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .pcont>p {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
-	font-size: 12pt;
+	font-size: 2.3vh;
 	text-align: justify;
 }
 
@@ -129,7 +145,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	height: 100%;
 	width: 100%;
 	z-index: 2;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.1);
 	color: rgb(255, 255, 255);
 	font-size: 10vh;
 	border-radius: 6px;
@@ -284,6 +300,10 @@ a, a:hover, a:active, a:visited, a:focus {
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+	.menubutton {
+		font-size: 1.7vh;
+	}
+
 	.hackaboximgcont {
 		margin-top: 10vh;
 	}
@@ -342,6 +362,11 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.pcont {
 		margin-top: 14vh;
+	}
+
+	.vidcont>iframe {
+		width: 50%;
+		height: 20%;
 	}
 }
 
@@ -413,13 +438,13 @@ a, a:hover, a:active, a:visited, a:focus {
 	    left: 18px;
 	    width: 0;
 	    border-width: 32.2px 32.9px 32.2px 0;
-	    border-color: transparent #fff transparent transparent;
+	    border-color: transparent #aaa transparent transparent;
 	}
 
 	.fp-controlArrow.fp-next {
 	    right: 18px;
 	    border-width: 32.9px 0 32.9px 32.2px;
-	    border-color: transparent transparent transparent #fff;
+	    border-color: transparent transparent transparent #aaa;
 	}
 
 	.appleimg {
@@ -470,6 +495,10 @@ a, a:hover, a:active, a:visited, a:focus {
 		margin-top: 2vh;
 	}
 
+	.pcont>p {
+		font-size: 2.1vh;
+	}
+
 	.appleimg {
 		max-width: 35%;
 		max-height: 35%;
@@ -477,7 +506,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.techapple {
 		position: relative;
-		margin-top: 8vh;
+		margin-top: 12vh;
 		float: none;
 	}
 
@@ -527,12 +556,12 @@ a, a:hover, a:active, a:visited, a:focus {
 	    left: 15px;
 	    width: 0;
 	    border-width: 18.2px 18.9px 18.2px 0;
-	    border-color: transparent #fff transparent transparent;
+	    border-color: transparent #aaa transparent transparent;
 	}
 
 	.fp-controlArrow.fp-next {
 	    right: 15px;
 	    border-width: 18.9px 0 18.9px 18.2px;
-	    border-color: transparent transparent transparent #fff;
+	    border-color: transparent transparent transparent #aaa;
 	}
 }
