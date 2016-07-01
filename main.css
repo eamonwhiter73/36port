@@ -1,0 +1,201 @@
+nav {
+	background-color: rgba(96, 18, 24, 0.86);
+	position: relative;
+	height: 5vh;
+}
+
+.navbar>.row {
+	height: 100%;
+}
+
+.menuholder {
+	height: 100%;
+	position: relative;
+}
+
+.logo {
+	font-family: 'Satisfy', cursive;
+	color: #EBEBEB;
+	font-size: 19pt;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 52px;
+	display: inline-block;
+}
+
+.btn-danger {
+	background-color: rgba(96, 18, 24, 0);
+	border: none;
+	height: 100%;
+	line-height: 40px;
+}
+
+.btn-danger:hover {
+	background-color: rgba(96, 18, 24, 0);
+	border: none;
+}
+
+.inlineblock {
+	display: inline-block;
+}
+
+/*PAGES AND SLIDES*/
+
+#home {
+	background-image: url("../images/portfolioback.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;       
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+#hackabox1 {
+	background-color: #D4B89B;
+}
+#hackabox2 {background-color: #547345}
+#hackabox3 {background-color: #554889}
+
+#wordpress1 {background-color: #124445}
+#wordpress2 {background-color: #255553}
+#wordpress3 {background-color: #444444}
+
+#app1 {background-color: #666666}
+#app2 {background-color: #777777}
+#app3 {background-color: #999999}
+
+#skills {background-color: #111111}
+
+#contact {background-color: #222222}
+
+/*HOME*/
+
+.homejumbo {
+	height: 80vh;
+	margin-top: 65px;
+	background-color: rgba(96, 18, 24, 0.51)	
+}
+
+/*HACKABOX*/
+
+.hackaboximg {
+	max-width: 100%;	
+	max-height: auto;
+	border-radius: 6px;
+}
+
+.hackaboximgcont {
+	position: relative;
+}
+
+.hacktext {
+	display: inline-block;
+	padding-top: 2vh;
+}
+
+.hacktext>p {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 2vh;
+	text-align: justify;
+	color: white;
+}
+
+.titlep {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 3.5vh;
+	text-align: center;
+	color: #C75252;
+}
+
+.subtitle {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 2.5vh;
+	color: #C75252;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.hackaboximgcont {
+		margin-top: 7vh;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.hackaboximgcont {
+		margin-top: 18vh;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.logo {
+		font-size: 2.9vh;
+	}
+
+	.btn-danger {
+		font-size: 1.8vh;
+	}
+
+	.hackaboximgcont {
+		margin-top: 23vh;
+	}
+
+	.hacktext {
+		margin-top: 3vh;
+	}
+
+	.hacktext>p {
+		font-size: 1.7vh;
+	}
+
+	.titlep {
+		font-size: 3.2vh;
+	}
+
+	.subtitle {
+		font-size: 2.2vh;
+	}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.logo {
+		font-size: 2.2vh;
+	}
+
+	.btn-danger {
+		font-size: 1.4vh;
+	}
+
+	.hackaboximgcont {
+		margin-top: 30vh;
+	}
+
+	.hacktext {
+		margin-top: 3vh;
+	}
+
+	.hacktext>p {
+		font-size: 1.5vh;
+	}
+
+	.titlep {
+		font-size: 3.2vh;
+	}
+
+	.subtitle {
+		font-size: 2.2vh;
+	}
+}
