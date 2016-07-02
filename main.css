@@ -199,6 +199,12 @@ a, a:hover, a:active, a:visited, a:focus {
 	overflow: hidden;
 	padding-left: 0;
 	padding-right: 0;
+	height: 70vh;
+	padding-bottom: 70vh;
+	background-image: url('images/themeboximg.png');
+	background-size: 100%;
+    border-radius: 6px;
+    margin-top: 2vh;
 }
 
 .hacktext {
@@ -209,7 +215,8 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .wordtext {
 	display: inline-block;
-	padding-top: 4vh;
+	height: 70vh;
+	margin-top: 0vh;
 }
 
 .hacktext>p {
@@ -223,7 +230,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .wordtext>p {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
-	font-size: 3vh;
+	font-size: 2.4vh;
 	text-align: justify;
 	color: white;
 }
@@ -237,11 +244,26 @@ a, a:hover, a:active, a:visited, a:focus {
 	color: #C75252;
 }
 
+.titlewp {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 3.4vw;
+	text-align: center;
+	color: #21759B;
+}
+
 .subtitle {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	font-size: 1.4vw;
 	color: #C75252;
+}
+
+.subtitlewp {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 1.9vw;
+	color: #21759B;
 }
 
 /* Large desktops and laptops */
@@ -307,7 +329,22 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.wpimgcont {
-		margin-top: 7vh;
+		margin-top: 1vh;
+		height: 70vh;
+		padding-bottom: 70vh;
+		background-size: 170%;
+	}
+
+	.wordtext {
+		margin-top: 0;
+	}
+
+	.wordtext>p {
+		font-size: 2.5vh;
+	}
+
+	.subtitlewp {
+		font-size: 2.8vh;
 	}
 
 	.hacktext {
@@ -366,7 +403,10 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.wpimgcont {
-		margin-top: 2vh;
+		margin-top: 1vh;
+		height: 70vh;
+		padding-bottom: 70vh;
+		background-size: 235%;
 	}
 
 	.techwp {
@@ -398,13 +438,13 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.wordtext>p {
-		font-size: 2.4vh;
+		font-size: 2.1vh;
 	}
 
 	.titlep {
 		font-family: 'Raleway', sans-serif;
 		font-weight: 400;
-		font-size: 3vw;
+		font-size: 4vw;
 		text-align: center;
 		color: #C75252;
 	}
@@ -414,6 +454,10 @@ a, a:hover, a:active, a:visited, a:focus {
 		font-weight: 400;
 		font-size: 2.4vh;
 		color: #C75252;
+	}
+
+	.subtitlewp {
+		font-size: 2.7vh;
 	}
 
 	.demo>p {
@@ -480,7 +524,9 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.wpimgcont {
-		margin-top: 0vh;
+		margin-top: 6vh;
+		padding-bottom: 0;
+		height: auto;
 	}
 
 	.techwp {
@@ -495,6 +541,10 @@ a, a:hover, a:active, a:visited, a:focus {
 		font-size: 1.8vh;
 	}
 
+	.wordtext>p {
+		font-size: 1.8vh;
+	}
+
 	.titlep {
 		font-size: 4vw;
 		margin-top: 4vh;
@@ -502,6 +552,19 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.subtitle {
 		font-size: 2vh;
+	}
+
+	.wordtext>p {
+		font-size: 2vh;
+	}
+
+	.titlewp {
+		margin-top: 4vh;
+		font-size: 5vw;
+	}
+
+	.subtitlewp {
+		font-size: 2.1vh;
 	}
 
 	.fp-controlArrow.fp-prev {
@@ -605,6 +668,25 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.wpimg {
 		display: none;
+	}
+
+	.wpimgcont {
+		height: auto;
+		padding-bottom: 0;
+		margin-top: 0vh;
+	}
+
+	.wordtext>p {
+		font-size: 2vh;
+	}
+
+	.titlewp {
+		margin-top: 4vh;
+		font-size: 6vw;
+	}
+
+	.subtitlewp {
+		font-size: 2.1vh;
 	}
 
 	.wpsmall {
