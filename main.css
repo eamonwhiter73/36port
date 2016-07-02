@@ -52,7 +52,6 @@ a, a:hover, a:active, a:visited, a:focus {
 	height: 100%;
 	line-height: 49px;
 	text-align: center;
-	font-size: 2vh;
 }
 
 .inlineblock {
@@ -135,8 +134,8 @@ a, a:hover, a:active, a:visited, a:focus {
 /*HACKABOX*/
 
 .hackaboximg {
-	width: 100%;	
-	height: auto;
+	width: 92%;	
+	height: 100%;
 	border-radius: 6px;
 }
 
@@ -188,6 +187,11 @@ a, a:hover, a:active, a:visited, a:focus {
 	overflow: hidden;
 	padding-left: 0;
 	padding-right: 0;
+	height: 80vh;
+	padding-bottom: 80vh;
+	background-image: url('images/hackaboxfull.png');
+	background-size: 124%;
+    border-radius: 6px;
 }
 
 .wpimgcont {
@@ -199,7 +203,8 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .hacktext {
 	display: inline-block;
-	padding-top: 2vh;
+	height: 80vh;
+	margin-top: 0vh;
 }
 
 .wordtext {
@@ -210,7 +215,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .hacktext>p {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
-	font-size: 2vh;
+	font-size: 2.2vh;
 	text-align: justify;
 	color: white;
 }
@@ -227,7 +232,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .titlep {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
-	font-size: 3.5vh;
+	font-size: 6vh;
 	text-align: center;
 	color: #C75252;
 }
@@ -235,7 +240,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .subtitle {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
-	font-size: 2.5vh;
+	font-size: 1.4vw;
 	color: #C75252;
 }
 
@@ -243,6 +248,10 @@ a, a:hover, a:active, a:visited, a:focus {
 @media (min-width: 1200px) {
 	.hackaboximg {
 		display: block;
+	}
+
+	.hackaboximgcont {
+		margin-top: 2vh;
 	}
 
 	.hackaboximgsmall {
@@ -256,12 +265,45 @@ a, a:hover, a:active, a:visited, a:focus {
 	.wpsmall {
 		display: none;
 	}
+
+	.titlep {
+		font-size: 5vh;
+	}
+
+	.hacktext>p {
+		font-size: 1.3vw;
+	}
+
+	.subtitle {
+		font-size: 2.4vh;
+	}
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 	.hackaboximgcont {
-		margin-top: 10vh;
+		margin-top: 5vh;
+		height: 70vh;
+		padding-bottom: 70vh;
+		background-size: 130%;
+	}
+
+	.hackaboximg {
+		width: 100%;	
+		height: auto;
+		border-radius: 6px;
+	}
+
+	.demo {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		z-index: 2;
+		background-color: rgba(0, 0, 0, 0.1);
+		color: rgb(255, 255, 255);
+		font-size: 10vh;
+		border-radius: 6px;
+		text-align: center;
 	}
 
 	.wpimgcont {
@@ -269,12 +311,24 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hacktext {
-		margin-top: 2vh;
+		height: 70vh;
+		margin-top: 3vh;
+	}
+
+	.titlep {
+		font-size: 4.5vh;
+	}
+
+	.hacktext>p {
+		font-size: 1.2vw;
+	}
+
+	.subtitle {
+		font-size: 2.5vh;
 	}
 
 	.hackaboximg {
 		display: block;
-		float: right;
 	}
 
 	.hackaboximgsmall {
@@ -290,7 +344,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.demo>p {
-		line-height: 300px;
+		line-height: 488px;
 	}
 
 	.techwp {
@@ -305,7 +359,10 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hackaboximgcont {
-		margin-top: 10vh;
+		margin-top: 5vh;
+		background-size: 200%;
+		height: 75vh;
+		padding-bottom: 75vh;
 	}
 
 	.wpimgcont {
@@ -333,7 +390,11 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hacktext>p {
-		font-size: 1.6vh;
+		font-size: 1.4vw;
+	}
+
+	.hacktext {
+		margin-top: 5vh;
 	}
 
 	.wordtext>p {
@@ -343,7 +404,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	.titlep {
 		font-family: 'Raleway', sans-serif;
 		font-weight: 400;
-		font-size: 3.1vh;
+		font-size: 3vw;
 		text-align: center;
 		color: #C75252;
 	}
@@ -351,13 +412,13 @@ a, a:hover, a:active, a:visited, a:focus {
 	.subtitle {
 		font-family: 'Raleway', sans-serif;
 		font-weight: 400;
-		font-size: 2.1vh;
+		font-size: 2.4vh;
 		color: #C75252;
 	}
 
 	.demo>p {
-		line-height: 210px;
-		font-size: 6vh;
+		line-height: 500px;
+		font-size: 9vh;
 	}
 
 	.pcont {
@@ -373,14 +434,22 @@ a, a:hover, a:active, a:visited, a:focus {
 /* Landscape phones and portrait tablets */
 @media screen and (min-width: 481px) and (max-width: 767px) {
 	.logo {
-		font-size: 2.9vh;
+		font-size: 2.6vh;
+	}
+
+	.demo {
+		width: 100%;
+		height: auto;
 	}
 
 	.hackaboximgcont {
 		display: inline;
 		overflow: hidden;
 		border-radius: 6px;
-		margin-top: 6vh;
+		margin-top:10vh;
+		padding-bottom: 0vh;
+		height: auto;
+		background-image: none;
 	}
 
 	.hackaboximg {
@@ -389,6 +458,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.hackaboximgsmall {
 		display: block;
+
 	}
 
 	.demo>p {
@@ -418,20 +488,20 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hacktext {
-
 		display: inline;
 	}
 
 	.hacktext>p {
-		font-size: 1.7vh;
+		font-size: 1.8vh;
 	}
 
 	.titlep {
-		font-size: 3.2vh;
+		font-size: 4vw;
+		margin-top: 4vh;
 	}
 
 	.subtitle {
-		font-size: 2.2vh;
+		font-size: 2vh;
 	}
 
 	.fp-controlArrow.fp-prev {
@@ -491,6 +561,10 @@ a, a:hover, a:active, a:visited, a:focus {
 	    transform: rotate(-15deg);
 	}
 
+	.demo {
+		width: 100%;
+	}
+
 	.pcont {
 		margin-top: 2vh;
 	}
@@ -516,7 +590,9 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hackaboximgcont {
-		margin-top: 7vh;
+		margin-top: 10vh;
+		height: auto;
+		padding-bottom: 0vh;
 	}
 
 	.hackaboximg {
@@ -537,19 +613,20 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hacktext {
-		margin-top: 1vh;
+		margin-top: 2vh;
 	}
 
 	.hacktext>p {
-		font-size: 1.5vh;
+		font-size: 1.7vh;
 	}
 
 	.titlep {
-		font-size: 3.2vh;
+		font-size: 5vw;
+		margin-top: 0vh;
 	}
 
 	.subtitle {
-		font-size: 2.2vh;
+		font-size: 2.7vw;
 	}
 
 	.fp-controlArrow.fp-prev {
