@@ -199,12 +199,11 @@ a, a:hover, a:active, a:visited, a:focus {
 	overflow: hidden;
 	padding-left: 0;
 	padding-right: 0;
-	height: 70vh;
-	padding-bottom: 70vh;
+	height: 80vh;
+	padding-bottom: 80vh;
 	background-image: url('images/themeboximg.png');
-	background-size: 100%;
+	background-size: 124%;
     border-radius: 6px;
-    margin-top: 2vh;
 }
 
 .hacktext {
@@ -215,7 +214,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .wordtext {
 	display: inline-block;
-	height: 70vh;
+	height: 80vh;
 	margin-top: 0vh;
 }
 
@@ -272,10 +271,6 @@ a, a:hover, a:active, a:visited, a:focus {
 		display: block;
 	}
 
-	.hackaboximgcont {
-		margin-top: 2vh;
-	}
-
 	.hackaboximgsmall {
 		display: none;
 	}
@@ -293,7 +288,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hacktext>p {
-		font-size: 1.3vw;
+		font-size: 1.29vw;
 	}
 
 	.subtitle {
@@ -304,7 +299,6 @@ a, a:hover, a:active, a:visited, a:focus {
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 	.hackaboximgcont {
-		margin-top: 5vh;
 		height: 70vh;
 		padding-bottom: 70vh;
 		background-size: 130%;
@@ -349,19 +343,18 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.hacktext {
 		height: 70vh;
-		margin-top: 3vh;
 	}
 
 	.titlep {
-		font-size: 4.5vh;
+		font-size: 5vh;
 	}
 
 	.hacktext>p {
-		font-size: 1.2vw;
+		font-size: 1.17vw;
 	}
 
 	.subtitle {
-		font-size: 2.5vh;
+		font-size: 2.8vh;
 	}
 
 	.hackaboximg {
@@ -403,10 +396,10 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.wpimgcont {
-		margin-top: 1vh;
-		height: 70vh;
-		padding-bottom: 70vh;
-		background-size: 235%;
+		margin-top: 5vh;
+		height: 75vh;
+		padding-bottom: 75vh;
+		background-size: 200%;
 	}
 
 	.techwp {
@@ -444,7 +437,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	.titlep {
 		font-family: 'Raleway', sans-serif;
 		font-weight: 400;
-		font-size: 4vw;
+		font-size: 3.2vw;
 		text-align: center;
 		color: #C75252;
 	}
