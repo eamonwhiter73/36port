@@ -299,8 +299,8 @@ a, a:hover, a:active, a:visited, a:focus {
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 	.hackaboximgcont {
-		height: 70vh;
-		padding-bottom: 70vh;
+		height: 80vh;
+		padding-bottom: 80vh;
 		background-size: 130%;
 	}
 
@@ -342,7 +342,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hacktext {
-		height: 70vh;
+		height: 80vh;
 	}
 
 	.titlep {
@@ -350,7 +350,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hacktext>p {
-		font-size: 1.17vw;
+		font-size: 1.4vw;
 	}
 
 	.subtitle {
@@ -389,16 +389,14 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hackaboximgcont {
-		margin-top: 5vh;
 		background-size: 200%;
-		height: 75vh;
-		padding-bottom: 75vh;
+		height:80vh;
+		padding-bottom: 80vh;
 	}
 
 	.wpimgcont {
-		margin-top: 5vh;
-		height: 75vh;
-		padding-bottom: 75vh;
+		height: 80vh;
+		padding-bottom: 80vh;
 		background-size: 200%;
 	}
 
@@ -423,11 +421,11 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hacktext>p {
-		font-size: 1.4vw;
+		font-size: 1.48vw;
 	}
 
 	.hacktext {
-		margin-top: 5vh;
+
 	}
 
 	.wordtext>p {
