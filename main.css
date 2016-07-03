@@ -13,14 +13,6 @@ nav {
 	position: relative;
 }
 
-.fp-controlArrow.fp-prev {
-    border-color: #aaa #aaa #aaa #aaa;
-}
-
-.fp-controlArrow.fp-next {
-    border-color: #aaa #aaa #aaa #aaa;
-}
-
 .logo {
 	font-family: 'Satisfy', cursive;
 	color: #EBEBEB;
@@ -31,13 +23,13 @@ nav {
 	display: inline-block;
 }
 
-.fp-controlArrow.fp-prev {
+/*.fp-controlArrow.fp-prev {
     border-color: transparent #aaa transparent transparent;
 }
 
 .fp-controlArrow.fp-next {
     border-color: transparent transparent transparent #aaa;
-}
+}*/
 
 a, a:hover, a:active, a:visited, a:focus {
 	text-decoration: none;
@@ -221,7 +213,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .hacktext>p {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
-	font-size: 2.2vh;
+	font-size: 14px;
 	text-align: justify;
 	color: white;
 }
@@ -238,7 +230,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .titlep {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
-	font-size: 6vh;
+	font-size: 20px;
 	text-align: center;
 	color: #C75252;
 }
@@ -254,7 +246,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .subtitle {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
-	font-size: 1.4vw;
+	font-size: 15px;
 	color: #C75252;
 }
 
@@ -285,14 +277,6 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.titlep {
 		font-size: 5vh;
-	}
-
-	.hacktext>p {
-		font-size: 1.29vw;
-	}
-
-	.subtitle {
-		font-size: 2.4vh;
 	}
 }
 
@@ -347,14 +331,6 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.titlep {
 		font-size: 5vh;
-	}
-
-	.hacktext>p {
-		font-size: 1.4vw;
-	}
-
-	.subtitle {
-		font-size: 2.8vh;
 	}
 
 	.hackaboximg {
@@ -468,10 +444,6 @@ a, a:hover, a:active, a:visited, a:focus {
 
 /* Landscape phones and portrait tablets */
 @media screen and (min-width: 481px) and (max-width: 767px) {
-	.logo {
-		font-size: 2.6vh;
-	}
-
 	.demo {
 		width: 100%;
 		height: auto;
@@ -600,10 +572,6 @@ a, a:hover, a:active, a:visited, a:focus {
 		line-height: 49px;
 		text-align: center;
 		font-size: 1.4vh;
-	}
-	
-	.logo {
-		font-size: 2.2vh;
 	}
 
 	.demo>p {
