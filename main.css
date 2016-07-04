@@ -86,13 +86,6 @@ a, a:hover, a:active, a:visited, a:focus {
 	color: #AAAAAA;
 }
 
-.pcont>p {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 200;
-	font-size: 2.3vh;
-	text-align: justify;
-}
-
 .vidcont {
 	position: relative;
 	overflow: hidden;
@@ -115,11 +108,13 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .pcont>p {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 200;
+	font-family: 'Nobile', sans-serif;	
 	font-size: 14px;
 	text-align: justify;
 	color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: 
 }
 
 .techapple {
@@ -131,15 +126,13 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .subtitleap {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
+	font-family: 'Corben', cursive;
 	font-size: 15px;
 	color: #aaaaaa;
 }
 
 .titleap {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
+	font-family: 'Corben', cursive;
 	font-size: 20px;
 	text-align: center;
 	color: #aaaaaa;
@@ -241,16 +234,14 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .hacktext>p {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 200;
+    font-family: 'Nobile', sans-serif;
 	font-size: 14px;
 	text-align: justify;
 	color: white;
 }
 
 .wordtext>p {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 200;
+    font-family: 'Nobile', sans-serif;
 	font-size: 2.4vh;
 	text-align: justify;
 	color: white;
@@ -258,31 +249,27 @@ a, a:hover, a:active, a:visited, a:focus {
 
 
 .titlep {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
+    font-family: 'Corben', cursive;
 	font-size: 20px;
 	text-align: center;
 	color: #C75252;
 }
 
 .titlewp {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
+    font-family: 'Corben', cursive;
 	font-size: 3.4vw;
 	text-align: center;
 	color: #21759B;
 }
 
 .subtitle {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	font-size: 15px;
+    font-family: 'Corben', cursive;
+	font-size: 12px;
 	color: #C75252;
 }
 
 .subtitlewp {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
+    font-family: 'Corben', cursive;
 	font-size: 1.9vw;
 	color: #21759B;
 }
@@ -394,7 +381,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hackaboximgcont {
-		background-size: 200%;
+		background-size: 235%;
 		height:80vh;
 		padding-bottom: 80vh;
 	}
@@ -402,7 +389,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	.wpimgcont {
 		height: 80vh;
 		padding-bottom: 80vh;
-		background-size: 200%;
+		background-size: 235%;
 	}
 
 	.techwp {
@@ -434,18 +421,11 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.titlep {
-		font-family: 'Raleway', sans-serif;
-		font-weight: 400;
 		font-size: 3.2vw;
-		text-align: center;
-		color: #C75252;
 	}
 
 	.subtitle {
-		font-family: 'Raleway', sans-serif;
-		font-weight: 400;
 		font-size: 2.4vh;
-		color: #C75252;
 	}
 
 	.subtitlewp {
