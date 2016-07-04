@@ -67,6 +67,9 @@ $(document).ready(function() {
             $('.titlewp').fitText(1.5);
             $('.subtitlewp').fitText(2, { minFontSize: '17px'});
             $('.wordtext>p').fitText(0.5, { minFontSize: '18px', maxFontSize: '18.3px'});
+            $('.titleap').fitText(1.5);
+            $('.subtitleap').fitText(2, { minFontSize: '17px'});
+            $('.pcont>p').fitText(2, { minFontSize: '15px', maxFontSize: '15px'});
         }
 
         if($(window).width() < 1201 && $(window).width() > 992) {
@@ -77,6 +80,7 @@ $(document).ready(function() {
             $('.titlewp').fitText(1.5);
             $('.subtitlewp').fitText(2, { minFontSize: '17px'});
             $('.wordtext>p').fitText(0.5, { minFontSize: '17px', maxFontSize: '17.4px'});
+            $('.pcont>p').fitText(2, { minFontSize: '13.5px', maxFontSize: '14.8px'});
         }
 
         if($(window).width() < 993 && $(window).width() > 767) {
@@ -87,6 +91,8 @@ $(document).ready(function() {
             $('.titlewp').fitText(1.2);
             $('.subtitlewp').fitText(1.5, { minFontSize: '17px'});
             $('.wordtext>p').fitText(1.8, { minFontSize: '15px', maxFontSize: '15.4px'});
+            $('.pcont>p').fitText(1.2, { minFontSize: '13px', maxFontSize: '13.3px'});
+
         }
 
         if($(window).width() < 768 && $(window).width() > 480) {
@@ -96,6 +102,7 @@ $(document).ready(function() {
             $('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.5);
             $('.subtitlewp').fitText(2, { minFontSize: '17px'});
+            $('.pcont>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '12.6px'});
         }
 
         if($(window).width() < 481) {
@@ -104,6 +111,9 @@ $(document).ready(function() {
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.5, { minFontSize: '12px', maxFontSize: '12px'});
             $('.wordtext>p').fitText(1.5, { minFontSize: '14px', maxFontSize: '14px'});
+            $('.pcont>p').fitText(1.5, { minFontSize: '11.7px', maxFontSize: '11.7px'});
+            $('.subtitleap').fitText(2.7, { minFontSize: '14px'});
+            $('.titleap').fitText(1.5);
         }
     });
 
@@ -116,6 +126,9 @@ $(document).ready(function() {
             $('.titlewp').fitText(1.5);
             $('.subtitlewp').fitText(2, { minFontSize: '17px'});
             $('.wordtext>p').fitText(0.5, { minFontSize: '18px', maxFontSize: '18.3px'});
+            $('.titleap').fitText(1.5);
+            $('.subtitleap').fitText(2, { minFontSize: '17px'});
+            $('.pcont>p').fitText(2, { minFontSize: '15px', maxFontSize: '15px'});
         }
 
         if($(window).width() < 1201 && $(window).width() > 992) {
@@ -126,6 +139,7 @@ $(document).ready(function() {
             $('.titlewp').fitText(1.5);
             $('.subtitlewp').fitText(2, { minFontSize: '17px'});
             $('.wordtext>p').fitText(0.5, { minFontSize: '17px', maxFontSize: '17.4px'});
+            $('.pcont>p').fitText(2, { minFontSize: '13.5px', maxFontSize: '14.8px'});
         }
 
         if($(window).width() < 993 && $(window).width() > 767) {
@@ -136,6 +150,8 @@ $(document).ready(function() {
             $('.titlewp').fitText(1.2);
             $('.subtitlewp').fitText(1.5, { minFontSize: '17px'});
             $('.wordtext>p').fitText(1.8, { minFontSize: '15px', maxFontSize: '15.4px'});
+            $('.pcont>p').fitText(1.2, { minFontSize: '13px', maxFontSize: '13.3px'});
+
         }
 
         if($(window).width() < 768 && $(window).width() > 480) {
@@ -145,6 +161,8 @@ $(document).ready(function() {
             $('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.5);
             $('.subtitlewp').fitText(2, { minFontSize: '17px'});
+            $('.pcont>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '12.6px'});
+
         }
 
         if($(window).width() < 481) {
@@ -152,6 +170,7 @@ $(document).ready(function() {
             $('.titlep').fitText(1.5);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.5, { minFontSize: '12px', maxFontSize: '12px'});
+            $('.wordtext>p').fitText(1.5, { minFontSize: '14px', maxFontSize: '14px'});
         }
     });
 
