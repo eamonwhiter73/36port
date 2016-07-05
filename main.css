@@ -112,9 +112,20 @@ a, a:hover, a:active, a:visited, a:focus {
 	font-size: 14px;
 	text-align: justify;
 	color: black;
-	border-bottom-style: solid;
+}
+
+.uline {
+	border-bottom-style: dotted;
 	border-bottom-width: 1px;
-	border-bottom-color: 
+	border-bottom-color: #aaaaaa;
+	padding-bottom: 2%;
+}
+
+.ulinewp {
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	border-bottom-color: #036E91;
+	padding-bottom: 2%;
 }
 
 .techapple {
@@ -257,9 +268,10 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .titlewp {
     font-family: 'Corben', cursive;
-	font-size: 3.4vw;
+	font-size: 3vw;
 	text-align: center;
-	color: #21759B;
+	color: #036E91;	
+	text-shadow: 0 -1px #6CC8E7, 1px 0 #6CC8E7, 0 1px #6CC8E7, -1px 0 #6CC8E7;
 }
 
 .subtitle {
@@ -271,7 +283,9 @@ a, a:hover, a:active, a:visited, a:focus {
 .subtitlewp {
     font-family: 'Corben', cursive;
 	font-size: 1.9vw;
-	color: #21759B;
+	color: #036E91;
+	position: relative;
+	text-shadow: 0 -1px #6CC8E7, 1px 0 #6CC8E7, 0 1px #6CC8E7, -1px 0 #6CC8E7;
 }
 
 /* Large desktops and laptops */
