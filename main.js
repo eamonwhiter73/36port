@@ -182,6 +182,27 @@ $(document).ready(function() {
         }
     });
 
+    if(location.hash.slice(1) == 'thirdPage') {
+        $('nav').css({
+            'background-color': '#A10000'
+        })
+    }
+    if(location.hash.slice(1) == 'secondPage') {
+        $('nav').css({
+            'background-color': '#B24949'
+        })
+    }
+    if(location.hash.slice(1) == 'firstPage') {
+        $('nav').css({
+            'background-color': 'rgba(96, 18, 24, 0.86)'
+        })
+    }
+    if(location.hash.slice(1) == 'fourthPage') {
+        $('nav').css({
+            'background-color': '#aaaaaa'
+        })
+    }
+
     $(window).on('hashchange',function(){ 
         console.log(location.hash.slice(1));
         if(location.hash.slice(1) == 'fourthPage') {
@@ -200,6 +221,27 @@ $(document).ready(function() {
 
             $('.fp-controlArrow.fp-next').css({
                 'border-color': 'transparent transparent transparent #fff'
+            })
+        }
+
+        if(location.hash.slice(1) == 'thirdPage') {
+            $('nav').css({
+                'background-color': '#A10000'
+            })
+        }
+        if(location.hash.slice(1) == 'secondPage') {
+            $('nav').css({
+                'background-color': '#B24949'
+            })
+        }
+        if(location.hash.slice(1) == 'firstPage') {
+            $('nav').css({
+                'background-color': 'rgba(96, 18, 24, 0.86)'
+            })
+        }
+        if(location.hash.slice(1) == 'fourthPage') {
+            $('nav').css({
+                'background-color': '#aaaaaa'
             })
         }
     }); 

@@ -70,7 +70,7 @@ a, a:hover, a:active, a:visited, a:focus {
 #hackabox2 {background-color: #547345}
 #hackabox3 {background-color: #554889}
 
-#wordpress1 {background-color: #1AABDB;}
+#wordpress1 {background-color: #000000}
 #wordpress2 {background-color: #255553}
 #wordpress3 {background-color: #444444}
 
@@ -121,12 +121,30 @@ a, a:hover, a:active, a:visited, a:focus {
 	padding-bottom: 2%;
 }
 
-.ulinewp {
-	border-bottom-style: dotted;
+.ulinehack {
+	/*border-bottom-style: dotted;
 	border-bottom-width: 1px;
-	border-bottom-color: #036E91;
+	border-bottom-color: #B24949;*/
 	padding-bottom: 2%;
+	position: relative;
 }
+
+.ulinehack:before {
+	content:"";
+    background: #B24949;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 1px;
+}
+
+.ulinewp {
+	/*border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	border-bottom-color: #A10000;*/
+	padding-bottom: 2%;
+}	
 
 .techapple {
 	margin-top: 30vh;
@@ -230,6 +248,9 @@ a, a:hover, a:active, a:visited, a:focus {
 	background-image: url('images/themeboximg.png');
 	background-size: 124%;
     border-radius: 6px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #A10000;
 }
 
 .hacktext {
@@ -270,8 +291,7 @@ a, a:hover, a:active, a:visited, a:focus {
     font-family: 'Corben', cursive;
 	font-size: 3vw;
 	text-align: center;
-	color: #036E91;	
-	text-shadow: 0 -1px #6CC8E7, 1px 0 #6CC8E7, 0 1px #6CC8E7, -1px 0 #6CC8E7;
+	color: #A10000;	
 }
 
 .subtitle {
@@ -283,9 +303,9 @@ a, a:hover, a:active, a:visited, a:focus {
 .subtitlewp {
     font-family: 'Corben', cursive;
 	font-size: 1.9vw;
-	color: #036E91;
+	color: #A10000;
 	position: relative;
-	text-shadow: 0 -1px #6CC8E7, 1px 0 #6CC8E7, 0 1px #6CC8E7, -1px 0 #6CC8E7;
+	/*text-shadow: 0 -1px #6CC8E7, 1px 0 #6CC8E7, 0 1px #6CC8E7, -1px 0 #6CC8E7;*/
 }
 
 /* Large desktops and laptops */
