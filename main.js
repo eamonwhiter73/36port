@@ -203,7 +203,47 @@ $(document).ready(function() {
         })
     }
 
-    $(window).on('hashchange',function(){ 
+    if(location.hash.slice(1) == 'fourthPage') {
+        $('.fp-controlArrow.fp-prev').css({
+            'border-color': 'transparent #aaa transparent transparent'
+        })
+
+        $('.fp-controlArrow.fp-next').css({
+            'border-color': 'transparent transparent transparent #aaa'
+        })
+    }
+    else if(location.hash.slice(1) == 'thirdPage') {
+        $('.fp-controlArrow.fp-prev').css({
+            'border-color': 'transparent #A10000 transparent transparent'
+        })
+
+        $('.fp-controlArrow.fp-next').css({
+            'border-color': 'transparent transparent transparent #A10000'
+        })
+    }
+    else if(location.hash.slice(1) == 'secondPage'){
+        $('.fp-controlArrow.fp-prev').css({
+            'border-color': 'transparent #B24949 transparent transparent'
+        })
+
+        $('.fp-controlArrow.fp-next').css({
+            'border-color': 'transparent transparent transparent #B24949'
+        })
+    }
+    else {
+        $('.fp-controlArrow.fp-prev').css({
+            'border-color': 'transparent #aaa transparent transparent'
+        })
+
+        $('.fp-controlArrow.fp-next').css({
+            'border-color': 'transparent transparent transparent #aaa'
+        })
+    }
+
+    $(window).on('hashchange',function(){
+        $('nav').css({
+            'display': 'none'
+        });
         console.log(location.hash.slice(1));
         if(location.hash.slice(1) == 'fourthPage') {
             $('.fp-controlArrow.fp-prev').css({
@@ -214,13 +254,31 @@ $(document).ready(function() {
                 'border-color': 'transparent transparent transparent #aaa'
             })
         }
-        else {
+        else if(location.hash.slice(1) == 'thirdPage') {
             $('.fp-controlArrow.fp-prev').css({
-                'border-color': 'transparent #fff transparent transparent'
+                'border-color': 'transparent #A10000 transparent transparent'
             })
 
             $('.fp-controlArrow.fp-next').css({
-                'border-color': 'transparent transparent transparent #fff'
+                'border-color': 'transparent transparent transparent #A10000'
+            })
+        }
+        else if(location.hash.slice(1) == 'secondPage'){
+            $('.fp-controlArrow.fp-prev').css({
+                'border-color': 'transparent #B24949 transparent transparent'
+            })
+
+            $('.fp-controlArrow.fp-next').css({
+                'border-color': 'transparent transparent transparent #B24949'
+            })
+        }
+        else {
+            $('.fp-controlArrow.fp-prev').css({
+                'border-color': 'transparent #aaa transparent transparent'
+            })
+
+            $('.fp-controlArrow.fp-next').css({
+                'border-color': 'transparent transparent transparent #aaa'
             })
         }
 
@@ -244,5 +302,7 @@ $(document).ready(function() {
                 'background-color': '#aaaaaa'
             })
         }
+
+        $('nav').fadeIn(1020, 'easeInOutCubic');
     }); 
 });
