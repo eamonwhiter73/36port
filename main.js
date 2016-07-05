@@ -240,6 +240,36 @@ $(document).ready(function() {
         })
     }
 
+    $('#projectsbutton').mouseenter(function() {
+        $('.dropdown').css({
+            "display": "inline"
+        })
+    })
+
+    $('#projectsbutton').mouseleave(function() {
+        $('.dropdown').css({
+            "display": "none"
+        })
+    })
+
+    $('.dropdownbutton').hover(function(){
+        $('.dropdown').css({
+            'display': 'block'
+        })
+    })
+
+    $('.dropdownbutton').hover(function(){
+        $('.dropdown').css({
+            'display': 'block'
+        })
+    })
+
+    $('.dropdownbutton').mouseleave(function(){
+        $('.dropdown').css({
+            'display': 'none'
+        })
+    })
+
     $(window).on('hashchange',function(){
         $('nav').css({
             'display': 'none'
