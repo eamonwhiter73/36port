@@ -7,11 +7,13 @@
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/nanoscroller.css" />
 	<link rel="stylesheet" type="text/css" href="main.css" />
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="node_modules/fullpage.js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/jquery.fittext.js"></script>
+	<script type="text/javascript" src="js/jquery.nanoscroller.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 
@@ -33,11 +35,11 @@
 		<div class="row">
 			<nav class="navbar navbar-fixed-top">
 				<div class="row">
-					<div class="logo col-lg-5 col-lg-offset-10 col-md-5 col-md-offset-9 col-sm-7 col-sm-offset-7 col-xs-9 col-xs-offset-4">Eamon White</div>
+					<div class="logo col-lg-5 col-lg-offset-10 col-md-5 col-md-offset-9 col-sm-7 col-sm-offset-9 col-xs-9 col-xs-offset-4">Eamon White</div>
 					<div class='menuholder col-lg-11 col-md-13 col-sm-16'>
 						<a href="#firstPage" type="button" class="menubutton inlineblock col-lg-9 col-md-9">HOME</a>
 						<a type="button" id='projectsbutton' class="menubutton inlineblock col-lg-9 col-md-9">PROJECTS</a>
-						<div class='dropdown col-lg-14'>
+						<div class='dropdown col-lg-14 col-md-14 col-sm-14 col-xs-8'>
 							<a class='dropdownbutton' href="#secondPage">HACKABOX</a>
 							<a class='dropdownbutton' href="#thirdPage">WP THEME</a>
 							<a class='dropdownbutton radius' href="#fourthPage">iOS APP</a>
@@ -56,19 +58,41 @@
 				<div class="section" id="hackabox">
 					<div class="slide" id="hackabox1">
 						<div class='container-fluid'>
-							<div class="row">
-								<div class='col-lg-14 col-lg-offset-3 col-md-14 col-md-offset-3	col-sm-14 col-sm-offset-3 col-xs-28 col-xs-offset-4 hackaboximgcont'>
-									<div class='demo'><p>DEMO</p></div>
-									<!--<img class='hackaboximg' src='images/hackaboxfull.png'>-->
-									<img class='hackaboximgsmall' src='images/hackaboxquery700.png'>
+							<div class="row" style="position: relative;">
+								<div class = "titlepout col-lg-36">
+									<div class='crumbmine col-lg-5 col-lg-offset-0'>Projects > Hackabox</div>
+									<div class="titlep col-lg-13 col-lg-offset-15">HACKABOX</div>
 								</div>
-								<div class='hacktext col-lg-15 col-lg-offset-1 col-md-15 col-md-offset-1 col-sm-15 col-sm-offset-1 col-xs-28 col-xs-offset-4'>
-									<div class = "titlep">Hackabox</div></br>
+								<div class='forborder col-lg-11 col-lg-offset-4 col-md-14 col-md-offset-3 col-sm-14 col-sm-offset-3 col-xs-28 col-xs-offset-4'>
+									<div class='col-lg-36 col-md-14 col-md-offset-3	col-sm-14 col-sm-offset-3 col-xs-28 col-xs-offset-4 hackaboximgcont'>
+										<div class='demo'><p>DEMO</p></div>
+										<!--<img class='hackaboximg' src='images/hackaboxfull.png'>-->
+										<img class='hackaboximgsmall' src='images/hackaboxquery700.png'>
+									</div>
+								</div>
+								<div class='hacktext col-lg-13 col-lg-offset-0 col-md-15 col-md-offset-0 col-sm-15 col-sm-offset-0 col-xs-28 col-xs-offset-4'>
 						    		<div class = "subtitle">Goals:</div><p>To develop a MEAN stack website for my Hackabox project, including a forum built from scratch.</p>
 						    		<div class = "subtitle">Challenges:</div><p>Building a forum from scratch with AngularJS (and other tech).</p>
 						    		<div class = "subtitle">Learned:</div><p>Further developed my AngularJS and other MEAN tech skills. I had to go very in depth with AngularJS for the forum.</p>
 						    		<div class = "subtitle">More:</div>
 						    		<p>This site was born out of an idea I had to create a gaming platform out of a Raspberry Pi (computer). While I wasn't really able to get going on the project, I did end up making a simple MEAN stack site. A MEAN stack consists of the technologies represented by the logos below. MongoDB (database), ExpressJS, AngularJS, and NodeJS. I made a forum from scratch, and a fully functional user system. It is responsive. You can click on the image, and it will bring you to a demo - feel free to create a user and use the forum, everything that is available on the demo is fully functional (including a MongoDB backend). Please proceed to the next slides for more details on this project.</p>
+						    		<div class='read col-lg-8'>READ MORE</div>
+						    	</div>
+						    	<div class='readpanel col-lg-18 col-lg-offset-15'>
+						    		<div class="closemine col-lg-3 col-lg-offset-33">close</div>
+						    	</div>
+						    	<div class="techused col-lg-28 col-lg-offset-9">TECHNOLOGIES USED</div>
+						    	<div class="mongoholder col-lg-2 col-lg-offset-16">
+						    		<img class="mongodbimg" src="images/mongodb.png">
+						    	</div>
+						    	<div class="mongoholder col-lg-2">
+						    		<img class="expressimg" src="images/expressjs.png">
+						    	</div>
+						    	<div class="mongoholder col-lg-2">
+						    		<img class="angularimg" src="images/angularjs.png">
+						    	</div>
+						    	<div class="mongoholder col-lg-2">
+						    		<img class="nodeimg" src="images/nodejs.png">
 						    	</div>
 							</div>
 						</div>

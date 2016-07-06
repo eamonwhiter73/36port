@@ -61,9 +61,9 @@ $(document).ready(function() {
     $(window).load(function() {
         if($(window).width() > 1199) {        
             $('.logo').fitText(0.67);
-            $('.titlep').fitText(1.5);
+            $('.titlep').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '17px'});
-            $('.hacktext>p').fitText(2, { minFontSize: '15.2px', maxFontSize: '15.4px'});
+            $('.hacktext>p').fitText(2, { minFontSize: '12px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.8);
             $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
             $('.wordtext>p').fitText(0.5, { minFontSize: '16px', maxFontSize: '17px'});
@@ -123,9 +123,9 @@ $(document).ready(function() {
     $(window).resize(function() {
         if($(window).width() > 1199) {        
             $('.logo').fitText(0.67);
-            $('.titlep').fitText(1.5);
+            $('.titlep').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '17px'});
-            $('.hacktext>p').fitText(2, { minFontSize: '15.2px', maxFontSize: '15.4px'});
+            $('.hacktext>p').fitText(2, { minFontSize: '12px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.8);
             $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
             $('.wordtext>p').fitText(0.5, { minFontSize: '16px', maxFontSize: '17px'});
@@ -182,7 +182,7 @@ $(document).ready(function() {
         }
     });
 
-    if(location.hash.slice(1) == 'thirdPage') {
+    /*if(location.hash.slice(1) == 'thirdPage') {
         $('nav').css({
             'background-color': '#A10000'
         })
@@ -201,7 +201,7 @@ $(document).ready(function() {
         $('nav').css({
             'background-color': '#aaaaaa'
         })
-    }
+    }*/
 
     if(location.hash.slice(1) == 'fourthPage') {
         $('.fp-controlArrow.fp-prev').css({
@@ -223,11 +223,11 @@ $(document).ready(function() {
     }
     else if(location.hash.slice(1) == 'secondPage'){
         $('.fp-controlArrow.fp-prev').css({
-            'border-color': 'transparent #B24949 transparent transparent'
+            'border-color': 'transparent rgb(96, 18, 24) transparent transparent'
         })
 
         $('.fp-controlArrow.fp-next').css({
-            'border-color': 'transparent transparent transparent #B24949'
+            'border-color': 'transparent transparent transparent rgb(96, 18, 24)'
         })
     }
     else {
@@ -271,9 +271,6 @@ $(document).ready(function() {
     })
 
     $(window).on('hashchange',function(){
-        $('nav').css({
-            'display': 'none'
-        });
         console.log(location.hash.slice(1));
         if(location.hash.slice(1) == 'fourthPage') {
             $('.fp-controlArrow.fp-prev').css({
@@ -295,11 +292,11 @@ $(document).ready(function() {
         }
         else if(location.hash.slice(1) == 'secondPage'){
             $('.fp-controlArrow.fp-prev').css({
-                'border-color': 'transparent #B24949 transparent transparent'
+                'border-color': 'transparent rgb(96, 18, 24) transparent transparent'
             })
 
             $('.fp-controlArrow.fp-next').css({
-                'border-color': 'transparent transparent transparent #B24949'
+                'border-color': 'transparent transparent transparent rgb(96, 18, 24)'
             })
         }
         else {
@@ -312,7 +309,7 @@ $(document).ready(function() {
             })
         }
 
-        if(location.hash.slice(1) == 'thirdPage') {
+        /*if(location.hash.slice(1) == 'thirdPage') {
             $('nav').css({
                 'background-color': '#A10000'
             })
@@ -331,8 +328,20 @@ $(document).ready(function() {
             $('nav').css({
                 'background-color': '#aaaaaa'
             })
-        }
+        }*/
 
         $('nav').fadeIn(1020, 'easeInOutCubic');
-    }); 
+    });
+
+    $('.read').click(function() {
+        $('.readpanel').css({
+            "display": "block"
+        })
+    });
+
+    $('.closemine').click(function() {
+        $('.readpanel').css({
+            "display": "none"
+        })
+    });
 });

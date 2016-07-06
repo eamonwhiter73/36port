@@ -7,6 +7,10 @@ a {
 	cursor: pointer; cursor: hand;
 }
 
+.navbar {
+	margin-bottom: 0px;
+}
+
 .navbar>.row {
 	height: 100%;
 }
@@ -21,7 +25,7 @@ a {
 	position: absolute;
 	z-index: 2;
 	top: 53px;
-	right: 10vw;
+	right: 11vw;
 	border-bottom-right-radius: 6px;
 	border-bottom-left-radius: 6px;
 }
@@ -98,7 +102,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 #hackabox1 {
-	background-color: #D4B89B;
+	background-color: #D4B79E;
 }
 #hackabox2 {background-color: #547345}
 #hackabox3 {background-color: #554889}
@@ -141,7 +145,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .pcont>p {
-	font-family: 'Nobile', sans-serif;	
+	font-family: 'Avenir';	
 	font-size: 14px;
 	text-align: justify;
 	color: black;
@@ -188,13 +192,13 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .subtitleap {
-	font-family: 'Corben', cursive;
+	font-family: 'Avenir';
 	font-size: 15px;
 	color: #aaaaaa;
 }
 
 .titleap {
-	font-family: 'Corben', cursive;
+	font-family: 'Avenir';
 	font-size: 20px;
 	text-align: center;
 	color: #aaaaaa;
@@ -224,7 +228,6 @@ a, a:hover, a:active, a:visited, a:focus {
 	background-color: rgba(0, 0, 0, 0.1);
 	color: rgb(255, 255, 255);
 	font-size: 10vh;
-	border-radius: 6px;
 	text-align: center;
 }
 
@@ -236,7 +239,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .demo>p {
-	line-height: 488px;
+	line-height: 300px;
 	-ms-transform: rotate(-45deg); /* IE 9 */
     -webkit-transform: rotate(-45deg); /* Safari */
     transform: rotate(-45deg);
@@ -260,15 +263,32 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .hackaboximgcont {
+	margin-left: 0;
 	position: relative;
 	overflow: hidden;
 	padding-left: 0;
 	padding-right: 0;
-	height: 80vh;
-	padding-bottom: 80vh;
+	height: 50vh;
+	padding-bottom: 50vh;
 	background-image: url('images/hackaboxfull.png');
 	background-size: 124%;
-    border-radius: 6px;
+	padding: 0px;
+	border-style: solid;
+	border-width: 6px;
+	border-color: #D4B89B;
+}
+
+.forborder {
+  background: #D4B89B; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* Standard syntax */
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  padding-right: 2vh;
+  padding-left: 10vh;
+
 }
 
 .wpimgcont {
@@ -288,8 +308,48 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .hacktext {
 	display: inline-block;
-	height: 80vh;
+	height: 54vh;
+	padding-left: 2vh;
+	padding-right: 2vh;
+	padding-top: 2vh;
 	margin-top: 0vh;
+	background: #D4B89B; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, #C8A589 40%, #D4B79E); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #C8A589 40%, #D4B79E); /* Standard syntax */
+	margin-left: 2vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.read {
+	background-color: rgba(96, 18, 24, 0.5);
+	position: absolute;
+	bottom: 1vh;
+	right: 5vh;
+	z-index: 2;
+	padding: 1vh;
+	color: #F8E3D0;
+	cursor: hand; cursor: pointer;
+}
+
+.readpanel {
+	position: absolute;
+	display: none;
+	height: 90%;
+	z-index: 3;
+	background-color: rgba(96, 18, 24, 0.86);
+	top: 20vh;
+}
+
+.closemine {
+	color: #fff;
+	font-family: 'Avenir';
+	font-size: 14px;
+	position: absolute;
+	top: 1vh;
+	cursor: hand; cursor: pointer;
 }
 
 .wordtext {
@@ -299,42 +359,157 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .hacktext>p {
-    font-family: 'Nobile', sans-serif;
-	font-size: 14px;
+    font-family: 'Avenir';
+	font-size: 12px;
 	text-align: justify;
-	color: white;
+	color: #FAE6D5;
+}
+
+.techused {
+	position: relative;
+	font-family: 'Avenir';
+	font-size: 22px;
+	font-weight: 700;
+	color: #6F282A;
+	background-color: #D4B79E;
+	margin-top: 4vh;
+}
+
+.techused:before {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 11%;
+	top: 45%;
+	left: -11%;
+	background-color: #6F282A;
+}
+
+.techused:after {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 13%;
+	top: 45%;
+	left: 55%;
+	background-color: #6F282A;
+}
+
+.expressimg {
+  width: 100%;
+  position: absolute;
+  bottom: 1vh;
+  left: 1vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
+.mongodbimg {
+  width: 100%;
+  position: absolute;
+  bottom: -2vh;
+  left: 1vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+
+}
+
+.angularimg {
+  width: 100%;
+  position: absolute;
+  bottom: -2vh;
+  left: 1vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
+.mongodbholder {
+	z-index: 2;
+}
+
+.nodeimg {
+  width: 100%;
+  position: absolute;
+  bottom: 0vh;
+  left: 1vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
 }
 
 .wordtext>p {
-    font-family: 'Nobile', sans-serif;
+    font-family: 'Avenir';
 	font-size: 2.4vh;
 	text-align: justify;
 	color: white;
 }
 
+.fp-tableCell {
+	vertical-align: top;
+}
 
-.titlep {
-    font-family: 'Corben', cursive;
+
+.titlepout {
+    font-family: 'Avenir';
+    font-weight: 900;
 	font-size: 20px;
 	text-align: center;
-	color: #C75252;
+	color: #6F282A;
+	height: 14vh;
+	background-color: #DBC4B0;
+	position: relative;
+	margin-top: 53px;
+}
+
+.titlep {
+	background-color: #DBC4B0;
+	height: 100%;
+	line-height: 16vh;
+}
+
+.titlep:before {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 85%;
+	top: 53%;
+	left: -71%;
+	background-color: #6F282A;
+}
+
+.titlep:after {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 15%;
+	top: 53%;
+	right: -1%;
+	background-color: #6F282A;
+}
+
+.crumbmine {
+	font-size: 16px;
+	position: absolute;
+	background-color: #DBC4B0;
+	color: #884548;
+	top: 2vh;
 }
 
 .titlewp {
-    font-family: 'Corben', cursive;
+    font-family: 'Avenir';
 	font-size: 3vw;
 	text-align: center;
 	color: #A10000;	
 }
 
 .subtitle {
-    font-family: 'Corben', cursive;
-	font-size: 12px;
-	color: #C75252;
+    font-family: 'Avenir';
+    font-weight: 900;
+	font-size: 13px;
+	color: #6F282A;
 }
 
 .subtitlewp {
-    font-family: 'Corben', cursive;
+    font-family: 'Avenir';
 	font-size: 1.9vw;
 	color: #A10000;
 	position: relative;
@@ -439,6 +614,10 @@ a, a:hover, a:active, a:visited, a:focus {
 	.techwp {
 		margin-top: 7vh;
 	}
+
+	.dropdown {
+		left: 11vw;
+	}
 }
 
 /* Portrait tablets and small desktops */
@@ -502,6 +681,10 @@ a, a:hover, a:active, a:visited, a:focus {
 	.demo>p {
 		line-height: 500px;
 		font-size: 9vh;
+	}
+
+	.dropdown {
+		left: 5vw;
 	}
 }
 
@@ -635,6 +818,10 @@ a, a:hover, a:active, a:visited, a:focus {
 		width: 100%;
 		height: 100%;
 		border-radius: 6px;
+	}
+
+	.dropdown {
+		right: 35vw;
 	}
 }
 
