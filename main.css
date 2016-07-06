@@ -129,13 +129,13 @@ a, a:hover, a:active, a:visited, a:focus {
 	padding-left: 0;
 	padding-right: 0;
 	height: 80vh;
-    border-radius: 6px;
+    
 }
 
 .vidcont>iframe {
 	width: 100%;
 	height: 100%;
-	border-radius: 6px;
+	
 }
 
 .pcont {
@@ -217,7 +217,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .hackaboximg {
 	width: 92%;	
 	height: 100%;
-	border-radius: 6px;
+	
 }
 
 .demo {
@@ -248,7 +248,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .wpimg {
 	max-width: 100%;	
 	max-height: auto;
-	border-radius: 6px;
+	
 }
 
 .techwp {
@@ -258,7 +258,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .hackaboximgsmall {
 	max-width: 100%;	
 	max-height: auto;
-	border-radius: 6px;
+	
 	display: none;
 }
 
@@ -278,19 +278,6 @@ a, a:hover, a:active, a:visited, a:focus {
 	border-color: #D4B89B;
 }
 
-.forborder {
-  background: #D4B89B; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* Standard syntax */
-  padding-bottom: 2vh;
-  padding-top: 2vh;
-  padding-right: 2vh;
-  padding-left: 10vh;
-
-}
-
 .wpimgcont {
 	position: relative;
 	overflow: hidden;
@@ -300,27 +287,10 @@ a, a:hover, a:active, a:visited, a:focus {
 	padding-bottom: 80vh;
 	background-image: url('images/themeboximg.png');
 	background-size: 124%;
-    border-radius: 6px;
+    
     border-style: solid;
     border-width: 4px;
     border-color: #A10000;
-}
-
-.hacktext {
-	display: inline-block;
-	height: 54vh;
-	padding-left: 2vh;
-	padding-right: 2vh;
-	padding-top: 2vh;
-	margin-top: 0vh;
-	background: #D4B89B; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(left, #C8A589 40%, #D4B79E); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(to right, #C8A589 40%, #D4B79E); /* Standard syntax */
-	margin-left: 2vh;
-	position: relative;
-	overflow: hidden;
 }
 
 .read {
@@ -365,10 +335,16 @@ a, a:hover, a:active, a:visited, a:focus {
 	color: #FAE6D5;
 }
 
+.techholder {
+	position: absolute;
+	height: 10%;
+	top: 93%;
+}
+
 .techused {
 	position: relative;
 	font-family: 'Avenir';
-	font-size: 22px;
+	font-size: 12px;
 	font-weight: 700;
 	color: #6F282A;
 	background-color: #D4B79E;
@@ -397,43 +373,33 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .expressimg {
   width: 100%;
-  position: absolute;
-  bottom: 1vh;
-  left: 1vh;
   padding-left: 1vh;
   padding-right: 1vh;
+  padding-top: 2vh;
 }
 
 .mongodbimg {
   width: 100%;
-  position: absolute;
-  bottom: -2vh;
-  left: 1vh;
   padding-left: 1vh;
   padding-right: 1vh;
-
 }
 
 .angularimg {
   width: 100%;
-  position: absolute;
-  bottom: -2vh;
-  left: 1vh;
   padding-left: 1vh;
   padding-right: 1vh;
 }
 
 .mongodbholder {
 	z-index: 2;
+	position: relative;
 }
 
 .nodeimg {
   width: 100%;
-  position: absolute;
-  bottom: 0vh;
-  left: 1vh;
   padding-left: 1vh;
   padding-right: 1vh;
+  padding-top: 1vh;
 }
 
 .wordtext>p {
@@ -537,20 +503,88 @@ a, a:hover, a:active, a:visited, a:focus {
 	.titlep {
 		font-size: 5vh;
 	}
+
+	.hacktext {
+		display: inline-block;
+		height: 54vh;
+		padding-left: 2vh;
+		padding-right: 2vh;
+		padding-top: 2vh;
+		margin-top: 0vh;
+		background: #D4B89B; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(left, #C8A589 40%, #D4B79E); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to right, #C8A589 40%, #D4B79E); /* Standard syntax */
+		margin-left: 2vh;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.forborder {
+	  background: #D4B89B; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* Standard syntax */
+	  padding-bottom: 2vh;
+	  padding-top: 2vh;
+	  padding-right: 2vh;
+	  padding-left: 10vh;
+
+	}
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 	.hackaboximgcont {
-		height: 80vh;
-		padding-bottom: 80vh;
-		background-size: 130%;
+		background-size: 135%;
+	}
+
+	.techholder {
+		position: absolute;
+		height: 10%;
+		top: 94%;
+	}
+
+	.techused:after {
+		left: 74%;
+		width: 21%;
+	}
+
+	.techused:before {
+		content: "";
+		position: absolute;
+		height: 3px;
+		width: 13%;
+		top: 45%;
+		left: -13%;
+		background-color: #6F282A;
+	}
+
+	.titlep:before {
+		content: "";
+		position: absolute;
+		height: 3px;
+		width: 82%;
+		top: 53%;
+		left: -66%;
+		background-color: #6F282A;
+	}
+
+	.titlep:after {
+		content: "";
+		position: absolute;
+		height: 3px;
+		width: 15%;
+		top: 53%;
+		right: 0%;
+		background-color: #6F282A;
 	}
 
 	.hackaboximg {
 		width: 100%;	
 		height: auto;
-		border-radius: 6px;
 	}
 
 	.demo {
@@ -561,7 +595,6 @@ a, a:hover, a:active, a:visited, a:focus {
 		background-color: rgba(0, 0, 0, 0.1);
 		color: rgb(255, 255, 255);
 		font-size: 10vh;
-		border-radius: 6px;
 		text-align: center;
 	}
 
@@ -584,11 +617,37 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hacktext {
-		height: 80vh;
+		display: inline-block;
+		height: 54vh;
+		padding-left: 2vh;
+		padding-right: 2vh;
+		padding-top: 2vh;
+		margin-top: 0vh;
+		background: #D4B89B; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(left, #C8A589 40%, #D4B79E); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to right, #C8A589 40%, #D4B79E); /* Standard syntax */
+		margin-left: 2vh;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.forborder {
+	  background: #D4B89B; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* Standard syntax */
+	  padding-bottom: 2vh;
+	  padding-top: 2vh;
+	  padding-right: 2vh;
+	  padding-left: 10vh;
+
 	}
 
 	.titlep {
-		font-size: 5vh;
+	
 	}
 
 	.hackaboximg {
@@ -626,10 +685,33 @@ a, a:hover, a:active, a:visited, a:focus {
 		font-size: 1.7vh;
 	}
 
+	.techholder {
+		position: absolute;
+		height: 10%;
+		top: 95%;
+	}
+
 	.hackaboximgcont {
 		background-size: 235%;
-		height:80vh;
-		padding-bottom: 80vh;
+		height:50vh;
+		padding-bottom: 50vh;
+	}
+
+	.hacktext {
+		display: inline-block;
+		height: 55.8vh;
+		padding-left: 2vh;
+		padding-right: 2vh;
+		padding-top: 2vh;
+		margin-top: 0vh;
+		background: #D4B89B; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(left, #C8A589 40%, #D4B79E); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to right, #C8A589 40%, #D4B79E); /* Standard syntax */
+		margin-left: 2vh;
+		position: relative;
+		overflow: hidden;
 	}
 
 	.wpimgcont {
@@ -640,6 +722,19 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.techwp {
 		margin-top: 0vh;
+	}
+
+	.forborder {
+	  background: #D4B89B; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* Standard syntax */
+	  padding-bottom: 2vh;
+	  padding-top: 2vh;
+	  padding-right: 2vh;
+	  padding-left: 10vh;
+
 	}
 
 	.hackaboximg {
@@ -698,8 +793,8 @@ a, a:hover, a:active, a:visited, a:focus {
 	.hackaboximgcont {
 		display: inline;
 		overflow: hidden;
-		border-radius: 6px;
-		margin-top:10vh;
+		
+		margin-top:0vh;
 		padding-bottom: 0vh;
 		height: auto;
 		background-image: none;
@@ -729,7 +824,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.wpsmall {
-		border-radius: 6px;
+		
 	}
 
 	.wpimgcont {
@@ -742,8 +837,70 @@ a, a:hover, a:active, a:visited, a:focus {
 		position: relative;
 	}
 
+	.expressimg {
+	  width: 100%;
+	  padding-left: 1vh;
+	  padding-right: 1vh;
+	  padding-top: 1vh;
+	}
+
+	.mongodbimg {
+	  width: 100%;
+	  padding-left: 1vh;
+	  padding-right: 1vh;
+	}
+
+	.angularimg {
+	  width: 100%;
+	  padding-left: 1vh;
+	  padding-right: 1vh;
+	}
+
+	.mongodbholder {
+		z-index: 2;
+		position: relative;
+	}
+
+	.nodeimg {
+	  width: 100%;
+	  padding-left: 1vh;
+	  padding-right: 1vh;
+	  padding-top: 1vh;
+	}
+
+	.techholder {
+		position: absolute;
+		height: 10%;
+		top: 96%;
+	}
+
+	.forborder {
+	  background: #D4B89B; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(90deg, #C8A589, #D4B79E); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(90deg, #C8A589, #D4B79E); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(90deg, #C8A589, #D4B79E); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(90deg, #C8A589, #D4B79E); /* Standard syntax */
+	  padding-bottom: 2vh;
+	  padding-top: 2vh;
+	  padding-right: 2vh;
+	  padding-left: 2vh;
+
+	}
+
 	.hacktext {
-		display: inline;
+		display: inline-block;
+		height: 44vh;
+		padding-left: 2vh;
+		padding-right: 2vh;
+		padding-top: 2vh;
+		margin-top: 0vh;
+		background: #D4B89B; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(left, #C8A589 40%, #D4B79E); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to right, #C8A589 40%, #D4B79E); /* Standard syntax */
+		position: relative;
+		overflow: hidden;
 	}
 
 	.hacktext>p {
@@ -810,14 +967,14 @@ a, a:hover, a:active, a:visited, a:focus {
 		padding-left: 0;
 		padding-right: 0;
 		height: 20vh;
-	    border-radius: 6px;
+	    
 	    margin-top: 10vh;
 	}
 
 	.vidcont>iframe {
 		width: 100%;
 		height: 100%;
-		border-radius: 6px;
+		
 	}
 
 	.dropdown {
@@ -874,14 +1031,14 @@ a, a:hover, a:active, a:visited, a:focus {
 		padding-left: 0;
 		padding-right: 0;
 		height: 20vh;
-	    border-radius: 6px;
+	    
 	    margin-top: 10vh;
 	}
 
 	.vidcont>iframe {
 		width: 100%;
 		height: 100%;
-		border-radius: 6px;
+		
 	}
 
 	.hackaboximgcont {
@@ -923,7 +1080,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.wpsmall {
 		display: block;
-		border-radius: 6px;
+		
 	}
 
 	.hacktext {
