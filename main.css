@@ -294,20 +294,21 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .read {
-	background-color: rgba(96, 18, 24, 0.5);
+	background-color: rgba(96, 18, 24, 0.4);
 	position: absolute;
 	bottom: 1vh;
-	right: 5vh;
+	right: 3vh;
 	z-index: 2;
 	padding: 1vh;
 	color: #F8E3D0;
 	cursor: hand; cursor: pointer;
+	text-align: center;
 }
 
 .readpanel {
 	position: absolute;
 	display: none;
-	height: 90%;
+	height: 82%;
 	z-index: 3;
 	background-color: rgba(96, 18, 24, 0.86);
 	top: 20vh;
@@ -319,6 +320,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	font-size: 14px;
 	position: absolute;
 	top: 1vh;
+	right:1.5vmax;
 	cursor: hand; cursor: pointer;
 }
 
@@ -336,19 +338,26 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .techholder {
-	position: absolute;
+	position: relative;
 	height: 10%;
-	top: 93%;
+	top: 92%;
+	z-index: 2;
+	padding-top: 1vh;
 }
 
 .techused {
-	position: relative;
+	position: absolute;
 	font-family: 'Avenir';
-	font-size: 12px;
+	font-size: 18px;
 	font-weight: 700;
 	color: #6F282A;
 	background-color: #D4B79E;
-	margin-top: 4vh;
+	top: 92.5%;
+	height: 4.5vh;
+}
+
+.techused>p {
+	line-height: 4.5vh;
 }
 
 .techused:before {
@@ -375,31 +384,35 @@ a, a:hover, a:active, a:visited, a:focus {
   width: 100%;
   padding-left: 1vh;
   padding-right: 1vh;
-  padding-top: 2vh;
+  padding-top: 4.7vh;
 }
 
 .mongodbimg {
   width: 100%;
-  padding-left: 1vh;
-  padding-right: 1vh;
 }
 
 .angularimg {
   width: 100%;
   padding-left: 1vh;
   padding-right: 1vh;
+  padding-top: 1.8vh;
 }
 
-.mongodbholder {
+.mongoholder {
 	z-index: 2;
 	position: relative;
+}
+
+.mongoholdernode {
+	z-index: 2;
+	position: relative;
+	padding-top: 3vh;
 }
 
 .nodeimg {
   width: 100%;
   padding-left: 1vh;
   padding-right: 1vh;
-  padding-top: 1vh;
 }
 
 .wordtext>p {
@@ -430,6 +443,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	background-color: #DBC4B0;
 	height: 100%;
 	line-height: 16vh;
+	font-size: 22px;
 }
 
 .titlep:before {
@@ -500,10 +514,6 @@ a, a:hover, a:active, a:visited, a:focus {
 		display: none;
 	}
 
-	.titlep {
-		font-size: 5vh;
-	}
-
 	.hacktext {
 		display: inline-block;
 		height: 54vh;
@@ -541,10 +551,26 @@ a, a:hover, a:active, a:visited, a:focus {
 		background-size: 135%;
 	}
 
+	.expressimg {
+		padding-top: 3.8vh;
+	}
+
 	.techholder {
-		position: absolute;
+		position: relative;
 		height: 10%;
-		top: 94%;
+		top: 92%;
+		z-index: 2;
+		padding-top: 1vh;
+	}
+
+	.techused {
+		top: 93.5%;
+		font-size: 1.5vw;
+		height: 4.5vh;
+	}
+
+	.techused>p {
+		line-height: 4.5vh;		
 	}
 
 	.techused:after {
@@ -686,13 +712,55 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.techholder {
-		position: absolute;
+		position: relative;
 		height: 10%;
-		top: 95%;
+		z-index: 2;
+		padding-top: 1vh;
+	}
+
+	.expressimg {
+		padding-top: 4vh;
+	}
+
+	.angularimg {
+		padding-top: 2vh;
+	}
+
+	.nodeimg {
+		padding-bottom: 4vh;
+	}
+
+	.techused {
+		top: 93%;
+		font-size: 1.5vw;
+		height: 2vh;
+	}
+
+	.mongodbimg {
+		padding-top: 1vh;
+	}
+
+	.techused>p {
+		line-height: 2vh;		
+	}
+
+	.techused:after {
+		left: 71%;
+		width: 21%;
+	}
+
+	.techused:before {
+		content: "";
+		position: absolute;
+		height: 3px;
+		width: 9%;
+		top: 45%;
+		left: -9%;
+		background-color: #6F282A;
 	}
 
 	.hackaboximgcont {
-		background-size: 235%;
+		background-size: 260%;
 		height:50vh;
 		padding-bottom: 50vh;
 	}
@@ -761,8 +829,16 @@ a, a:hover, a:active, a:visited, a:focus {
 		font-size: 2.1vh;
 	}
 
-	.titlep {
-		font-size: 3.2vw;
+	.titlep:after {
+		width: 8%;
+		right: 4%;
+
+	}
+
+	.titlep:before {
+		width: 81%;
+		left: -68%;
+
 	}
 
 	.subtitle {
@@ -790,11 +866,26 @@ a, a:hover, a:active, a:visited, a:focus {
 		height: 100%;
 	}
 
+	.crumbmine {
+		z-index: 2;
+		font-size: 2vw;
+		text-align: left;
+	}
+
+	.closemine {
+		color: #fff;
+		font-family: 'Avenir';
+		font-size: 14px;
+		position: absolute;
+		top: 1vh;
+		right:1vmin;
+		cursor: hand; cursor: pointer;
+	}
+
 	.hackaboximgcont {
 		display: inline;
 		overflow: hidden;
 		
-		margin-top:0vh;
 		padding-bottom: 0vh;
 		height: auto;
 		background-image: none;
@@ -871,19 +962,21 @@ a, a:hover, a:active, a:visited, a:focus {
 	.techholder {
 		position: absolute;
 		height: 10%;
-		top: 96%;
+		top: 94%;
 	}
 
 	.forborder {
 	  background: #D4B89B; /* For browsers that do not support gradients */
-	  background: -webkit-linear-gradient(90deg, #C8A589, #D4B79E); /* For Safari 5.1 to 6.0 */
-	  background: -o-linear-gradient(90deg, #C8A589, #D4B79E); /* For Opera 11.1 to 12.0 */
-	  background: -moz-linear-gradient(90deg, #C8A589, #D4B79E); /* For Firefox 3.6 to 15 */
-	  background: linear-gradient(90deg, #C8A589, #D4B79E); /* Standard syntax */
+	  background: -webkit-linear-gradient(0deg, #C8A589, #D4B79E); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(0deg, #C8A589, #D4B79E); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(0deg, #C8A589, #D4B79E); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(0deg, #C8A589, #D4B79E); /* Standard syntax */
 	  padding-bottom: 2vh;
 	  padding-top: 2vh;
 	  padding-right: 2vh;
 	  padding-left: 2vh;
+	  margin-top: 1vh;
+	  margin-bottom: 1vh;
 
 	}
 
@@ -895,10 +988,10 @@ a, a:hover, a:active, a:visited, a:focus {
 		padding-top: 2vh;
 		margin-top: 0vh;
 		background: #D4B89B; /* For browsers that do not support gradients */
-		background: -webkit-linear-gradient(left, #C8A589 40%, #D4B79E); /* For Safari 5.1 to 6.0 */
-		background: -o-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Opera 11.1 to 12.0 */
-		background: -moz-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Firefox 3.6 to 15 */
-		background: linear-gradient(to right, #C8A589 40%, #D4B79E); /* Standard syntax */
+		background: -webkit-linear-gradient(180deg, #C8A589, #D4B79E 70%); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(180deg, #C8A589, #D4B79E 70%); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(180deg, #C8A589, #D4B79E 70%); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(180deg, #C8A589, #D4B79E 70%); /* Standard syntax */
 		position: relative;
 		overflow: hidden;
 	}
@@ -912,8 +1005,17 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.titlep {
-		font-size: 4vw;
-		margin-top: 4vh;
+		margin-top: 0vh;
+	}
+
+	.titlep:before {
+		width: 52%;
+		left: -38%;
+	}
+
+	.titlep:after {
+		width: 52%;
+		right: -38%;
 	}
 
 	.subtitle {
@@ -992,6 +1094,64 @@ a, a:hover, a:active, a:visited, a:focus {
 		font-size: 1.4vh;
 	}
 
+	.crumbmine {
+		z-index: 2;
+		font-size: 2.5vw;
+	}
+
+	.closemine {
+		color: #fff;
+		font-family: 'Avenir';
+		font-size: 14px;
+		position: absolute;
+		top: 1vh;
+		right:2.5vmax;
+		cursor: hand; cursor: pointer;
+	}
+
+	.forborder {
+	  background: #D4B89B; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(0deg, #C8A589, #D4B79E 60%); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(0deg, #C8A589, #D4B79E 60%); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(0deg, #C8A589, #D4B79E 60%); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(0deg, #C8A589, #D4B79E 60%); /* Standard syntax */
+	  padding-bottom: 2vh;
+	  padding-top: 2vh;
+	  padding-right: 2vh;
+	  padding-left: 2vh;
+	  margin-top: 1vh;
+	}
+
+	.hacktext {
+		display: inline-block;
+		height: 44vh;
+		padding-left: 2vh;
+		padding-right: 2vh;
+		padding-top: 2vh;
+		margin-top: 0vh;
+		background: #D4B89B; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(180deg, #C8A589, #D4B79E 70%); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(180deg, #C8A589, #D4B79E 70%); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(180deg, #C8A589, #D4B79E 70%); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(180deg, #C8A589, #D4B79E 70%); /* Standard syntax */
+		position: relative;
+		overflow: hidden;
+	}
+
+	.titlep {
+		margin-top: 0vh;
+	}
+
+	.titlep:before {
+		width: 52%;
+		left: -38%;
+	}
+
+	.titlep:after {
+		width: 46%;
+		right: -32%;
+	}
+
 	.demo>p {
 	    margin-top: 0;
 	    line-height: 60px;
@@ -1042,7 +1202,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hackaboximgcont {
-		margin-top: 10vh;
+		margin-top: 0vh;
 		height: auto;
 		padding-bottom: 0vh;
 	}
@@ -1092,7 +1252,6 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.titlep {
-		font-size: 5vw;
 		margin-top: 0vh;
 	}
 
