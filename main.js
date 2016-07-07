@@ -346,4 +346,42 @@ $(document).ready(function() {
             "display": "none"
         })
     });
+
+    $('.menubutton').mouseenter(function() {
+        $(this).animate({
+            opacity: 0.8,
+            left: "+=1",
+        }, 100, function() {
+            // Animation complete.
+        });
+    });
+
+    $('.menubutton').mouseleave(function() {
+        $(this).animate({
+            opacity: 1,
+            left: "-=1",
+        }, 200, function() {
+            // Animation complete.
+        });     
+    });
+
+    $('.dropdownbutton').mouseenter(function() {
+        $(this).animate({
+            opacity: 0.8,
+            left: "+=1",
+            width: "-=1"
+        }, 100, function() {
+            // Animation complete.
+        });
+    });
+
+    $('.dropdownbutton').mouseleave(function() {
+        $(this).animate({
+            opacity: 1,
+            left: "-=1",
+            width: "+=1"
+        }, 200, function() {
+            // Animation complete.
+        });
+    });
 });

@@ -23,16 +23,20 @@ a {
 .dropdown {
 	display: none;
 	position: absolute;
-	z-index: 2;
-	top: 53px;
+	z-index: 3;
+	top: 52px;
 	right: 11vw;
-	border-bottom-right-radius: 6px;
-	border-bottom-left-radius: 6px;
+	background-color: rgba(96, 18, 24, 0.86);
 }
 
-.radius {
-	border-bottom-right-radius: 6px;
-	border-bottom-left-radius: 6px;
+.buttonundercover {
+	background-color: rgba(97,17,23,0.9);
+	width: 100%;
+	height: 100%;
+}
+
+.bottom {
+	margin-bottom: 5px;
 }
 
 .logo {
@@ -61,25 +65,44 @@ a, a:hover, a:active, a:visited, a:focus {
 	color: white;
 }
 
-.menubutton, .dropdownbutton {
+.menubutton {
 	background-color: rgba(96, 18, 24, 0);
-	height: 100%;
+	height: 52px;
 	line-height: 52px;
 	text-align: center;
 }
 
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.07);
+}
+
 .dropdownbutton {
 	padding: 12px 0px 12px 12px;
-	background-color: rgba(96, 18, 24, 0.86);
-	height: 52px;
+	height: 36px;
 	line-height: 24px;
 	text-align: left;
 	color: #EBEBEB;
 	display: block;
+	width: 100%;
+	position: relative;
+	background-color: rgba(96, 18, 24, 0);
+	line-height: 18px;
 }
 
 .dropdownbutton:hover {
-	display: block;
 	color: #EBEBEB;
 }
 
@@ -1080,18 +1103,31 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.dropdown {
-		right: 35vw;
+		right: 30vw;
 	}
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 	.menubutton, .dropdownbutton {
-		background-color: rgba(96, 18, 24, 0);
 		height: 100%;
-		line-height: 52px;
 		text-align: center;
 		font-size: 1.4vh;
+	}
+
+	.dropdown {
+		right: 31vw;
+	}
+
+	.dropdownbutton {
+		padding: 8px 0px 4px 4px;
+		height: 28px;
+		line-height: 18px;
+		text-align: left;
+		color: #EBEBEB;
+		display: block;
+		width: 100%;
+		position: relative;
 	}
 
 	.crumbmine {
