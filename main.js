@@ -347,9 +347,23 @@ $(document).ready(function() {
         })
     });
 
+    $('#projectsbutton').mouseenter(function() {
+        $('.apex-dn').css({
+            "display": "block"
+        })
+    });
+
+    $('#projectsbutton').mouseleave(function() {
+        $('.apex-dn').css({
+            "display": "none"
+        })  
+    });
+
     $('.menubutton').mouseenter(function() {
+        $(this).css({
+            "color": "#ffffff"
+        })
         $(this).animate({
-            opacity: 0.8,
             left: "+=1",
         }, 100, function() {
             // Animation complete.
@@ -358,11 +372,13 @@ $(document).ready(function() {
 
     $('.menubutton').mouseleave(function() {
         $(this).animate({
-            opacity: 1,
             left: "-=1",
         }, 200, function() {
             // Animation complete.
-        });     
+        });  
+        $(this).css({
+            "color": "#ebebeb"
+        })   
     });
 
     $('.dropdownbutton').mouseenter(function() {
