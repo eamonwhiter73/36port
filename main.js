@@ -62,8 +62,9 @@ $(document).ready(function() {
         if($(window).width() > 1199) {        
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
-            $('.subtitle').fitText(2.7, { maxFontSize: '13px'});
-            $('.hacktext>p').fitText(2, { minFontSize: '11px', maxFontSize: '12px'});
+            $('.titlepwp').fitText(0.9);
+            $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
+            $('.hacktext>p').fitText(2, { minFontSize: '12px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.8);
             $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
             $('.wordtext>p').fitText(0.5, { minFontSize: '16px', maxFontSize: '17px'});
@@ -75,8 +76,9 @@ $(document).ready(function() {
         if($(window).width() < 1201 && $(window).width() > 992) {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
-            $('.subtitle').fitText(2.7, { maxFontSize: '13px'});
-            $('.hacktext>p').fitText(2.8, { minFontSize: '11px', maxFontSize: '12px'});
+            $('.titlepwp').fitText(0.9);
+            $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
+            $('.hacktext>p').fitText(2.8, { minFontSize: '12px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.8);
             $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
             $('.wordtext>p').fitText(0.8, { minFontSize: '15px', maxFontSize: '16.5px'});
@@ -87,6 +89,7 @@ $(document).ready(function() {
         if($(window).width() < 993 && $(window).width() > 767) {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
+            $('.titlepwp').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(2.6, { minFontSize: '12.6px', maxFontSize: '12.8px'});
             $('.titlewp').fitText(1.6);
@@ -100,8 +103,9 @@ $(document).ready(function() {
         if($(window).width() < 768 && $(window).width() > 480) {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
+            $('.titlepwp').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
-            $('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '13px'});
+            $('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '14px'});
             $('.titlewp').fitText(2);
             $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
             $('.pcont>p').fitText(1.8, { minFontSize: '11px', maxFontSize: '11.8px'});
@@ -110,6 +114,7 @@ $(document).ready(function() {
         if($(window).width() < 481) {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
+            $('.titlepwp').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.5, { minFontSize: '12px', maxFontSize: '12px'});
             $('.wordtext>p').fitText(1.5, { minFontSize: '14px', maxFontSize: '14px'});
@@ -122,11 +127,12 @@ $(document).ready(function() {
     });
 
     $(window).resize(function() {
-                if($(window).width() > 1199) {        
+        if($(window).width() > 1199) {        
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
-            $('.subtitle').fitText(2.7, { maxFontSize: '13px'});
-            $('.hacktext>p').fitText(2, { minFontSize: '11px', maxFontSize: '12px'});
+            $('.titlepwp').fitText(0.9);
+            $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
+            $('.hacktext>p').fitText(2, { minFontSize: '12px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.8);
             $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
             $('.wordtext>p').fitText(0.5, { minFontSize: '16px', maxFontSize: '17px'});
@@ -138,8 +144,9 @@ $(document).ready(function() {
         if($(window).width() < 1201 && $(window).width() > 992) {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
-            $('.subtitle').fitText(2.7, { maxFontSize: '13px'});
-            $('.hacktext>p').fitText(2.8, { minFontSize: '11px', maxFontSize: '12px'});
+            $('.titlepwp').fitText(0.9);
+            $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
+            $('.hacktext>p').fitText(2.8, { minFontSize: '12px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.8);
             $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
             $('.wordtext>p').fitText(0.8, { minFontSize: '15px', maxFontSize: '16.5px'});
@@ -150,6 +157,7 @@ $(document).ready(function() {
         if($(window).width() < 993 && $(window).width() > 767) {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
+            $('.titlepwp').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(2.6, { minFontSize: '12.6px', maxFontSize: '12.8px'});
             $('.titlewp').fitText(1.6);
@@ -163,8 +171,9 @@ $(document).ready(function() {
         if($(window).width() < 768 && $(window).width() > 480) {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
+            $('.titlepwp').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
-            $('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '13px'});
+            $('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '14px'});
             $('.titlewp').fitText(2);
             $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
             $('.pcont>p').fitText(1.8, { minFontSize: '11px', maxFontSize: '11.8px'});
@@ -173,6 +182,7 @@ $(document).ready(function() {
         if($(window).width() < 481) {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
+            $('.titlepwp').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.5, { minFontSize: '12px', maxFontSize: '12px'});
             $('.wordtext>p').fitText(1.5, { minFontSize: '14px', maxFontSize: '14px'});
@@ -364,7 +374,7 @@ $(document).ready(function() {
             "color": "#ffffff"
         })
         $(this).animate({
-            left: "+=1",
+            top: "+=1",
         }, 100, function() {
             // Animation complete.
         });
@@ -372,7 +382,7 @@ $(document).ready(function() {
 
     $('.menubutton').mouseleave(function() {
         $(this).animate({
-            left: "-=1",
+            top: "-=1",
         }, 200, function() {
             // Animation complete.
         });  

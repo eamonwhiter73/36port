@@ -103,7 +103,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	line-height: 52px;
 	text-align: center;
 	color: #EBEBEB;
-	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 /* Grow */
@@ -125,16 +125,17 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .dropdownbutton {
 	/*padding: 12px 0px 12px 12px;*/
-	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-	height: 36px;
-	line-height: 24px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	height: 32px;
+	line-height: 32px;
 	text-align: left;
 	color: #FFF1E4;
 	display: block;
 	width: 100% !important;
 	position: relative;
 	background-color: rgba(96, 18, 24, 0);
-	line-height: 36px;
 	border-bottom-color: rgba(96, 18, 24, 0.4) !important;
 	border-bottom-style: solid !important;
 	border-bottom-width: 1px !important;
@@ -346,19 +347,20 @@ a, a:hover, a:active, a:visited, a:focus {
 	border-color: #D4B89B;
 }
 
-.wpimgcont {
+.wpcont {
+	margin-left: 0;
 	position: relative;
 	overflow: hidden;
 	padding-left: 0;
 	padding-right: 0;
-	height: 80vh;
-	padding-bottom: 80vh;
+	height: 50vh;
+	padding-bottom: 50vh;
 	background-image: url('images/themeboximg.png');
 	background-size: 124%;
-    
-    border-style: solid;
-    border-width: 4px;
-    border-color: #A10000;
+	padding: 0px;
+	border-style: solid;
+	border-width: 6px;
+	border-color: #D4B89B;
 }
 
 .read {
@@ -444,7 +446,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	height: 3px;
 	width: 13%;
 	top: 45%;
-	left: 55%;
+	left: 60%;
 	background-color: #6F282A;
 }
 
@@ -534,6 +536,33 @@ a, a:hover, a:active, a:visited, a:focus {
 	background-color: #6F282A;
 }
 
+.titlepwp {
+	background-color: #DBC4B0;
+	height: 100%;
+	line-height: 16vh;
+	font-size: 22px;
+}
+
+.titlepwp:before {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 75%;
+	top: 53%;
+	left: -70.5%;
+	background-color: #6F282A;
+}
+
+.titlepwp:after {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 6.5%;
+	top: 53%;
+	right: -1%;
+	background-color: #6F282A;
+}
+
 .crumbmine {
 	font-size: 16px;
 	position: absolute;
@@ -616,7 +645,11 @@ a, a:hover, a:active, a:visited, a:focus {
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 	.hackaboximgcont {
-		background-size: 135%;
+		background-size: 150%;
+	}
+
+	.hackaboximgcontadj {
+		background-size: 150%;
 	}
 
 	.expressimg {
@@ -642,7 +675,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.techused:after {
-		left: 74%;
+		left: 79%;
 		width: 21%;
 	}
 
@@ -692,10 +725,8 @@ a, a:hover, a:active, a:visited, a:focus {
 		text-align: center;
 	}
 
-	.wpimgcont {
-		height: 80vh;
-		padding-bottom: 80vh;
-		background-size: 170%;
+	.wpcont {
+		background-size: 150%;
 	}
 
 	.wordtext {
@@ -761,7 +792,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.demo>p {
-		line-height: 488px;
+		line-height: 280px;
 	}
 
 	.techwp {
@@ -822,7 +853,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.techused:after {
-		left: 71%;
+		left: 74%;
 		width: 21%;
 	}
 
@@ -859,9 +890,11 @@ a, a:hover, a:active, a:visited, a:focus {
 		overflow: hidden;
 	}
 
-	.wpimgcont {
-		height: 80vh;
-		padding-bottom: 80vh;
+	.hacktextadjust {
+		height: 54vh;
+	}
+
+	.wpcont {
 		background-size: 235%;
 	}
 
@@ -927,8 +960,8 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.demo>p {
-		line-height: 500px;
-		font-size: 9vh;
+		line-height: 300px;
+		font-size: 7vh;
 	}
 
 	.dropdown {
@@ -969,6 +1002,15 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hackaboximgcont {
+		display: inline;
+		overflow: hidden;
+		
+		padding-bottom: 0vh;
+		height: auto;
+		background-image: none;
+	}
+
+	.wpcont {
 		display: inline;
 		overflow: hidden;
 		
@@ -1101,6 +1143,20 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.titlep:after {
 		width: 52%;
+		right: -38%;
+	}
+
+	.titlepwp {
+		margin-top: 0vh;
+	}
+
+	.titlepwp:before {
+		width: 45%;
+		left: -38%;
+	}
+
+	.titlepwp:after {
+		width: 45%;
 		right: -38%;
 	}
 
@@ -1260,6 +1316,20 @@ a, a:hover, a:active, a:visited, a:focus {
 		right: -32%;
 	}
 
+	.titlepwp {
+		margin-top: 0vh;
+	}
+
+	.titlepwp:before {
+		width: 46%;
+		left: -38%;
+	}
+
+	.titlepwp:after {
+		width: 46%;
+		right: -39%;
+	}
+
 	.demo>p {
 	    margin-top: 0;
 	    line-height: 60px;
@@ -1310,6 +1380,12 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hackaboximgcont {
+		margin-top: 0vh;
+		height: auto;
+		padding-bottom: 0vh;
+	}
+
+	.wpcont {
 		margin-top: 0vh;
 		height: auto;
 		padding-bottom: 0vh;
