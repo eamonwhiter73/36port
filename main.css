@@ -1,7 +1,7 @@
 nav {
 	background-color: rgba(96, 18, 24, 0.86);
 	position: relative;
-	z-index: 99999
+	z-index: 99999;
 }
 
 a {
@@ -25,41 +25,55 @@ a {
 	display: none;
 	position: absolute;
 	top: 53px;
-	right: 11vw;
-	background-color: rgba(96, 18, 24, 0.4);
-	z-index: 99998
+	right: 10vw;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	z-index: 99998;
+	background: rgba(96, 18, 24, 0.7); 
+	background: -webkit-linear-gradient(0deg, rgba(165,73,80, 0.3),  rgba(96, 18, 24, 0.8)); 
+	background: -o-linear-gradient(0deg, rgba(165,73,80, 0.3),  rgba(96, 18, 24, 0.8)); 
+	background: -moz-linear-gradient(0deg, rgba(165,73,80, 0.3),  rgba(96, 18, 24, 0.8)); 
+	background: linear-gradient(0deg, rgba(165,73,80, 0.3),  rgba(96, 18, 24, 0.8)); 
+	overflow: hidden;
 }
 
 .buttonundercover {
+	padding: 0;
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background: rgba(96, 18, 24, 0.86); /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(180deg, rgba(96, 18, 24, 0.86), rgba(96, 18, 24, 0)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(180deg, rgba(96, 18, 24, 0.86), rgba(96, 18, 24, 0)); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(180deg, rgba(96, 18, 24, 0.86), rgba(96, 18, 24, 0)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(180deg, rgba(96, 18, 24, 0.86), rgba(96, 18, 24, 0)); /* Standard syntax */
+	/*background: rgba(96, 18, 24, 0.86); 
+  	background: -webkit-linear-gradient(left top, rgba(212,183,158, 0.3) 55%, rgba(96, 18, 24, 0.2)); 
+  	background: -o-linear-gradient(bottom right, rgba(212,183,158, 0.3) 55%, rgba(96, 18, 24, 0.2)); 
+  	background: -moz-linear-gradient(bottom right, rgba(212,183,158, 0.3) 55%, rgba(96, 18, 24, 0.2)); 
+  	background: linear-gradient(to bottom right, rgba(212,183,158, 0.3) 55%, rgba(96, 18, 24, 0.2));*/ 
+	background: rgba(96, 18, 24, 0.86); 
+	background: -webkit-linear-gradient(180deg, rgba(165,73,80, 0.8) 50%, rgba(131,42,49, 0.3));
+	background: -o-linear-gradient(180deg, rgba(165,73,80, 0.8) 50%, rgba(131,42,49, 0.3));
+	background: -moz-linear-gradient(180deg, rgba(165,73,80, 0.8) 50%, rgba(131,42,49, 0.3));
+	background: linear-gradient(180deg, rgba(165,73,80, 0.8) 50%, rgba(131,42,49, 0.3));
 }
 
 .apex-dn {
     width:0px;
     height:0px;
-    border-left:6px solid transparent;
-    border-right:6px solid transparent;
-    border-top:6px solid #fff;
+    border-left:4px solid transparent;
+    border-right:4px solid transparent;
+    border-top:4px solid #fff;
     position: absolute;
     left: 95%;
-    top: 48%;
+    top: 47%;
     display: none;
 }
 
 .bottom {
-	margin-bottom: 5px;
+	margin-bottom: 0;
 }
 
 .logo {
 	font-family: 'Satisfy', cursive;
-	color: #EBEBEB;
+	color: #FFF1E4;
 	font-size: 19pt;
 	text-align: center;
 	vertical-align: middle;
@@ -80,7 +94,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .menuholder>a, .menuholder>a:hover, .menuholder>a:active, .menuholder>a:visited, .menuholder>a:focus {
-	color: #EBEBEB;
+	color: #FFF1E4;
 }
 
 .menubutton {
@@ -89,6 +103,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	line-height: 52px;
 	text-align: center;
 	color: #EBEBEB;
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 }
 
 /* Grow */
@@ -109,21 +124,32 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .dropdownbutton {
-	padding: 12px 0px 12px 12px;
+	/*padding: 12px 0px 12px 12px;*/
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 	height: 36px;
 	line-height: 24px;
 	text-align: left;
-	color: #EBEBEB;
+	color: #FFF1E4;
 	display: block;
-	width: 100%;
+	width: 100% !important;
 	position: relative;
 	background-color: rgba(96, 18, 24, 0);
-	line-height: 18px;
+	line-height: 36px;
+	border-bottom-color: rgba(96, 18, 24, 0.4) !important;
+	border-bottom-style: solid !important;
+	border-bottom-width: 1px !important;
+	padding-left: 6px;
 }
 
-.dropdownbutton:hover {
-	color: #EBEBEB;
-}
+/*.dropdownbutton:hover:before {
+	content: "";
+	height: 1px;
+	position: absolute;
+	width: 2px;
+	left: -1px;
+	bottom: -1px;
+	background-color: rgba(96, 18, 24, 0.8);
+}*/
 
 .inlineblock {
 	display: inline-block;
@@ -745,6 +771,15 @@ a, a:hover, a:active, a:visited, a:focus {
 	.dropdown {
 		left: 11vw;
 	}
+
+	.dropdownbutton {
+		text-align: left;
+		color: #FFF1E4;
+		padding-left: 6px;
+		display: block;
+		width: 100%;
+		position: relative;
+	}
 }
 
 /* Portrait tablets and small desktops */
@@ -898,6 +933,15 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.dropdown {
 		left: 5vw;
+	}
+
+	.dropdownbutton {
+		text-align: left;
+		color: #FFF1E4;
+		padding-left: 6px;
+		display: block;
+		width: 100%;
+		position: relative;
 	}
 }
 
@@ -1124,6 +1168,15 @@ a, a:hover, a:active, a:visited, a:focus {
 	.dropdown {
 		right: 30vw;
 	}
+
+	.dropdownbutton {
+		text-align: left;
+		color: #FFF1E4;
+		padding-left: 6px;
+		display: block;
+		width: 100%;
+		position: relative;
+	}
 }
 
 /* Portrait phones and smaller */
@@ -1139,11 +1192,11 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.dropdownbutton {
-		padding: 8px 0px 4px 4px;
 		height: 28px;
-		line-height: 18px;
+		line-height: 28px;
 		text-align: left;
-		color: #EBEBEB;
+		color: #FFF1E4;
+		padding-left: 6px;
 		display: block;
 		width: 100%;
 		position: relative;

@@ -377,27 +377,31 @@ $(document).ready(function() {
             // Animation complete.
         });  
         $(this).css({
-            "color": "#ebebeb"
+            "color": "#FFF1E4"
         })   
     });
 
     $('.dropdownbutton').mouseenter(function() {
         $(this).animate({
-            opacity: 0.8,
             left: "+=1",
             width: "-=1"
         }, 100, function() {
             // Animation complete.
         });
+        $(this).css({
+            "color": "#ffffff"
+        }) 
     });
 
     $('.dropdownbutton').mouseleave(function() {
         $(this).animate({
-            opacity: 1,
             left: "-=1",
             width: "+=1"
         }, 200, function() {
             // Animation complete.
         });
+        $(this).css({
+            "color": "#FFF1E4"
+        }) 
     });
 });
