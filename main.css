@@ -81,13 +81,13 @@ a {
 	display: inline-block;
 }
 
-/*.fp-controlArrow.fp-prev {
-    border-color: transparent #aaa transparent transparent;
+.fp-controlArrow.fp-prev {
+    border-color: transparent rgb(96, 18, 24) transparent transparent;
 }
 
 .fp-controlArrow.fp-next {
-    border-color: transparent transparent transparent #aaa;
-}*/
+    border-color: transparent transparent transparent rgb(96, 18, 24);
+}
 
 a, a:hover, a:active, a:visited, a:focus {
 	text-decoration: none;
@@ -201,7 +201,7 @@ a, a:hover, a:active, a:visited, a:focus {
     
 }
 
-.vidcont>iframe {
+iframe {
 	width: 100%;
 	height: 100%;
 	
@@ -347,6 +347,20 @@ a, a:hover, a:active, a:visited, a:focus {
 	border-color: #D4B89B;
 }
 
+.imgcontadj {
+	margin-left: 0;
+	position: relative;
+	overflow: hidden;
+	padding-left: 0;
+	padding-right: 0;
+	height: 50vh;
+	padding-bottom: 50vh;
+	padding: 0px;
+	border-style: solid;
+	border-width: 6px;
+	border-color: #D4B89B;
+}
+
 .wpcont {
 	margin-left: 0;
 	position: relative;
@@ -468,6 +482,37 @@ a, a:hover, a:active, a:visited, a:focus {
   padding-top: 1.8vh;
 }
 
+.nodeimg {
+  width: 100%;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
+.wordpressimg {
+  width: 100%;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  padding-top: 2.2vh;
+}
+
+.phpimg {
+  width: 100%;
+  padding-top: 3.8vh;
+}
+
+.mysqlimg {
+  width: 100%;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  padding-top: 4vh;
+}
+
+.bootstrapimg {
+  width: 100%;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
 .mongoholder {
 	z-index: 2;
 	position: relative;
@@ -477,12 +522,6 @@ a, a:hover, a:active, a:visited, a:focus {
 	z-index: 2;
 	position: relative;
 	padding-top: 3vh;
-}
-
-.nodeimg {
-  width: 100%;
-  padding-left: 1vh;
-  padding-right: 1vh;
 }
 
 .wordtext>p {
@@ -531,6 +570,33 @@ a, a:hover, a:active, a:visited, a:focus {
 	position: absolute;
 	height: 3px;
 	width: 15%;
+	top: 53%;
+	right: -1%;
+	background-color: #6F282A;
+}
+
+.titlepios {
+	background-color: #DBC4B0;
+	height: 100%;
+	line-height: 16vh;
+	font-size: 22px;
+}
+
+.titlepios:before {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 75%;
+	top: 53%;
+	left: -71%;
+	background-color: #6F282A;
+}
+
+.titlepios:after {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 5%;
 	top: 53%;
 	right: -1%;
 	background-color: #6F282A;
@@ -654,6 +720,22 @@ a, a:hover, a:active, a:visited, a:focus {
 
 	.expressimg {
 		padding-top: 3.8vh;
+	}
+
+	.phpimg {
+		padding-top: 2.8vh;
+	}
+
+	.wordpressimg {
+		padding-top: 1.7vh;
+	}
+
+	.mysqlimg {
+		padding-top: 3vh
+	}
+
+	.bootstrapimg {
+		padding-bottom: 1vh;
 	}
 
 	.techholder {
@@ -826,6 +908,12 @@ a, a:hover, a:active, a:visited, a:focus {
 		padding-top: 1vh;
 	}
 
+	.techused {
+		top: 93%;
+		font-size: 1.5vw;
+		height: 2vh;
+	}
+
 	.expressimg {
 		padding-top: 4vh;
 	}
@@ -838,14 +926,24 @@ a, a:hover, a:active, a:visited, a:focus {
 		padding-bottom: 4vh;
 	}
 
-	.techused {
-		top: 93%;
-		font-size: 1.5vw;
-		height: 2vh;
-	}
-
 	.mongodbimg {
 		padding-top: 1vh;
+	}
+
+	.phpimg {
+		padding-top: 3.3vh;
+	}
+
+	.bootstrapimg {
+		padding-top: 0.5vh;
+	}
+
+	.mysqlimg {
+		padding-bottom: 3.7vh;
+	}
+
+	.wordpressimg {
+		padding-top: 2.7vh;
 	}
 
 	.techused>p {
@@ -868,7 +966,11 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.hackaboximgcont {
-		background-size: 260%;
+		height:50vh;
+		padding-bottom: 50vh;
+	}
+
+	.imgcontadj {
 		height:50vh;
 		padding-bottom: 50vh;
 	}
@@ -940,14 +1042,14 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.titlep:after {
-		width: 8%;
-		right: 4%;
+		width: 16%;
+		right: 0%;
 
 	}
 
 	.titlep:before {
-		width: 81%;
-		left: -68%;
+		width: 85%;
+		left: -71%;
 
 	}
 
@@ -975,6 +1077,11 @@ a, a:hover, a:active, a:visited, a:focus {
 		display: block;
 		width: 100%;
 		position: relative;
+	}
+
+	iframe {
+		width: 100%;
+		height: 50vh;
 	}
 }
 
@@ -1008,6 +1115,18 @@ a, a:hover, a:active, a:visited, a:focus {
 		padding-bottom: 0vh;
 		height: auto;
 		background-image: none;
+	}
+
+	.imgcontadj {
+		display: inline;
+		overflow: hidden;
+		height: 20vh;
+		padding-bottom: 0vh;
+		background-image: none;
+	}
+
+	.topadjust {
+		height: 24vh;
 	}
 
 	.wpcont {
@@ -1056,36 +1175,10 @@ a, a:hover, a:active, a:visited, a:focus {
 		position: relative;
 	}
 
-	.expressimg {
-	  width: 100%;
-	  padding-left: 1vh;
-	  padding-right: 1vh;
-	  padding-top: 1vh;
-	}
-
-	.mongodbimg {
-	  width: 100%;
-	  padding-left: 1vh;
-	  padding-right: 1vh;
-	}
-
-	.angularimg {
-	  width: 100%;
-	  padding-left: 1vh;
-	  padding-right: 1vh;
-	}
-
 	.mongodbholder {
 		z-index: 2;
 		position: relative;
-	}
-
-	.nodeimg {
-	  width: 100%;
-	  padding-left: 1vh;
-	  padding-right: 1vh;
-	  padding-top: 1vh;
-	}
+	}	
 
 	.techholder {
 		position: absolute;
@@ -1124,6 +1217,10 @@ a, a:hover, a:active, a:visited, a:focus {
 		overflow: hidden;
 	}
 
+	.hackadjust {
+		height: 40vh;
+	}
+
 	.hacktext>p {
 		font-size: 1.8vh;
 	}
@@ -1160,6 +1257,20 @@ a, a:hover, a:active, a:visited, a:focus {
 		right: -38%;
 	}
 
+	.titlepios {
+		margin-top: 0vh;
+	}
+
+	.titlepios:before {
+		width: 45%;
+		left: -38%;
+	}
+
+	.titlepios:after {
+		width: 45%;
+		right: -38%;
+	}
+
 	.subtitle {
 		font-size: 2vh;
 	}
@@ -1181,13 +1292,13 @@ a, a:hover, a:active, a:visited, a:focus {
 	    left: 18px;
 	    width: 0;
 	    border-width: 32.2px 32.9px 32.2px 0;
-	    border-color: transparent #aaa transparent transparent;
+	    border-color: transparent rgb(96, 18, 24) transparent transparent;
 	}
 
 	.fp-controlArrow.fp-next {
 	    right: 18px;
 	    border-width: 32.9px 0 32.9px 32.2px;
-	    border-color: transparent transparent transparent #aaa;
+	    border-color: transparent transparent transparent rgb(96, 18, 24);
 	}
 
 	.appleimg {
@@ -1215,10 +1326,9 @@ a, a:hover, a:active, a:visited, a:focus {
 	    margin-top: 10vh;
 	}
 
-	.vidcont>iframe {
+	iframe {
 		width: 100%;
-		height: 100%;
-		
+		height: 100%;	
 	}
 
 	.dropdown {
@@ -1302,6 +1412,14 @@ a, a:hover, a:active, a:visited, a:focus {
 		overflow: hidden;
 	}
 
+	.hackadjust {
+		height: 42vh;
+	}
+
+	.topadjust {
+		height: 24vh;
+	}
+
 	.titlep {
 		margin-top: 0vh;
 	}
@@ -1326,6 +1444,20 @@ a, a:hover, a:active, a:visited, a:focus {
 	}
 
 	.titlepwp:after {
+		width: 46%;
+		right: -39%;
+	}
+
+	.titlepios {
+		margin-top: 0vh;
+	}
+
+	.titlepios:before {
+		width: 46%;
+		left: -38%;
+	}
+
+	.titlepios:after {
 		width: 46%;
 		right: -39%;
 	}
@@ -1373,7 +1505,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	    margin-top: 10vh;
 	}
 
-	.vidcont>iframe {
+	iframe {
 		width: 100%;
 		height: 100%;
 		
@@ -1383,6 +1515,12 @@ a, a:hover, a:active, a:visited, a:focus {
 		margin-top: 0vh;
 		height: auto;
 		padding-bottom: 0vh;
+	}
+
+	.imgcontadj {
+		margin-top: 0vh;
+		padding-bottom: 0vh;
+		height: 20vh;
 	}
 
 	.wpcont {
@@ -1447,12 +1585,12 @@ a, a:hover, a:active, a:visited, a:focus {
 	    left: 15px;
 	    width: 0;
 	    border-width: 18.2px 18.9px 18.2px 0;
-	    border-color: transparent #aaa transparent transparent;
+	    border-color: transparent rgb(96, 18, 24) transparent transparent;
 	}
 
 	.fp-controlArrow.fp-next {
 	    right: 15px;
 	    border-width: 18.9px 0 18.9px 18.2px;
-	    border-color: transparent transparent transparent #aaa;
+	    border-color: transparent transparent transparent rgb(96, 18, 24);
 	}
 }

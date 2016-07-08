@@ -63,6 +63,7 @@ $(document).ready(function() {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
+            $('.titlepios').fitText(0.9);
             $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
             $('.hacktext>p').fitText(2, { minFontSize: '12px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.8);
@@ -77,6 +78,7 @@ $(document).ready(function() {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
+            $('.titlepios').fitText(0.9);
             $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
             $('.hacktext>p').fitText(2.8, { minFontSize: '12px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.8);
@@ -90,6 +92,7 @@ $(document).ready(function() {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
+            $('.titlepios').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(2.6, { minFontSize: '12.6px', maxFontSize: '12.8px'});
             $('.titlewp').fitText(1.6);
@@ -104,6 +107,7 @@ $(document).ready(function() {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
+            $('.titlepios').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '14px'});
             $('.titlewp').fitText(2);
@@ -115,6 +119,7 @@ $(document).ready(function() {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
+            $('.titlepios').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.5, { minFontSize: '12px', maxFontSize: '12px'});
             $('.wordtext>p').fitText(1.5, { minFontSize: '14px', maxFontSize: '14px'});
@@ -131,6 +136,7 @@ $(document).ready(function() {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
+            $('.titlepios').fitText(0.9);
             $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
             $('.hacktext>p').fitText(2, { minFontSize: '12px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.8);
@@ -145,6 +151,7 @@ $(document).ready(function() {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
+            $('.titlepios').fitText(0.9);
             $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
             $('.hacktext>p').fitText(2.8, { minFontSize: '12px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.8);
@@ -158,6 +165,7 @@ $(document).ready(function() {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
+            $('.titlepios').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(2.6, { minFontSize: '12.6px', maxFontSize: '12.8px'});
             $('.titlewp').fitText(1.6);
@@ -172,6 +180,7 @@ $(document).ready(function() {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
+            $('.titlepios').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '14px'});
             $('.titlewp').fitText(2);
@@ -183,6 +192,7 @@ $(document).ready(function() {
             $('.logo').fitText(0.67);
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
+            $('.titlepios').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.5, { minFontSize: '12px', maxFontSize: '12px'});
             $('.wordtext>p').fitText(1.5, { minFontSize: '14px', maxFontSize: '14px'});
@@ -215,7 +225,7 @@ $(document).ready(function() {
         })
     }*/
 
-    if(location.hash.slice(1) == 'fourthPage') {
+    /*if(location.hash.slice(1) == 'fourthPage') {
         $('.fp-controlArrow.fp-prev').css({
             'border-color': 'transparent #aaa transparent transparent'
         })
@@ -250,7 +260,7 @@ $(document).ready(function() {
         $('.fp-controlArrow.fp-next').css({
             'border-color': 'transparent transparent transparent #aaa'
         })
-    }
+    }*/
 
     $('#projectsbutton').mouseenter(function() {
         $('.dropdown').css({
@@ -309,15 +319,6 @@ $(document).ready(function() {
 
             $('.fp-controlArrow.fp-next').css({
                 'border-color': 'transparent transparent transparent rgb(96, 18, 24)'
-            })
-        }
-        else {
-            $('.fp-controlArrow.fp-prev').css({
-                'border-color': 'transparent #aaa transparent transparent'
-            })
-
-            $('.fp-controlArrow.fp-next').css({
-                'border-color': 'transparent transparent transparent #aaa'
             })
         }
 
