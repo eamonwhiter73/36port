@@ -475,6 +475,13 @@ iframe {
   padding-top: 4.7vh;
 }
 
+.expmagadj {
+  width: 100%;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  padding-top: 3.2vh;	
+}
+
 .mongodbimg {
   width: 100%;
 }
@@ -490,10 +497,6 @@ iframe {
   width: 100%;
   padding-left: 1vh;
   padding-right: 1vh;
-}
-
-.expmagadj {
-	padding-top: 3.2vh;
 }
 
 .mongadjust {
@@ -758,6 +761,22 @@ iframe {
 		padding-bottom: 1vh;
 	}
 
+	.expmagadj {
+		padding-top: 3.2vh;
+	}
+
+	.mongadjust {
+	  padding-top: 1.3vh;
+	}
+
+	.gmapadj {
+		padding-top: 4vh;
+	}
+
+	.parseadj {
+		padding-top: 0.8vh;
+	}
+
 	.techholder {
 		position: relative;
 		height: 10%;
@@ -951,11 +970,11 @@ iframe {
 	}
 
 	.expmagadj {
-		padding-top: 3.2vh;
+		padding-top: 3.3vh;
 	}
 
 	.mongadjust {
-	  padding-top: 1vh;
+	  padding-top: 2vh;
 	}
 
 	.gmapadj {
