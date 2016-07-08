@@ -1002,6 +1002,7 @@ iframe {
 	}
 
 	.hackaboximgcont {
+		background-size: 235%;
 		height:50vh;
 		padding-bottom: 50vh;
 	}
