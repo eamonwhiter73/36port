@@ -89,6 +89,10 @@ a {
     border-color: transparent transparent transparent rgb(96, 18, 24);
 }
 
+.fp-slidesNav ul li a span {
+	background: rgb(96, 18, 24);
+}
+
 a, a:hover, a:active, a:visited, a:focus {
 	text-decoration: none;
 }
@@ -486,6 +490,22 @@ iframe {
   width: 100%;
   padding-left: 1vh;
   padding-right: 1vh;
+}
+
+.expmagadj {
+	padding-top: 3.2vh;
+}
+
+.mongadjust {
+  padding-top: 1vh;
+}
+
+.gmapadj {
+	padding-top: 4vh;
+}
+
+.parseadj {
+	padding-top: 0.8vh;
 }
 
 .wordpressimg {
@@ -930,6 +950,22 @@ iframe {
 		padding-top: 1vh;
 	}
 
+	.expmagadj {
+		padding-top: 3.2vh;
+	}
+
+	.mongadjust {
+	  padding-top: 1vh;
+	}
+
+	.gmapadj {
+		padding-top: 4vh;
+	}
+
+	.parseadj {
+		padding-top: 0.8vh;
+	}
+
 	.phpimg {
 		padding-top: 3.3vh;
 	}
@@ -951,8 +987,8 @@ iframe {
 	}
 
 	.techused:after {
-		left: 74%;
-		width: 21%;
+		left: 71%;
+		width: 24%;
 	}
 
 	.techused:before {
