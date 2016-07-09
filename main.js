@@ -294,7 +294,7 @@ $(document).ready(function() {
 
     $(window).on('hashchange',function(){
         console.log(location.hash.slice(1));
-        if(location.hash.slice(1) == 'fourthPage') {
+        /*if(location.hash.slice(1) == 'fourthPage') {
             $('.fp-controlArrow.fp-prev').css({
                 'border-color': 'transparent #aaa transparent transparent'
             })
@@ -320,7 +320,7 @@ $(document).ready(function() {
             $('.fp-controlArrow.fp-next').css({
                 'border-color': 'transparent transparent transparent rgb(96, 18, 24)'
             })
-        }
+        }*/
 
         /*if(location.hash.slice(1) == 'thirdPage') {
             $('nav').css({
@@ -342,8 +342,6 @@ $(document).ready(function() {
                 'background-color': '#aaaaaa'
             })
         }*/
-
-        $('nav').fadeIn(1020, 'easeInOutCubic');
     });
 
     $('.read').click(function() {
@@ -414,5 +412,10 @@ $(document).ready(function() {
         $(this).css({
             "color": "#FFF1E4"
         }) 
+    });
+
+    $('#leftg').on('click', function() {
+        console.log('in rotate left');
+        $('.hackaboximgcont:visible').prev().css('display', 'block');  
     });
 });

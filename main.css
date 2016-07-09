@@ -316,6 +316,7 @@ iframe {
 	-ms-transform: rotate(-45deg); /* IE 9 */
     -webkit-transform: rotate(-45deg); /* Safari */
     transform: rotate(-45deg);
+    text-shadow: 4px 4px #333;
 }
 
 .wpimg {
@@ -326,6 +327,49 @@ iframe {
 
 .techwp {
 	margin-top:4vh;
+}
+
+.ss1 {
+	display: none;
+	background-image: url('images/ss1.png');
+	background-size: 124%;
+}
+
+.ss2 {
+	display: none;
+	background-image: url('images/ss2.png');
+	background-size: 124%;
+}
+
+.glyphicon {
+	color: rgb(219,196,176);
+	padding-bottom: 1px;
+
+}
+
+.tancolor {
+	color: rgb(219,196,176);
+}
+
+.leftglyph {
+	position: absolute;
+	top: 78%;
+	right: 75%;
+	-ms-transform: scale(2); /* IE 9 */
+	-webkit-transform: scale(2); /* Safari */
+	transform: scale(2);
+	box-shadow: 0.5px 0px 0.5px 0px #000;
+	z-index: 999
+}
+
+.rightglyph {
+	position: absolute;
+	top: 78%;
+	right: 67%;
+	-ms-transform: scale(2); /* IE 9 */
+	-webkit-transform: scale(2); /* Safari */
+	transform: scale(2);
+	box-shadow: -0.5px 0px 0.5px 0px #000;
 }
 
 .hackaboximgsmall {
