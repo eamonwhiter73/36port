@@ -64,6 +64,7 @@ $(document).ready(function() {
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
+            $('.titlepskill').fitText(0.9);
             $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
             $('.hacktext>p').fitText(2, { minFontSize: '12px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.8);
@@ -79,6 +80,7 @@ $(document).ready(function() {
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
+            $('.titlepskill').fitText(0.9);
             $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
             $('.hacktext>p').fitText(2.8, { minFontSize: '12px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.8);
@@ -93,6 +95,7 @@ $(document).ready(function() {
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
+            $('.titlepskill').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(2.6, { minFontSize: '12.6px', maxFontSize: '12.8px'});
             $('.titlewp').fitText(1.6);
@@ -108,6 +111,7 @@ $(document).ready(function() {
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
+            $('.titlepskill').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '14px'});
             $('.titlewp').fitText(2);
@@ -120,6 +124,7 @@ $(document).ready(function() {
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
+            $('.titlepskill').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.5, { minFontSize: '12px', maxFontSize: '12px'});
             $('.wordtext>p').fitText(1.5, { minFontSize: '14px', maxFontSize: '14px'});
@@ -137,6 +142,7 @@ $(document).ready(function() {
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
+            $('.titlepskill').fitText(0.9);
             $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
             $('.hacktext>p').fitText(2, { minFontSize: '12px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.8);
@@ -152,6 +158,7 @@ $(document).ready(function() {
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
+            $('.titlepskill').fitText(0.9);
             $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
             $('.hacktext>p').fitText(2.8, { minFontSize: '12px', maxFontSize: '13px'});
             $('.titlewp').fitText(1.8);
@@ -166,6 +173,7 @@ $(document).ready(function() {
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
+            $('.titlepskill').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(2.6, { minFontSize: '12.6px', maxFontSize: '12.8px'});
             $('.titlewp').fitText(1.6);
@@ -181,6 +189,7 @@ $(document).ready(function() {
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
+            $('.titlepskill').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '14px'});
             $('.titlewp').fitText(2);
@@ -193,6 +202,7 @@ $(document).ready(function() {
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
+            $('.titlepskill').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.5, { minFontSize: '12px', maxFontSize: '12px'});
             $('.wordtext>p').fitText(1.5, { minFontSize: '14px', maxFontSize: '14px'});
@@ -416,6 +426,28 @@ $(document).ready(function() {
 
     $('#leftg').on('click', function() {
         console.log('in rotate left');
-        $('.hackaboximgcont:visible').prev().css('display', 'block');  
+        if($('.hackaboximgcont:visible').prev().is('.hackaboximgcont')) {
+            $('.hackaboximgcont:visible').prev().css('display', 'block');  
+            $('.hackaboximgcont:visible').next().css('display', 'none');
+        }
+        else {
+            console.log('nothing before it');
+        }
+    });
+    $('#rightg').on('click', function() {
+        console.log('in rotate left');
+        if($('.hackaboximgcont:visible').next().is('.hackaboximgcont')) {
+            $('.hackaboximgcont:visible').next().css('display', 'block');
+            $('.hackaboximgcont:visible').prev().css('display', 'none');
+        }
+        else {
+            console.log('nothing after it');
+        }
+    });
+
+    $('.forborder').magnificPopup({
+      delegate: 'a', // child items selector, by clicking on it popup will open
+      type: 'image'
+      // other options
     });
 });

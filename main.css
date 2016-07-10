@@ -329,22 +329,10 @@ iframe {
 	margin-top:4vh;
 }
 
-.ss1 {
-	display: none;
-	background-image: url('images/ss1.png');
-	background-size: 124%;
-}
-
-.ss2 {
-	display: none;
-	background-image: url('images/ss2.png');
-	background-size: 124%;
-}
-
 .glyphicon {
-	color: rgb(219,196,176);
+	color: rgba(96, 18, 24, 1);
 	padding-bottom: 1px;
-
+	z-index: 90
 }
 
 .tancolor {
@@ -354,18 +342,18 @@ iframe {
 .leftglyph {
 	position: absolute;
 	top: 78%;
-	right: 75%;
+	right: 74%;
 	-ms-transform: scale(2); /* IE 9 */
 	-webkit-transform: scale(2); /* Safari */
 	transform: scale(2);
 	box-shadow: 0.5px 0px 0.5px 0px #000;
-	z-index: 999
+	z-index: 999;
 }
 
 .rightglyph {
 	position: absolute;
 	top: 78%;
-	right: 67%;
+	right: 68%;
 	-ms-transform: scale(2); /* IE 9 */
 	-webkit-transform: scale(2); /* Safari */
 	transform: scale(2);
@@ -393,6 +381,50 @@ iframe {
 	border-style: solid;
 	border-width: 6px;
 	border-color: #D4B89B;
+}
+
+.smallimgcont {
+	margin: 2px;
+	position: relative;
+	padding-left: 0;
+	padding-right: 0;
+	height: 13.75vh;
+	float: right;
+	padding: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #D4B89B;
+	text-align: center;
+	background-color: rgba(0,0,0,0);
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	text-shadow: -1px 0 #DBC4B0, 0 1px #DBC4B0, 1px 0 #DBC4B0, 0 -1px #DBC4B0;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+	color: rgba(96, 18, 24, 1);
+}
+
+.changesmallmarg {
+	margin-left: 2vh;
+	margin-top: 2vh;
+	float: left;
+	height: 34.5vh;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.logo1 {
+	max-width: 40%;
+	max-height: auto;
+}
+
+.logophp2 {
+	max-width: 54%;
+	max-height: auto;
+}
+
+.bgsize {
+	background-size: 180%;
+	background-position: -120px 0px
 }
 
 .imgcontadj {
@@ -642,6 +674,33 @@ iframe {
 	background-color: #6F282A;
 }
 
+.titlepskill {
+	background-color: #DBC4B0;
+	height: 100%;
+	line-height: 16vh;
+	font-size: 22px;
+}
+
+.titlepskill:before {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 94%;
+	top: 53%;
+	left: -66%;
+	background-color: #6F282A;
+}
+
+.titlepskill:after {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 36%;
+	top: 53%;
+	right: -8%;
+	background-color: #6F282A;
+}
+
 .titlepios {
 	background-color: #DBC4B0;
 	height: 100%;
@@ -761,6 +820,17 @@ iframe {
 		overflow: hidden;
 	}
 
+	.hackskilladj {
+		background: -webkit-linear-gradient(left, #C8A589 75%, #D4B79E); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(right, #C8A589 75%, #D4B79E); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(right, #C8A589 75%, #D4B79E); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to right, #C8A589 75%, #D4B79E); /* Standard syntax */
+		height: 75.5vh;
+		padding-left: 0vh;
+		padding-right: 0vh;
+		padding-top: 0vh;
+	}
+
 	.forborder {
 	  background: #D4B89B; /* For browsers that do not support gradients */
 	  background: -webkit-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Safari 5.1 to 6.0 */
@@ -773,12 +843,50 @@ iframe {
 	  padding-left: 10vh;
 
 	}
+
+	.forborderskills {
+	  background: #D4B89B; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* Standard syntax */
+	  padding-bottom: 2vh;
+	  padding-top: 2vh;
+	  padding-right: 2vh;
+	  padding-left: 10vh;
+	  height: 75.5vh;
+	}
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+	.leftglyph {
+		position: absolute;
+		top: 78%;
+		right: 73%;
+		-ms-transform: scale(2); /* IE 9 */
+		-webkit-transform: scale(2); /* Safari */
+		transform: scale(2);
+		box-shadow: 0.5px 0px 0.5px 0px #000;
+		z-index: 999;
+	}
+
+	.rightglyph {
+		position: absolute;
+		top: 78%;
+		right: 68%;
+		-ms-transform: scale(2); /* IE 9 */
+		-webkit-transform: scale(2); /* Safari */
+		transform: scale(2);
+		box-shadow: -0.5px 0px 0.5px 0px #000;
+	}
 	.hackaboximgcont {
 		background-size: 150%;
+	}
+
+	.bgsize {
+		background-size: 250%;
+		background-position: -150px 0px
 	}
 
 	.hackaboximgcontadj {
@@ -854,6 +962,26 @@ iframe {
 		background-color: #6F282A;
 	}
 
+	.titlepskill:before {
+		content: "";
+		position: absolute;
+		height: 3px;
+		width: 95%;
+		top: 53%;
+		left: -70%;
+		background-color: #6F282A;
+	}
+
+	.titlepskill:after {
+		content: "";
+		position: absolute;
+		height: 3px;
+		width: 42%;
+		top: 53%;
+		right: -15%;
+		background-color: #6F282A;
+	}
+
 	.titlep:before {
 		content: "";
 		position: absolute;
@@ -923,6 +1051,16 @@ iframe {
 		overflow: hidden;
 	}
 
+	.changesmallmarg {
+		margin-left: 0.4vh;
+		margin-top: 0.4vh;
+		margin-right: 1vh;
+		margin-bottom: 1vh;
+		float: left;
+		height: 34.75vh;
+		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+	}
+
 	.forborder {
 	  background: #D4B89B; /* For browsers that do not support gradients */
 	  background: -webkit-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Safari 5.1 to 6.0 */
@@ -934,6 +1072,23 @@ iframe {
 	  padding-right: 2vh;
 	  padding-left: 10vh;
 
+	}
+
+	.forborderskills {
+	  background: #D4B89B; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* Standard syntax */
+	  padding-bottom: 2vh;
+	  padding-top: 2vh;
+	  padding-right: 2vh;
+	  padding-left: 10vh;
+	  height: 75.5vh;
+	}
+
+	.hackskilladj {
+		height: 75.5vh;
 	}
 
 	.titlep {
@@ -1075,6 +1230,27 @@ iframe {
 		padding-bottom: 50vh;
 	}
 
+	.leftglyph {
+		position: absolute;
+		top: 78%;
+		right: 76%;
+		-ms-transform: scale(2); /* IE 9 */
+		-webkit-transform: scale(2); /* Safari */
+		transform: scale(2);
+		box-shadow: 0.5px 0px 0.5px 0px #000;
+		z-index: 999;
+	}
+
+	.rightglyph {
+		position: absolute;
+		top: 78%;
+		right: 69.5%;
+		-ms-transform: scale(2); /* IE 9 */
+		-webkit-transform: scale(2); /* Safari */
+		transform: scale(2);
+		box-shadow: -0.5px 0px 0.5px 0px #000;
+	}
+
 	.hacktext {
 		display: inline-block;
 		height: 55.8vh;
@@ -1096,6 +1272,20 @@ iframe {
 		height: 54vh;
 	}
 
+	.hackskilladj {
+		height: 75.5vh;
+	}
+
+	.changesmallmarg {
+		margin-left: 0.4vh;
+		margin-top: 0.4vh;
+		margin-right: 1vh;
+		margin-bottom: 1vh;
+		float: left;
+		height: 34.75vh;
+		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+	}
+
 	.wpcont {
 		background-size: 235%;
 	}
@@ -1115,6 +1305,19 @@ iframe {
 	  padding-right: 2vh;
 	  padding-left: 10vh;
 
+	}
+
+	.forborderskills {
+	  background: #D4B89B; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* Standard syntax */
+	  padding-bottom: 2vh;
+	  padding-top: 2vh;
+	  padding-right: 2vh;
+	  padding-left: 10vh;
+	  height: 75.5vh;
 	}
 
 	.hackaboximg {
@@ -1151,6 +1354,26 @@ iframe {
 		width: 85%;
 		left: -71%;
 
+	}
+
+	.titlepskill:before {
+		content: "";
+		position: absolute;
+		height: 3px;
+		width: 97%;
+		top: 53%;
+		left: -70%;
+		background-color: #6F282A;
+	}
+
+	.titlepskill:after {
+		content: "";
+		position: absolute;
+		height: 3px;
+		width: 48%;
+		top: 53%;
+		right: -20%;
+		background-color: #6F282A;
 	}
 
 	.subtitle {
@@ -1301,6 +1524,41 @@ iframe {
 
 	}
 
+	.forborderskills {
+	  background: #D4B89B; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(0deg, #C8A589 80%, #D4B79E); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(0deg, #C8A589 80%, #D4B79E); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(0deg, #C8A589 80%, #D4B79E); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(0deg, #C8A589 80%, #D4B79E); /* Standard syntax */
+	  padding-bottom: 2vh;
+	  padding-top: 2vh;
+	  padding-right: 2vh;
+	  padding-left: 2vh;
+	  margin-bottom: 2vh;
+	  margin-top: 2vh;
+	}
+
+	.smallimgcont {
+		margin: 1px;
+		position: relative;
+		padding-left: 0;
+		padding-right: 0;
+		height: 9vh;
+		padding: 0px;
+		float: left;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #D4B89B;
+		text-align: center;
+		background-color: rgba(0,0,0,0);
+		font-family: 'Roboto', sans-serif;
+		font-size: 12px;
+		font-weight: 700;
+		text-shadow: -1px 0 #DBC4B0, 0 1px #DBC4B0, 1px 0 #DBC4B0, 0 -1px #DBC4B0;
+		color: rgba(96, 18, 24, 1);
+		display: inline-block;
+	}
+
 	.hacktext {
 		display: inline-block;
 		height: 44vh;
@@ -1315,6 +1573,37 @@ iframe {
 		background: linear-gradient(180deg, #C8A589, #D4B79E 70%); /* Standard syntax */
 		position: relative;
 		overflow: hidden;
+	}
+
+	.hackskilladj {
+		margin-top: 2vh;
+		height: 73vh;
+	}
+
+	.changesmallmarg {
+		margin-left: 0.7vh;
+		margin-top: 0.7vh;
+		margin-right: 0.7vh;
+		margin-bottom: 0.7vh;
+		float: left;
+		height: 33vh;
+		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+	}
+
+	.bot {
+		margin-right: 3px;
+	}
+
+	.top {
+		margin-left: 3.6px;
+	}
+
+	.addonepx {
+		margin-left: 5px;
+	}
+
+	.addonepx2 {
+		margin-left: 2px;
 	}
 
 	.hackadjust {
@@ -1369,6 +1658,26 @@ iframe {
 	.titlepios:after {
 		width: 45%;
 		right: -38%;
+	}
+
+	.titlepskill:before {
+		content: "";
+		position: absolute;
+		height: 3px;
+		width: 67%;
+		top: 53%;
+		left: -38%;
+		background-color: #6F282A;
+	}
+
+	.titlepskill:after {
+		content: "";
+		position: absolute;
+		height: 3px;
+		width: 67%;
+		top: 53%;
+		right: -38%;
+		background-color: #6F282A;
 	}
 
 	.subtitle {
@@ -1516,6 +1825,16 @@ iframe {
 		height: 42vh;
 	}
 
+	.changesmallmarg {
+		margin-left: 0.5vh;
+		margin-top: 0.5vh;
+		margin-right: 0.5vh;
+		margin-bottom: 0.5vh;
+		float: left;
+		height: 33vh;
+		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+	}
+
 	.topadjust {
 		height: 24vh;
 	}
@@ -1532,6 +1851,16 @@ iframe {
 	.titlep:after {
 		width: 46%;
 		right: -32%;
+	}
+
+	.titlepskill:before {
+		width: 68%;
+		left: -39%;
+	}
+
+	.titlepskill:after {
+		width: 68%;
+		right: -39%;
 	}
 
 	.titlepwp {
@@ -1667,6 +1996,10 @@ iframe {
 
 	.hacktext {
 		margin-top: 2vh;
+	}
+
+	.hackskilladj {
+		height: 73vh;
 	}
 
 	.hacktext>p {

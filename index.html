@@ -8,12 +8,13 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/hover.css" />
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
 	<link rel="stylesheet" type="text/css" href="main.css" />
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="node_modules/fullpage.js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/jquery.fittext.js"></script>
-	<script type="text/javascript" src="js/jquery.nanoscroller.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 
@@ -24,8 +25,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Corben:700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-	<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300' rel='stylesheet' type='text/css'>	<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
 	<!--<script src="vendors/jquery.easings.min.js"></script>-->
 
 
@@ -68,24 +68,29 @@
 									<div class="titlep col-lg-13 col-lg-offset-15 col-md-13 col-md-offset-15 col-sm-13 col-sm-offset-15 col-xs-16 col-xs-offset-10">HACKABOX</div>
 								</div>
 								<div class='forborder col-lg-11 col-lg-offset-4 col-md-11 col-md-offset-4 col-sm-11 col-sm-offset-3 col-xs-28 col-xs-offset-4'>
-									<div class='col-lg-36 col-md-36 col-sm-36 col-xs-36 hackaboximgcont'>
+									<a class='col-lg-36 col-md-36 col-sm-36 col-xs-36 hackaboximgcont'>
 										<div class='demo'><p>DEMO</p></div>
+									<!--<img class='hackaboximg' src='images/hackaboxfull.png'>-->
+										<img class='hackaboximgsmall' src='images/hackaboxquery700.png'>
+									</a>
+									<a href="images/ss1.png" class='col-lg-36 col-md-36 col-sm-36 col-xs-36 hackaboximgcont bgsize' style="background-image: url('images/ss1.png'); display: none;">
 										<!--<img class='hackaboximg' src='images/hackaboxfull.png'>-->
 										<img class='hackaboximgsmall' src='images/hackaboxquery700.png'>
-									</div>
-									<div class='col-lg-36 col-md-36 col-sm-36 col-xs-36 hackaboximgcont ss1'>
-										<div class='demo'><p>DEMO</p></div>
+									</a>
+									<a href="images/ss2.png" class='col-lg-36 col-md-36 col-sm-36 col-xs-36 hackaboximgcont bgsize' style="background-image: url('images/ss2.png'); display: none;">
 										<!--<img class='hackaboximg' src='images/hackaboxfull.png'>-->
 										<img class='hackaboximgsmall' src='images/hackaboxquery700.png'>
-									</div>
-									<div class='col-lg-36 col-md-36 col-sm-36 col-xs-36 hackaboximgcont ss2'>
-										<div class='demo'><p>DEMO</p></div>
-										<!--<img class='hackaboximg' src='images/hackaboxfull.png'>-->
-										<img class='hackaboximgsmall' src='images/hackaboxquery700.png'>
-									</div>
+									</a>
 									<!--<div class="apexback col-lg-10"></div>-->
 								</div>
-								<a class='inlineblock tancolor'><div class="glyphicon glyphicon-chevron-left leftglyph" id="leftg"></div></a><a class='inlineblock tancolor'><div class="glyphicon glyphicon-chevron-right rightglyph" id="rightg"></div></a>
+
+								<a class='inlineblock tancolor hidden-xs' id="leftg">
+									<div class="glyphicon glyphicon-chevron-left leftglyph"></div>
+								</a>
+								<a class='inlineblock tancolor hidden-xs' id="rightg">
+									<div class="glyphicon glyphicon-chevron-right rightglyph"></div>
+								</a>
+
 								<div class='hacktext col-lg-13 col-lg-offset-0 col-md-13 col-md-offset-0 col-sm-14 col-sm-offset-2 col-xs-28 col-xs-offset-4'>
 						    		<div class = "subtitle">Goals:</div><p>To develop a MEAN stack website for my Hackabox project, including a forum built from scratch.</p>
 						    		<div class = "subtitle">Challenges:</div><p>Building a forum from scratch with AngularJS (and other tech).</p>
@@ -206,7 +211,83 @@
 						</div>
 					</div>
 				</div>
-				<div class="section" id="skills">Skills</div>
+				<div class="section" id="skills">
+					<div class="slide" id="hackabox1">
+						<div class='container-fluid'>
+							<div class="row" style="position: relative;">
+								<div class = "titlepout col-lg-36 col-md-36 col-sm-36 col-xs-36">
+									<!--<div class='crumbmine col-lg-5 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-8 col-sm-offset-0 col-xs-10 col-xs-offset-0'>Projects > Hackabox</div>-->
+									<div class="titlepskill col-lg-14 col-lg-offset-15 col-md-13 col-md-offset-15 col-sm-15 col-sm-offset-14 col-xs-16 col-xs-offset-10">SKILLS</div>
+								</div>
+								<div class='forborderskills col-lg-14 col-lg-offset-3 col-md-14 col-md-offset-3 col-sm-18 col-sm-offset-0 col-xs-28 col-xs-offset-4 hidden-xs'>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-5 smallimgcont'>
+							    		<img class="logo1" src="images/css.png"><br>CSS3
+									</div>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-5 smallimgcont top'>
+							    		<img class="logo1" src="images/html.png"><br>HTML5
+									</div>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-5 smallimgcont top'>
+										<img class="logo1" src="images/js.png"><br>Javascript
+									</div>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-5 smallimgcont top'>
+										<img class="logophp2" src="images/php2.png"><br>PHP
+									</div>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-5 smallimgcont top'>
+										<img class="logo1" src="images/java.png"><br>Java
+									</div>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-4 smallimgcont top'>
+										<img class="logophp2" src="images/ios.png"><br>iOS
+									</div>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-5 smallimgcont top addonepx'>
+										<img class="logophp2" src="images/objc.png"><br>Objective-C
+									</div>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-4 smallimgcont bot'>
+										<img class="logophp2" src="images/mysql2.png"><br>MySQL
+									</div>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-5 smallimgcont bot'>
+										<img class="logophp2" src="images/mongo2.png"><br>MongoDB
+									</div>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-5 smallimgcont bot'>
+										<img class="logophp2" src="images/as.png"><br>ActionScript
+									</div>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-4 smallimgcont bot'>
+										<img class="logophp2" src="images/node1.png"><br>Node.js
+									</div>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-4 smallimgcont bot'>
+										<img class="logophp2" src="images/ang.png"><br>AngularJS
+									</div>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-4 smallimgcont bot'>
+										<img class="logophp2" src="images/express1.png"><br>expressjs
+									</div>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-4 smallimgcont bot'>
+										<img class="logophp2" src="images/parse2.png"><br>Parse SDK
+									</div>
+									<div class='col-lg-11 col-md-11 col-sm-11 col-xs-4 smallimgcont addonepx2'>
+										<img class="logophp2" src="images/wp1.png"><br>Wordpress
+									</div>
+									<!--<div class="apexback col-lg-10"></div>-->
+								</div>
+								<div class='hacktext hackskilladj col-lg-14 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-16 col-sm-offset-2 col-xs-28 col-xs-offset-4'>
+						    		<div class='col-lg-15 col-md-15 col-sm-15 col-xs-17 smallimgcont changesmallmarg'>
+							    		
+									</div>
+									<div class='col-lg-15 col-md-15 col-sm-15 col-xs-17 smallimgcont changesmallmarg'>
+							    		
+									</div>
+									<div class='col-lg-15 col-md-15 col-sm-15 col-xs-17 smallimgcont changesmallmarg'>
+										
+									</div>
+									<div class='col-lg-15 col-md-15 col-sm-15 col-xs-17 smallimgcont changesmallmarg'>
+										
+									</div>
+						    	</div>
+						    	<div class='readpanel col-lg-18 col-lg-offset-15 col-md-18 col-md-offset-15 col-sm-18 col-sm-offset-15 col-xs-28 col-xs-offset-4'>
+						    	<div class="closemine col-lg-3 col-lg-offset-33 col-md-3 col-md-offset-32 col-sm-3 col-sm-offset-33 col-xs-4 col-xs-offset-0">close</div>
+						    	</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="section" id="contact">Contact</div>
 			</div>
 		</div>
