@@ -66,7 +66,7 @@ $(document).ready(function() {
             $('.titlepios').fitText(0.9);
             $('.titlepskill').fitText(0.9);
             $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
-            $('.hacktext>p').fitText(2, { minFontSize: '12px', maxFontSize: '13px'});
+            $('.hacktext>p').fitText(2, { minFontSize: '14px', maxFontSize: '15px'});
             $('.titlewp').fitText(1.8);
             $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
             $('.wordtext>p').fitText(0.5, { minFontSize: '16px', maxFontSize: '17px'});
@@ -82,7 +82,7 @@ $(document).ready(function() {
             $('.titlepios').fitText(0.9);
             $('.titlepskill').fitText(0.9);
             $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
-            $('.hacktext>p').fitText(2.8, { minFontSize: '12px', maxFontSize: '13px'});
+            $('.hacktext>p').fitText(2.8, { minFontSize: '14px', maxFontSize: '15px'});
             $('.titlewp').fitText(1.8);
             $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
             $('.wordtext>p').fitText(0.8, { minFontSize: '15px', maxFontSize: '16.5px'});
@@ -102,7 +102,6 @@ $(document).ready(function() {
             $('.subtitlewp').fitText(2, { minFontSize:'17px', maxFontSize: '19px'});
             $('.wordtext>p').fitText(1.8, { minFontSize: '15px', maxFontSize: '15.5px'});
             $('.pcont>p').fitText(2.4, { minFontSize: '12px', maxFontSize: '12.6px'});
-
 
         }
 
@@ -144,7 +143,7 @@ $(document).ready(function() {
             $('.titlepios').fitText(0.9);
             $('.titlepskill').fitText(0.9);
             $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
-            $('.hacktext>p').fitText(2, { minFontSize: '12px', maxFontSize: '13px'});
+            $('.hacktext>p').fitText(2, { minFontSize: '14px', maxFontSize: '15px'});
             $('.titlewp').fitText(1.8);
             $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
             $('.wordtext>p').fitText(0.5, { minFontSize: '16px', maxFontSize: '17px'});
@@ -160,7 +159,7 @@ $(document).ready(function() {
             $('.titlepios').fitText(0.9);
             $('.titlepskill').fitText(0.9);
             $('.subtitle').fitText(2.7, { maxFontSize: '14px'});
-            $('.hacktext>p').fitText(2.8, { minFontSize: '12px', maxFontSize: '13px'});
+            $('.hacktext>p').fitText(2.8, { minFontSize: '14px', maxFontSize: '15px'});
             $('.titlewp').fitText(1.8);
             $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
             $('.wordtext>p').fitText(0.8, { minFontSize: '15px', maxFontSize: '16.5px'});
@@ -180,8 +179,6 @@ $(document).ready(function() {
             $('.subtitlewp').fitText(2, { minFontSize:'17px', maxFontSize: '19px'});
             $('.wordtext>p').fitText(1.8, { minFontSize: '15px', maxFontSize: '15.5px'});
             $('.pcont>p').fitText(2.4, { minFontSize: '12px', maxFontSize: '12.6px'});
-
-
         }
 
         if($(window).width() < 768 && $(window).width() > 480) {
@@ -223,13 +220,8 @@ $(document).ready(function() {
         $('nav').css({
             'background-color': '#B24949'
         })
-    }
-    if(location.hash.slice(1) == 'firstPage') {
-        $('nav').css({
-            'background-color': 'rgba(96, 18, 24, 0.86)'
-        })
-    }
-    if(location.hash.slice(1) == 'fourthPage') {
+    }*/
+    /*if(location.hash.slice(1) == 'fourthPage') {
         $('nav').css({
             'background-color': '#aaaaaa'
         })
@@ -450,4 +442,22 @@ $(document).ready(function() {
       type: 'image'
       // other options
     });
+
+    $('.forborderskills').children().each(function(index, value){
+        if(index < 3 || (index > 5 && index < 9) || index > 11) {
+            $(this).css('background-color', 'rgba(219,196,176, 0.7)')
+        }
+        else {
+            $(this).css('background-color', 'rgba(219,196,176, 0.1)')
+        }
+    })
+
+    $('.hackskilladj').children().each(function(index, value){
+        if(index == 0 || index == 2) {
+            $(this).css('background-color', 'rgba(219,196,176, 0.7)')
+        }
+        else {
+            $(this).css('background-color', 'rgba(219,196,176, 0.1)')
+        }
+    })
 });

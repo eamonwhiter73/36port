@@ -2,6 +2,7 @@ nav {
 	background-color: rgba(96, 18, 24, 0.86);
 	position: relative;
 	z-index: 99999;
+	box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
 }
 
 a {
@@ -106,7 +107,6 @@ a, a:hover, a:active, a:visited, a:focus {
 	height: 52px;
 	line-height: 52px;
 	text-align: center;
-	color: #EBEBEB;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -395,11 +395,10 @@ iframe {
 	border-width: 1px;
 	border-color: #D4B89B;
 	text-align: center;
-	background-color: rgba(0,0,0,0);
+	/*background-color: rgba(0,0,0,0);*/
 	font-family: 'Roboto', sans-serif;
-	font-size: 12px;
+	font-size: 12.2px;
 	font-weight: 700;
-	text-shadow: -1px 0 #DBC4B0, 0 1px #DBC4B0, 1px 0 #DBC4B0, 0 -1px #DBC4B0;
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 	color: rgba(96, 18, 24, 1);
 }
@@ -409,7 +408,18 @@ iframe {
 	margin-top: 2vh;
 	float: left;
 	height: 34.5vh;
-	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.one {
+	background-color: rgba(219,196,176, 0.7);
+}
+
+.two {
+	background-color: rgba(219,196,176, 0.8);
+}
+
+.hardware {
+	height: 15vh;
 }
 
 .logo1 {
@@ -685,9 +695,9 @@ iframe {
 	content: "";
 	position: absolute;
 	height: 3px;
-	width: 94%;
+	width: 96%;
 	top: 53%;
-	left: -66%;
+	left: -68%;
 	background-color: #6F282A;
 }
 
@@ -695,9 +705,9 @@ iframe {
 	content: "";
 	position: absolute;
 	height: 3px;
-	width: 36%;
+	width: 49%;
 	top: 53%;
-	right: -8%;
+	right: -21%;
 	background-color: #6F282A;
 }
 
@@ -775,6 +785,50 @@ iframe {
     font-weight: 900;
 	font-size: 13px;
 	color: #6F282A;
+}
+
+.skillsub {
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Avenir';
+    font-weight: 900;
+	color: #6F282A;
+}
+
+.block {
+	display: block;
+	height: 16.1vh;
+}
+
+.hardware {
+	height: 19vh;
+}
+
+.art {
+	height: 9vh;
+}
+
+.music {
+	height: 14.5vh;
+}
+
+.software {
+	height: 22vh;
+}
+
+.justify {
+	text-align: justify;
+    font-family: 'Avenir';
+    font-weight: 100;
+    color: #FFF1E4;
+    list-style: none;
+}
+
+.justify>li:before {
+    content: "\f1b2";
+    font-family: FontAwesome;
+    color: rgba(96, 18, 24, 1); 
+    margin-right: 4px;
 }
 
 .subtitlewp {
@@ -966,9 +1020,9 @@ iframe {
 		content: "";
 		position: absolute;
 		height: 3px;
-		width: 95%;
+		width: 99%;
 		top: 53%;
-		left: -70%;
+		left: -72%;
 		background-color: #6F282A;
 	}
 
@@ -976,9 +1030,9 @@ iframe {
 		content: "";
 		position: absolute;
 		height: 3px;
-		width: 42%;
+		width: 46%;
 		top: 53%;
-		right: -15%;
+		right: -19%;
 		background-color: #6F282A;
 	}
 
@@ -1051,14 +1105,39 @@ iframe {
 		overflow: hidden;
 	}
 
+	.smallimgcont {
+		
+	}
+
 	.changesmallmarg {
 		margin-left: 0.4vh;
 		margin-top: 0.4vh;
 		margin-right: 1vh;
 		margin-bottom: 1vh;
 		float: left;
-		height: 34.75vh;
+		line-height: 14.9px;
+		font-size: 1.12vw;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+	}
+
+	.skillsub {
+		font-size: 12px;
+	}
+
+	.hardware {
+		height: 21.8vh;
+	}
+
+	.art {
+		height: 9.3vh;
+	}
+
+	.music {
+		height: 13.7vh;
+	}
+
+	.software {
+		height: 21.8vh;
 	}
 
 	.forborder {
@@ -1282,8 +1361,29 @@ iframe {
 		margin-right: 1vh;
 		margin-bottom: 1vh;
 		float: left;
-		height: 34.75vh;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+		font-size: 1.33vw;
+		line-height: 15px;
+	}
+
+	.skillsub {
+		font-size: 13px;
+	}
+
+	.hardware {
+		height: 21.6vh;
+	}
+
+	.art {
+		height: 8.3vh;
+	}
+
+	.music {
+		height: 13.9vh;
+	}
+
+	.software {
+		height: 22.1vh;
 	}
 
 	.wpcont {
@@ -1360,9 +1460,9 @@ iframe {
 		content: "";
 		position: absolute;
 		height: 3px;
-		width: 97%;
+		width: 99%;
 		top: 53%;
-		left: -70%;
+		left: -72%;
 		background-color: #6F282A;
 	}
 
@@ -1370,9 +1470,9 @@ iframe {
 		content: "";
 		position: absolute;
 		height: 3px;
-		width: 48%;
+		width: 56%;
 		top: 53%;
-		right: -20%;
+		right: -29%;
 		background-color: #6F282A;
 	}
 
@@ -1554,7 +1654,6 @@ iframe {
 		font-family: 'Roboto', sans-serif;
 		font-size: 12px;
 		font-weight: 700;
-		text-shadow: -1px 0 #DBC4B0, 0 1px #DBC4B0, 1px 0 #DBC4B0, 0 -1px #DBC4B0;
 		color: rgba(96, 18, 24, 1);
 		display: inline-block;
 	}
@@ -1586,9 +1685,30 @@ iframe {
 		margin-right: 0.7vh;
 		margin-bottom: 0.7vh;
 		float: left;
-		height: 33vh;
-		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+		line-height: 18px;
+		font-size: 1.70vw;
 	}
+
+	.skillsub {
+		font-size: 14px;
+	}
+
+	.hardware {
+		height: 19.2vh;
+	}
+
+	.art {
+		height: 9vh;
+	}
+
+	.music {
+		height: 14.7vh;
+	}
+
+	.software {
+		height: 22vh;
+	}
+
 
 	.bot {
 		margin-right: 3px;
@@ -1831,8 +1951,29 @@ iframe {
 		margin-right: 0.5vh;
 		margin-bottom: 0.5vh;
 		float: left;
-		height: 33vh;
+		font-size: 10px;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+		line-height: 13px;
+	}
+
+	.skillsub {
+		font-size: 11px;
+	}
+
+	.hardware {
+		height: 19.7vh;
+	}
+
+	.art {
+		height: 8.7vh;
+	}
+
+	.music {
+		height: 14.5vh;
+	}
+
+	.software {
+		height: 22vh;
 	}
 
 	.topadjust {
