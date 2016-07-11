@@ -331,6 +331,7 @@ iframe {
 
 .glyphicon {
 	color: rgba(96, 18, 24, 1);
+	background-color: rgba(212,183,158,0.8);
 	padding-bottom: 1px;
 	z-index: 90
 }
@@ -348,6 +349,7 @@ iframe {
 	transform: scale(2);
 	box-shadow: 0.5px 0px 0.5px 0px #000;
 	z-index: 999;
+	background-color: 
 }
 
 .rightglyph {
@@ -381,6 +383,7 @@ iframe {
 	border-style: solid;
 	border-width: 6px;
 	border-color: #D4B89B;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 .smallimgcont {
@@ -477,6 +480,7 @@ iframe {
 	color: #F8E3D0;
 	cursor: hand; cursor: pointer;
 	text-align: center;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 .readpanel {
@@ -560,9 +564,6 @@ iframe {
 
 .expmagadj {
   width: 100%;
-  padding-left: 1vh;
-  padding-right: 1vh;
-  padding-top: 3.2vh;	
 }
 
 .mongodbimg {
@@ -578,40 +579,30 @@ iframe {
 }
 
 .mongadjust {
-  padding-top: 1vh;
 }
 
 .gmapadj {
-	padding-top: 4vh;
+	width: 100%;
 }
 
 .parseadj {
-	padding-top: 0.8vh;
+	width: 100%;
 }
 
 .wordpressimg {
   width: 100%;
-  padding-left: 1vh;
-  padding-right: 1vh;
-  padding-top: 2.2vh;
 }
 
 .phpimg {
   width: 100%;
-  padding-top: 3.8vh;
 }
 
 .mysqlimg {
   width: 100%;
-  padding-left: 1vh;
-  padding-right: 1vh;
-  padding-top: 4vh;
 }
 
 .bootstrapimg {
   width: 100%;
-  padding-left: 1vh;
-  padding-right: 1vh;
 }
 
 .mongoholder {
@@ -942,35 +933,27 @@ iframe {
 	}
 
 	.phpimg {
-		padding-top: 2.8vh;
 	}
 
 	.wordpressimg {
-		padding-top: 1.7vh;
 	}
 
 	.mysqlimg {
-		padding-top: 3vh
 	}
 
 	.bootstrapimg {
-		padding-bottom: 1vh;
 	}
 
 	.expmagadj {
-		padding-top: 3.2vh;
 	}
 
 	.mongadjust {
-	  padding-top: 1.3vh;
 	}
 
 	.gmapadj {
-		padding-top: 4vh;
 	}
 
 	.parseadj {
-		padding-top: 0.8vh;
 	}
 
 	.techholder {
@@ -982,7 +965,7 @@ iframe {
 	}
 
 	.techused {
-		top: 93%;
+		top: 93.2%;
 		font-size: 1.5vw;
 		height: 4vh;
 	}
@@ -1140,7 +1123,6 @@ iframe {
 	  padding-top: 2vh;
 	  padding-right: 2vh;
 	  padding-left: 10vh;
-
 	}
 
 	.forborderskills {
@@ -1235,35 +1217,27 @@ iframe {
 	}
 
 	.expmagadj {
-		padding-top: 3.3vh;
 	}
 
 	.mongadjust {
-	  padding-top: 2vh;
 	}
 
 	.gmapadj {
-		padding-top: 4vh;
 	}
 
 	.parseadj {
-		padding-top: 0.8vh;
 	}
 
 	.phpimg {
-		padding-top: 3.3vh;
 	}
 
 	.bootstrapimg {
-		padding-top: 0.5vh;
 	}
 
 	.mysqlimg {
-		padding-bottom: 3.7vh;
 	}
 
 	.wordpressimg {
-		padding-top: 2.7vh;
 	}
 
 	.techused>p {
