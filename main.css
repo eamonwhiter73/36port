@@ -452,6 +452,7 @@ iframe {
 	border-style: solid;
 	border-width: 6px;
 	border-color: #D4B89B;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 .wpcont {
@@ -468,6 +469,7 @@ iframe {
 	border-style: solid;
 	border-width: 6px;
 	border-color: #D4B89B;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 .read {
