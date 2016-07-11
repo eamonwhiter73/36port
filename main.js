@@ -427,7 +427,7 @@ $(document).ready(function() {
         }
     });
     $('#rightg').on('click', function() {
-        console.log('in rotate left');
+        console.log('in rotate right');
         if($('.hackaboximgcont:visible').next().is('.hackaboximgcont')) {
             $('.hackaboximgcont:visible').next().css('display', 'block');
             $('.hackaboximgcont:visible').prev().css('display', 'none');
@@ -437,8 +437,37 @@ $(document).ready(function() {
         }
     });
 
+    $('#leftgw').on('click', function() {
+        console.log('in rotate left');
+        if($('.hackaboximgcont:visible').prev().is('.hackaboximgcont')) {
+            $('.hackaboximgcont:visible').prev().css('display', 'block');  
+            $('.hackaboximgcont:visible').next().css('display', 'none');
+        }
+        else if($('.hackaboximgcont:visible').prev().is('.wpcont')) {
+            $('.hackaboximgcont:visible').prev().css('display', 'block');  
+            $('.wpcont:visible').next().css('display', 'none');
+        } 
+        else {
+            console.log('nothing before it');
+        }
+    });
+    $('#rightgw').on('click', function() {
+        console.log('in rotate right');
+        if($('.wpcont:visible').next().is('.hackaboximgcont')) { 
+            $('.wpcont:visible').next().css('display', 'block');
+            $('.hackaboximgcont:visible').prev().css('display', 'none');
+        }
+        else if($('.hackaboximgcont:visible').next().is('.hackaboximgcont')) {
+            $('.hackaboximgcont:visible').next().css('display', 'block');
+            $('.hackaboximgcont:visible').prev().css('display', 'none');
+        }
+        else {
+            console.log('nothing after it');
+        }
+    });
+
     $('.forborder').magnificPopup({
-      delegate: 'a', // child items selector, by clicking on it popup will open
+      delegate: 'a.imsel', // child items selector, by clicking on it popup will open
       type: 'image'
       // other options
     });

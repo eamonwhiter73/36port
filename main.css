@@ -2,7 +2,7 @@ nav {
 	background-color: rgba(96, 18, 24, 0.86);
 	position: relative;
 	z-index: 99999;
-	box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
+	box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.3);
 }
 
 a {
@@ -556,9 +556,6 @@ iframe {
 
 .expressimg {
   width: 100%;
-  padding-left: 1vh;
-  padding-right: 1vh;
-  padding-top: 4.7vh;
 }
 
 .expmagadj {
@@ -574,15 +571,10 @@ iframe {
 
 .angularimg {
   width: 100%;
-  padding-left: 1vh;
-  padding-right: 1vh;
-  padding-top: 1.8vh;
 }
 
 .nodeimg {
   width: 100%;
-  padding-left: 1vh;
-  padding-right: 1vh;
 }
 
 .mongadjust {
@@ -630,7 +622,6 @@ iframe {
 .mongoholdernode {
 	z-index: 2;
 	position: relative;
-	padding-top: 3vh;
 }
 
 .wordtext>p {
@@ -948,7 +939,6 @@ iframe {
 	}
 
 	.expressimg {
-		padding-top: 3.8vh;
 	}
 
 	.phpimg {
@@ -992,9 +982,9 @@ iframe {
 	}
 
 	.techused {
-		top: 93.5%;
+		top: 93%;
 		font-size: 1.5vw;
-		height: 4.5vh;
+		height: 4vh;
 	}
 
 	.techused>p {
@@ -1220,9 +1210,10 @@ iframe {
 
 	.techholder {
 		position: relative;
-		height: 10%;
+		height: 12%;
+		line-height: 74px;
 		z-index: 2;
-		padding-top: 1vh;
+		padding-top: vh;
 	}
 
 	.techused {
@@ -1232,19 +1223,15 @@ iframe {
 	}
 
 	.expressimg {
-		padding-top: 4vh;
 	}
 
 	.angularimg {
-		padding-top: 2vh;
 	}
 
 	.nodeimg {
-		padding-bottom: 4vh;
 	}
 
 	.mongodbimg {
-		padding-top: 1vh;
 	}
 
 	.expmagadj {
@@ -1280,7 +1267,7 @@ iframe {
 	}
 
 	.techused>p {
-		line-height: 2vh;		
+		line-height: 17px;		
 	}
 
 	.techused:after {
