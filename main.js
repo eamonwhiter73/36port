@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    "use strict";
+
     $('#fullpage').fullpage({
         //Navigation
         menu: '#menu',
@@ -65,6 +67,7 @@ $(document).ready(function() {
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
             $('.titlepskill').fitText(0.9);
+            $('.titlepcont').fitText(0.9);
             $('.subtitle').fitText(2.2, { maxFontSize: '18px'});
             $('.hacktext>p').fitText(2, { minFontSize: '14px', maxFontSize: '15px'});
             $('.titlewp').fitText(1.8);
@@ -81,6 +84,7 @@ $(document).ready(function() {
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
             $('.titlepskill').fitText(0.9);
+            $('.titlepcont').fitText(0.9);
             $('.subtitle').fitText(2.2, { maxFontSize: '18px'});
             $('.hacktext>p').fitText(2.8, { minFontSize: '14px', maxFontSize: '15px'});
             $('.titlewp').fitText(1.8);
@@ -96,6 +100,7 @@ $(document).ready(function() {
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
             $('.titlepskill').fitText(0.9);
+            $('.titlepcont').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(2.6, { minFontSize: '12.6px', maxFontSize: '12.8px'});
             $('.titlewp').fitText(1.6);
@@ -111,6 +116,7 @@ $(document).ready(function() {
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
             $('.titlepskill').fitText(0.9);
+            $('.titlepcont').fitText(0.7);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '15px'});
             $('.titlewp').fitText(2);
@@ -124,6 +130,7 @@ $(document).ready(function() {
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
             $('.titlepskill').fitText(0.9);
+            $('.titlepcont').fitText(0.7);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.5, { minFontSize: '12px', maxFontSize: '12px'});
             $('.wordtext>p').fitText(1.5, { minFontSize: '14px', maxFontSize: '14px'});
@@ -142,6 +149,7 @@ $(document).ready(function() {
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
             $('.titlepskill').fitText(0.9);
+            $('.titlepcont').fitText(0.9);
             $('.subtitle').fitText(2.2, { maxFontSize: '18px'});
             $('.hacktext>p').fitText(2, { minFontSize: '14px', maxFontSize: '15px'});
             $('.titlewp').fitText(1.8);
@@ -158,6 +166,7 @@ $(document).ready(function() {
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
             $('.titlepskill').fitText(0.9);
+            $('.titlepcont').fitText(0.9);
             $('.subtitle').fitText(2.2, { maxFontSize: '18px'});
             $('.hacktext>p').fitText(2.8, { minFontSize: '14px', maxFontSize: '15px'});
             $('.titlewp').fitText(1.8);
@@ -173,6 +182,7 @@ $(document).ready(function() {
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
             $('.titlepskill').fitText(0.9);
+            $('.titlepcont').fitText(0.9);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(2.6, { minFontSize: '12.6px', maxFontSize: '12.8px'});
             $('.titlewp').fitText(1.6);
@@ -188,8 +198,9 @@ $(document).ready(function() {
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
             $('.titlepskill').fitText(0.9);
+            $('.titlepcont').fitText(0.7);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
-            $('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '14px'});
+            $('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '15px'});
             $('.titlewp').fitText(2);
             $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
             $('.pcont>p').fitText(1.8, { minFontSize: '11px', maxFontSize: '11.8px'});
@@ -201,6 +212,7 @@ $(document).ready(function() {
             $('.titlepwp').fitText(0.9);
             $('.titlepios').fitText(0.9);
             $('.titlepskill').fitText(0.9);
+            $('.titlepcont').fitText(0.7);
             $('.subtitle').fitText(2.7, { minFontSize: '15px'});
             $('.hacktext>p').fitText(1.5, { minFontSize: '12px', maxFontSize: '12px'});
             $('.wordtext>p').fitText(1.5, { minFontSize: '14px', maxFontSize: '14px'});
@@ -227,17 +239,54 @@ $(document).ready(function() {
             'background-color': '#aaaaaa'
         })
     }*/
+    $('.smallimgcont').hide();
+    $('.changesmallmarg').hide();
 
-    /*if(location.hash.slice(1) == 'fourthPage') {
-        $('.fp-controlArrow.fp-prev').css({
-            'border-color': 'transparent #aaa transparent transparent'
-        })
-
-        $('.fp-controlArrow.fp-next').css({
-            'border-color': 'transparent transparent transparent #aaa'
-        })
+    if(location.hash.slice(1) == 'fourthPage') {
+        if($('.offsetadj').is(':visible')) {
+            $('.thanks').hide().fadeIn(4250);
+        }
     }
-    else if(location.hash.slice(1) == 'thirdPage') {
+
+    if(location.hash.slice(1) == 'thirdPage') {
+        console.log("in third page");
+        
+        //get the html content
+        if($(".forborderskills").is(':visible')) {
+            setInterval(function() {
+                console.log('in forborderskills visible');
+                var step = 0;
+                var step2 = 0;
+                var content = $(".smallimgcont");
+                var content2 = $('.changesmallmarg');
+                var max = content.length;
+                var max2 = content2.length;
+                var speed = 100; // ms
+                var speed2 = 250; // ms
+
+                var handle = setInterval(function () {
+                    if (step >= max) {
+                        clearInterval(handle);
+                    } else {
+                        var item = content[step];
+                        $(item).show();
+                    }
+                    step++;
+                }, speed);
+
+                var handle2 = setInterval(function () {
+                    if (step2 >= max2) {
+                        clearInterval(handle2);
+                    } else {
+                        var item2 = content2[step2];
+                        $(item2).fadeIn();
+                    }
+                    step2++;
+                }, speed2);
+            }, 1400);
+        }
+    }
+    /*else if(location.hash.slice(1) == 'thirdPage') {
         $('.fp-controlArrow.fp-prev').css({
             'border-color': 'transparent #A10000 transparent transparent'
         })
@@ -297,25 +346,50 @@ $(document).ready(function() {
 
     $(window).on('hashchange',function(){
         console.log(location.hash.slice(1));
-        /*if(location.hash.slice(1) == 'fourthPage') {
-            $('.fp-controlArrow.fp-prev').css({
-                'border-color': 'transparent #aaa transparent transparent'
-            })
 
-            $('.fp-controlArrow.fp-next').css({
-                'border-color': 'transparent transparent transparent #aaa'
-            })
+        if(location.hash.slice(1) == 'fourthPage') {
+            if($('.offsetadj').is(':visible')) {
+                $('.thanks').hide().fadeIn(2000);
+            }
         }
-        else if(location.hash.slice(1) == 'thirdPage') {
-            $('.fp-controlArrow.fp-prev').css({
-                'border-color': 'transparent #A10000 transparent transparent'
-            })
+        if(location.hash.slice(1) == 'thirdPage') {
+            console.log("in third page");
+            //get the html content
+            if($(".forborderskills").is(':visible')) {
+                setInterval(function() {
+                    console.log('in forborderskills visible');
+                    var step = 0;
+                    var step2 = 0;
+                    var content = $(".smallimgcont");
+                    var content2 = $('.changesmallmarg');
+                    var max = content.length;
+                    var max2 = content2.length;
+                    var speed = 70; // ms
+                    var speed2 = 100; // ms
 
-            $('.fp-controlArrow.fp-next').css({
-                'border-color': 'transparent transparent transparent #A10000'
-            })
+                    var handle = setInterval(function () {
+                        if (step >= max) {
+                            clearInterval(handle);
+                        } else {
+                            var item = content[step];
+                            $(item).show();
+                        }
+                        step++;
+                    }, speed);
+
+                    var handle2 = setInterval(function () {
+                        if (step2 >= max2) {
+                            clearInterval(handle2);
+                        } else {
+                            var item2 = content2[step2];
+                            $(item2).fadeIn();
+                        }
+                        step2++;
+                    }, speed2);
+                }, 500);
+            }
         }
-        else if(location.hash.slice(1) == 'secondPage'){
+        /*else if(location.hash.slice(1) == 'secondPage'){
             $('.fp-controlArrow.fp-prev').css({
                 'border-color': 'transparent rgb(96, 18, 24) transparent transparent'
             })
