@@ -440,13 +440,12 @@ height: 100%;
 	position: relative;
 	padding-left: 0;
 	padding-right: 0;
-	padding-bottom: 2.6%;
+	padding-bottom: 1%;
 	float: right;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #D4B89B;
 	text-align: center;
-	/*background-color: rgba(0,0,0,0);*/
 	font-family: 'Roboto', sans-serif;
 	font-size: 12.2px;
 	font-weight: 700;
@@ -456,9 +455,10 @@ height: 100%;
 
 .changesmallmarg {
 	margin-left: 3%;
-	margin-top: 3%;
+	margin-top: 2px;
 	float: left;
-	padding-bottom: 19%;
+	font-size: 1.1vw;
+	line-height: 16px;
 }
 
 .one {
@@ -467,10 +467,6 @@ height: 100%;
 
 .two {
 	background-color: rgba(219,196,176, 0.8);
-}
-
-.hardware {
-	padding-bottom: 0.5%;
 }
 
 .logo1 {
@@ -755,9 +751,9 @@ height: 100%;
 	content: "";
 	position: absolute;
 	height: 3px;
-	width: 49%;
-	top: 42px;
-	right: -21%;
+	width: 58%;
+	top: 44px;
+	right: -30%;
 	background-color: #6F282A;
 }
 
@@ -847,20 +843,20 @@ height: 100%;
 	display: block;
 }
 
-.hardware {
-	padding-bottom: 0.3%;
+.music {
+	height: 19.5%;
 }
 
 .art {
-	padding-bottom: 0.3%;
-}
-
-.music {
-	padding-bottom: 0.3%;
+	height: 12.8%;
 }
 
 .software {
-	padding-bottom: 0.3%;
+	height: 32%;
+}
+
+.hardware {
+	height: 31.5%;
 }
 
 .justify {
@@ -940,8 +936,8 @@ height: 100%;
 		background: linear-gradient(to right, #C8A589 75%, #D4B79E); /* Standard syntax */
 		padding-left: 0;
 		padding-right: 0;
-		padding-top: 0;
-		height: auto;
+		padding-top: 1%;
+		height: 456px
 	}
 
 	.forborder {
@@ -973,11 +969,14 @@ height: 100%;
 	  padding-bottom: 1%;
 	  padding-top: 1%;
 	  padding-right: 1.1%;
-	  padding-left: 10%;
+	  padding-left: 1%;
+	  height: 456px
 	}
 
 	.showme {
+		padding-bottom: 1%;
 		display: none;
+		height: 19%;
 	}
 
 	.fademe {
@@ -1018,33 +1017,6 @@ height: 100%;
 
 	.hackaboximgcontadj {
 		background-size: 150%;
-	}
-
-	.expressimg {
-	}
-
-	.phpimg {
-	}
-
-	.wordpressimg {
-	}
-
-	.mysqlimg {
-	}
-
-	.bootstrapimg {
-	}
-
-	.expmagadj {
-	}
-
-	.mongadjust {
-	}
-
-	.gmapadj {
-	}
-
-	.parseadj {
 	}
 
 	.techholder {
@@ -1153,54 +1125,41 @@ height: 100%;
 
 	.hacktext {
 		display: inline-block;
-		height: 54vh;
-		padding-left: 2vh;
-		padding-right: 2vh;
-		padding-top: 2vh;
-		margin-top: 0vh;
+		padding-left: 1%;
+		padding-right: 1%;
+		padding-top: 1%;
+		padding-bottom: 1.2%;
 		background: #D4B89B; /* For browsers that do not support gradients */
 		background: -webkit-linear-gradient(left, #C8A589 40%, #D4B79E); /* For Safari 5.1 to 6.0 */
 		background: -o-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Opera 11.1 to 12.0 */
 		background: -moz-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Firefox 3.6 to 15 */
 		background: linear-gradient(to right, #C8A589 40%, #D4B79E); /* Standard syntax */
-		margin-left: 2vh;
+		margin-left: 1%;
 		position: relative;
 		overflow: hidden;
 	}
 
 	.smallimgcont {
-		
+		padding-bottom: 1%;
+	}
+
+	.showme {
+		padding-bottom: 1%;
+		display: none;
+		height: 19%;
 	}
 
 	.changesmallmarg {
-		margin-left: 0.4vh;
-		margin-top: 0.4vh;
-		margin-right: 1vh;
-		margin-bottom: 1vh;
+		margin-left: 2px;
+		margin-top: 2px;
 		float: left;
-		line-height: 14.9px;
-		font-size: 1.12vw;
+		line-height: 14px;
+		font-size: 1.02vw;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 	}
 
 	.skillsub {
 		font-size: 12px;
-	}
-
-	.hardware {
-		height: 21.8vh;
-	}
-
-	.art {
-		height: 9.3vh;
-	}
-
-	.music {
-		height: 13.7vh;
-	}
-
-	.software {
-		height: 21.8vh;
 	}
 
 	.forborder {
@@ -1227,15 +1186,14 @@ height: 100%;
 	  background: -o-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Opera 11.1 to 12.0 */
 	  background: -moz-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Firefox 3.6 to 15 */
 	  background: linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* Standard syntax */
-	  padding-bottom: 2vh;
-	  padding-top: 2vh;
-	  padding-right: 2vh;
-	  padding-left: 10vh;
-	  height: 75.5vh;
+	  padding-bottom: 1%;
+	  padding-top: 1%;
+	  padding-right: 1%;
+	  height: 456px;
 	}
 
 	.hackskilladj {
-		height: 75.5vh;
+		height: 456px;
 	}
 
 	.titlep {
@@ -1277,6 +1235,22 @@ height: 100%;
 		display: block;
 		width: 100%;
 		position: relative;
+	}
+
+	.art {
+		height: 12.5%;
+	}
+
+	.music {
+		height: 20.5%;
+	}
+
+	.software {
+		height: 31.8%;
+	}
+
+	.hardware {
+		height: 31.2%;
 	}
 }
 
@@ -1364,17 +1338,17 @@ height: 100%;
 
 	.hacktext {
 		display: inline-block;
-		height: 55.8vh;
-		padding-left: 2vh;
-		padding-right: 2vh;
-		padding-top: 2vh;
-		margin-top: 0vh;
+		height: 400px;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		padding-left: 1%;
+		padding-right: 1%;
 		background: #D4B89B; /* For browsers that do not support gradients */
 		background: -webkit-linear-gradient(left, #C8A589 40%, #D4B79E); /* For Safari 5.1 to 6.0 */
 		background: -o-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Opera 11.1 to 12.0 */
 		background: -moz-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Firefox 3.6 to 15 */
 		background: linear-gradient(to right, #C8A589 40%, #D4B79E); /* Standard syntax */
-		margin-left: 2vh;
+		margin-left: 1.5%;
 		position: relative;
 		overflow: hidden;
 	}
@@ -1384,38 +1358,39 @@ height: 100%;
 	}
 
 	.hackskilladj {
-		height: 75.5vh;
+		height: 512px;
 	}
 
 	.changesmallmarg {
-		margin-left: 0.4vh;
-		margin-top: 0.4vh;
-		margin-right: 1vh;
-		margin-bottom: 1vh;
 		float: left;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
-		font-size: 1.33vw;
+		font-size: 1.38vw;
 		line-height: 15px;
+		margin-left: 0;
+		margin-top: 0;
+		margin-left: 2px;
+		margin-right: 2px;
+		margin-top: 2px;
 	}
 
 	.skillsub {
 		font-size: 13px;
 	}
 
-	.hardware {
-		height: 21.6vh;
-	}
-
 	.art {
-		height: 8.3vh;
+		height: 14.5%;
 	}
 
 	.music {
-		height: 13.9vh;
+		height: 19.5%;
 	}
 
 	.software {
-		height: 22.1vh;
+		height: 31.5%;
+	}
+
+	.hardware {
+		height: 31%;
 	}
 
 	.wpcont {
@@ -1468,11 +1443,17 @@ height: 100%;
 	  background: -o-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Opera 11.1 to 12.0 */
 	  background: -moz-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Firefox 3.6 to 15 */
 	  background: linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* Standard syntax */
-	  padding-bottom: 2vh;
-	  padding-top: 2vh;
-	  padding-right: 2vh;
-	  padding-left: 10vh;
-	  height: 75.5vh;
+	  padding-bottom: 1%;
+	  padding-top: 1%;
+	  padding-right: 1%;
+	  height: 512px;
+	}
+
+	.showme {
+		padding-bottom: 1%;
+		padding-top: 9px;
+		display: none;
+		height: 19.2%;
 	}
 
 	.hackaboximg {
@@ -1762,10 +1743,7 @@ height: 100%;
 	}
 
 	.changesmallmarg {
-		margin-left: 0.7vh;
-		margin-top: 0.7vh;
-		margin-right: 0.7vh;
-		margin-bottom: 0.7vh;
+		margin: 1%;
 		float: left;
 		line-height: 18px;
 		font-size: 1.70vw;
