@@ -199,8 +199,8 @@ a, a:hover, a:active, a:visited, a:focus {
    -moz-box-shadow:    inset 2px 2px 2px rgba(0,0,0,0.5);
    -webkit-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.5);
    box-shadow:         inset 2px 2px 2px rgba(0,0,0,0.5);
-   padding: 0.7vh;
-   margin-bottom: 2vh;
+   padding: 1.4%;
+   margin-bottom: 3%;
    position: relative;
 }
 
@@ -214,21 +214,16 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 .inset>textarea {
     width: 100%; 
-    padding: 0px
+    padding-bottom: 205px;
 }
 
 .label {
 	position: relative;
-	float: left;
 	color: #6F282A;
 	font-size: 14.5px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	padding-left: 0;
-}
-
-.inset>textarea {
-	height: 33vh;
 }
 
 .thanks {
@@ -239,8 +234,9 @@ a, a:hover, a:active, a:visited, a:focus {
 	-ms-transform: rotate(-10deg); /* IE 9 */
     -webkit-transform: rotate(-10deg); /* Safari */
     transform: rotate(-10deg);
-    float: right;
-    margin-top: 2vh;
+    margin-top: 1%;
+    position: absolute;
+    right: 1%;
 }
 
 .vidcont {
@@ -253,9 +249,8 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 iframe {
-	width: 100%;
-	height: 100%;
-	
+width: 100%;
+height: 100%;
 }
 
 .pcont {
@@ -347,7 +342,7 @@ iframe {
 	z-index: 2;
 	background-color: rgba(0, 0, 0, 0.1);
 	color: rgb(255, 255, 255);
-	font-size: 10vh;
+	font-size: 7vw;
 	text-align: center;
 }
 
@@ -388,25 +383,36 @@ iframe {
 }
 
 .leftglyph {
-	position: absolute;
-	top: 78%;
-	right: 74%;
+	position: relative;
 	-ms-transform: scale(2); /* IE 9 */
 	-webkit-transform: scale(2); /* Safari */
 	transform: scale(2);
 	box-shadow: 0.5px 0px 0.5px 0px #000;
 	z-index: 999;
-	background-color: 
+}
+
+#leftg {
+	position: relative;
+	float: left;
 }
 
 .rightglyph {
-	position: absolute;
-	top: 78%;
-	right: 68%;
+	position: relative;
 	-ms-transform: scale(2); /* IE 9 */
 	-webkit-transform: scale(2); /* Safari */
 	transform: scale(2);
 	box-shadow: -0.5px 0px 0.5px 0px #000;
+	z-index: 999;
+}
+
+#rightg {
+	position: relative;
+	float: right;
+}
+
+.arrowscont {
+	position: absolute;
+	top: 78%;
 }
 
 .hackaboximgsmall {
@@ -417,20 +423,16 @@ iframe {
 }
 
 .hackaboximgcont {
-	margin-left: 0;
 	position: relative;
 	overflow: hidden;
 	padding-left: 0;
-	padding-right: 0;
-	height: 50vh;
-	padding-bottom: 50vh;
 	background-image: url('images/hackaboxfull.png');
-	background-size: 124%;
-	padding: 0px;
+	background-size: 135%;
 	border-style: solid;
 	border-width: 6px;
 	border-color: #D4B89B;
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+	padding-bottom: 123%;
 }
 
 .smallimgcont {
@@ -438,9 +440,8 @@ iframe {
 	position: relative;
 	padding-left: 0;
 	padding-right: 0;
-	height: 13.75vh;
+	padding-bottom: 2.6%;
 	float: right;
-	padding: 0px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #D4B89B;
@@ -454,10 +455,10 @@ iframe {
 }
 
 .changesmallmarg {
-	margin-left: 2vh;
-	margin-top: 2vh;
+	margin-left: 3%;
+	margin-top: 3%;
 	float: left;
-	height: 34.5vh;
+	padding-bottom: 19%;
 }
 
 .one {
@@ -469,7 +470,7 @@ iframe {
 }
 
 .hardware {
-	height: 15vh;
+	padding-bottom: 0.5%;
 }
 
 .logo1 {
@@ -488,14 +489,10 @@ iframe {
 }
 
 .imgcontadj {
-	margin-left: 0;
 	position: relative;
 	overflow: hidden;
-	padding-left: 0;
-	padding-right: 0;
-	height: 50vh;
-	padding-bottom: 50vh;
-	padding: 0px;
+	height: 374px;
+	padding: 0;
 	border-style: solid;
 	border-width: 6px;
 	border-color: #D4B89B;
@@ -508,11 +505,9 @@ iframe {
 	overflow: hidden;
 	padding-left: 0;
 	padding-right: 0;
-	height: 50vh;
-	padding-bottom: 50vh;
+	padding-bottom: 123%;
 	background-image: url('images/themeboximg.png');
 	background-size: 124%;
-	padding: 0px;
 	border-style: solid;
 	border-width: 6px;
 	border-color: #D4B89B;
@@ -682,7 +677,7 @@ iframe {
 	font-size: 20px;
 	text-align: center;
 	color: #6F282A;
-	height: 14vh;
+	height: 94px;
 	background-color: #DBC4B0;
 	position: relative;
 	margin-top: 53px;
@@ -690,8 +685,7 @@ iframe {
 
 .titlep {
 	background-color: #DBC4B0;
-	height: 100%;
-	line-height: 16vh;
+	line-height: 94px;
 	font-size: 22px;
 }
 
@@ -700,7 +694,7 @@ iframe {
 	position: absolute;
 	height: 3px;
 	width: 85%;
-	top: 53%;
+	top: 48%;
 	left: -71%;
 	background-color: #6F282A;
 }
@@ -710,15 +704,14 @@ iframe {
 	position: absolute;
 	height: 3px;
 	width: 15%;
-	top: 53%;
+	top: 48%;
 	right: -1%;
 	background-color: #6F282A;
 }
 
 .titlepcont {
 	background-color: #DBC4B0;
-	height: 100%;
-	line-height: 16vh;
+	line-height: 95px;
 	font-size: 22px;
 }
 
@@ -727,7 +720,7 @@ iframe {
 	position: absolute;
 	height: 3px;
 	width: 70%;
-	top: 53%;
+	top: 43px;
 	left: -55%;
 	background-color: #6F282A;
 }
@@ -737,15 +730,14 @@ iframe {
 	position: absolute;
 	height: 3px;
 	width: 15%;
-	top: 53%;
+	top: 43px;
 	right: -1%;
 	background-color: #6F282A;
 }
 
 .titlepskill {
 	background-color: #DBC4B0;
-	height: 100%;
-	line-height: 16vh;
+	line-height: 94px;
 	font-size: 22px;
 }
 
@@ -753,9 +745,9 @@ iframe {
 	content: "";
 	position: absolute;
 	height: 3px;
-	width: 96%;
-	top: 53%;
-	left: -68%;
+	width: 91%;
+	top: 44px;
+	left: -63%;
 	background-color: #6F282A;
 }
 
@@ -764,15 +756,14 @@ iframe {
 	position: absolute;
 	height: 3px;
 	width: 49%;
-	top: 53%;
+	top: 42px;
 	right: -21%;
 	background-color: #6F282A;
 }
 
 .titlepios {
 	background-color: #DBC4B0;
-	height: 100%;
-	line-height: 16vh;
+	line-height: 94px;
 	font-size: 22px;
 }
 
@@ -781,7 +772,7 @@ iframe {
 	position: absolute;
 	height: 3px;
 	width: 75%;
-	top: 53%;
+	top: 48%;
 	left: -71%;
 	background-color: #6F282A;
 }
@@ -791,15 +782,14 @@ iframe {
 	position: absolute;
 	height: 3px;
 	width: 5%;
-	top: 53%;
+	top: 48%;
 	right: -1%;
 	background-color: #6F282A;
 }
 
 .titlepwp {
 	background-color: #DBC4B0;
-	height: 100%;
-	line-height: 16vh;
+	line-height: 94px;
 	font-size: 22px;
 }
 
@@ -808,7 +798,7 @@ iframe {
 	position: absolute;
 	height: 3px;
 	width: 75%;
-	top: 53%;
+	top: 48%;
 	left: -70.5%;
 	background-color: #6F282A;
 }
@@ -818,7 +808,7 @@ iframe {
 	position: absolute;
 	height: 3px;
 	width: 6.5%;
-	top: 53%;
+	top: 48%;
 	right: -1%;
 	background-color: #6F282A;
 }
@@ -855,23 +845,22 @@ iframe {
 
 .block {
 	display: block;
-	height: 16.1vh;
 }
 
 .hardware {
-	height: 19vh;
+	padding-bottom: 0.3%;
 }
 
 .art {
-	height: 9vh;
+	padding-bottom: 0.3%;
 }
 
 .music {
-	height: 14.5vh;
+	padding-bottom: 0.3%;
 }
 
 .software {
-	height: 22vh;
+	padding-bottom: 0.3%;
 }
 
 .justify {
@@ -880,6 +869,7 @@ iframe {
     font-weight: 100;
     color: #FFF1E4;
     list-style: none;
+    margin-bottom: 0;
 }
 
 .justify>li:before {
@@ -895,6 +885,17 @@ iframe {
 	color: #A10000;
 	position: relative;
 	/*text-shadow: 0 -1px #6CC8E7, 1px 0 #6CC8E7, 0 1px #6CC8E7, -1px 0 #6CC8E7;*/
+}
+
+.hackadjust {
+	padding-bottom: 1%;
+	padding-top: 1%;
+	padding-right: 1.1%;
+}
+
+.submitbut {
+	position: absolute;
+	top: 92%;
 }
 
 /* Large desktops and laptops */
@@ -917,19 +918,19 @@ iframe {
 
 	.hacktext {
 		display: inline-block;
-		height: 54vh;
-		padding-left: 2vh;
-		padding-right: 2vh;
-		padding-top: 2vh;
-		margin-top: 0vh;
 		background: #D4B89B; /* For browsers that do not support gradients */
 		background: -webkit-linear-gradient(left, #C8A589 40%, #D4B79E); /* For Safari 5.1 to 6.0 */
 		background: -o-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Opera 11.1 to 12.0 */
 		background: -moz-linear-gradient(right, #C8A589 40%, #D4B79E); /* For Firefox 3.6 to 15 */
 		background: linear-gradient(to right, #C8A589 40%, #D4B79E); /* Standard syntax */
-		margin-left: 2vh;
+		margin-left: 1%;
+		padding-top: 1%;
+		padding-right: 1%;
+		padding-left: 1%;
+		padding-bottom: 1%;
+		height: 400px;
 		position: relative;
-		overflow: hidden;
+	    overflow: hidden;
 	}
 
 	.hackskilladj {
@@ -937,10 +938,10 @@ iframe {
 		background: -o-linear-gradient(right, #C8A589 75%, #D4B79E); /* For Opera 11.1 to 12.0 */
 		background: -moz-linear-gradient(right, #C8A589 75%, #D4B79E); /* For Firefox 3.6 to 15 */
 		background: linear-gradient(to right, #C8A589 75%, #D4B79E); /* Standard syntax */
-		height: 75.5vh;
-		padding-left: 0vh;
-		padding-right: 0vh;
-		padding-top: 0vh;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
+		height: auto;
 	}
 
 	.forborder {
@@ -949,18 +950,18 @@ iframe {
 	  background: -o-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Opera 11.1 to 12.0 */
 	  background: -moz-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Firefox 3.6 to 15 */
 	  background: linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* Standard syntax */
-	  padding-bottom: 2vh;
-	  padding-top: 2vh;
-	  padding-right: 2vh;
-	  padding-left: 10vh;
+	  padding-bottom: 1%;
+	  padding-top: 1%;
+	  padding-right: 1%;
+	  padding-left: 1%;
+	  height: 400px;
 
 	}
 
 	.offsetadj {
-		padding: 2vh;
-		margin-top: 3vh;
-		height: 70vh;
+		margin-top: 1.5%;
 		box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+		height: 486px;
 	}
 
 	.forborderskills {
@@ -969,11 +970,10 @@ iframe {
 	  background: -o-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Opera 11.1 to 12.0 */
 	  background: -moz-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Firefox 3.6 to 15 */
 	  background: linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* Standard syntax */
-	  padding-bottom: 2vh;
-	  padding-top: 2vh;
-	  padding-right: 2vh;
-	  padding-left: 10vh;
-	  height: 75.5vh;
+	  padding-bottom: 1%;
+	  padding-top: 1%;
+	  padding-right: 1.1%;
+	  padding-left: 10%;
 	}
 
 	.showme {
@@ -1127,12 +1127,11 @@ iframe {
 
 	.demo {
 		position: absolute;
-		height: 100%;
-		width: 100%;
+		padding-bottom: 100%;
 		z-index: 2;
 		background-color: rgba(0, 0, 0, 0.1);
 		color: rgb(255, 255, 255);
-		font-size: 10vh;
+		font-size: 10vw;
 		text-align: center;
 	}
 
@@ -1210,10 +1209,9 @@ iframe {
 	  background: -o-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Opera 11.1 to 12.0 */
 	  background: -moz-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Firefox 3.6 to 15 */
 	  background: linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* Standard syntax */
-	  padding-bottom: 2vh;
-	  padding-top: 2vh;
-	  padding-right: 2vh;
-	  padding-left: 10vh;
+	  padding-bottom: 1%;
+	  padding-top: 1%;
+	  padding-right: 1%;
 	}
 
 	.offsetadj {
@@ -1288,6 +1286,17 @@ iframe {
 		font-size: 1.7vh;
 	}
 
+	.inset>textarea {
+	    width: 100%; 
+	    padding-bottom: 210px;
+	}
+
+	.submitbut {
+		position: absolute;
+		top: 91%;
+		margin: 1%;
+	}
+
 	.techholder {
 		position: relative;
 		height: 12%;
@@ -1300,42 +1309,6 @@ iframe {
 		top: 93%;
 		font-size: 1.5vw;
 		height: 2vh;
-	}
-
-	.expressimg {
-	}
-
-	.angularimg {
-	}
-
-	.nodeimg {
-	}
-
-	.mongodbimg {
-	}
-
-	.expmagadj {
-	}
-
-	.mongadjust {
-	}
-
-	.gmapadj {
-	}
-
-	.parseadj {
-	}
-
-	.phpimg {
-	}
-
-	.bootstrapimg {
-	}
-
-	.mysqlimg {
-	}
-
-	.wordpressimg {
 	}
 
 	.techused>p {
@@ -1459,10 +1432,9 @@ iframe {
 	  background: -o-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Opera 11.1 to 12.0 */
 	  background: -moz-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Firefox 3.6 to 15 */
 	  background: linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* Standard syntax */
-	  padding-bottom: 2vh;
-	  padding-top: 2vh;
-	  padding-right: 2vh;
-	  padding-left: 10vh;
+	  padding-bottom: 1%;
+	  padding-top: 1%;
+	  padding-right: 1%;
 
 	}
 
@@ -1482,7 +1454,8 @@ iframe {
 	    -webkit-transform: rotate(-10deg); /* Safari */
 	    transform: rotate(-10deg);
 	    float: right;
-	    margin-top: 2vh;
+	    margin-left: 1%;
+	    margin-bottom: 1%;
  		-webkit-animation: fadeIn 1s 5; /* Safari 4+ */
   		-moz-animation:    fadeIn 1s 5; /* Fx 5+ */
   		-o-animation:      fadeIn 1s 5; /* Opera 12+ */
@@ -1568,7 +1541,7 @@ iframe {
 
 	.demo>p {
 		line-height: 300px;
-		font-size: 7vh;
+		font-size: 5vw;
 	}
 
 	.dropdown {
@@ -1595,6 +1568,17 @@ iframe {
 	.demo {
 		width: 100%;
 		height: 100%;
+	}
+
+	.submitbut {
+		position: absolute;
+		top: 91%;
+		margin-top: 1%;
+	}
+
+	.inset>textarea {
+	    width: 100%; 
+	    padding-bottom: 190px;
 	}
 
 	.crumbmine {
@@ -1692,18 +1676,16 @@ iframe {
 	}
 
 	.forborder {
+	  height: 440px;
 	  background: #D4B89B; /* For browsers that do not support gradients */
-	  background: -webkit-linear-gradient(0deg, #C8A589, #D4B79E); /* For Safari 5.1 to 6.0 */
-	  background: -o-linear-gradient(0deg, #C8A589, #D4B79E); /* For Opera 11.1 to 12.0 */
-	  background: -moz-linear-gradient(0deg, #C8A589, #D4B79E); /* For Firefox 3.6 to 15 */
-	  background: linear-gradient(0deg, #C8A589, #D4B79E); /* Standard syntax */
-	  padding-bottom: 2vh;
-	  padding-top: 2vh;
-	  padding-right: 2vh;
-	  padding-left: 2vh;
-	  margin-top: 1vh;
-	  margin-bottom: 1vh;
-
+	  background: -webkit-linear-gradient(0deg, #C8A589, #D4B79E 60%); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(0deg, #C8A589, #D4B79E 60%); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(0deg, #C8A589, #D4B79E 60%); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(0deg, #C8A589, #D4B79E 60%); /* Standard syntax */
+	  padding-top: 1%;
+	  padding-right: 1%;
+	  padding-left: 1%;
+	  margin-top: 1%;
 	}
 
 	.offsetadj {
@@ -1720,7 +1702,7 @@ iframe {
 	    -webkit-transform: rotate(-10deg); /* Safari */
 	    transform: rotate(-10deg);
 	    float: right;
-	    margin-top: 2vh;
+	    margin-top: 1%;
 	}
 
 
@@ -2038,16 +2020,22 @@ iframe {
 	  background: -o-linear-gradient(0deg, #C8A589, #D4B79E 60%); /* For Opera 11.1 to 12.0 */
 	  background: -moz-linear-gradient(0deg, #C8A589, #D4B79E 60%); /* For Firefox 3.6 to 15 */
 	  background: linear-gradient(0deg, #C8A589, #D4B79E 60%); /* Standard syntax */
-	  padding-bottom: 2vh;
-	  padding-top: 2vh;
-	  padding-right: 2vh;
-	  padding-left: 2vh;
-	  margin-top: 1vh;
+	  padding-top: 1%;
+	  padding-right: 1%;
+	  padding-left: 1%;
+	  margin-top: 4%;
+	  padding-bottom: 430px;
 	}
 
 	.offsetadj {
 		box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
-		margin-top: 3vh;
+		height: 420px;
+	}
+
+	.submitbut {
+		position: absolute;
+		top: 92%;
+		margin-top: 1%;
 	}
 
 	.thanks {
@@ -2059,7 +2047,8 @@ iframe {
 	    -webkit-transform: rotate(-10deg); /* Safari */
 	    transform: rotate(-10deg);
 	    float: right;
-	    margin-top: 5vh;
+	    margin-right: 2%;
+	    margin-top: 4%;
 	}
 
 	.hacktext {
@@ -2079,7 +2068,7 @@ iframe {
 	}
 
 	.hackadjust {
-		height: 42vh;
+		height: 400px;
 	}
 
 	.changesmallmarg {
