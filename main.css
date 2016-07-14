@@ -100,13 +100,12 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .menubutton {
-	line-height: 48px;
-	height: 47px;
+	line-height: 52px;
+	height: 52px;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	z-index: 99999;
 	font-size: 15px;
-	margin-top: 4px;
 }
 
 /* Grow */
@@ -1246,7 +1245,7 @@ height: 100%;
 	}
 
 	.dropdown {
-		left: 11vw;
+		left: 10vw;
 	}
 
 	.dropdownbutton {
@@ -1296,17 +1295,16 @@ height: 100%;
 		font-size: 3vw;
 		text-align: center;
 		vertical-align: middle;
-		line-height: 48px;
 		display: inline-block;
 	}
 
 	.menubutton {
-	    line-height: 48px;
-	   	height: 48px;
+	    line-height: 52px;
+	   	height: 52px;
 	    text-align: center;
 	    font-family: 'Roboto', sans-serif;
 	    z-index: 99999;
-	    font-size: 1.43vw;
+	    font-size: 1.52vw;
 	    padding-left: 5.4%;
 	    padding-right: 5.4%;
 	}
@@ -1593,7 +1591,7 @@ height: 100%;
 	}
 
 	.dropdown {
-		left: 5vw;
+		left: 11vw;
 	}
 
 	.dropdownbutton {
@@ -1602,6 +1600,7 @@ height: 100%;
 		padding-left: 6px;
 		display: block;
 		width: 100%;
+		font-size: 11px;
 		position: relative;
 	}
 
@@ -1619,15 +1618,15 @@ height: 100%;
 	}
 
 	.menubutton {
-	    height: 47px;
-	    line-height: 48px;
+	    height: 52px;
+	    line-height: 52px;
 	    text-align: center;
 	    font-family: 'Roboto', sans-serif;
 	    z-index: 99999;
 	    font-size: 2vw;
 	    padding-left: 2.4%;
 	    padding-right: 2.4%;
-	    margin-top: 4px;
+	    margin-top: 2px;
 	}
 
 	.logo {
@@ -2031,7 +2030,7 @@ height: 100%;
 	}
 
 	.dropdown {
-		right: 30vw;
+		right: 32vw;
 	}
 
 	.dropdownbutton {
@@ -2069,7 +2068,7 @@ height: 100%;
 	}
 
 	.dropdown {
-		right: 31vw;
+		right: 35vw;
 	}
 
 	.dropdownbutton {
@@ -2105,10 +2104,11 @@ height: 100%;
 	  background: -moz-linear-gradient(0deg, #C8A589, #D4B79E 60%); /* For Firefox 3.6 to 15 */
 	  background: linear-gradient(0deg, #C8A589, #D4B79E 60%); /* Standard syntax */
 	  padding-top: 1%;
-	  padding-right: 1%;
-	  padding-left: 1%;
-	  margin-top: 4%;
-	  padding-bottom: 430px;
+	  padding-right: 2%;
+	  padding-left: 2%;
+	  padding-bottom: 1%;
+	  margin-top: 1%;
+	  height: 125px;
 	}
 
 	.offsetadj {
@@ -2137,16 +2137,15 @@ height: 100%;
 
 	.hacktext {
 		display: inline-block;
-		padding-left: 2.4%;
-		padding-right: 2.4%;
-		padding-top: 2%;
 		background: #D4B89B; /* For browsers that do not support gradients */
-		background: -webkit-linear-gradient(180deg, #C8A589, #D4B79E 70%); /* For Safari 5.1 to 6.0 */
-		background: -o-linear-gradient(180deg, #C8A589, #D4B79E 70%); /* For Opera 11.1 to 12.0 */
-		background: -moz-linear-gradient(180deg, #C8A589, #D4B79E 70%); /* For Firefox 3.6 to 15 */
-		background: linear-gradient(180deg, #C8A589, #D4B79E 70%); /* Standard syntax */
+		background: -webkit-linear-gradient(180deg, #C8A589, #D4B79E 100%); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(180deg, #C8A589, #D4B79E 100%); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(180deg, #C8A589, #D4B79E 100%); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(180deg, #C8A589, #D4B79E 100%); /* Standard syntax */
 		position: relative;
 		overflow: hidden;
+		margin-top: 1%;
+		height: 330px;
 	}
 
 	.hackadjust {
@@ -2255,9 +2254,8 @@ height: 100%;
 	}
 
 	.demo>p {
-	    margin-top: 0;
-	    line-height: 60px;
-	    font-size: 7vh;
+	    line-height: 100px;
+	    font-size: 11vw;
 	    -ms-transform: rotate(-15deg); /* IE 9 */
 	    -webkit-transform: rotate(-15deg); /* Safari */
 	    transform: rotate(-15deg);
@@ -2304,9 +2302,12 @@ height: 100%;
 	}
 
 	.hackaboximgcont {
-		margin-top: 0vh;
-		height: auto;
-		padding-bottom: 0vh;
+		display: inline;
+		overflow: hidden;
+		padding-right: 0;	
+		padding-bottom: 0;	
+		background-image: none;
+		height: 109px;
 	}
 
 	.imgcontadj {
@@ -2358,7 +2359,7 @@ height: 100%;
 	}
 
 	.hacktext {
-		margin-top: 3%;
+		margin-top: 2%;
 	}
 
 	.hackskilladj {
@@ -2366,6 +2367,7 @@ height: 100%;
 	}
 
 	.hacktext>p {
+		font-size: 12px;
 	}
 
 	.titlep {
@@ -2373,7 +2375,7 @@ height: 100%;
 	}
 
 	.subtitle {
-		font-size: 2.7vw;
+		font-size: 14px;
 	}
 
 	.fp-controlArrow.fp-prev {
