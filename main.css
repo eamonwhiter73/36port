@@ -71,11 +71,12 @@ a {
 .logo {
 	font-family: 'Satisfy', cursive;
 	color: #FFF1E4;
-	font-size: 19pt;
+	font-size: 2.4vw;
 	text-align: center;
-	vertical-align: middle;
-	line-height: 52px;
+	line-height: 48px;
+	height: 47;
 	display: inline-block;
+	margin-top: 4px;
 }
 
 .fp-controlArrow.fp-prev {
@@ -99,11 +100,13 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 .menubutton {
-	height: 52px;
-	line-height: 52px;
+	line-height: 48px;
+	height: 47px;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	z-index: 99999;
+	font-size: 15px;
+	margin-top: 4px;
 }
 
 /* Grow */
@@ -416,9 +419,7 @@ height: 100%;
 }
 
 .hackaboximgsmall {
-	max-width: 100%;	
-	max-height: auto;
-	
+	height: auto;
 	display: none;
 }
 
@@ -432,7 +433,7 @@ height: 100%;
 	border-width: 6px;
 	border-color: #D4B89B;
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
-	padding-bottom: 123%;
+	padding-bottom: 362px;
 }
 
 .smallimgcont {
@@ -457,7 +458,7 @@ height: 100%;
 	margin-left: 3%;
 	margin-top: 2px;
 	float: left;
-	font-size: 1.1vw;
+	font-size: 1.03vw;
 	line-height: 16px;
 }
 
@@ -550,9 +551,11 @@ height: 100%;
 
 .hacktext>p {
     font-family: 'Avenir';
-	font-size: 12px;
-	text-align: justify;
+    text-align: justify;
 	color: #FAE6D5;
+	position: relative;
+	margin-bottom: 2%;
+	font-size: 1.3vw;
 }
 
 .techholder {
@@ -689,9 +692,9 @@ height: 100%;
 	content: "";
 	position: absolute;
 	height: 3px;
-	width: 85%;
-	top: 48%;
-	left: -71%;
+	width: 81%;
+	top: 44px;
+	left: -67%;
 	background-color: #6F282A;
 }
 
@@ -700,7 +703,7 @@ height: 100%;
 	position: absolute;
 	height: 3px;
 	width: 15%;
-	top: 48%;
+	top: 44px;
 	right: -1%;
 	background-color: #6F282A;
 }
@@ -814,7 +817,7 @@ height: 100%;
 	position: absolute;
 	background-color: #DBC4B0;
 	color: #884548;
-	top: 2vh;
+	top: 14px;
 }
 
 .titlewp {
@@ -827,7 +830,7 @@ height: 100%;
 .subtitle {
     font-family: 'Avenir';
     font-weight: 900;
-	font-size: 13px;
+	font-size: 1.5vw;
 	color: #6F282A;
 }
 
@@ -987,9 +990,7 @@ height: 100%;
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 	.leftglyph {
-		position: absolute;
-		top: 78%;
-		right: 73%;
+		position: relative;
 		-ms-transform: scale(2); /* IE 9 */
 		-webkit-transform: scale(2); /* Safari */
 		transform: scale(2);
@@ -997,17 +998,34 @@ height: 100%;
 		z-index: 999;
 	}
 
+	#leftg {
+		position: relative;
+		float: left;
+	}
+
 	.rightglyph {
-		position: absolute;
-		top: 78%;
-		right: 68%;
+		position: relative;
 		-ms-transform: scale(2); /* IE 9 */
 		-webkit-transform: scale(2); /* Safari */
 		transform: scale(2);
 		box-shadow: -0.5px 0px 0.5px 0px #000;
+		z-index: 999;
 	}
+
+	#rightg {
+		position: relative;
+		float: right;
+	}
+
+	.arrowscont {
+		position: absolute;
+		top: 78%;
+	}
+
 	.hackaboximgcont {
-		background-size: 150%;
+		background-size: 160%;
+		height: auto;
+		position: relative;
 	}
 
 	.bgsize {
@@ -1030,7 +1048,7 @@ height: 100%;
 	.techused {
 		top: 93.2%;
 		font-size: 1.5vw;
-		height: 4vh;
+		height: 28px;
 	}
 
 	.techused>p {
@@ -1046,9 +1064,9 @@ height: 100%;
 		content: "";
 		position: absolute;
 		height: 3px;
-		width: 13%;
+		width: 15%;
 		top: 45%;
-		left: -13%;
+		left: -15%;
 		background-color: #6F282A;
 	}
 
@@ -1076,9 +1094,9 @@ height: 100%;
 		content: "";
 		position: absolute;
 		height: 3px;
-		width: 82%;
-		top: 53%;
-		left: -66%;
+		width: 83%;
+		top: 44px;
+		left: -67%;
 		background-color: #6F282A;
 	}
 
@@ -1087,7 +1105,7 @@ height: 100%;
 		position: absolute;
 		height: 3px;
 		width: 15%;
-		top: 53%;
+		top: 44px;
 		right: 0%;
 		background-color: #6F282A;
 	}
@@ -1103,7 +1121,7 @@ height: 100%;
 		z-index: 2;
 		background-color: rgba(0, 0, 0, 0.1);
 		color: rgb(255, 255, 255);
-		font-size: 10vw;
+		font-size: 6vw;
 		text-align: center;
 	}
 
@@ -1137,6 +1155,7 @@ height: 100%;
 		margin-left: 1%;
 		position: relative;
 		overflow: hidden;
+		height: 400px;
 	}
 
 	.smallimgcont {
@@ -1171,6 +1190,8 @@ height: 100%;
 	  padding-bottom: 1%;
 	  padding-top: 1%;
 	  padding-right: 1%;
+	  padding-left: 1%;
+	  height: 400px;
 	}
 
 	.offsetadj {
@@ -1252,12 +1273,46 @@ height: 100%;
 	.hardware {
 		height: 31.2%;
 	}
+
+	.logo {
+		font-family: 'Satisfy', cursive;
+		color: #FFF1E4;
+		font-size: 2.5vw;
+		text-align: center;
+		line-height: 48px;
+		display: inline-block;
+	}
+
+	.menubutton {
+		font-size: 15px;
+	}
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-	.menubutton, .dropdownbutton {
-		font-size: 1.7vh;
+	.logo {
+		font-family: 'Satisfy', cursive;
+		color: #FFF1E4;
+		font-size: 3vw;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 48px;
+		display: inline-block;
+	}
+
+	.menubutton {
+	    line-height: 48px;
+	   	height: 48px;
+	    text-align: center;
+	    font-family: 'Roboto', sans-serif;
+	    z-index: 99999;
+	    font-size: 1.43vw;
+	    padding-left: 5.4%;
+	    padding-right: 5.4%;
+	}
+
+	.dropdownbutton {
+		font-size: 12px;
 	}
 
 	.inset>textarea {
@@ -1291,23 +1346,22 @@ height: 100%;
 
 	.techused:after {
 		left: 71%;
-		width: 24%;
+		width: 35%;
 	}
 
 	.techused:before {
 		content: "";
 		position: absolute;
 		height: 3px;
-		width: 9%;
+		width: 13%;
 		top: 45%;
-		left: -9%;
+		left: -13%;
 		background-color: #6F282A;
 	}
 
 	.hackaboximgcont {
 		background-size: 235%;
-		height:50vh;
-		padding-bottom: 50vh;
+		padding-bottom: 368px;
 	}
 
 	.imgcontadj {
@@ -1316,9 +1370,7 @@ height: 100%;
 	}
 
 	.leftglyph {
-		position: absolute;
-		top: 78%;
-		right: 76%;
+		position: relative;
 		-ms-transform: scale(2); /* IE 9 */
 		-webkit-transform: scale(2); /* Safari */
 		transform: scale(2);
@@ -1326,14 +1378,28 @@ height: 100%;
 		z-index: 999;
 	}
 
+	#leftg {
+		position: relative;
+		float: left;
+	}
+
 	.rightglyph {
-		position: absolute;
-		top: 78%;
-		right: 69.5%;
+		position: relative;
 		-ms-transform: scale(2); /* IE 9 */
 		-webkit-transform: scale(2); /* Safari */
 		transform: scale(2);
 		box-shadow: -0.5px 0px 0.5px 0px #000;
+		z-index: 999;
+	}
+
+	#rightg {
+		position: relative;
+		float: right;
+	}
+
+	.arrowscont {
+		position: absolute;
+		top: 78%;
 	}
 
 	.hacktext {
@@ -1364,8 +1430,8 @@ height: 100%;
 	.changesmallmarg {
 		float: left;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
-		font-size: 1.38vw;
-		line-height: 15px;
+		font-size: 1.47vw;
+		line-height: 16px;
 		margin-left: 0;
 		margin-top: 0;
 		margin-left: 2px;
@@ -1378,19 +1444,19 @@ height: 100%;
 	}
 
 	.art {
-		height: 14.5%;
+		height: 11.5%;
 	}
 
 	.music {
-		height: 19.5%;
+		height: 20.5%;
 	}
 
 	.software {
-		height: 31.5%;
+		height: 30.8%;
 	}
 
 	.hardware {
-		height: 31%;
+		height: 33.7%;
 	}
 
 	.wpcont {
@@ -1410,6 +1476,7 @@ height: 100%;
 	  padding-bottom: 1%;
 	  padding-top: 1%;
 	  padding-right: 1%;
+	  height: 400px;
 
 	}
 
@@ -1473,7 +1540,7 @@ height: 100%;
 	}
 
 	.hacktext>p {
-		font-size: 1.48vw;
+		font-size: 1.5vw;
 	}
 
 	.wordtext>p {
@@ -1481,14 +1548,14 @@ height: 100%;
 	}
 
 	.titlep:after {
-		width: 16%;
-		right: 0%;
+		width: 31%;
+		right: -17%;
 
 	}
 
 	.titlep:before {
-		width: 85%;
-		left: -71%;
+		width: 90%;
+		left: -76%;
 
 	}
 
@@ -1513,7 +1580,7 @@ height: 100%;
 	}
 
 	.subtitle {
-		font-size: 2.4vh;
+		font-size: 1.8vw;
 	}
 
 	.subtitlewp {
@@ -1522,7 +1589,7 @@ height: 100%;
 
 	.demo>p {
 		line-height: 300px;
-		font-size: 5vw;
+		font-size: 6vw;
 	}
 
 	.dropdown {
@@ -1548,7 +1615,30 @@ height: 100%;
 @media screen and (min-width: 481px) and (max-width: 767px) {
 	.demo {
 		width: 100%;
-		height: 100%;
+		height: auto;
+	}
+
+	.menubutton {
+	    height: 47px;
+	    line-height: 48px;
+	    text-align: center;
+	    font-family: 'Roboto', sans-serif;
+	    z-index: 99999;
+	    font-size: 2vw;
+	    padding-left: 2.4%;
+	    padding-right: 2.4%;
+	    margin-top: 4px;
+	}
+
+	.logo {
+		font-family: 'Satisfy', cursive;
+		color: #FFF1E4;
+		font-size: 4vw;
+		text-align: center;
+	    line-height: 48px;
+	   	height: 47px;
+		display: inline-block;
+		margin-top: 4px;
 	}
 
 	.submitbut {
@@ -1581,10 +1671,10 @@ height: 100%;
 	.hackaboximgcont {
 		display: inline;
 		overflow: hidden;
-		
-		padding-bottom: 0vh;
-		height: auto;
+		padding-right: 0;	
+		padding-bottom: 0;	
 		background-image: none;
+		height: 109px;
 	}
 
 	.imgcontadj {
@@ -1614,17 +1704,16 @@ height: 100%;
 
 	.hackaboximgsmall {
 		display: block;
-
+		height: auto;
 	}
 
 	.demo>p {
         transform: none;
-	    line-height: 70px;
-	    font-size: 8vh;
+	    line-height: 90px;
+	    font-size: 7vw;
 	    -ms-transform: rotate(-15deg); /* IE 9 */
 	    -webkit-transform: rotate(-15deg); /* Safari */
 	    transform: rotate(-15deg);
-	    margin-top: 2vh;
 	}
 
 	.wpimg {
@@ -1657,7 +1746,6 @@ height: 100%;
 	}
 
 	.forborder {
-	  height: 440px;
 	  background: #D4B89B; /* For browsers that do not support gradients */
 	  background: -webkit-linear-gradient(0deg, #C8A589, #D4B79E 60%); /* For Safari 5.1 to 6.0 */
 	  background: -o-linear-gradient(0deg, #C8A589, #D4B79E 60%); /* For Opera 11.1 to 12.0 */
@@ -1666,7 +1754,9 @@ height: 100%;
 	  padding-top: 1%;
 	  padding-right: 1%;
 	  padding-left: 1%;
+	  padding-bottom: 1%;
 	  margin-top: 1%;
+	  height: 125px;
 	}
 
 	.offsetadj {
@@ -1693,12 +1783,11 @@ height: 100%;
 	  background: -o-linear-gradient(0deg, #C8A589 80%, #D4B79E); /* For Opera 11.1 to 12.0 */
 	  background: -moz-linear-gradient(0deg, #C8A589 80%, #D4B79E); /* For Firefox 3.6 to 15 */
 	  background: linear-gradient(0deg, #C8A589 80%, #D4B79E); /* Standard syntax */
-	  padding-bottom: 2vh;
-	  padding-top: 2vh;
-	  padding-right: 2vh;
-	  padding-left: 2vh;
-	  margin-bottom: 2vh;
-	  margin-top: 2vh;
+	  padding-bottom: 2%;
+	  padding-top: 2%;
+	  padding-right: 2%;
+	  padding-left: 2%;
+	  margin-top:2%
 	}
 
 	.smallimgcont {
@@ -1706,7 +1795,6 @@ height: 100%;
 		position: relative;
 		padding-left: 0;
 		padding-right: 0;
-		height: 9vh;
 		padding: 0px;
 		float: left;
 		border-style: solid;
@@ -1723,50 +1811,52 @@ height: 100%;
 
 	.hacktext {
 		display: inline-block;
-		height: 44vh;
-		padding-left: 2vh;
-		padding-right: 2vh;
-		padding-top: 2vh;
-		margin-top: 0vh;
 		background: #D4B89B; /* For browsers that do not support gradients */
-		background: -webkit-linear-gradient(180deg, #C8A589, #D4B79E 70%); /* For Safari 5.1 to 6.0 */
-		background: -o-linear-gradient(180deg, #C8A589, #D4B79E 70%); /* For Opera 11.1 to 12.0 */
-		background: -moz-linear-gradient(180deg, #C8A589, #D4B79E 70%); /* For Firefox 3.6 to 15 */
-		background: linear-gradient(180deg, #C8A589, #D4B79E 70%); /* Standard syntax */
+		background: -webkit-linear-gradient(180deg, #C8A589, #D4B79E 100%); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(180deg, #C8A589, #D4B79E 100%); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(180deg, #C8A589, #D4B79E 100%); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(180deg, #C8A589, #D4B79E 100%); /* Standard syntax */
 		position: relative;
 		overflow: hidden;
+		margin-top: 1%;
+		height: 330px;
 	}
 
 	.hackskilladj {
-		margin-top: 2vh;
-		height: 73vh;
+		margin-top: 2%;
+		padding-bottom: 2%;
+		padding-right: 2%;
+		padding-left: 2%;
+		padding-top: 1.75%;
+		height: 440px;
 	}
 
 	.changesmallmarg {
-		margin: 1%;
+		margin-left: 0;
+		margin-bottom: 1%;
 		float: left;
-		line-height: 18px;
-		font-size: 1.70vw;
+		line-height: 16px;
+		font-size: 1.85vw;
 	}
 
 	.skillsub {
 		font-size: 14px;
 	}
 
-	.hardware {
-		height: 19.2vh;
-	}
-
 	.art {
-		height: 9vh;
+		height: 13.5%;
 	}
 
 	.music {
-		height: 14.7vh;
+		height: 20.5%;
 	}
 
 	.software {
-		height: 22vh;
+		height: 32.8%;
+	}
+
+	.hardware {
+		height: 29.7%;
 	}
 
 
@@ -1791,7 +1881,7 @@ height: 100%;
 	}
 
 	.hacktext>p {
-		font-size: 1.8vh;
+		font-size: 14px;
 	}
 
 	.wordtext>p {
@@ -1881,7 +1971,7 @@ height: 100%;
 	}
 
 	.subtitle {
-		font-size: 2vh;
+		font-size: 16px;
 	}
 
 	.wordtext>p {
@@ -1956,10 +2046,26 @@ height: 100%;
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-	.menubutton, .dropdownbutton {
+	.menubutton {
+		text-align: center;
+		font-size: 11px;
+		margin-top: 4px;
+	}
+
+	.dropdownbutton {
 		height: 100%;
 		text-align: center;
-		font-size: 1.4vh;
+		font-size: 11px;
+	}
+
+	.logo {
+		font-family: 'Satisfy', cursive;
+		color: #FFF1E4;
+		font-size: 4.5vw;
+		text-align: center;
+		line-height: 48px;
+		display: inline-block;
+		margin-top: 4px;
 	}
 
 	.dropdown {
@@ -2031,11 +2137,9 @@ height: 100%;
 
 	.hacktext {
 		display: inline-block;
-		height: 44vh;
-		padding-left: 2vh;
-		padding-right: 2vh;
-		padding-top: 2vh;
-		margin-top: 0vh;
+		padding-left: 2.4%;
+		padding-right: 2.4%;
+		padding-top: 2%;
 		background: #D4B89B; /* For browsers that do not support gradients */
 		background: -webkit-linear-gradient(180deg, #C8A589, #D4B79E 70%); /* For Safari 5.1 to 6.0 */
 		background: -o-linear-gradient(180deg, #C8A589, #D4B79E 70%); /* For Opera 11.1 to 12.0 */
@@ -2050,42 +2154,36 @@ height: 100%;
 	}
 
 	.changesmallmarg {
-		margin-left: 0.5vh;
-		margin-top: 0.5vh;
-		margin-right: 0.5vh;
-		margin-bottom: 0.5vh;
+		margin-bottom: 1%;
 		float: left;
-		font-size: 10px;
+		font-size: 2.2vw;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 		line-height: 13px;
+		margin-left: 0;
 	}
 
 	.skillsub {
 		font-size: 11px;
 	}
 
-	.hardware {
-		height: 19.7vh;
-	}
-
 	.art {
-		height: 8.7vh;
+		height: 10.5%;
 	}
 
 	.music {
-		height: 14.5vh;
+		height: 19.5%;
 	}
 
 	.software {
-		height: 22vh;
+		height: 28.8%;
 	}
 
-	.topadjust {
-		height: 24vh;
+	.hardware {
+		height: 29.7%;
 	}
 
 	.titlep {
-		margin-top: 0vh;
+		margin-top: 0;
 	}
 
 	.titlep:before {
@@ -2109,7 +2207,7 @@ height: 100%;
 	}
 
 	.titlepwp {
-		margin-top: 0vh;
+		margin-top: 0;
 	}
 
 	.titlepwp:before {
@@ -2123,7 +2221,7 @@ height: 100%;
 	}
 
 	.titlepios {
-		margin-top: 0vh;
+		margin-top: 0;
 	}
 
 	.titlepios:before {
@@ -2260,19 +2358,18 @@ height: 100%;
 	}
 
 	.hacktext {
-		margin-top: 2vh;
+		margin-top: 3%;
 	}
 
 	.hackskilladj {
-		height: 73vh;
+		height: 430px;
 	}
 
 	.hacktext>p {
-		font-size: 1.7vh;
 	}
 
 	.titlep {
-		margin-top: 0vh;
+		margin-top: 0;
 	}
 
 	.subtitle {
