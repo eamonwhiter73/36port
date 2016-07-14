@@ -2101,7 +2101,7 @@ height: 100%;
 }
 
 /* Portrait phones and smaller */
-@media (max-width: 480px) {
+@media screen and (min-width: 321px) and (max-width: 480px) {
 	.menubutton {
 		text-align: center;
 		font-size: 2.3vw;
@@ -2222,9 +2222,9 @@ height: 100%;
 	.changesmallmarg {
 		margin-bottom: 1%;
 		float: left;
-		font-size: 2.1vw;
+		font-size: 2.41vw;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
-		line-height: 13px;
+		line-height: 11px;
 		margin-left: 0;
 	}
 
@@ -2233,7 +2233,7 @@ height: 100%;
 	}
 
 	.art {
-		height: 11.5%;
+		height: 13.5%;
 	}
 
 	.music {
@@ -2241,11 +2241,11 @@ height: 100%;
 	}
 
 	.software {
-		height: 30.8%;
+		height: 28.8%;
 	}
 
 	.hardware {
-		height: 30.7%;
+		height: 29.7%;
 	}
 
 	.titlep {
@@ -2462,11 +2462,16 @@ height: 100%;
 @media (max-width: 320px) {
 	.forborder {
 		height: 280px;
-		margin-top: 2.5%;
+		margin-top: 2%;
 	}
 
 	.inset>textarea {
 		padding-bottom: 70px;
+		border-radius: 0;
+	}
+
+	.inset>input {
+		border-radius: 0;
 	}
 
 	.submitbut {
@@ -2477,11 +2482,13 @@ height: 100%;
 
 	.logo {
 		font-size: 14px;
-		line-height: 45px
+		line-height: 45px;
 	}
 
 	.menubutton {
 		font-size: 8px;
+		padding-left: 1%;
+		padding-right: 1%;
 	}
 
 	.titlepcont:before, .titlepcont:after {
@@ -2490,5 +2497,29 @@ height: 100%;
 
 	.thanks {
 		margin-top: 8%;
+	}
+
+	.hackskilladj {
+		height: 300px;
+	}
+
+	.changesmallmarg {
+		line-height: 9px;
+	}
+
+	.art {
+		height: 11.5%;
+	}
+
+	.music {
+		height: 20%;
+	}
+
+	.software {
+		height: 29.8%;
+	}
+
+	.hardware {
+		height: 29.7%;
 	}
 }
