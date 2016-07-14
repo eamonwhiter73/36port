@@ -517,8 +517,21 @@ $(document).ready(function() {
     $('#rightg').on('click', function() {
         console.log('in rotate right');
         if($('.hackaboximgcont:visible').next().is('.hackaboximgcont')) {
-            $('.hackaboximgcont:visible').next().css('display', 'block');
-            $('.hackaboximgcont:visible').prev().css('display', 'none');
+            $('.hackaboximgcont:visible').next().css({
+                'opacity': '0',
+                'position': 'absolute',
+                'left': '100%',
+                'display': 'block'
+            });
+            $('.hackaboximgcont:visible').next().animate({
+                opacity: '1',
+                left: '-=100%'
+            }, 600, function(){
+                $('.hackaboximgcont:visible').prev().css('display', 'none');
+                $('.hackaboximgcont:visible').css('position', 'relative');
+            })
+
+            //$('.hackaboximgcont:visible').next().css('display', 'block');
         }
         else {
             console.log('nothing after it');
@@ -542,12 +555,34 @@ $(document).ready(function() {
     $('#rightgw').on('click', function() {
         console.log('in rotate right');
         if($('.wpcont:visible').next().is('.hackaboximgcont')) { 
-            $('.wpcont:visible').next().css('display', 'block');
-            $('.hackaboximgcont:visible').prev().css('display', 'none');
+            $('.wpcont:visible').next().css({
+                'opacity': '0',
+                'position': 'absolute',
+                'left': '100%',
+                'display': 'block'
+            });
+            $('.wpcont:visible').next().animate({
+                opacity: '1',
+                left: '-=100%'
+            }, 600, function(){
+                $('.hackaboximgcont:visible').prev().css('display', 'none');
+                $('.hackaboximgcont:visible').css('position', 'relative');
+            })
         }
         else if($('.hackaboximgcont:visible').next().is('.hackaboximgcont')) {
-            $('.hackaboximgcont:visible').next().css('display', 'block');
-            $('.hackaboximgcont:visible').prev().css('display', 'none');
+            $('.hackaboximgcont:visible').next().css({
+                'opacity': '0',
+                'position': 'absolute',
+                'left': '100%',
+                'display': 'block'
+            });
+            $('.hackaboximgcont:visible').next().animate({
+                opacity: '1',
+                left: '-=100%'
+            }, 600, function(){
+                $('.hackaboximgcont:visible').prev().css('display', 'none');
+                $('.hackaboximgcont:visible').css('position', 'relative');
+            })
         }
         else {
             console.log('nothing after it');
