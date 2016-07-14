@@ -389,7 +389,7 @@ $(document).ready(function() {
                 var step2 = 0;
                 var content2 = $('.changesmallmarg');
                 var max2 = content2.length;
-                var speed2 = 250; // ms
+                var speed2 = 290; // ms
 
                 var handle2 = setInterval(function () {
                     if (step2 >= max2) {
@@ -514,9 +514,16 @@ $(document).ready(function() {
             console.log('nothing before it');
         }
     });
+
+    var active = false;
+
     $('#rightg').on('click', function() {
+        if (active) {
+            return;
+        }
         console.log('in rotate right');
         if($('.hackaboximgcont:visible').next().is('.hackaboximgcont')) {
+            active = true;
             $('.hackaboximgcont:visible').next().css({
                 'opacity': '0',
                 'position': 'absolute',
@@ -529,13 +536,15 @@ $(document).ready(function() {
             }, 600, function(){
                 $('.hackaboximgcont:visible').prev().css('display', 'none');
                 $('.hackaboximgcont:visible').css('position', 'relative');
+                active = false;
             })
-
             //$('.hackaboximgcont:visible').next().css('display', 'block');
         }
         else {
             console.log('nothing after it');
         }
+
+ 
     });
 
     $('#leftgw').on('click', function() {
@@ -553,8 +562,12 @@ $(document).ready(function() {
         }
     });
     $('#rightgw').on('click', function() {
+        if (active) {
+            return;
+        }
         console.log('in rotate right');
-        if($('.wpcont:visible').next().is('.hackaboximgcont')) { 
+        if($('.wpcont:visible').next().is('.hackaboximgcont')) {
+            active = true;
             $('.wpcont:visible').next().css({
                 'opacity': '0',
                 'position': 'absolute',
@@ -567,9 +580,12 @@ $(document).ready(function() {
             }, 600, function(){
                 $('.hackaboximgcont:visible').prev().css('display', 'none');
                 $('.hackaboximgcont:visible').css('position', 'relative');
+                active = false;
             })
         }
         else if($('.hackaboximgcont:visible').next().is('.hackaboximgcont')) {
+
+            active = true;
             $('.hackaboximgcont:visible').next().css({
                 'opacity': '0',
                 'position': 'absolute',
@@ -582,6 +598,7 @@ $(document).ready(function() {
             }, 600, function(){
                 $('.hackaboximgcont:visible').prev().css('display', 'none');
                 $('.hackaboximgcont:visible').css('position', 'relative');
+                active = false;
             })
         }
         else {
