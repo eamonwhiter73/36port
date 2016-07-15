@@ -60,7 +60,7 @@ $(document).ready(function() {
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
   
-    $(window).load(function() {
+    /*$(window).load(function() {
         if($(window).width() > 1199) {        
             $('.titlep').fitText(0.9);
             $('.titlepwp').fitText(0.9);
@@ -212,7 +212,7 @@ $(document).ready(function() {
             $('.titlewp').fitText(1.8),
             $('.subtitlewp').fitText(2, { maxFontSize: '17px'});
         }
-    });
+    });*/
 
     /*if(location.hash.slice(1) == 'thirdPage') {
         $('nav').css({
