@@ -621,8 +621,8 @@ $(document).ready(function() {
         }
     })
 
-    $('.hackskilladj').children().each(function(index, value){
-        if(index == 0 || index == 2) {
+    $('.hackskilladj>.row').children().each(function(index, value){
+        if(index == 0 || index == 3) {
             $(this).css('background-color', 'rgba(219,196,176, 0.7)')
         }
         else {

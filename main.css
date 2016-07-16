@@ -462,11 +462,11 @@ height: 100%;
 }
 
 .changesmallmarg {
-	margin-left: 3%;
+	margin-left: 1px;
 	margin-top: 2px;
 	float: left;
-	font-size: 0.98vw;
-	line-height: 16px;
+	font-size: 14px;
+	line-height: 15.5px;
 	padding: 1%;
 }
 
@@ -745,16 +745,16 @@ height: 100%;
 .titlepskill {
 	background-color: #DBC4B0;
 	line-height: 94px;
-	font-size: 22px;
+	font-size: 4.3vw;
 }
 
 .titlepskill:before {
 	content: "";
 	position: absolute;
 	height: 3px;
-	width: 91%;
+	width: 114%;
 	top: 44px;
-	left: -63%;
+	left: -86%;
 	background-color: #6F282A;
 }
 
@@ -762,9 +762,9 @@ height: 100%;
 	content: "";
 	position: absolute;
 	height: 3px;
-	width: 52%;
+	width: 82%;
 	top: 44px;
-	right: -24%;
+	right: -54%;
 	background-color: #6F282A;
 }
 
@@ -849,26 +849,30 @@ height: 100%;
 	font-family: 'Avenir';
     font-weight: 900;
 	color: #6F282A;
+	margin-bottom: 1%;
+	margin-top: 1%;
 }
+
+
 
 .block {
 	display: block;
 }
 
 .music {
-	height: 20.1%;
+	height: 190px;	
 }
 
 .art {
-	height: 12.8%;
+	height: 206px;
 }
 
 .software {
-	height: 31.4%;
+	height: 230px;
 }
 
 .hardware {
-	height: 31.5%;
+	height: 214px;
 }
 
 .justify {
@@ -885,6 +889,10 @@ height: 100%;
     font-family: FontAwesome;
     color: rgba(96, 18, 24, 1); 
     margin-right: 4px;
+}
+
+.justify>li {
+	margin-bottom: 2%;
 }
 
 .subtitlewp {
@@ -946,8 +954,8 @@ height: 100%;
 		background: -o-linear-gradient(right, #C8A589 75%, #D4B79E); /* For Opera 11.1 to 12.0 */
 		background: -moz-linear-gradient(right, #C8A589 75%, #D4B79E); /* For Firefox 3.6 to 15 */
 		background: linear-gradient(to right, #C8A589 75%, #D4B79E); /* Standard syntax */
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 1.2%;
+		padding-right: 1%;
 		padding-top: 1%;
 		height: 456px
 	}
@@ -1094,9 +1102,9 @@ height: 100%;
 		content: "";
 		position: absolute;
 		height: 3px;
-		width: 99%;
+		width: 130%;
 		top: 44px;
-		left: -72%;
+		left: -102%;
 		background-color: #6F282A;
 	}
 
@@ -1104,9 +1112,9 @@ height: 100%;
 		content: "";
 		position: absolute;
 		height: 3px;
-		width: 52%;
+		width: 75%;
 		top: 44px;
-		right: -19%;
+		right: -47%;
 		background-color: #6F282A;
 	}
 
@@ -1193,12 +1201,12 @@ height: 100%;
 		margin-top: 2px;
 		float: left;
 		line-height: 14px;
-		font-size: 1vw;
+		font-size: 13px;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 	}
 
 	.skillsub {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.forborder {
@@ -1275,19 +1283,19 @@ height: 100%;
 	}
 
 	.art {
-		height: 12%;
+		padding-bottom: 10%;
 	}
 
 	.music {
-		height: 21%;
+		padding-bottom: 40%;
 	}
 
 	.software {
-		height: 31.8%;
+		padding-bottom: 40%;
 	}
 
 	.hardware {
-		height: 31.2%;
+		padding-bottom: 40%;
 	}
 
 	.logo {
@@ -1463,19 +1471,19 @@ height: 100%;
 	}
 
 	.art {
-		height: 12.5%;
+		height: 49%;
 	}
 
 	.music {
-		height: 18.5%;
+		height: 49%;
 	}
 
 	.software {
-		height: 32.8%;
+		height: 49%;
 	}
 
 	.hardware {
-		height: 32.7%;
+		height: 49%;
 	}
 
 	.wpcont {
