@@ -466,7 +466,7 @@ height: 100%;
 	margin-top: 2px;
 	float: left;
 	font-size: 14px;
-	line-height: 15.5px;
+	line-height: 16px;
 	padding: 1%;
 }
 
@@ -853,26 +853,30 @@ height: 100%;
 	margin-top: 1%;
 }
 
-
-
 .block {
 	display: block;
 }
 
 .music {
-	height: 190px;	
+	position: relative;
+	display: inline-block;
+	padding-bottom: 1%;
 }
 
 .art {
-	height: 206px;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 1%;
 }
 
 .software {
-	height: 230px;
+	/*height: 230px;*/
+	padding-bottom: 1%;
 }
 
 .hardware {
-	height: 214px;
+	/*height: 214px;*/
+	padding-bottom: 1%;
 }
 
 .justify {
@@ -1200,13 +1204,13 @@ height: 100%;
 		margin-left: 2px;
 		margin-top: 2px;
 		float: left;
-		line-height: 14px;
-		font-size: 13px;
+		line-height: 16px;
+		font-size: 14px;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 	}
 
 	.skillsub {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.forborder {
@@ -1282,20 +1286,26 @@ height: 100%;
 		position: relative;
 	}
 
-	.art {
-		padding-bottom: 10%;
+	.music {
+		position: relative;
+		display: inline-block;
+		padding-bottom: 1%;
 	}
 
-	.music {
-		padding-bottom: 40%;
+	.art {
+		position: relative;
+		display: inline-block;
+		padding-bottom: 1%;
 	}
 
 	.software {
-		padding-bottom: 40%;
+		/*height: 230px;*/
+		padding-bottom: 1%;
 	}
 
 	.hardware {
-		padding-bottom: 40%;
+		/*height: 214px;*/
+		padding-bottom: 1%;
 	}
 
 	.logo {
@@ -1457,8 +1467,8 @@ height: 100%;
 	.changesmallmarg {
 		float: left;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
-		font-size: 1.38vw;
-		line-height: 16px;
+		font-size: 12.5px;
+		line-height: 14px;
 		margin-left: 0;
 		margin-top: 0;
 		margin-left: 2px;
@@ -1467,23 +1477,29 @@ height: 100%;
 	}
 
 	.skillsub {
-		font-size: 1.5vw;
-	}
-
-	.art {
-		height: 49%;
+		font-size: 13px;
 	}
 
 	.music {
-		height: 49%;
+		position: relative;
+		display: inline-block;
+		padding-bottom: 1%;
+	}
+
+	.art {
+		position: relative;
+		display: inline-block;
+		padding-bottom: 1%;
 	}
 
 	.software {
-		height: 49%;
+		/*height: 230px;*/
+		padding-bottom: 1%;
 	}
 
 	.hardware {
-		height: 49%;
+		/*height: 214px;*/
+		padding-bottom: 1%;
 	}
 
 	.wpcont {
@@ -1887,10 +1903,10 @@ height: 100%;
 	}
 
 	.hackskilladj {
-		margin-top: 2%;
-		padding-bottom: 2%;
-		padding-right: 2%;
-		padding-left: 2%;
+		margin-top: 1%;
+		padding-bottom: 1%;
+		padding-right: 2.5%;
+		padding-left: 1.75%;
 		padding-top: 1.75%;
 		height: 440px;
 	}
@@ -1899,29 +1915,35 @@ height: 100%;
 		margin-left: 0;
 		margin-bottom: 1%;
 		float: left;
-		line-height: 16px;
-		font-size: 1.7vw;
+		line-height: 2.1vw;
+		font-size: 1.8vw;
 		padding: 1%;
 	}
 
 	.skillsub {
-		font-size: 14px;
-	}
-
-	.art {
-		height: 14.5%;
+		font-size: 1.9vw;
 	}
 
 	.music {
-		height: 18.5%;
+		position: relative;
+		display: inline-block;
+		padding-bottom: 1%;
+	}
+
+	.art {
+		position: relative;
+		display: inline-block;
+		padding-bottom: 1%;
 	}
 
 	.software {
-		height: 33.8%;
+		/*height: 230px;*/
+		padding-bottom: 1%;
 	}
 
 	.hardware {
-		height: 29.7%;
+		/*height: 214px;*/
+		padding-bottom: 1%;
 	}
 
 
@@ -2236,9 +2258,9 @@ height: 100%;
 	.changesmallmarg {
 		margin-bottom: 1%;
 		float: left;
-		font-size: 2.41vw;
+		font-size: 2.4vw;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
-		line-height: 11px;
+		line-height: 2.7vw;
 		margin-left: 0;
 	}
 
@@ -2246,20 +2268,26 @@ height: 100%;
 		font-size: 11px;
 	}
 
-	.art {
-		height: 13.5%;
+	.music {
+		position: relative;
+		display: inline-block;
+		padding-bottom: 1%;
 	}
 
-	.music {
-		height: 18.5%;
+	.art {
+		position: relative;
+		display: inline-block;
+		padding-bottom: 1%;
 	}
 
 	.software {
-		height: 28.8%;
+		/*height: 230px;*/
+		padding-bottom: 1%;
 	}
 
 	.hardware {
-		height: 29.7%;
+		/*height: 214px;*/
+		padding-bottom: 1%;
 	}
 
 	.titlep {
@@ -2450,6 +2478,7 @@ height: 100%;
 
 	.hackskilladj {
 		height: 430px;
+		padding-right: 13px;
 	}
 
 	.hacktext>p {
@@ -2554,20 +2583,26 @@ height: 100%;
 		width: 98%;
 	}
 
-	.art {
-		height: 12.5%;
+	.music {
+		position: relative;
+		display: inline-block;
+		padding-bottom: 1%;
 	}
 
-	.music {
-		height: 21%;
+	.art {
+		position: relative;
+		display: inline-block;
+		padding-bottom: 1%;
 	}
 
 	.software {
-		height: 28.8%;
+		/*height: 230px;*/
+		padding-bottom: 1%;
 	}
 
 	.hardware {
-		height: 28.7%;
+		/*height: 214px;*/
+		padding-bottom: 1%;
 	}
 
 	.menubutton {
@@ -2820,5 +2855,27 @@ height: 100%;
 		padding-bottom: 93%;
 		margin-top: 24%;
 		background-color: rgba(96, 18, 24, 0.71);	
+	}
+}
+
+@media screen and (max-width: 693px) and (min-width: 591px) {
+	.changesmallmarg {
+		font-size: 1.9vw;
+		line-height: 2.2vw;
+	}
+
+	.skillsub {
+		font-size: 2vw;
+	}
+}
+
+@media screen and (max-width: 590px) and (min-width: 480px) {
+	.changesmallmarg {
+		font-size: 2.2vw;
+		line-height: 2.5vw;
+	}
+
+	.skillsub {
+		font-size: 2.3vw;
 	}
 }

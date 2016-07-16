@@ -629,4 +629,106 @@ $(document).ready(function() {
             $(this).css('background-color', 'rgba(219,196,176, 0.1)')
         }
     })
+
+    $(window).resize(function() {
+        if($(window).width() > 1199) {
+            var hack = $('.hackskilladj').height();
+            var hard = $('.hardware').height();
+            var soft = $('.software').height();
+            var diff1 = hack - hard - 28;
+            var diff2 = hack - soft - 28;
+            $('.art').height(diff1);
+            $('.music').height(diff2);
+        }
+        if($(window).width() < 1200 && $(window).width() > 992) {
+            var hack = $('.hackskilladj').height();
+            var hard = $('.hardware').height();
+            var soft = $('.software').height();
+            var diff1 = hack - hard - 25;
+            var diff2 = hack - soft - 25;
+            $('.art').height(diff1);
+            $('.music').height(diff2);
+        }
+
+        if($(window).width() < 993 && $(window).width() > 767) {
+            var hack = $('.hackskilladj').height();
+            var hard = $('.hardware').height();
+            var soft = $('.software').height();
+            var diff1 = hack - hard - 21;
+            var diff2 = hack - soft - 21;
+            $('.art').height(diff1);
+            $('.music').height(diff2);
+        }
+
+        if($(window).width() < 768 && $(window).width() > 480) {
+            var hack = $('.hackskilladj').height();
+            var hard = $('.hardware').height();
+            var soft = $('.software').height();
+            var diff1 = hack - hard - 18;
+            var diff2 = hack - soft - 18;
+            $('.art').height(diff1);
+            $('.music').height(diff2);
+        }
+
+        if($(window).width() < 481 && $(window).width() > 320) {
+            var hack = $('.hackskilladj').height();
+            var hard = $('.hardware').height();
+            var soft = $('.software').height();
+            var diff1 = hack - hard - 15;
+            var diff2 = hack - soft - 15;
+            $('.art').height(diff1);
+            $('.music').height(diff2);
+        }
+    });
+
+    $(window).load(function() {
+        if($(window).width() > 1199) {
+            var hack = $('.hackskilladj').height();
+            var hard = $('.hardware').height();
+            var soft = $('.software').height();
+            var diff1 = hack - hard - 28;
+            var diff2 = hack - soft - 28;
+            $('.art').height(diff1);
+            $('.music').height(diff2);
+        }
+        if($(window).width() < 1200 && $(window).width() > 992) {
+            var hack = $('.hackskilladj').height();
+            var hard = $('.hardware').height();
+            var soft = $('.software').height();
+            var diff1 = hack - hard - 25;
+            var diff2 = hack - soft - 25;
+            $('.art').height(diff1);
+            $('.music').height(diff2);
+        }
+
+        if($(window).width() < 993 && $(window).width() > 767) {
+            var hack = $('.hackskilladj').height();
+            var hard = $('.hardware').height();
+            var soft = $('.software').height();
+            var diff1 = hack - hard - 21;
+            var diff2 = hack - soft - 21;
+            $('.art').height(diff1);
+            $('.music').height(diff2);
+        }
+
+        if($(window).width() < 768 && $(window).width() > 480) {
+            var hack = $('.hackskilladj').height();
+            var hard = $('.hardware').height();
+            var soft = $('.software').height();
+            var diff1 = hack - hard - 18;
+            var diff2 = hack - soft - 18;
+            $('.art').height(diff1);
+            $('.music').height(diff2);
+        }
+
+        if($(window).width() < 481 && $(window).width() > 320) {
+            var hack = $('.hackskilladj').height();
+            var hard = $('.hardware').height();
+            var soft = $('.software').height();
+            var diff1 = hack - hard - 15;
+            var diff2 = hack - soft - 15;
+            $('.art').height(diff1);
+            $('.music').height(diff2);
+        }
+    });
 });
