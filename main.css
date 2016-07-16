@@ -522,10 +522,10 @@ height: 100%;
 .read {
 	background-color: rgba(96, 18, 24, 0.4);
 	position: absolute;
-	bottom: 1vh;
-	right: 3vh;
+	bottom: 1%;
+	right: 3%;
 	z-index: 2;
-	padding: 1vh;
+	padding: 1%;
 	color: #F8E3D0;
 	cursor: hand; cursor: pointer;
 	text-align: center;
@@ -538,7 +538,7 @@ height: 100%;
 	height: 82%;
 	z-index: 3;
 	background-color: rgba(96, 18, 24, 0.86);
-	top: 20vh;
+	top: 20%;
 }
 
 .closemine {
@@ -546,8 +546,8 @@ height: 100%;
 	font-family: 'Avenir';
 	font-size: 14px;
 	position: absolute;
-	top: 1vh;
-	right:1.5vmax;
+	top: 1%;
+	right:1.5%;
 	cursor: hand; cursor: pointer;
 }
 
@@ -571,7 +571,7 @@ height: 100%;
 	height: 10%;
 	top: 92%;
 	z-index: 2;
-	padding-top: 1vh;
+	padding-top: 1%;
 }
 
 .techused {
@@ -594,7 +594,7 @@ height: 100%;
 	position: absolute;
 	height: 3px;
 	width: 10%;
-	top: 45%;
+	top: 12px;
 	left: -10%;
 	background-color: #6F282A;
 }
@@ -604,7 +604,7 @@ height: 100%;
 	position: absolute;
 	height: 3px;
 	width: 13%;
-	top: 45%;
+	top: 12px;
 	left: 60%;
 	background-color: #6F282A;
 }
@@ -668,7 +668,7 @@ height: 100%;
 
 .wordtext>p {
     font-family: 'Avenir';
-	font-size: 2.4vh;
+	font-size: 14px;
 	text-align: justify;
 	color: white;
 }
@@ -771,7 +771,7 @@ height: 100%;
 .titlepios {
 	background-color: #DBC4B0;
 	line-height: 94px;
-	font-size: 22px;
+	font-size: 4.3vw;
 }
 
 .titlepios:before {
@@ -797,16 +797,16 @@ height: 100%;
 .titlepwp {
 	background-color: #DBC4B0;
 	line-height: 94px;
-	font-size: 22px;
+	font-size:4.3vw;
 }
 
 .titlepwp:before {
 	content: "";
 	position: absolute;
 	height: 3px;
-	width: 71%;
+	width: 69%;
 	top: 44px;
-	left: -66.5%;
+	left: -67.5%;
 	background-color: #6F282A;
 }
 
@@ -814,7 +814,7 @@ height: 100%;
 	content: "";
 	position: absolute;
 	height: 3px;
-	width: 6.5%;
+	width: 2%;
 	top: 44px;
 	right: -1%;
 	background-color: #6F282A;
@@ -825,7 +825,7 @@ height: 100%;
 	position: absolute;
 	background-color: #DBC4B0;
 	color: #884548;
-	top: 14px;
+	top: 7px;
 	text-align: left;
 }
 
@@ -889,7 +889,7 @@ height: 100%;
 
 .subtitlewp {
     font-family: 'Avenir';
-	font-size: 1.9vw;
+	font-size: 16px;
 	color: #A10000;
 	position: relative;
 	/*text-shadow: 0 -1px #6CC8E7, 1px 0 #6CC8E7, 0 1px #6CC8E7, -1px 0 #6CC8E7;*/
@@ -1077,6 +1077,7 @@ height: 100%;
 	.techused:after {
 		left: 79%;
 		width: 21%;
+		top: 12px;
 	}
 
 	.techused:before {
@@ -1084,7 +1085,7 @@ height: 100%;
 		position: absolute;
 		height: 3px;
 		width: 15%;
-		top: 45%;
+		top: 12px;
 		left: -15%;
 		background-color: #6F282A;
 	}
@@ -1153,11 +1154,11 @@ height: 100%;
 	}
 
 	.wordtext>p {
-		font-size: 2.5vh;
+		font-size: 14px;
 	}
 
 	.subtitlewp {
-		font-size: 2.8vh;
+		font-size: 16px;
 	}
 
 	.hacktext {
@@ -1325,7 +1326,7 @@ height: 100%;
 	    text-align: center;
 	    font-family: 'Avenir';
 	    z-index: 99999;
-	    font-size: 2.1vmin;
+	    font-size: 1.6vmax;
 	    padding-left: 3.1%;
 	    padding-right: 3.1%;
 	    padding-top: 4.8%;
@@ -1563,7 +1564,7 @@ height: 100%;
 	}
 
 	.wordtext>p {
-		font-size: 2.1vh;
+		font-size: 14px;
 	}
 
 	.titlep:after {
@@ -1579,13 +1580,13 @@ height: 100%;
 	}
 
 	.titlepwp:after {
-		width: 22%;
+		width: 17%;
 		right: -16%;
 
 	}
 
 	.titlepwp:before {
-		width: 81%;
+		width: 77%;
 		left: -76%;
 
 	}
@@ -1635,7 +1636,7 @@ height: 100%;
 	}
 
 	.subtitlewp {
-		font-size: 2.7vh;
+		font-size: 16px;
 	}
 
 	.demo>p {
@@ -1672,7 +1673,7 @@ height: 100%;
 	    text-align: center;
 	    font-family: 'Avenir';
 	    z-index: 99999;
-	    font-size: 1.7vmax;
+	    font-size: 1.99vw;
 	    padding-left: 1.4%;
 	    padding-right: 1.4%;
 	    padding-top: 4.8%;
@@ -1961,20 +1962,22 @@ height: 100%;
 
 	.titlepwp {
 		margin-top: 0;
+		font-size: 5.3vw;
 	}
 
 	.titlepwp:before {
-		width: 45%;
-		left: -38%;
+		width: 34%;
+		left: -36%;
 	}
 
 	.titlepwp:after {
-		width: 45%;
-		right: -38%;
+		width: 34%;
+		right: -36%;
 	}
 
 	.titlepios {
 		margin-top: 0;
+		font-size: 4.9vw;
 	}
 
 	.titlepios:before {
@@ -2032,7 +2035,7 @@ height: 100%;
 	}
 
 	.wordtext>p {
-		font-size: 2vh;
+		font-size: 14px;
 	}
 
 	.titlewp {
@@ -2041,7 +2044,7 @@ height: 100%;
 	}
 
 	.subtitlewp {
-		font-size: 2.1vh;
+		font-size: 16px;
 	}
 
 	.fp-controlArrow.fp-prev {
@@ -2279,30 +2282,32 @@ height: 100%;
 
 	.titlepwp {
 		margin-top: 0;
+		font-size: 5.2vw;
 	}
 
 	.titlepwp:before {
-		width: 46%;
-		left: -38%;
+		width: 37%;
+		left: -37%;
 	}
 
 	.titlepwp:after {
-		width: 46%;
-		right: -39%;
+		width: 37%;
+		right: -37%;
 	}
 
 	.titlepios {
 		margin-top: 0;
+		font-size: 5.3vw;
 	}
 
 	.titlepios:before {
-		width: 46%;
+		width: 38%;
 		left: -38%;
 	}
 
 	.titlepios:after {
-		width: 46%;
-		right: -39%;
+		width: 38%;
+		right: -38%;
 	}
 
 	.titlepcont:before {
@@ -2413,7 +2418,7 @@ height: 100%;
 	}
 
 	.wordtext>p {
-		font-size: 2vh;
+		font-size: 14px;
 	}
 
 	.titlewp {
@@ -2517,6 +2522,15 @@ height: 100%;
 		right: -14%;
 		background-color: #6F282A;
 	}
+
+	.wordtext>p {
+		font-size: 12px;
+	}
+
+	.subtitlewp {
+		font-size: 13px;
+	}
+
 
 	.thanks {
 		margin-top: 11%;
