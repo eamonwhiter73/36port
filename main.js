@@ -301,40 +301,42 @@ $(document).ready(function() {
 
         if(location.hash.slice(1) == 'thirdPage') {
             console.log("in third page");
+            setTimeout(function() {
+                console.log('in forborderskills visible');
+                var step = 0;
+                var step2 = 0;
+                var content = $(".showme");
+                var content2 = $('.changesmallmarg');
+                var max = content.length;
+                var max2 = content2.length;
+                var speed = 100; // ms
+                var speed2 = 250; // ms
 
+                var handle = setInterval(function () {
+                    if (step >= max) {
+                        clearInterval(handle);
+                    } else {
+                        var item = content[step];
+                        $(item).show();
+                    }
+                    step++;
+                }, speed);
 
-                 setTimeout(function() {
-                    console.log('in forborderskills visible');
-                    var step = 0;
-                    var step2 = 0;
-                    var content = $(".showme");
-                    var content2 = $('.changesmallmarg');
-                    var max = content.length;
-                    var max2 = content2.length;
-                    var speed = 100; // ms
-                    var speed2 = 250; // ms
+                var handle2 = setInterval(function () {
+                    if (step2 >= max2) {
+                        clearInterval(handle2);
+                    } else {
+                        var item2 = content2[step2];
+                        $(item2).fadeIn();
+                    }
+                    step2++;
+                }, speed2);
+            }, 400);
 
-                    var handle = setInterval(function () {
-                        if (step >= max) {
-                            clearInterval(handle);
-                        } else {
-                            var item = content[step];
-                            $(item).show();
-                        }
-                        step++;
-                    }, speed);
-
-                    var handle2 = setInterval(function () {
-                        if (step2 >= max2) {
-                            clearInterval(handle2);
-                        } else {
-                            var item2 = content2[step2];
-                            $(item2).fadeIn();
-                        }
-                        step2++;
-                    }, speed2);
-                }, 400);
-            
+            $('.titlepskill').css({ 'right': '-100px', 'left': '', 'opacity': '0'}).stop().animate({
+                opacity: 1,
+                right: "+=100"
+            }, 1000, 'linear');
         }
 
         if(location.hash.slice(1) == 'secondPage' || location.hash.substr(1) == 'secondPage/1' || location.hash.substr(1) == 'secondPage/2'){
@@ -346,9 +348,21 @@ $(document).ready(function() {
                     right: "+=550"
             }, 2000, 'easeOutExpo');
         }
+
+        if(location.hash.slice(1) == 'fourthPage') {
+            $('.titlepcont').css({ 'left': '-200px', 'right': '', 'opacity': '0'}).stop().animate({
+                opacity: 1,
+                left: "+=200"
+            }, 2500, 'easeOutBounce');
+
+                           
+            $('.offsetadj').css({ 'top': '100px', 'right': '', 'opacity': '0'}).stop().animate({
+                opacity: 1,
+                top: "-=100"
+            }, 2000, 'easeInOutCubic');
+        }
     }
     
-
     $(window).on('hashchange',function(){
         var y = 0;
         //console.log(location.hash.slice(1));
@@ -405,6 +419,21 @@ $(document).ready(function() {
                     step2++;
                 }, speed2);
             }, 600);
+
+            $('.forborderskills').css({'left': '-350px', 'right': '', 'opacity': '0'}).animate({
+                left: '+=350',
+                opacity: 1
+            }, 1000);
+
+            $('.hackskilladj').css({'right': '-600px', 'left': '', 'opacity': '0'}).animate({
+                right: '+=600',
+                opacity: 1
+            }, 1000);
+
+            $('.titlepskill').css({ 'right': '-100px', 'left': '', 'opacity': '0'}).stop().animate({
+                opacity: 1,
+                right: "+=100"
+            }, 1000, 'linear');
         }
 
         if(location.hash.slice(1) == 'secondPage' || location.hash.substr(1) == 'secondPage/1' || location.hash.substr(1) == 'secondPage/2'){
@@ -420,28 +449,18 @@ $(document).ready(function() {
                 }, 2300, 'easeOutExpo');
             }, 100);
         }
-
-
-        /*if(location.hash.slice(1) == 'thirdPage') {
-            $('nav').css({
-                'background-color': '#A10000'
-            })
-        }
-        if(location.hash.slice(1) == 'secondPage') {
-            $('nav').css({
-                'background-color': '#B24949'
-            })
-        }
-        if(location.hash.slice(1) == 'firstPage') {
-            $('nav').css({
-                'background-color': 'rgba(96, 18, 24, 0.86)'
-            })
-        }
         if(location.hash.slice(1) == 'fourthPage') {
-            $('nav').css({
-                'background-color': '#aaaaaa'
-            })
-        }*/
+            $('.titlepcont').css({ 'left': '-200px', 'right': '', 'opacity': '0'}).stop().animate({
+                opacity: 1,
+                left: "+=200"
+            }, 2500, 'easeOutBounce');
+
+                           
+            $('.offsetadj').css({ 'top': '100px', 'right': '', 'opacity': '0'}).stop().animate({
+                opacity: 1,
+                top: "-=100"
+            }, 2000, 'easeInOutCubic');
+        }
     });
 
     $('.read').click(function() {
