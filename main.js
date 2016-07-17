@@ -293,10 +293,16 @@ $(document).ready(function() {
         $('.showme').hide();
         $('.changesmallmarg').hide();
 
-        if(location.hash.slice(1) == 'fourthPage') {
-            if($('.offsetadj').is(':visible')) {
-                $('.thanks').hide().fadeIn(3000);
-            }
+        if(location.hash.slice(1) == 'firstPage') {
+            $('nav').css({'top': '-53px', 'opacity' : '0'}).animate({
+                opacity: 1,
+                top: "+=53px"
+            }, 1000, "easeOutExpo");
+
+            $('.homejumbo').css({'left': '-80px', 'opacity' : '0'}).animate({
+                opacity: 1,
+                left: "+=80px"
+            }, 1000, "easeOutExpo");
         }
 
         if(location.hash.slice(1) == 'thirdPage') {
@@ -338,14 +344,35 @@ $(document).ready(function() {
                 right: "+=100"
             }, 1000, 'linear');
 
-            var hack = $('.hackskilladj').height();
-            var hard = $('.hardware').height();
-            var soft = $('.software').height();
-            var diff1 = hack - hard - 23;
-            var diff2 = hack - soft - 23;
-            $('.art').height(diff1);
-            $('.music').height(diff2);
+            if($(window).width() > 1199) {
+                var hack = $('.hackskilladj').height();
+                var hard = $('.hardware').height();
+                var soft = $('.software').height();
+                var diff1 = hack - hard - 23;
+                var diff2 = hack - soft - 23;
+                $('.art').height(diff1);
+                $('.music').height(diff2);
+            }
 
+            if($(window).width() < 1200 && $(window).width() > 992) {
+                var hack = $('.hackskilladj').height();
+                var hard = $('.hardware').height();
+                var soft = $('.software').height();
+                var diff1 = hack - hard - 25;
+                var diff2 = hack - soft - 25;
+                $('.art').height(diff1);
+                $('.music').height(diff2);
+            }
+
+            if($(window).width() < 993 && $(window).width() > 767) {
+                var hack = $('.hackskilladj').height();
+                var hard = $('.hardware').height();
+                var soft = $('.software').height();
+                var diff1 = hack - hard - 21;
+                var diff2 = hack - soft - 21;
+                $('.art').height(diff1);
+                $('.music').height(diff2);
+            }
             if($(window).width() < 768 && $(window).width() > 480) {
                 var hack = $('.hackskilladj').height();
                 var hard = $('.hardware').height();
@@ -400,6 +427,10 @@ $(document).ready(function() {
                 opacity: 1,
                 top: "-=100"
             }, 2000, 'easeInOutCubic');
+
+            if($('.offsetadj').is(':visible')) {
+                $('.thanks').hide().fadeIn(3000);
+            }
         }
     }
     
@@ -414,6 +445,16 @@ $(document).ready(function() {
                 window.clearInterval(intervalID2);
             };
         }, 700);
+
+        
+        if(location.hash.slice(1) == 'firstPage') {
+            setTimeout(function(){
+                $('.homejumbo').css({'left': '-80px', 'opacity' : '0'}).animate({
+                    opacity: 1,
+                    left: "+=80px"
+                }, 1000, "easeOutExpo");
+            },300);
+        }
 
         if(location.hash.slice(1) == 'fourthPage') {
             if($('.offsetadj').is(':visible')) {
@@ -758,60 +799,5 @@ $(document).ready(function() {
             $('.art').height(diff1);
             $('.music').height(diff2);
         }
-    });
-    
-    $(window).load(function() {
-        if($(window).width() > 1199) {
-            //PUT ABOVE IN checkHash function.
-        }
-        if($(window).width() < 1200 && $(window).width() > 992) {
-            var hack = $('.hackskilladj').height();
-            var hard = $('.hardware').height();
-            var soft = $('.software').height();
-            var diff1 = hack - hard - 25;
-            var diff2 = hack - soft - 25;
-            $('.art').height(diff1);
-            $('.music').height(diff2);
-        }
-
-        if($(window).width() < 993 && $(window).width() > 767) {
-            var hack = $('.hackskilladj').height();
-            var hard = $('.hardware').height();
-            var soft = $('.software').height();
-            var diff1 = hack - hard - 21;
-            var diff2 = hack - soft - 21;
-            $('.art').height(diff1);
-            $('.music').height(diff2);
-        }
-
-        /*if($(window).width() < 768 && $(window).width() > 480) {
-            var hack = $('.hackskilladj').height();
-            var hard = $('.hardware').height();
-            var soft = $('.software').height();
-            var diff1 = hack - hard - 18;
-            var diff2 = hack - soft - 18;
-            $('.art').height(diff1);
-            $('.music').height(diff2);
-        }
-
-        if($(window).width() < 481 && $(window).width() > 320) {
-            var hack = $('.hackskilladj').height();
-            var hard = $('.hardware').height();
-            var soft = $('.software').height();
-            var diff1 = hack - hard - 15;
-            var diff2 = hack - soft - 15;
-            $('.art').height(diff1);
-            $('.music').height(diff2);
-        }
-
-        if($(window).width() < 321) {
-            var hack = $('.hackskilladj').height();
-            var hard = $('.hardware').height();
-            var soft = $('.software').height();
-            var diff1 = hack - hard - 13;
-            var diff2 = hack - soft - 13;
-            $('.art').height(diff1);
-            $('.music').height(diff2);
-        }*/
     });
 });
