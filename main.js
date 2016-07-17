@@ -337,6 +337,46 @@ $(document).ready(function() {
                 opacity: 1,
                 right: "+=100"
             }, 1000, 'linear');
+
+            var hack = $('.hackskilladj').height();
+            var hard = $('.hardware').height();
+            var soft = $('.software').height();
+            var diff1 = hack - hard - 23;
+            var diff2 = hack - soft - 23;
+            $('.art').height(diff1);
+            $('.music').height(diff2);
+
+            if($(window).width() < 768 && $(window).width() > 480) {
+                var hack = $('.hackskilladj').height();
+                var hard = $('.hardware').height();
+                var soft = $('.software').height();
+                var diff1 = hack - hard - 18;
+                var diff2 = hack - soft - 18;
+                $('.art').height(diff1);
+                $('.music').height(diff2);
+            }
+
+            if($(window).width() < 481 && $(window).width() > 320) {
+                var hack = $('.hackskilladj').height();
+                var hard = $('.hardware').height();
+                var soft = $('.software').height();
+                var diff1 = hack - hard - 15;
+                var diff2 = hack - soft - 15;
+                $('.art').height(diff1);
+                $('.music').height(diff2);
+            }
+
+            if($(window).width() < 321) {
+                var hack = $('.hackskilladj').height();
+                var hard = $('.hardware').height();
+                var soft = $('.software').height();
+                var diff1 = hack - hard - 13;
+                var diff2 = hack - soft - 13;
+                $('.art').height(diff1);
+                $('.music').height(diff2);
+            }
+
+
         }
 
         if(location.hash.slice(1) == 'secondPage' || location.hash.substr(1) == 'secondPage/1' || location.hash.substr(1) == 'secondPage/2'){
@@ -708,25 +748,21 @@ $(document).ready(function() {
             $('.art').height(diff1);
             $('.music').height(diff2);
         }
+
+        if($(window).width() < 321) {
+            var hack = $('.hackskilladj').height();
+            var hard = $('.hardware').height();
+            var soft = $('.software').height();
+            var diff1 = hack - hard - 13;
+            var diff2 = hack - soft - 13;
+            $('.art').height(diff1);
+            $('.music').height(diff2);
+        }
     });
     
     $(window).load(function() {
         if($(window).width() > 1199) {
-            var hack = $('.hackskilladj').height();
-            var hard = $('.hardware').height();
-            var soft = $('.software').height();
-            var diff1 = hack - hard - 28;
-            var diff2 = hack - soft - 28;
-            $('.art').height(diff1);
-            $('.music').height(diff2);
-
-            /*$('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
-                left: "+=500"
-            }, 1300, 'easeOutExpo');
-
-            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
-                    right: "+=550"
-            }, 2000, 'easeOutExpo');*/
+            //PUT ABOVE IN checkHash function.
         }
         if($(window).width() < 1200 && $(window).width() > 992) {
             var hack = $('.hackskilladj').height();
@@ -736,14 +772,6 @@ $(document).ready(function() {
             var diff2 = hack - soft - 25;
             $('.art').height(diff1);
             $('.music').height(diff2);
-
-            /*$('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
-                left: "+=500"
-            }, 1300, 'easeOutExpo');
-
-            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
-                    right: "+=550"
-            }, 2000, 'easeOutExpo');*/
         }
 
         if($(window).width() < 993 && $(window).width() > 767) {
@@ -754,17 +782,9 @@ $(document).ready(function() {
             var diff2 = hack - soft - 21;
             $('.art').height(diff1);
             $('.music').height(diff2);
-
-            /*$('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
-                left: "+=500"
-            }, 1300, 'easeOutExpo');
-
-            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
-                    right: "+=550"
-            }, 2000, 'easeOutExpo');*/
         }
 
-        if($(window).width() < 768 && $(window).width() > 480) {
+        /*if($(window).width() < 768 && $(window).width() > 480) {
             var hack = $('.hackskilladj').height();
             var hard = $('.hardware').height();
             var soft = $('.software').height();
@@ -772,14 +792,6 @@ $(document).ready(function() {
             var diff2 = hack - soft - 18;
             $('.art').height(diff1);
             $('.music').height(diff2);
-
-            /*$('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
-                left: "+=500"
-            }, 1300, 'easeOutExpo');
-
-            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
-                    right: "+=550"
-            }, 2000, 'easeOutExpo');*/
         }
 
         if($(window).width() < 481 && $(window).width() > 320) {
@@ -790,14 +802,6 @@ $(document).ready(function() {
             var diff2 = hack - soft - 15;
             $('.art').height(diff1);
             $('.music').height(diff2);
-
-            /*$('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
-                left: "+=500"
-            }, 1300, 'easeOutExpo');
-
-            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
-                    right: "+=550"
-            }, 2000, 'easeOutExpo');*/
         }
 
         if($(window).width() < 321) {
@@ -808,14 +812,6 @@ $(document).ready(function() {
             var diff2 = hack - soft - 13;
             $('.art').height(diff1);
             $('.music').height(diff2);
-
-            /*$('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
-                left: "+=500"
-            }, 1300, 'easeOutExpo');
-
-            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
-                    right: "+=550"
-            }, 2000, 'easeOutExpo');*/
-        }
+        }*/
     });
 });

@@ -132,7 +132,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .dropdownbutton {
 	/*padding: 12px 0px 12px 12px;*/
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Avenir';
 	font-weight: 300;
 	font-size: 12px;
 	height: 32px;
@@ -228,7 +228,7 @@ a, a:hover, a:active, a:visited, a:focus {
 	position: relative;
 	color: #6F282A;
 	font-size: 14.5px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Avenir';
 	font-weight: 700;
 	padding-left: 0;
 }
@@ -461,7 +461,7 @@ height: 100%;
 	border-width: 1px;
 	border-color: #D4B89B;
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Avenir', sans-serif;
 	font-size: 12.2px;
 	font-weight: 700;
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
@@ -868,6 +868,7 @@ height: 100%;
 	position: relative;
 	display: inline-block;
 	padding-bottom: 1%;
+	margin-left: 11px;
 }
 
 .art {
@@ -879,6 +880,7 @@ height: 100%;
 .software {
 	/*height: 230px;*/
 	padding-bottom: 1%;
+	margin-left: 11px;
 }
 
 .hardware {
@@ -1297,6 +1299,7 @@ height: 100%;
 		position: relative;
 		display: inline-block;
 		padding-bottom: 1%;
+		margin-left: 11px;
 	}
 
 	.art {
@@ -1308,6 +1311,7 @@ height: 100%;
 	.software {
 		/*height: 230px;*/
 		padding-bottom: 1%;
+		margin-left: 11px;
 	}
 
 	.hardware {
@@ -1491,6 +1495,7 @@ height: 100%;
 		position: relative;
 		display: inline-block;
 		padding-bottom: 1%;
+		margin-left: 11px;
 	}
 
 	.art {
@@ -1502,6 +1507,7 @@ height: 100%;
 	.software {
 		/*height: 230px;*/
 		padding-bottom: 1%;
+		margin-left: 11px;
 	}
 
 	.hardware {
@@ -1889,7 +1895,7 @@ height: 100%;
 		border-color: #D4B89B;
 		text-align: center;
 		background-color: rgba(0,0,0,0);
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Avenir';
 		font-size: 12px;
 		font-weight: 700;
 		color: rgba(96, 18, 24, 1);
@@ -1920,7 +1926,6 @@ height: 100%;
 
 	.changesmallmarg {
 		margin-left: 0;
-		margin-bottom: 1%;
 		float: left;
 		line-height: 2.1vw;
 		font-size: 1.8vw;
@@ -1935,22 +1940,37 @@ height: 100%;
 		position: relative;
 		display: inline-block;
 		padding-bottom: 1%;
+		margin: 2px;
+		margin-left: 6px;
 	}
 
 	.art {
 		position: relative;
 		display: inline-block;
 		padding-bottom: 1%;
+		margin-right: 2px;
+		margin-top: 2px;
+		margin-bottom: 2px;
+		margin-left: 8px;
 	}
 
 	.software {
 		/*height: 230px;*/
 		padding-bottom: 1%;
+		margin-top: 2px;
+		margin-bottom: 3px;
+		margin-left: 6px;
+		margin-right: 2px;
 	}
 
 	.hardware {
 		/*height: 214px;*/
 		padding-bottom: 1%;
+		margin-top: 2px;
+		margin-right: 2px;
+		margin-left: 2px;
+		margin-bottom: 3px;
+		margin-left: 8px;
 	}
 
 
@@ -2269,9 +2289,9 @@ height: 100%;
 	.changesmallmarg {
 		margin-bottom: 1%;
 		float: left;
-		font-size: 2.4vw;
+		font-size: 2.33vw;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
-		line-height: 2.7vw;
+		line-height: 2.63vw;
 		margin-left: 0;
 	}
 
@@ -2283,22 +2303,36 @@ height: 100%;
 		position: relative;
 		display: inline-block;
 		padding-bottom: 1%;
+		margin: 2px;
+		margin-left: 6px;
 	}
 
 	.art {
 		position: relative;
 		display: inline-block;
 		padding-bottom: 1%;
+		margin-right: 2px;
+		margin-top: 2px;
+		margin-bottom: 2px;
+		margin-left: 4px;
 	}
 
 	.software {
 		/*height: 230px;*/
 		padding-bottom: 1%;
+		margin-top: 2px;
+		margin-bottom: 3px;
+		margin-left: 6px;
+		margin-right: 2px;
 	}
 
 	.hardware {
 		/*height: 214px;*/
 		padding-bottom: 1%;
+		margin-top: 2px;
+		margin-right: 2px;
+		margin-bottom: 3px;
+		margin-left: 4px;
 	}
 
 	.titlep {
@@ -2601,17 +2635,21 @@ height: 100%;
 		position: relative;
 		display: inline-block;
 		padding-bottom: 1%;
+		margin-left: 1px;
+		margin-top: 0;
 	}
 
 	.art {
 		position: relative;
 		display: inline-block;
 		padding-bottom: 1%;
+		margin-top: 0;
 	}
 
 	.software {
 		/*height: 230px;*/
 		padding-bottom: 1%;
+		margin-left: 1px;
 	}
 
 	.hardware {
@@ -2885,8 +2923,8 @@ height: 100%;
 
 @media screen and (max-width: 590px) and (min-width: 480px) {
 	.changesmallmarg {
-		font-size: 2.2vw;
-		line-height: 2.5vw;
+		font-size: 2.09vw;
+		line-height: 2.39vw;
 	}
 
 	.skillsub {
