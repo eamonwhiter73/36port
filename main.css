@@ -24,6 +24,28 @@ a {
 	height: 100%;
 }
 
+.margincoloringl {
+	width: 10%;
+	background-color: #6F282B;
+	position: absolute;
+	padding-bottom: 100%;
+	left: 0;
+	top: 0;
+	z-index: 99999;
+	box-shadow: 1px 0px 1px  0.8px rgba(0,0,0,0.7);
+}
+
+.margincoloringr {
+	width: 10%;
+	background-color: #6F282B;
+	position: absolute;
+	padding-bottom: 100%;
+	right: 0;
+	top: 0;
+	z-index: 99999;
+	box-shadow: -1px 0px 1px  0.8px rgba(0,0,0,0.7);
+}
+
 .dropdown {
 	display: none;
 	position: absolute;
@@ -835,7 +857,7 @@ height: 100%;
 	font-size: 14px;
 	position: absolute;
 	background-color: #DBC4B0;
-	color: #884548;
+	color: #B99B81;
 	top: 7px;
 	text-align: left;
 }
@@ -862,6 +884,7 @@ height: 100%;
 	color: #6F282A;
 	margin-bottom: 1%;
 	margin-top: 1%;
+	text-decoration: underline;
 }
 
 .block {
@@ -872,7 +895,7 @@ height: 100%;
 	position: relative;
 	display: inline-block;
 	padding-bottom: 1%;
-	margin-left: 11px;
+	margin-left: 5px;
 }
 
 .art {
@@ -881,10 +904,16 @@ height: 100%;
 	padding-bottom: 1%;
 }
 
+.hardware>.justify>li, .music>.justify>li {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #C9A88D;
+}
+
 .software {
 	/*height: 230px;*/
 	padding-bottom: 1%;
-	margin-left: 11px;
+	margin-left: 5px;
 }
 
 .hardware {
@@ -902,7 +931,7 @@ height: 100%;
 }
 
 .justify>li:before {
-    content: "\f1b2";
+    content: "\f101";
     font-family: FontAwesome;
     color: rgba(96, 18, 24, 1); 
     margin-right: 4px;
@@ -910,6 +939,10 @@ height: 100%;
 
 .justify>li {
 	margin-bottom: 2%;
+	border-bottom: rgba(96, 18, 24, 0.3); 
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding-bottom: 1%;
 }
 
 .subtitlewp {
@@ -1303,7 +1336,7 @@ height: 100%;
 		position: relative;
 		display: inline-block;
 		padding-bottom: 1%;
-		margin-left: 11px;
+		margin-left: 6px;
 	}
 
 	.art {
@@ -1315,7 +1348,7 @@ height: 100%;
 	.software {
 		/*height: 230px;*/
 		padding-bottom: 1%;
-		margin-left: 11px;
+		margin-left: 6px;
 	}
 
 	.hardware {
@@ -1499,7 +1532,7 @@ height: 100%;
 		position: relative;
 		display: inline-block;
 		padding-bottom: 1%;
-		margin-left: 11px;
+		margin-left: 6px;
 	}
 
 	.art {
@@ -1511,7 +1544,7 @@ height: 100%;
 	.software {
 		/*height: 230px;*/
 		padding-bottom: 1%;
-		margin-left: 11px;
+		margin-left: 6px;
 	}
 
 	.hardware {

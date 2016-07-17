@@ -293,18 +293,6 @@ $(document).ready(function() {
         $('.showme').hide();
         $('.changesmallmarg').hide();
 
-        if(location.hash.slice(1) == 'firstPage') {
-            $('nav').css({'top': '-53px', 'opacity' : '0'}).animate({
-                opacity: 1,
-                top: "+=53px"
-            }, 1000, "easeOutExpo");
-
-            $('.homejumbo').css({'left': '-80px', 'opacity' : '0'}).animate({
-                opacity: 1,
-                left: "+=80px"
-            }, 1000, "easeOutExpo");
-        }
-
         if(location.hash.slice(1) == 'thirdPage') {
             console.log("in third page");
             setTimeout(function() {
@@ -417,9 +405,9 @@ $(document).ready(function() {
         }
 
         if(location.hash.slice(1) == 'fourthPage') {
-            $('.titlepcont').css({ 'left': '-200px', 'right': '', 'opacity': '0'}).stop().animate({
+            $('.titlepcont').css({ 'left': '-700px', 'right': '', 'opacity': '0'}).stop().animate({
                 opacity: 1,
-                left: "+=200"
+                left: "+=700"
             }, 2500, 'easeOutBounce');
 
                            
@@ -431,6 +419,16 @@ $(document).ready(function() {
             if($('.offsetadj').is(':visible')) {
                 $('.thanks').hide().fadeIn(3000);
             }
+
+            $('.margincoloringl').css({'left': '-10%', 'right': '', 'opacity': '0'}).animate({
+                left: '+=10%',
+                opacity: '1'
+            }, 2000);
+
+            $('.margincoloringr').css({'right': '-10%', 'left': '', 'opacity': '0'}).animate({
+                right: '+=10%',
+                opacity: '1'
+            }, 2000)
         }
     }
     
@@ -600,6 +598,16 @@ $(document).ready(function() {
                 opacity: 1,
                 top: "-=100"
             }, 2000, 'easeInOutCubic');
+
+            $('.margincoloringl').css({'left': '-10%', 'right': '', 'opacity': '0'}).animate({
+                left: '+=10%',
+                opacity: '1'
+            }, 2000);
+
+            $('.margincoloringr').css({'right': '-10%', 'left': '', 'opacity': '0'}).animate({
+                right: '+=10%',
+                opacity: '1'
+            }, 2000)
         }
     });
 
@@ -792,7 +800,8 @@ $(document).ready(function() {
 
     $('.hackskilladj>.row').children().each(function(index, value){
         if(index == 0 || index == 3) {
-            $(this).css('background-color', 'rgba(219,196,176, 0.7)')
+            $(this).css('background-color', 'rgba(96, 18, 24, 0.13)');
+            $(this).css('border', 'none');
         }
         else {
             $(this).css('background-color', 'rgba(219,196,176, 0.1)')
