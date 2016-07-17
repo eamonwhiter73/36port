@@ -336,6 +336,16 @@ $(document).ready(function() {
                 }, 400);
             
         }
+
+        if(location.hash.slice(1) == 'secondPage' || location.hash.substr(1) == 'secondPage/1' || location.hash.substr(1) == 'secondPage/2'){
+            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
+                left: "+=500"
+            }, 1300, 'easeOutExpo');
+
+            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
+                    right: "+=550"
+            }, 2000, 'easeOutExpo');
+        }
     }
     
 
@@ -396,16 +406,21 @@ $(document).ready(function() {
                 }, speed2);
             }, 600);
         }
-        
-        if(location.hash.slice(1) == 'secondPage'){
-            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
-                left: "+=500"
-            }, 1300, 'easeOutExpo');
 
-            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
-                    right: "+=550"
-            }, 2000, 'easeOutExpo');
+        if(location.hash.slice(1) == 'secondPage' || location.hash.substr(1) == 'secondPage/1' || location.hash.substr(1) == 'secondPage/2'){
+            setTimeout(function(){
+                $('.forborderhack').css({ 'right': '', 'left': '-200px', 'opacity': '0' }).stop().animate({
+                    opacity: 1,
+                    left: "+=200"
+                }, 2200, 'easeOutExpo');
+
+                $('.hacktexthack').css({ 'left': '', 'right': '-250px', 'opacity': '0' }).stop().animate({
+                        opacity: 1,
+                        right: "+=250"
+                }, 2300, 'easeOutExpo');
+            }, 100);
         }
+
 
         /*if(location.hash.slice(1) == 'thirdPage') {
             $('nav').css({
@@ -686,13 +701,13 @@ $(document).ready(function() {
             $('.art').height(diff1);
             $('.music').height(diff2);
 
-            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
+            /*$('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
                 left: "+=500"
             }, 1300, 'easeOutExpo');
 
             $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
                     right: "+=550"
-            }, 2000, 'easeOutExpo');
+            }, 2000, 'easeOutExpo');*/
         }
         if($(window).width() < 1200 && $(window).width() > 992) {
             var hack = $('.hackskilladj').height();
@@ -703,13 +718,13 @@ $(document).ready(function() {
             $('.art').height(diff1);
             $('.music').height(diff2);
 
-            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
+            /*$('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
                 left: "+=500"
             }, 1300, 'easeOutExpo');
 
             $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
                     right: "+=550"
-            }, 2000, 'easeOutExpo');
+            }, 2000, 'easeOutExpo');*/
         }
 
         if($(window).width() < 993 && $(window).width() > 767) {
@@ -721,13 +736,13 @@ $(document).ready(function() {
             $('.art').height(diff1);
             $('.music').height(diff2);
 
-            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
+            /*$('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
                 left: "+=500"
             }, 1300, 'easeOutExpo');
 
             $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
                     right: "+=550"
-            }, 2000, 'easeOutExpo');
+            }, 2000, 'easeOutExpo');*/
         }
 
         if($(window).width() < 768 && $(window).width() > 480) {
@@ -739,13 +754,13 @@ $(document).ready(function() {
             $('.art').height(diff1);
             $('.music').height(diff2);
 
-            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
+            /*$('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
                 left: "+=500"
             }, 1300, 'easeOutExpo');
 
             $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
                     right: "+=550"
-            }, 2000, 'easeOutExpo');
+            }, 2000, 'easeOutExpo');*/
         }
 
         if($(window).width() < 481 && $(window).width() > 320) {
@@ -757,13 +772,13 @@ $(document).ready(function() {
             $('.art').height(diff1);
             $('.music').height(diff2);
 
-            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
+            /*$('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
                 left: "+=500"
             }, 1300, 'easeOutExpo');
 
             $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
                     right: "+=550"
-            }, 2000, 'easeOutExpo');
+            }, 2000, 'easeOutExpo');*/
         }
 
         if($(window).width() < 321) {
@@ -775,13 +790,13 @@ $(document).ready(function() {
             $('.art').height(diff1);
             $('.music').height(diff2);
 
-            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
+            /*$('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
                 left: "+=500"
             }, 1300, 'easeOutExpo');
 
             $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
                     right: "+=550"
-            }, 2000, 'easeOutExpo');
+            }, 2000, 'easeOutExpo');*/
         }
     });
 });
