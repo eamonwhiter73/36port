@@ -362,30 +362,24 @@ $(document).ready(function() {
             //if($(".forborderskills").is(':visible')) {
 
             setTimeout(function() {
-                console.log('in forborderskills visible');
                 var step = 0;
                 var content = $(".showme");
                 var max = content.length;
                 var speed = 100; // ms
 
-                console.log(content);
 
                 var handle = setInterval(function () {
                     if (step >= max) {
-                        console.log('clearinterval1')
                         clearInterval(handle);
                     } else {
                         var item = content[step];
                         $(item).show();
-                        console.log(step + " step");
-                        console.log(max + " max");
                     }
                     step++;
                 }, speed);
             }, 600);
 
             setTimeout(function() {
-                console.log('in forborderskills visible');
                 var step2 = 0;
                 var content2 = $('.changesmallmarg');
                 var max2 = content2.length;
@@ -402,15 +396,16 @@ $(document).ready(function() {
                 }, speed2);
             }, 600);
         }
-        /*else if(location.hash.slice(1) == 'secondPage'){
-            $('.fp-controlArrow.fp-prev').css({
-                'border-color': 'transparent rgb(96, 18, 24) transparent transparent'
-            })
+        
+        if(location.hash.slice(1) == 'secondPage'){
+            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
+                left: "+=500"
+            }, 1300, 'easeOutExpo');
 
-            $('.fp-controlArrow.fp-next').css({
-                'border-color': 'transparent transparent transparent rgb(96, 18, 24)'
-            })
-        }*/
+            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
+                    right: "+=550"
+            }, 2000, 'easeOutExpo');
+        }
 
         /*if(location.hash.slice(1) == 'thirdPage') {
             $('nav').css({
@@ -680,7 +675,7 @@ $(document).ready(function() {
             $('.music').height(diff2);
         }
     });
-
+    
     $(window).load(function() {
         if($(window).width() > 1199) {
             var hack = $('.hackskilladj').height();
@@ -690,6 +685,14 @@ $(document).ready(function() {
             var diff2 = hack - soft - 28;
             $('.art').height(diff1);
             $('.music').height(diff2);
+
+            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
+                left: "+=500"
+            }, 1300, 'easeOutExpo');
+
+            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
+                    right: "+=550"
+            }, 2000, 'easeOutExpo');
         }
         if($(window).width() < 1200 && $(window).width() > 992) {
             var hack = $('.hackskilladj').height();
@@ -699,6 +702,14 @@ $(document).ready(function() {
             var diff2 = hack - soft - 25;
             $('.art').height(diff1);
             $('.music').height(diff2);
+
+            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
+                left: "+=500"
+            }, 1300, 'easeOutExpo');
+
+            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
+                    right: "+=550"
+            }, 2000, 'easeOutExpo');
         }
 
         if($(window).width() < 993 && $(window).width() > 767) {
@@ -709,6 +720,14 @@ $(document).ready(function() {
             var diff2 = hack - soft - 21;
             $('.art').height(diff1);
             $('.music').height(diff2);
+
+            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
+                left: "+=500"
+            }, 1300, 'easeOutExpo');
+
+            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
+                    right: "+=550"
+            }, 2000, 'easeOutExpo');
         }
 
         if($(window).width() < 768 && $(window).width() > 480) {
@@ -719,6 +738,14 @@ $(document).ready(function() {
             var diff2 = hack - soft - 18;
             $('.art').height(diff1);
             $('.music').height(diff2);
+
+            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
+                left: "+=500"
+            }, 1300, 'easeOutExpo');
+
+            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
+                    right: "+=550"
+            }, 2000, 'easeOutExpo');
         }
 
         if($(window).width() < 481 && $(window).width() > 320) {
@@ -729,6 +756,32 @@ $(document).ready(function() {
             var diff2 = hack - soft - 15;
             $('.art').height(diff1);
             $('.music').height(diff2);
+
+            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
+                left: "+=500"
+            }, 1300, 'easeOutExpo');
+
+            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
+                    right: "+=550"
+            }, 2000, 'easeOutExpo');
+        }
+
+        if($(window).width() < 321) {
+            var hack = $('.hackskilladj').height();
+            var hard = $('.hardware').height();
+            var soft = $('.software').height();
+            var diff1 = hack - hard - 13;
+            var diff2 = hack - soft - 13;
+            $('.art').height(diff1);
+            $('.music').height(diff2);
+
+            $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
+                left: "+=500"
+            }, 1300, 'easeOutExpo');
+
+            $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
+                    right: "+=550"
+            }, 2000, 'easeOutExpo');
         }
     });
 });
