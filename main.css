@@ -351,9 +351,54 @@ height: 100%;
 /*HOME*/
 
 .homejumbo {
-	padding-bottom: 515px;
+	padding-bottom: 1%;
+	padding-top: 1%;
 	margin-top: 82px;
-	background-color: rgba(96, 18, 24, 0.71);	
+	background-color: rgba(96, 18, 24, 0.71);
+	color: #FFF1E4;
+	text-align: left;	
+}
+
+.programmer {
+	position: relative;
+	font-family: 'Courgette', cursive;
+	font-size: 48px;
+}
+
+.artist {
+	position: relative;
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 46px;
+}
+
+.fueledby {
+	font-family: 'Rubik', sans-serif;
+	font-size: 42px;
+	position: relative;
+	font-weight: 900;
+	text-align: center;
+}
+
+.solving {
+	position: relative;
+	font-family: 'Pacifico', sans-serif;
+	font-size: 54px;
+	position: relative;
+}
+
+.and {
+	font-family: 'Passion One', cursive;
+	font-size: 48px;
+	position: relative;
+	font-weight: 400;
+}
+
+.creativity {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 60px;
+	font-weight: 900;
+	position: relative;
+	text-align: center;
 }
 
 .container .jumbotron, .container-fluid .jumbotron {
@@ -1370,7 +1415,7 @@ height: 100%;
 	}
 
 	.homejumbo {
-		padding-bottom: 515px;
+		padding-bottom: 1%;
 		margin-top: 82px;
 		background-color: rgba(96, 18, 24, 0.71);	
 	}
@@ -1728,7 +1773,7 @@ height: 100%;
 	}
 
 	.homejumbo {
-		padding-bottom: 515px;
+		padding-bottom: 368px;
 		margin-top: 82px;
 		background-color: rgba(96, 18, 24, 0.71);	
 	}
@@ -1736,6 +1781,12 @@ height: 100%;
 
 /* Landscape phones and portrait tablets */
 @media screen and (min-width: 481px) and (max-width: 767px) {
+	.homejumbo {
+		padding-bottom: 380px;
+		margin-top: 82px;
+		background-color: rgba(96, 18, 24, 0.71);	
+	}
+
 	.margincoloringl {
 		width: 6%;
 		background-color: #6F282B;
@@ -2637,7 +2688,7 @@ height: 100%;
 	}
 
 	.homejumbo {
-		padding-bottom: 100%;
+		padding-bottom: 380px;
 		margin-top: 30%;
 		background-color: rgba(96, 18, 24, 0.71);	
 	}
