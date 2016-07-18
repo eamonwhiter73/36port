@@ -462,11 +462,11 @@ height: 100%;
 
 .leftglyph {
 	position: relative;
-	-ms-transform: scale(2); /* IE 9 */
-	-webkit-transform: scale(2); /* Safari */
-	transform: scale(2);
-	box-shadow: 0.5px 0px 0.5px 0px #000;
+	-ms-transform: scale(1.4); /* IE 9 */
+	-webkit-transform: scale(1.4); /* Safari */
+	transform: scale(1.4);
 	z-index: 999;
+	color: rgba(96, 18, 24, 1);
 }
 
 #leftg {
@@ -476,11 +476,11 @@ height: 100%;
 
 .rightglyph {
 	position: relative;
-	-ms-transform: scale(2); /* IE 9 */
-	-webkit-transform: scale(2); /* Safari */
-	transform: scale(2);
-	box-shadow: -0.5px 0px 0.5px 0px #000;
+	-ms-transform: scale(1.4); /* IE 9 */
+	-webkit-transform: scale(1.4); /* Safari */
+	transform: scale(1.4);
 	z-index: 999;
+	color: rgba(96, 18, 24, 1);
 }
 
 #rightg {
@@ -500,7 +500,11 @@ height: 100%;
 
 .arrowscont {
 	position: absolute;
-	top: 78%;
+	top: 537px;
+	background-color: #C8A589;
+	padding-bottom: 0.2%; 
+	padding-left: 1.4%; 
+	padding-right: 1.4%; 
 }
 
 .hackaboximgsmall {
@@ -1103,10 +1107,9 @@ height: 100%;
 @media (min-width: 992px) and (max-width: 1199px) {
 	.leftglyph {
 		position: relative;
-		-ms-transform: scale(2); /* IE 9 */
-		-webkit-transform: scale(2); /* Safari */
-		transform: scale(2);
-		box-shadow: 0.5px 0px 0.5px 0px #000;
+		-ms-transform: scale(1.4); /* IE 9 */
+		-webkit-transform: scale(1.4); /* Safari */
+		transform: scale(1.4);
 		z-index: 999;
 	}
 
@@ -1117,10 +1120,9 @@ height: 100%;
 
 	.rightglyph {
 		position: relative;
-		-ms-transform: scale(2); /* IE 9 */
-		-webkit-transform: scale(2); /* Safari */
-		transform: scale(2);
-		box-shadow: -0.5px 0px 0.5px 0px #000;
+		-ms-transform: scale(1.4); /* IE 9 */
+		-webkit-transform: scale(1.4); /* Safari */
+		transform: scale(1.4);
 		z-index: 999;
 	}
 
@@ -1141,7 +1143,10 @@ height: 100%;
 
 	.arrowscont {
 		position: absolute;
-		top: 78%;
+		background-color: #C8A589;
+		padding-bottom: 0.2%; 
+		padding-left: 1.4%; 
+		padding-right: 1.4%; 
 	}
 
 	.hackaboximgcont {
@@ -1505,10 +1510,9 @@ height: 100%;
 
 	.leftglyph {
 		position: relative;
-		-ms-transform: scale(2); /* IE 9 */
-		-webkit-transform: scale(2); /* Safari */
-		transform: scale(2);
-		box-shadow: 0.5px 0px 0.5px 0px #000;
+		-ms-transform: scale(1.4); /* IE 9 */
+		-webkit-transform: scale(1.4); /* Safari */
+		transform: scale(1.4);
 		z-index: 999;
 	}
 
@@ -1519,10 +1523,9 @@ height: 100%;
 
 	.rightglyph {
 		position: relative;
-		-ms-transform: scale(2); /* IE 9 */
-		-webkit-transform: scale(2); /* Safari */
-		transform: scale(2);
-		box-shadow: -0.5px 0px 0.5px 0px #000;
+		-ms-transform: scale(1.4); /* IE 9 */
+		-webkit-transform: scale(1.4); /* Safari */
+		transform: scale(1.4);
 		z-index: 999;
 	}
 
@@ -1533,7 +1536,11 @@ height: 100%;
 
 	.arrowscont {
 		position: absolute;
-		top: 78%;
+		top: 540px;
+		background-color: #C8A589;
+		padding-bottom: 0.2%; 
+		padding-left: 1.4%; 
+		padding-right: 1.4%; 
 	}
 
 	.hacktext {
