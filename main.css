@@ -28,7 +28,7 @@ a {
 	width: 10%;
 	background-color: #6F282B;
 	position: absolute;
-	padding-bottom: 100%;
+	padding-bottom: 180%;
 	left: 0;
 	top: 0;
 	z-index: 99999;
@@ -39,7 +39,7 @@ a {
 	width: 10%;
 	background-color: #6F282B;
 	position: absolute;
-	padding-bottom: 100%;
+	padding-bottom: 180%;
 	right: 0;
 	top: 0;
 	z-index: 99999;
@@ -1736,6 +1736,28 @@ height: 100%;
 
 /* Landscape phones and portrait tablets */
 @media screen and (min-width: 481px) and (max-width: 767px) {
+	.margincoloringl {
+		width: 6%;
+		background-color: #6F282B;
+		position: absolute;
+		padding-bottom: 180%;
+		left: 0;
+		top: 0;
+		z-index: 99998;
+		box-shadow: 1px 0px 1px  0.8px rgba(0,0,0,0.7);
+	}
+
+	.margincoloringr {
+		width: 6%;
+		background-color: #6F282B;
+		position: absolute;
+		padding-bottom: 180%;
+		right: 0;
+		top: 0;
+		z-index: 99998;
+		box-shadow: -1px 0px 1px  0.8px rgba(0,0,0,0.7);
+	}
+
 	.demo {
 		width: 100%;
 		height: auto;
@@ -2204,6 +2226,28 @@ height: 100%;
 
 /* Portrait phones and smaller */
 @media screen and (min-width: 321px) and (max-width: 480px) {
+	.margincoloringl {
+		width: 2%;
+		background-color: #6F282B;
+		position: absolute;
+		padding-bottom: 180%;
+		left: 0;
+		top: 0;
+		z-index: 99998;
+		box-shadow: 1px 0px 1px  0.8px rgba(0,0,0,0.7);
+	}
+
+	.margincoloringr {
+		width: 2%;
+		background-color: #6F282B;
+		position: absolute;
+		padding-bottom: 180%;
+		right: 0;
+		top: 0;
+		z-index: 99998;
+		box-shadow: -1px 0px 1px  0.8px rgba(0,0,0,0.7);
+	}
+
 	.menubutton {
 		text-align: center;
 		font-size: 2.3vw;
@@ -2600,6 +2644,28 @@ height: 100%;
 }
 
 @media (max-width: 320px) {
+	.margincoloringl {
+		width: 2%;
+		background-color: #6F282B;
+		position: absolute;
+		padding-bottom: 180%;
+		left: 0;
+		top: 0;
+		z-index: 99998;
+		box-shadow: 1px 0px 1px  0.8px rgba(0,0,0,0.7);
+	}
+
+	.margincoloringr {
+		width: 2%;
+		background-color: #6F282B;
+		position: absolute;
+		padding-bottom: 180%;
+		right: 0;
+		top: 0;
+		z-index: 99998;
+		box-shadow: -1px 0px 1px  0.8px rgba(0,0,0,0.7);
+	}
+
 	.inset>textarea {
 		padding-bottom: 90px;
 		border-radius: 0;
