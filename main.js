@@ -290,6 +290,8 @@ $(document).ready(function() {
     window.addEventListener('load', checkHash);
     
     function checkHash() {
+        $('#wrapper > div > div > nav').removeClass('col-lg-30 col-lg-offset-3 col-md-30 col-md-offset-3 col-sm-30 col-sm-offset-3');
+
         $('.showme').hide();
         $('.changesmallmarg').hide();
 
@@ -429,6 +431,7 @@ $(document).ready(function() {
                 right: '+=10%',
                 opacity: '1'
             }, 2000)
+
         }
     }
     
@@ -790,6 +793,31 @@ $(document).ready(function() {
             console.log('nothing after it');
         }
     });*/
+
+    console.log($('.bio').css('display'));
+    $('#bio').click(function() {
+        console.log('getting clicked')
+        if($('.bio').css('display') == 'none') {
+        console.log('should appear')
+
+            $('.bio').css({"display": "inline-block", 'right': '-44.45%', 'opacity': '0'}).animate({
+                right: '+=44.45%',
+                opacity: 0.98
+            }, 300, function(){
+                $('.fp-controlArrow.fp-next').css('display', 'none');
+            });
+        }
+        else {
+            console.log('shold go away')
+            $('.bio').animate({
+                right: '-=44.45%',
+                opacity: 0
+            }, 300, function(){
+                $('.bio').css('display', 'none');
+                $('.fp-controlArrow.fp-next').css('display', 'block');
+            });
+        }
+    })
 
     $('#leftg').on('click', function() {
         console.log('in rotate left');
