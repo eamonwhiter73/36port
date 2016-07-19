@@ -336,8 +336,8 @@ $(document).ready(function() {
                 var hack = $('.hackskilladj').height();
                 var hard = $('.hardware').height();
                 var soft = $('.software').height();
-                var diff1 = hack - hard - 23;
-                var diff2 = hack - soft - 23;
+                var diff1 = hack - hard - 21;
+                var diff2 = hack - soft - 21;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
             }
@@ -518,8 +518,8 @@ $(document).ready(function() {
                 var hack = $('.hackskilladj').height();
                 var hard = $('.hardware').height();
                 var soft = $('.software').height();
-                var diff1 = hack - hard - 28;
-                var diff2 = hack - soft - 28;
+                var diff1 = hack - hard - 21;
+                var diff2 = hack - soft - 21;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
             }
@@ -701,20 +701,28 @@ $(document).ready(function() {
         console.log('in rotate right');
         if($('.hackaboximgcont:visible').next().is('.hackaboximgcont')) {
             active = true;
-            $('.hackaboximgcont:visible').next().css({
+            console.log('in rotate left');
+            if($('.hackaboximgcont:visible').next().is('.hackaboximgcont')) {
+                $('.hackaboximgcont:visible').next().css('display', 'block');  
+                $('.hackaboximgcont:visible').prev().css('display', 'none');
+            }
+            else {
+                console.log('nothing before it');
+            }
+            /*$('.hackaboximgcont:visible').next().css({
                 'opacity': '0',
                 'position': 'absolute',
-                'left': '100%',
+                'left': '25%',
                 'display': 'block'
             });
             $('.hackaboximgcont:visible').next().animate({
                 opacity: '1',
-                left: '-=100%'
-            }, 600, function(){
+                left: '-=25%'
+            }, 200, function(){
                 $('.hackaboximgcont:visible').prev().css('display', 'none');
                 $('.hackaboximgcont:visible').css('position', 'relative');
                 active = false;
-            })
+            })*/
             //$('.hackaboximgcont:visible').next().css('display', 'block');
         }
         else {
@@ -724,7 +732,7 @@ $(document).ready(function() {
  
     });
 
-    $('#leftgw').on('click', function() {
+    /*$('#leftgw').on('click', function() {
         console.log('in rotate left');
         if($('.hackaboximgcont:visible').prev().is('.hackaboximgcont')) {
             $('.hackaboximgcont:visible').prev().css('display', 'block');  
@@ -748,13 +756,13 @@ $(document).ready(function() {
             $('.wpcont:visible').next().css({
                 'opacity': '0',
                 'position': 'absolute',
-                'left': '100%',
+                'left': '25%',
                 'display': 'block'
             });
             $('.wpcont:visible').next().animate({
                 opacity: '1',
-                left: '-=100%'
-            }, 600, function(){
+                left: '-=25%'
+            }, 200, function(){
                 $('.hackaboximgcont:visible').prev().css('display', 'none');
                 $('.hackaboximgcont:visible').css('position', 'relative');
                 active = false;
@@ -766,17 +774,67 @@ $(document).ready(function() {
             $('.hackaboximgcont:visible').next().css({
                 'opacity': '0',
                 'position': 'absolute',
-                'left': '100%',
+                'left': '25%',
                 'display': 'block'
             });
             $('.hackaboximgcont:visible').next().animate({
                 opacity: '1',
-                left: '-=100%'
-            }, 600, function(){
+                left: '-=25%'
+            }, 200, function(){
                 $('.hackaboximgcont:visible').prev().css('display', 'none');
                 $('.hackaboximgcont:visible').css('position', 'relative');
                 active = false;
             })
+        }
+        else {
+            console.log('nothing after it');
+        }
+    });*/
+
+    $('#leftg').on('click', function() {
+        console.log('in rotate left');
+        if($('.hackaboximgcont:visible').prev().is('.hackaboximgcont')) {
+            $('.hackaboximgcont:visible').prev().css('display', 'block');  
+            $('.hackaboximgcont:visible').next().css('display', 'none');
+        }
+        else {
+            console.log('nothing before it');
+        }
+    });
+    $('#rightg').on('click', function() {
+        console.log('in rotate right');
+        if($('.hackaboximgcont:visible').next().is('.hackaboximgcont')) {
+            $('.hackaboximgcont:visible').next().css('display', 'block');
+            $('.hackaboximgcont:visible').prev().css('display', 'none');
+        }
+        else {
+            console.log('nothing after it');
+        }
+    });
+
+    $('#leftgw').on('click', function() {
+        console.log('in rotate left');
+        if($('.hackaboximgcont:visible').prev().is('.hackaboximgcont')) {
+            $('.hackaboximgcont:visible').prev().css('display', 'block');  
+            $('.hackaboximgcont:visible').next().css('display', 'none');
+        }
+        else if($('.hackaboximgcont:visible').prev().is('.wpcont')) {
+            $('.hackaboximgcont:visible').prev().css('display', 'block');  
+            $('.wpcont:visible').next().css('display', 'none');
+        } 
+        else {
+            console.log('nothing before it');
+        }
+    });
+    $('#rightgw').on('click', function() {
+        console.log('in rotate right');
+        if($('.wpcont:visible').next().is('.hackaboximgcont')) { 
+            $('.wpcont:visible').next().css('display', 'block');
+            $('.hackaboximgcont:visible').prev().css('display', 'none');
+        }
+        else if($('.hackaboximgcont:visible').next().is('.hackaboximgcont')) {
+            $('.hackaboximgcont:visible').next().css('display', 'block');
+            $('.hackaboximgcont:visible').prev().css('display', 'none');
         }
         else {
             console.log('nothing after it');
@@ -794,7 +852,7 @@ $(document).ready(function() {
             $(this).css('background-color', 'rgba(219,196,176, 0.7)')
         }
         else {
-            $(this).css('background-color', 'rgba(219,196,176, 0.1)')
+            $(this).css('background-color', 'rgba(219,196,176, 0.1ld)')
         }
     })
 
