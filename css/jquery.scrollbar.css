@@ -118,9 +118,9 @@
 .scrollbar-inner > .scroll-element .scroll-element_outer,
 .scrollbar-inner > .scroll-element .scroll-element_track,
 .scrollbar-inner > .scroll-element .scroll-bar {
-    -webkit-border-radius: 8px;
+    /*-webkit-border-radius: 8px;
     -moz-border-radius: 8px;
-    border-radius: 8px;
+    border-radius: 8px;*/
 }
 
 .scrollbar-inner > .scroll-element .scroll-element_track,
@@ -132,7 +132,7 @@
 
 .scrollbar-inner > .scroll-element .scroll-element_track { background-color: #e0e0e0; }
 .scrollbar-inner > .scroll-element .scroll-bar { background-color: #c2c2c2; }
-.scrollbar-inner > .scroll-element:hover .scroll-bar { background-color: #919191; }
+.scrollbar-inner > .scroll-element:hover .scroll-bar { background-color: rgba(0,0,0,0); }
 .scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
 
 
@@ -201,13 +201,13 @@
 .scrollbar-outer > .scroll-element .scroll-element_outer,
 .scrollbar-outer > .scroll-element .scroll-element_track,
 .scrollbar-outer > .scroll-element .scroll-bar {
-    -webkit-border-radius: 8px;
+    /*-webkit-border-radius: 8px;
     -moz-border-radius: 8px;
-    border-radius: 8px;
+    border-radius: 8px;*/
 }
 
 .scrollbar-outer > .scroll-element .scroll-bar { background-color: #d9d9d9; }
-.scrollbar-outer > .scroll-element .scroll-bar:hover { background-color: #c2c2c2; }
+.scrollbar-outer > .scroll-element .scroll-bar:hover { background-color: rgba(0,0,0,0); }
 .scrollbar-outer > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
 
 
@@ -267,9 +267,9 @@
     filter: alpha(opacity=0);
     opacity: 0;
 
-    -webkit-border-radius: 7px;
+    /*-webkit-border-radius: 7px;
     -moz-border-radius: 7px;
-    border-radius: 7px;
+    border-radius: 7px;*/
 
     -webkit-transition: opacity 0.2s linear;
     -moz-transition: opacity 0.2s linear;
@@ -277,12 +277,12 @@
     -ms-transition: opacity 0.2s linear;
     transition: opacity 0.2s linear;
 }
-.scrollbar-macosx:hover > .scroll-element .scroll-bar,
+/*.scrollbar-macosx:hover > .scroll-element .scroll-bar,
 .scrollbar-macosx > .scroll-element.scroll-draggable .scroll-bar {
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
     filter: alpha(opacity=70);
     opacity: 0.7;
-}
+}*/
 
 
 .scrollbar-macosx > .scroll-element.scroll-x {
@@ -350,9 +350,9 @@
 }
 
 .scrollbar-light > .scroll-element .scroll-element_outer {
-    -webkit-border-radius: 10px;
+    /*-webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    border-radius: 10px;
+    border-radius: 10px;*/
 }
 
 .scrollbar-light > .scroll-element .scroll-element_size {
@@ -365,9 +365,9 @@
     background: -ms-linear-gradient(left, #dbdbdb 0%,#e8e8e8 100%);
     background: linear-gradient(to right, #dbdbdb 0%,#e8e8e8 100%);
 
-    -webkit-border-radius: 10px;
+    /*-webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    border-radius: 10px;
+    border-radius: 10px;*/
 }
 
 .scrollbar-light > .scroll-element.scroll-x {
@@ -397,9 +397,9 @@
     background: linear-gradient(to right, #fefefe 0%,#f5f5f5 100%);
 
     border: 1px solid #dbdbdb;
-    -webkit-border-radius: 10px;
+    /*-webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    border-radius: 10px;
+    border-radius: 10px;*/
 }
 
 /* scrollbar height/width & offset from container borders */
@@ -465,7 +465,7 @@
 
 .scrollbar-rail > .scroll-element .scroll-element_outer:hover .scroll-element_size {
     background-color: #666;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .scrollbar-rail > .scroll-element.scroll-x {
@@ -489,15 +489,15 @@
 .scrollbar-rail > .scroll-element .scroll-bar {
     background-color: #d0b9a0;
 
-    -webkit-border-radius: 2px;
+    /*-webkit-border-radius: 2px;
     -moz-border-radius: 2px;
-    border-radius: 2px;
+    border-radius: 2px;*/
 
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .scrollbar-rail > .scroll-element .scroll-element_outer:hover .scroll-bar {
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    /*box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);*/
 }
 
 /* scrollbar height/width & offset from container borders */
@@ -572,17 +572,17 @@
 .scrollbar-dynamic > .scroll-element .scroll-element_outer {
     opacity: 0.3;
 
-    -webkit-border-radius: 12px;
+    /*-webkit-border-radius: 12px;
     -moz-border-radius: 12px;
-    border-radius: 12px;
+    border-radius: 12px;*/
 }
 .scrollbar-dynamic > .scroll-element .scroll-element_size {
     background-color: #cccccc;
     opacity: 0;
 
-    -webkit-border-radius: 12px;
+    /*-webkit-border-radius: 12px;
     -moz-border-radius: 12px;
-    border-radius: 12px;
+    border-radius: 12px;*/
 
     -webkit-transition: opacity 0.2s;
     -moz-transition: opacity 0.2s;
@@ -594,9 +594,9 @@
 .scrollbar-dynamic > .scroll-element .scroll-bar {
     background-color: #6c6e71;
 
-    -webkit-border-radius: 7px;
+    /*-webkit-border-radius: 7px;
     -moz-border-radius: 7px;
-    border-radius: 7px;
+    border-radius: 7px;*/
 }
 
 /* scrollbar height/width & offset from container borders */
@@ -651,19 +651,19 @@
 
 /* hover & drag */
 
-.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer,
+/*.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer,
 .scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer {
     overflow: hidden;
 
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
     filter: alpha(opacity=70);
     opacity: 0.7;
-}
+}*/
 .scrollbar-dynamic > .scroll-element:hover .scroll-element_outer .scroll-element_size,
 .scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer .scroll-element_size {
-    opacity: 1;
+    opacity: 0;
 }
-.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer .scroll-bar,
+/*.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer .scroll-bar,
 .scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer .scroll-bar {
     height: 100%;
     width: 100%;
@@ -671,7 +671,7 @@
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
-}
+}*/
 
 .scrollbar-dynamic > .scroll-element.scroll-x:hover .scroll-element_outer,
 .scrollbar-dynamic > .scroll-element.scroll-x.scroll-draggable .scroll-element_outer {
@@ -746,14 +746,14 @@
     border: 1px solid #bdbdbd;
     cursor: default;
 
-    -webkit-border-radius: 2px;
+    /*-webkit-border-radius: 2px;
     -moz-border-radius: 2px;
-    border-radius: 2px;
+    border-radius: 2px;*/
 }
 
 .scrollbar-chrome > .scroll-element .scroll-bar:hover {
-    background-color: #c2c2c2;
-    border-color: #a9a9a9;
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
 }
 
 .scrollbar-chrome > .scroll-element.scroll-draggable .scroll-bar {

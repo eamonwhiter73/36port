@@ -410,13 +410,13 @@ $(document).ready(function() {
             $('.titlepcont').css({ 'left': '-700px', 'right': '', 'opacity': '0'}).stop().animate({
                 opacity: 1,
                 left: "+=700"
-            }, 2500, 'easeOutBounce');
+            }, 1500, 'easeOutBounce');
 
                            
             $('.offsetadj').css({ 'top': '100px', 'right': '', 'opacity': '0'}).stop().animate({
                 opacity: 1,
                 top: "-=100"
-            }, 2000, 'easeInOutCubic');
+            }, 900, 'easeInOutCubic');
 
             $('.thanks').hide().fadeIn(3000);
             
@@ -591,13 +591,13 @@ $(document).ready(function() {
             $('.titlepcont').css({ 'left': '-200px', 'right': '', 'opacity': '0'}).stop().animate({
                 opacity: 1,
                 left: "+=200"
-            }, 2500, 'easeOutBounce');
+            }, 1500, 'easeOutBounce');
 
                            
             $('.offsetadj').css({ 'top': '100px', 'right': '', 'opacity': '0'}).stop().animate({
                 opacity: 1,
                 top: "-=100"
-            }, 2000, 'easeInOutCubic');
+            }, 900, 'easeInOutCubic');
 
             $('.margincoloringl').css({'left': '-10%', 'right': '', 'opacity': '0'}).animate({
                 left: '+=10%',
