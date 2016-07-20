@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/hover.css" />
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.scrollbar.css" />
 	<link rel="stylesheet" type="text/css" href="main.css" />
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -17,6 +18,8 @@
 	<script type="text/javascript" src="node_modules/fullpage.js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/jquery.fittext.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollbar.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script src="https://use.fontawesome.com/cfbe62a5e3.js"></script>
@@ -49,7 +52,7 @@
 			</div>	
 			<nav class="navbar navbar-fixed-top">
 				<div class="row">
-					<div class="logo col-lg-6 col-lg-offset-9 col-md-6 col-md-offset-9 col-sm-8 col-sm-offset-5 col-xs-10 col-xs-offset-3">Eamon White</div>
+					<div class="logo col-lg-6 col-lg-offset-8 col-md-6 col-md-offset-8 col-sm-8 col-sm-offset-4 col-xs-10 col-xs-offset-3">Eamon White</div>
 					<div class='menuholder col-lg-14 col-md-14 col-sm-20'>
 						<a href="#firstPage" class="menubutton  col-lg-7 col-md-7 col-sm-7">HOME</a>
 						<a id='projectsbutton' class="menubutton  col-lg-7 col-md-8 col-sm-7">PROJECTS<div class="apex-dn"></div></a>
@@ -59,7 +62,7 @@
 					</div>
 				</div>
 			</nav>
-			<div class='dropdown col-lg-4 col-lg-offset-18 col-md-4 col-md-offset-17 col-sm-5 col-sm-offset-17 col-xs-9 col-xs-offset-16'>
+			<div class='dropdown col-lg-4 col-lg-offset-17 col-md-4 col-md-offset-17 col-sm-5 col-sm-offset-17 col-xs-9 col-xs-offset-16'>
 				<div class='buttonundercover bottom col-lg-36 col-md-36 col-sm-36 col-xs-36'>
 					<a class='dropdownbutton' href="#secondPage/">HACKABOX</a>
 					<a class='dropdownbutton' href="#secondPage/1">WP THEME</a>
@@ -124,13 +127,13 @@
 									</a>
 								</div>
 
-								<div class='hacktext hacktexthack col-lg-13 col-lg-offset-0 col-md-13 col-md-offset-0 col-sm-15 col-sm-offset-2 col-xs-28 col-xs-offset-4'>
+								<div class='hacktext hacktexthack scrollbar-dynamic col-lg-13 col-lg-offset-0 col-md-13 col-md-offset-0 col-sm-15 col-sm-offset-2 col-xs-28 col-xs-offset-4'>
 						    		<div class = "subtitle">Goals:</div><p>To develop a MEAN stack website for my Hackabox project, including a forum built from scratch.</p>
 						    		<div class = "subtitle">Challenges:</div><p>Building a forum from scratch with AngularJS (and other tech).</p>
 						    		<div class = "subtitle">Learned:</div><p>Further developed my AngularJS and other MEAN tech skills. I had to go very in depth with AngularJS for the forum.</p>
 						    		<div class = "subtitle">More:</div>
 						    		<p>This site was born out of an idea I had to create a gaming platform out of a Raspberry Pi (computer). While I wasn't really able to get going on the project, I did end up making a simple MEAN stack site. A MEAN stack consists of the technologies represented by the logos below. MongoDB (database), ExpressJS, AngularJS, and NodeJS. I made a forum from scratch, and a fully functional user system. It is responsive. You can click on the image, and it will bring you to a demo - feel free to create a user and use the forum, everything that is available on the demo is fully functional (including a MongoDB backend). Please proceed to the next slides for more details on this project.</p>
-						    		<div class='read col-lg-8'>READ MORE</div>
+						    		
 						    	</div>
 						    	<div class='readpanel col-lg-18 col-lg-offset-15 col-md-18 col-md-offset-15 col-sm-18 col-sm-offset-15 col-xs-28 col-xs-offset-4'>
 						    		<div class="closemine col-lg-3 col-lg-offset-33 col-md-3 col-md-offset-32 col-sm-3 col-sm-offset-33 col-xs-4 col-xs-offset-0">close</div>
@@ -204,13 +207,12 @@
 									</a>
 								</div>
 
-								<div class='hacktext hacktexthack col-lg-13 col-lg-offset-0 col-md-13 col-md-offset-0 col-sm-15 col-sm-offset-2 col-xs-28 col-xs-offset-4'>
+								<div class='hacktext hacktexthack scrollbar-dynamic col-lg-13 col-lg-offset-0 col-md-13 col-md-offset-0 col-sm-15 col-sm-offset-2 col-xs-28 col-xs-offset-4'>
 						    		<div class = "subtitle">Goals:</div><p>To develop a Wordpress theme and contact form plugin.</p>
 						    		<div class = "subtitle">Challenges:</div><p>Making responsive images, building out the Wordpress theme framework.</p>
 						    		<div class = "subtitle">Learned:</div><p>I learned about the key files, and methods used in Wordpress themes, which will allow me to customize any theme that has already been made, in any way.</p>
 						    		<div class = "subtitle">More:</div>
 						    		<p>This is a Wordpress theme I developed from scratch. It is responsive. I also built a contact form Wordpress plugin to go with it (the contact page is a plugin). All the front-end work is custom, I used a bootstrap scaffold to start it. It is meant to be a blog. Continue to the next slides for more details.</p>
-						    		<div class='read col-lg-8'>READ MORE</div>
 						    	</div>
 						    	<div class='readpanel col-lg-18 col-lg-offset-15 col-md-18 col-md-offset-15 col-sm-18 col-sm-offset-15 col-xs-28 col-xs-offset-4'>
 						    		<div class="closemine col-lg-3 col-lg-offset-33 col-md-3 col-md-offset-32 col-sm-3 col-sm-offset-33 col-xs-4 col-xs-offset-0">close</div>
@@ -247,13 +249,13 @@
 										<iframe src="https://www.youtube.com/embed/P4eM1eJQjgU" frameborder="0" allowfullscreen></iframe>
 									</div>
 								</div>
-								<div class='hacktext hacktexthack hackadjust col-lg-13 col-lg-offset-0 col-md-13 col-md-offset-0 col-sm-14 col-sm-offset-2 col-xs-28 col-xs-offset-4'>
+								<div class='hacktext hacktexthack scrollbar-dynamic hackadjust col-lg-13 col-lg-offset-0 col-md-13 col-md-offset-0 col-sm-14 col-sm-offset-2 col-xs-28 col-xs-offset-4'>
 						    		<div class = "subtitle">Goals:</div><p>To develop a game in which a player takes a picture somewhere, and other players try and match the picture that was taken, a bit like the game 'eye spy'.</p>
 						    		<div class = "subtitle">Challenges:</div><p>Figuring out how to determine if the pictures are a match.</p>
 						    		<div class = "subtitle">Learned:</div><p>I learned about ImageMagick - it is a console program that allows you to edit images in an advanced way.</p>
 						    		<div class = "subtitle">More:</div>
 						    		<p>This is a very simple native iOS app I developed. My idea was to create a game in which one would go somewhere and take a picture, and then someone would have to go find where you took the picture (with help from GPS) and take almost the same picture to complete the objective. The backend uses a console program called imageMagick to analyze the pictures to find out if they are the same. I used Parse as the meat of the backend to handle data that needs to be stored in a database, or retrieved from it. You can learn about Parse at <a id="parse" href="http://www.parse.com">parse.com</a></p>
-						    		<div class='read col-lg-8'>READ MORE</div>
+						    		
 						    	</div>
 						    	<div class='readpanel col-lg-18 col-lg-offset-15 col-md-18 col-md-offset-15 col-sm-18 col-sm-offset-15 col-xs-28 col-xs-offset-4'>
 						    		<div class="closemine col-lg-3 col-lg-offset-33 col-md-3 col-md-offset-32 col-sm-3 col-sm-offset-33 col-xs-4 col-xs-offset-0">close</div>
