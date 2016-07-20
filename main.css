@@ -14,6 +14,7 @@ nav {
 
 a {
 	cursor: pointer; cursor: hand;
+	color: rgba(96, 18, 24, 1);
 }
 
 .navbar {
@@ -689,6 +690,15 @@ height: 100%;
 	font-size: 14px;
 }
 
+.hacktext>p:last-child {
+    font-family: 'Avenir';
+    text-align: justify;
+	color: #FAE6D5;
+	position: relative;
+	margin-bottom: 24px;
+	font-size: 14px;
+}
+
 .techholder {
 	position: relative;
 	height: 10%;
@@ -799,7 +809,6 @@ height: 100%;
 .fp-tableCell {
 	vertical-align: top;
 }
-
 
 .titlepout {
     font-family: 'Avenir';
@@ -1926,10 +1935,6 @@ height: 100%;
 	    float: right;
 	    margin-right: 1%;
 	    margin-bottom: 1%;
- 		-webkit-animation: fadeIn 1s 5; /* Safari 4+ */
-  		-moz-animation:    fadeIn 1s 5; /* Fx 5+ */
-  		-o-animation:      fadeIn 1s 5; /* Opera 12+ */
-  		animation:         fadeIn 1s 5; /* IE 10+, Fx 29+ */
 	}
 
 	.forborderskills {
@@ -3297,6 +3302,7 @@ height: 100%;
 		margin-top: 1%;
 		padding: 2%;
 		height: 190px;
+		z-index: 99999;
 	}
 
 	.hackskilladj {

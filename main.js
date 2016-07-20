@@ -399,11 +399,11 @@ $(document).ready(function() {
         if(location.hash.slice(1) == 'secondPage' || location.hash.substr(1) == 'secondPage/1' || location.hash.substr(1) == 'secondPage/2'){
             $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
                 left: "+=500"
-            }, 1300, 'easeOutExpo');
+            }, 2000, 'easeOutExpo');
 
             $('.hacktexthack').css({ 'left': '', 'right': '-550px' }).stop().animate({
                     right: "+=550"
-            }, 2000, 'easeOutExpo');
+            }, 1300, 'easeOutExpo');
         }
 
         if(location.hash.slice(1) == 'fourthPage') {
@@ -418,9 +418,8 @@ $(document).ready(function() {
                 top: "-=100"
             }, 2000, 'easeInOutCubic');
 
-            if($('.offsetadj').is(':visible')) {
-                $('.thanks').hide().fadeIn(3000);
-            }
+            $('.thanks').hide().fadeIn(3000);
+            
 
             $('.margincoloringl').css({'left': '-10%', 'right': '', 'opacity': '0'}).animate({
                 left: '+=10%',
@@ -458,9 +457,7 @@ $(document).ready(function() {
         }
 
         if(location.hash.slice(1) == 'fourthPage') {
-            if($('.offsetadj').is(':visible')) {
-                $('.thanks').hide().fadeIn(3000);
-            }
+                $('.thanks').fadeIn(3000);
         }
         if(location.hash.slice(1) == 'thirdPage') {
             console.log("in third page");

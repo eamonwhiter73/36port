@@ -15,7 +15,7 @@
     max-height: none;
     max-width: none !important;
     overflow: scroll !important;
-    padding: 0;
+    padding: 12px;
     position: relative !important;
     top: 0;
     width: auto !important;
@@ -538,7 +538,8 @@
 {
     background: none;
     border: none;
-    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
     padding: 0;
     position: absolute;
     z-index: 10;
@@ -611,6 +612,7 @@
     min-height: 24px;
     right: 0;
     width: 7px;
+    background-color: rgba(96, 18, 24, 0.7); 
 }
 
 .scrollbar-dynamic > .scroll-element.scroll-x .scroll-element_outer {
