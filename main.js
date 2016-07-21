@@ -26,7 +26,7 @@ $(document).ready(function() {
         loopTop: false,
         loopHorizontal: true,
         continuousVertical: false,
-        normalScrollElements: '.hacktext, .scrollbar-dynamic',
+        normalScrollElements: '.scrollbar-dynamic',
         scrollOverflow: false,
         scrollOverflowOptions: null,
         touchSensitivity: 15,
@@ -305,7 +305,7 @@ $(document).ready(function() {
                 var content2 = $('.changesmallmarg');
                 var max = content.length;
                 var max2 = content2.length;
-                var speed = 70; // ms
+                var speed = 100; // ms
                 var speed2 = 150; // ms
 
                 var handle = setInterval(function () {
@@ -486,7 +486,7 @@ $(document).ready(function() {
                 var step2 = 0;
                 var content2 = $('.changesmallmarg');
                 var max2 = content2.length;
-                var speed2 = 290; // ms
+                var speed2 = 150; // ms
 
                 var handle2 = setInterval(function () {
                     if (step2 >= max2) {
@@ -918,6 +918,32 @@ $(document).ready(function() {
         })
       ;
     };
+
+    var arrayanchors = ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'];
+
+    $('#upa').click(function() {
+        var current = location.hash.slice(1);
+        var thisindex = arrayanchors.indexOf(current);
+        var next = arrayanchors[thisindex - 1];
+        console.log(next);
+        if(!next) {
+            window.location = 'http://example.dev/#firstPage';
+            return;
+        }
+        window.location = 'http://example.dev/#' + next;
+    })
+
+    $('#downa').click(function() {
+        var current = location.hash.slice(1);
+        var thisindex = arrayanchors.indexOf(current);
+        var next = arrayanchors[thisindex + 1];
+        console.log(next);
+        if(!next) {
+            window.location = 'http://example.dev/#fourthPage';
+            return;
+        }
+        window.location = 'http://example.dev/#' + next;
+    })
 
     /*$('.scrollbar-dynamic').on('wheel', function(e){
         var eo = e.originalEvent;

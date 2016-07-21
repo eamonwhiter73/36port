@@ -137,8 +137,17 @@ a {
 	background: rgb(96, 18, 24);
 }
 
-a, a:hover, a:active, a:visited, a:focus {
+a, a:active, a:visited, a:focus {
 	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: rgb(219,196,176);
+}
+
+.arrowscont>a:hover, .arrowscont>a:active, .arrowscont>a:visited, .arrowscont>a:focus {
+	color: rgb(219,196,176);
 }
 
 .menuholder>a, .menuholder>a:hover, .menuholder>a:active, .menuholder>a:visited, .menuholder>a:focus {
@@ -500,6 +509,7 @@ height: 100%;
 
 .tancolor {
 	color: rgb(219,196,176);
+	margin-top: 3px;
 }
 
 .leftglyph {
@@ -508,7 +518,7 @@ height: 100%;
 	-webkit-transform: scale(1.4); /* Safari */
 	transform: scale(1.4);
 	z-index: 999;
-	color: rgba(96, 18, 24, 1);
+	/*color: rgba(96, 18, 24, 1);*/
 }
 
 #leftg {
@@ -522,7 +532,7 @@ height: 100%;
 	-webkit-transform: scale(1.4); /* Safari */
 	transform: scale(1.4);
 	z-index: 999;
-	color: rgba(96, 18, 24, 1);
+	/*color: rgba(96, 18, 24, 1);*/
 }
 
 #rightg {
@@ -543,10 +553,39 @@ height: 100%;
 .arrowscont {
 	position: absolute;
 	top: 537px;
-	background-color: #C8A589;
+	background-color: rgba(96, 18, 24, 0.9);
 	padding-bottom: 0.2%; 
 	padding-left: 1.4%; 
-	padding-right: 1.4%; 
+	padding-right: 1.4%;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #C8A589;
+}
+
+#upa {
+	position: relative;
+	margin-top: 10px;
+}
+
+#downa {
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+.updownnav {
+	position: fixed;
+	top: 500px;
+	background-color: rgba(96, 18, 24, 0.9);
+	padding-left: 9.2px; 
+	/*padding-right: 1.4%;*/
+	border-style: solid;
+	border-width: 2px;
+	border-color: #C8A589;
+	/*-ms-transform: rotate(90deg); /* IE 9 */
+	/*-webkit-transform: rotate(90deg); /* Safari */
+	/*transform: rotate(90deg);*/
+	z-index: 99999;
 }
 
 .hackaboximgsmall {
