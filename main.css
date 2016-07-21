@@ -510,6 +510,7 @@ height: 100%;
 .tancolor {
 	color: rgb(219,196,176);
 	margin-top: 3px;
+	text-align: center;
 }
 
 .leftglyph {
@@ -564,29 +565,44 @@ height: 100%;
 
 #upa {
 	position: relative;
-	margin-top: 10px;
+	margin-top: 30px;
+	-ms-transform: scale(1.8); /* IE 9 */
+	-webkit-transform: scale(1.8); /* Safari */
+	transform: scale(1.8);
 }
 
 #downa {
 	position: relative;
 	margin-top: 50px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
+	-ms-transform: scale(1.8); /* IE 9 */
+	-webkit-transform: scale(1.8); /* Safari */
+	transform: scale(1.8);
+}
+
+.fa-bars {
+	display: none;
 }
 
 .updownnav {
 	position: fixed;
 	top: 500px;
 	background-color: rgba(96, 18, 24, 0.9);
-	padding-left: 9.2px; 
 	/*padding-right: 1.4%;*/
 	border-style: solid;
 	border-width: 2px;
 	border-color: #C8A589;
+	right: 15px;
 	/*-ms-transform: rotate(90deg); /* IE 9 */
 	/*-webkit-transform: rotate(90deg); /* Safari */
 	/*transform: rotate(90deg);*/
 	z-index: 99999;
+	box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.5);
 }
+
+
+	
+
 
 .hackaboximgsmall {
 	height: auto;
@@ -1120,232 +1136,6 @@ height: 100%;
 		display: none;
 	}
 
-	/*************** SCROLLBAR BASE CSS ***************/
- 
-	/*.scroll-wrapper {
-	    overflow: hidden !important;
-	    padding: 0 !important;
-	    position: relative;
-	}
-	 
-	.scroll-wrapper > .scroll-content {
-	    border: none !important;
-	    box-sizing: content-box !important;
-	    height: auto;
-	    left: 0;
-	    margin: 0;
-	    max-height: none;
-	    max-width: none !important;
-	    overflow: scroll !important;
-	    padding: 13px;
-	    position: relative !important;
-	    top: 0;
-	    width: auto !important;
-	}
-	 
-	.scroll-wrapper > .scroll-content::-webkit-scrollbar {
-	    height: 0;
-	    width: 0;
-	}
-	 
-	.scroll-element {
-	    display: none;
-	}
-	.scroll-element, .scroll-element div {
-	    box-sizing: content-box;
-	}
-	 
-	.scroll-element.scroll-x.scroll-scrollx_visible,
-	.scroll-element.scroll-y.scroll-scrolly_visible {
-	    display: block;
-	}
-	 
-	.scroll-element .scroll-bar,
-	.scroll-element .scroll-arrow {
-	    cursor: default;
-	}
-	 
-	.scroll-textarea {
-	    border: 1px solid #cccccc;
-	    border-top-color: #999999;
-	}
-	.scroll-textarea > .scroll-content {
-	    overflow: hidden !important;
-	}
-	.scroll-textarea > .scroll-content > textarea {
-	    border: none !important;
-	    box-sizing: border-box;
-	    height: 100% !important;
-	    margin: 0;
-	    max-height: none !important;
-	    max-width: none !important;
-	    overflow: scroll !important;
-	    outline: none;
-	    padding: 2px;
-	    position: relative !important;
-	    top: 0;
-	    width: 100% !important;
-	}
-	.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
-	    height: 0;
-	    width: 0;
-	}
-	 
-	 
-	 
-	 
-	/*************** SCROLLBAR DYNAMIC ***************/
-	 
-	/*.scrollbar-dynamic > .scroll-element,
-	.scrollbar-dynamic > .scroll-element div
-	{
-	    background: none;
-	    border: none;
-	    margin-top: 4px;
-	    margin-bottom: 4px;
-	    padding: 0;
-	    position: absolute;
-	    z-index: 10;
-	}
-	 
-	.scrollbar-dynamic > .scroll-element div {
-	    display: block;
-	    height: 100%;
-	    left: 0;
-	    top: 0;
-	    width: 100%;
-	}
-	 
-	.scrollbar-dynamic > .scroll-element.scroll-x {
-	    bottom: 2px;
-	    height: 7px;
-	    left: 0;
-	    min-width: 100%;
-	    width: 100%;
-	}
-	 
-	.scrollbar-dynamic > .scroll-element.scroll-y {
-	    height: 100%;
-	    min-height: 100%;
-	    right: 2px;
-	    top: 0;
-	    width: 7px;
-	}
-	 
-	.scrollbar-dynamic > .scroll-element .scroll-element_outer {
-	    opacity: 0.3;
-	 
-	    -webkit-border-radius: 12px;
-	    -moz-border-radius: 12px;
-	    border-radius: 12px;
-	}
-	.scrollbar-dynamic > .scroll-element .scroll-element_size {
-	    background-color: #cccccc;
-	    opacity: 0;
-	 
-	    -webkit-border-radius: 12px;
-	    -moz-border-radius: 12px;
-	    border-radius: 12px;
-	 
-	    -webkit-transition: opacity 0.2s;
-	    -moz-transition: opacity 0.2s;
-	    -o-transition: opacity 0.2s;
-	    -ms-transition: opacity 0.2s;
-	    transition: opacity 0.2s;
-	}
-	 
-	.scrollbar-dynamic > .scroll-element .scroll-bar {
-	    background-color: #6c6e71;
-	 
-	    /*-webkit-border-radius: 7px;
-	    -moz-border-radius: 7px;
-	    border-radius: 7px;*/
-	}
-	 
-	/* scrollbar height/width & offset from container borders */
-	 
-	/*.scrollbar-dynamic > .scroll-element.scroll-x .scroll-bar {
-	    bottom: 0;
-	    height: 7px;
-	    min-width: 24px;
-	    top: auto;
-	}
-	.scrollbar-dynamic > .scroll-element.scroll-y .scroll-bar {
-	    left: auto;
-	    min-height: 24px;
-	    right: 0;
-	    width: 7px;
-	}
-	 
-	.scrollbar-dynamic > .scroll-element.scroll-x .scroll-element_outer {
-	    bottom: 0;
-	    top: auto;
-	    left: 2px;
-	 
-	    -webkit-transition: height 0.2s;
-	    -moz-transition: height 0.2s;
-	    -o-transition: height 0.2s;
-	    -ms-transition: height 0.2s;
-	    transition: height 0.2s;
-	}
-	 
-	.scrollbar-dynamic > .scroll-element.scroll-y .scroll-element_outer {
-	    left: auto;
-	    right: 0;
-	    top: 2px;
-	 
-	    -webkit-transition: width 0.2s;
-	    -moz-transition: width 0.2s;
-	    -o-transition: width 0.2s;
-	    -ms-transition: width 0.2s;
-	    transition: width 0.2s;
-	}
-	 
-	.scrollbar-dynamic > .scroll-element.scroll-x .scroll-element_size { left: -4px; }
-	.scrollbar-dynamic > .scroll-element.scroll-y .scroll-element_size { top: -4px; }
-	 
-	 
-	/* update scrollbar offset if both scrolls are visible */
-	 
-	/*.scrollbar-dynamic > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -11px; }
-	.scrollbar-dynamic > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -11px; }
-	 
-	 
-	/* hover & drag */
-	 
-	/*scrollbar-dynamic > .scroll-element:hover .scroll-element_outer,
-	.scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer {
-	    overflow: hidden;
-	 
-	    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-	    filter: alpha(opacity=70);
-	    opacity: 0.7;
-	}
-	.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer .scroll-element_size,
-	.scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer .scroll-element_size {
-	    opacity: 1;
-	}
-	.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer .scroll-bar,
-	.scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer .scroll-bar {
-	    height: 100%;
-	    width: 100%;
-	 
-	    -webkit-border-radius: 12px;
-	    -moz-border-radius: 12px;
-	    border-radius: 12px;
-	}
-	 
-	.scrollbar-dynamic > .scroll-element.scroll-x:hover .scroll-element_outer,
-	.scrollbar-dynamic > .scroll-element.scroll-x.scroll-draggable .scroll-element_outer {
-	    height: 20px;
-	    min-height: 7px;
-	}
-	.scrollbar-dynamic > .scroll-element.scroll-y:hover .scroll-element_outer,
-	.scrollbar-dynamic > .scroll-element.scroll-y.scroll-draggable .scroll-element_outer {
-	    min-width: 7px;
-	    width: 20px;
-	}*/
-
 	.hacktext {
 		display: inline-block;
 		background: #D4B89B; /* For browsers that do not support gradients */
@@ -1429,6 +1219,10 @@ height: 100%;
 		color: #FFF1E4;
 	}
 
+	.updownnav {
+		padding-left: 0;
+	}
+
 	.solving {
 		position: relative;
 		font-family: 'Work Sans', sans-serif;
@@ -1475,11 +1269,7 @@ height: 100%;
 	}
 
 	.arrowscont {
-		position: absolute;
-		background-color: #C8A589;
-		padding-bottom: 0.2%; 
-		padding-left: 1.4%; 
-		padding-right: 1.4%; 
+		top: 532px;
 	}
 
 	.hackaboximgcont {
@@ -1867,11 +1657,15 @@ height: 100%;
 	.arrowscont {
 		position: absolute;
 		top: 540px;
-		background-color: #C8A589;
+		background-color: rgba(96, 18, 24, 0.9);
 		padding-bottom: 0.2%; 
 		padding-left: 1.4%; 
-		padding-right: 1.4%; 
+		padding-right: 1.4%;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #C8A589;
 	}
+
 
 	.hacktext {
 		display: inline-block;
@@ -2405,6 +2199,7 @@ height: 100%;
 		overflow: hidden;
 		margin-top: 1%;
 		height: 330px;
+		margin-left: 11.1%;
 	}
 
 	.hackskilladj {
@@ -2817,6 +2612,7 @@ height: 100%;
 		margin-top: 1%;
 		padding: 2%;
 		height: 330px;
+		margin-left: 11.1%;
 	}
 
 	.hackadjust {

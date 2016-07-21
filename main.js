@@ -342,6 +342,9 @@ $(document).ready(function() {
                 var diff2 = hack - soft - 21;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
+
+                $('.fa-bars').css('display', 'none');
+                $('.menubutton').css('opacity', '1');
             }
 
             if($(window).width() < 1200 && $(window).width() > 992) {
@@ -352,6 +355,9 @@ $(document).ready(function() {
                 var diff2 = hack - soft - 25;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
+
+                $('.fa-bars').css('display', 'none');
+                $('.menubutton').css('opacity', '1');
             }
 
             if($(window).width() < 993 && $(window).width() > 767) {
@@ -362,6 +368,9 @@ $(document).ready(function() {
                 var diff2 = hack - soft - 21;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
+
+                $('.fa-bars').css('display', 'none');
+                $('.menubutton').css('opacity', '1');
             }
             if($(window).width() < 768 && $(window).width() > 480) {
                 var hack = $('.hackskilladj').height();
@@ -371,6 +380,10 @@ $(document).ready(function() {
                 var diff2 = hack - soft - 18;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
+
+                $('.fa-bars').css('display', 'none');
+                $('.menubutton').css('opacity', '1');
+            
             }
 
             if($(window).width() < 481 && $(window).width() > 320) {
@@ -381,6 +394,11 @@ $(document).ready(function() {
                 var diff2 = hack - soft - 15;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
+
+                if($('.menubutton').is(':visible')) {
+                    $('.fa-bars').css('display', 'inline-block');
+                    $('.menubutton').css('opacity', '0');
+                }
             }
 
             if($(window).width() < 321) {
@@ -391,9 +409,47 @@ $(document).ready(function() {
                 var diff2 = hack - soft - 13;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
+
+                if($('.menubutton').is(':visible')) {
+                    $('.fa-bars').css('display', 'inline-block');
+                    $('.menubutton').css('opacity', '0');
+                }
             }
 
 
+        }
+
+        if($(window).width() > 1199) {
+            $('.fa-bars').css('display', 'none');
+            $('.menubutton').css('opacity', '1');
+        }
+
+        if($(window).width() < 1200 && $(window).width() > 992) {
+            $('.fa-bars').css('display', 'none');
+            $('.menubutton').css('opacity', '1');
+        }
+
+        if($(window).width() < 993 && $(window).width() > 767) {
+            $('.fa-bars').css('display', 'none');
+            $('.menubutton').css('opacity', '1');
+        }
+        if($(window).width() < 768 && $(window).width() > 480) {
+            $('.fa-bars').css('display', 'none');
+            $('.menubutton').css('opacity', '1');      
+        }
+
+        if($(window).width() < 481 && $(window).width() > 320) {
+            if($('.menubutton').is(':visible')) {
+                $('.fa-bars').css('display', 'inline-block');
+                $('.menubutton').css('opacity', '0');
+            }
+        }
+
+        if($(window).width() < 321) {
+            if($('.menubutton').is(':visible')) {
+                $('.fa-bars').css('display', 'inline-block');
+                $('.menubutton').css('opacity', '0');
+            }
         }
 
         if(location.hash.slice(1) == 'secondPage' || location.hash.substr(1) == 'secondPage/1' || location.hash.substr(1) == 'secondPage/2'){
@@ -996,6 +1052,10 @@ $(document).ready(function() {
             var diff2 = hack - soft - 28;
             $('.art').height(diff1);
             $('.music').height(diff2);
+
+                $('.fa-bars').css('display', 'none');
+                $('.menubutton').css('opacity', '1');
+            
         }
         if($(window).width() < 1200 && $(window).width() > 992) {
             var hack = $('.hackskilladj').height();
@@ -1005,6 +1065,10 @@ $(document).ready(function() {
             var diff2 = hack - soft - 25;
             $('.art').height(diff1);
             $('.music').height(diff2);
+
+                $('.fa-bars').css('display', 'none');
+                $('.menubutton').css('opacity', '1');
+            
         }
 
         if($(window).width() < 993 && $(window).width() > 767) {
@@ -1015,6 +1079,10 @@ $(document).ready(function() {
             var diff2 = hack - soft - 21;
             $('.art').height(diff1);
             $('.music').height(diff2);
+
+                $('.fa-bars').css('display', 'none');
+                $('.menubutton').css('opacity', '1');
+            
         }
 
         if($(window).width() < 768 && $(window).width() > 480) {
@@ -1025,6 +1093,10 @@ $(document).ready(function() {
             var diff2 = hack - soft - 18;
             $('.art').height(diff1);
             $('.music').height(diff2);
+
+                $('.fa-bars').css('display', 'none');
+                $('.menubutton').css('opacity', '1');
+            
         }
 
         if($(window).width() < 481 && $(window).width() > 320) {
@@ -1035,6 +1107,11 @@ $(document).ready(function() {
             var diff2 = hack - soft - 15;
             $('.art').height(diff1);
             $('.music').height(diff2);
+
+            if($('.menubutton').is(':visible')) {
+                $('.fa-bars').css('display', 'inline-block');
+                $('.menubutton').css('opacity', '0');
+            }
         }
 
         if($(window).width() < 321) {
@@ -1045,6 +1122,13 @@ $(document).ready(function() {
             var diff2 = hack - soft - 13;
             $('.art').height(diff1);
             $('.music').height(diff2);
+
+            if($('.menubutton').is(':visible')) {
+                $('.fa-bars').css('display', 'inline-block');
+                $('.menubutton').css('opacity', '0');
+            }
         }
+
+
     });
 });
