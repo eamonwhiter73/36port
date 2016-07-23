@@ -853,39 +853,14 @@ $(document).ready(function() {
             console.log('nothing after it');
         }
     });*/
-
-    console.log($('.bio').css('display'));
-    $('#bio').click(function() {
-        console.log('getting clicked')
-        if($('.bio').css('display') == 'none') {
-        console.log('should appear')
-
-            $('.bio').css({"display": "inline-block", 'right': '-44.45%', 'opacity': '0'}).animate({
-                right: '+=44.45%',
-                opacity: 0.98
-            }, 300, function(){
-                $('.fp-controlArrow.fp-next').css('display', 'none');
-            });
-        }
-        else {
-            console.log('shold go away')
-            $('.bio').animate({
-                right: '-=44.45%',
-                opacity: 0
-            }, 300, function(){
-                $('.bio').css('display', 'none');
-                $('.fp-controlArrow.fp-next').css('display', 'block');
-            });
-        }
-    })
-
+    
     $('.fa-bars').click(function() {
         $('.dropin').css('display', 'none');
         console.log('getting clicked')
         if($('.resnav').css('display') == 'none') {
         console.log('should appear')
 
-            $('.resnav').css({"display": "inline-block", 'left': '-44.45%', 'opacity': '0'}).animate({
+            $('.resnav').css({"display": "inline-block", 'opacity': '0'}).animate({
                 left: '+=44.45%',
                 opacity: 1
             }, 300, function(){
@@ -912,6 +887,31 @@ $(document).ready(function() {
             $('.dropin').css({"display": "block"});
         }
     });
+
+    console.log($('.bio').css('display'));
+    $('#bio').click(function() {
+        console.log('getting clicked')
+        if($('.bio').css('display') == 'none') {
+        console.log('should appear')
+
+            $('.bio').css({"display": "inline-block", 'right': '-44.45%', 'opacity': '0'}).animate({
+                right: '+=44.45%',
+                opacity: 0.98
+            }, 300, function(){
+                $('.fp-controlArrow.fp-next').css('display', 'none');
+            });
+        }
+        else {
+            console.log('shold go away')
+            $('.bio').animate({
+                right: '-=44.45%',
+                opacity: 0
+            }, 300, function(){
+                $('.bio').css('display', 'none');
+                $('.fp-controlArrow.fp-next').css('display', 'block');
+            });
+        }
+    })
 
     $('#leftg').on('click', function() {
         console.log('in rotate left');

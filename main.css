@@ -70,8 +70,8 @@ a {
 .resnav {
 	position: absolute;
 	background-color: rgba(96, 18, 24, 0.98);
-	left: 0;
-	z-index:99998;
+	left: -44.5%;
+	z-index:99997;
 	display: none;
 	text-align: left;
 	padding-top: 72px;
