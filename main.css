@@ -53,7 +53,7 @@ a {
 .bio {
 	position: absolute;
 	background-color: rgb(63,54,47);
-	right: 0;
+	right: -44.5%;
 	z-index:99998;
 	display: none;
 	text-align: justify;
@@ -75,7 +75,7 @@ a {
 	display: none;
 	text-align: left;
 	padding-top: 72px;
-	padding-left: 20px;
+	padding-left: 10px;
 	padding-right: 20px;
 	padding-bottom: 10px;
 	color: #FFF1E4;
@@ -2582,6 +2582,7 @@ height: 100%;
 
 /* Portrait phones and smaller */
 @media screen and (min-width: 321px) and (max-width: 480px) {
+
 	.programmer {
 		position: relative;
 		font-family: 'Work Sans', sans-serif;
@@ -3028,6 +3029,14 @@ height: 100%;
 		background-color: rgba(96, 18, 24, 0.71);
 		background: rgba(96, 18, 24, 0.71);	
 	}
+
+	.bio {
+		font-size: 13.3px;
+		padding-left: 8px;
+		padding-right: 8px;
+		padding-bottom: 0px;
+		padding-top: 60px;
+	}
 }
 
 @media (max-width: 320px) {
@@ -3430,6 +3439,14 @@ height: 100%;
 		margin-top: 24%;
 		background-color: rgba(96, 18, 24, 0.71);
 		background: rgba(96, 18, 24, 0.71);	
+	}
+
+	.bio {
+		font-size: 7pt;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 0px;
+		padding-top: 60px;
 	}
 }
 
