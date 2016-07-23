@@ -338,15 +338,16 @@ $(document).ready(function() {
                 var hack = $('.hackskilladj').height();
                 var hard = $('.hardware').height();
                 var soft = $('.software').height();
-                var diff1 = hack - hard - 21;
-                var diff2 = hack - soft - 21;
+                var diff1 = hack - hard - 28;
+                var diff2 = hack - soft - 28;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
-                $('.fa-bars').css('display', 'none');
-                $('.menubutton').css('opacity', '1');
+                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                    $('.fa-bars').css('display', 'none');
+                    $('.menuholder').css('display', 'inline-block');
+                
             }
-
             if($(window).width() < 1200 && $(window).width() > 992) {
                 var hack = $('.hackskilladj').height();
                 var hard = $('.hardware').height();
@@ -356,8 +357,10 @@ $(document).ready(function() {
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
-                $('.fa-bars').css('display', 'none');
-                $('.menubutton').css('opacity', '1');
+                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                    $('.fa-bars').css('display', 'none');  
+                    $('.menuholder').css('display', 'inline-block');
+                
             }
 
             if($(window).width() < 993 && $(window).width() > 767) {
@@ -369,9 +372,12 @@ $(document).ready(function() {
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
-                $('.fa-bars').css('display', 'none');
-                $('.menubutton').css('opacity', '1');
+                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                    $('.fa-bars').css('display', 'none');  
+                    $('.menuholder').css('display', 'inline-block');
+                
             }
+
             if($(window).width() < 768 && $(window).width() > 480) {
                 var hack = $('.hackskilladj').height();
                 var hard = $('.hardware').height();
@@ -381,9 +387,10 @@ $(document).ready(function() {
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
-                $('.fa-bars').css('display', 'none');
-                $('.menubutton').css('opacity', '1');
-            
+                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                    $('.fa-bars').css('display', 'none');                    
+                    $('.menuholder').css('display', 'inline-block');
+                
             }
 
             if($(window).width() < 481 && $(window).width() > 320) {
@@ -397,7 +404,8 @@ $(document).ready(function() {
 
                 if($('.menubutton').is(':visible')) {
                     $('.fa-bars').css('display', 'inline-block');
-                    $('.menubutton').css('opacity', '0');
+                    $('.fa-bars').css('color', '#FFF1E4');
+                    $('.menuholder').css('display', 'none');
                 }
             }
 
@@ -412,11 +420,10 @@ $(document).ready(function() {
 
                 if($('.menubutton').is(':visible')) {
                     $('.fa-bars').css('display', 'inline-block');
-                    $('.menubutton').css('opacity', '0');
+                    $('.fa-bars').css('color', '#FFF1E4');
+                    $('.menuholder').css('display', 'none');
                 }
             }
-
-
         }
 
         if($(window).width() > 1199) {
@@ -872,6 +879,40 @@ $(document).ready(function() {
         }
     })
 
+    $('.fa-bars').click(function() {
+        $('.dropin').css('display', 'none');
+        console.log('getting clicked')
+        if($('.resnav').css('display') == 'none') {
+        console.log('should appear')
+
+            $('.resnav').css({"display": "inline-block", 'left': '-44.45%', 'opacity': '0'}).animate({
+                left: '+=44.45%',
+                opacity: 1
+            }, 300, function(){
+                $('.fp-controlArrow.fp-prev').css('display', 'none');
+            });
+        }
+        else {
+            console.log('shold go away')
+            $('.resnav').animate({
+                left: '-=44.45%',
+                opacity: 0
+            }, 300, function(){
+                $('.resnav').css('display', 'none');
+                $('.fp-controlArrow.fp-prev').css('display', 'block');
+            });
+        }
+    })
+
+    $('#projectbuttonres').click(function() {
+        if($('.dropin').is(':visible')) {
+            $('.dropin').css({"display": "none"});
+        }
+        else {
+            $('.dropin').css({"display": "block"});
+        }
+    });
+
     $('#leftg').on('click', function() {
         console.log('in rotate left');
         if($('.hackaboximgcont:visible').prev().is('.hackaboximgcont')) {
@@ -975,30 +1016,55 @@ $(document).ready(function() {
       ;
     };
 
+    var arrayslidese = ['secondPage/1', 'secondPage/2'];
     var arrayanchors = ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'];
 
+    console.log(location.hash.substr(1));
+
     $('#upa').click(function() {
-        var current = location.hash.slice(1);
-        var thisindex = arrayanchors.indexOf(current);
-        var next = arrayanchors[thisindex - 1];
-        console.log(next);
-        if(!next) {
+        var current = location.hash.substr(1);
+        if(current=='') {
             window.location = 'http://example.dev/#firstPage';
             return;
         }
-        window.location = 'http://example.dev/#' + next;
+        else if(current.indexOf('/') > -1) {
+            window.location = 'http://example.dev/#firstPage'
+            return;
+        }
+        else {
+            var thisindex = arrayanchors.indexOf(current);
+            var next = arrayanchors[thisindex - 1];
+            console.log(next);
+            
+            if(!next) {
+                window.location = 'http://example.dev/#firstPage';
+                return;
+            }
+
+            window.location = 'http://example.dev/#' + next;
+        }
     })
 
     $('#downa').click(function() {
-        var current = location.hash.slice(1);
-        var thisindex = arrayanchors.indexOf(current);
-        var next = arrayanchors[thisindex + 1];
-        console.log(next);
-        if(!next) {
-            window.location = 'http://example.dev/#fourthPage';
+        var current = location.hash.substr(1);    
+        if(current=='') {
+            window.location = 'http://example.dev/#secondPage';
             return;
         }
-        window.location = 'http://example.dev/#' + next;
+        else if(current.indexOf('/') > -1) {
+            window.location = 'http://example.dev/#thirdPage';
+            return;
+        }
+        else {
+            var thisindex = arrayanchors.indexOf(current);
+            var next = arrayanchors[thisindex + 1];
+            console.log(next);
+            if(!next) {
+                window.location = 'http://example.dev/#fourthPage';
+                return;
+            }
+            window.location = 'http://example.dev/#' + next;
+        }
     })
 
     /*$('.scrollbar-dynamic').on('wheel', function(e){
@@ -1054,7 +1120,7 @@ $(document).ready(function() {
             $('.music').height(diff2);
 
                 $('.fa-bars').css('display', 'none');
-                $('.menubutton').css('opacity', '1');
+                $('.menuholder').css('display', 'inline-block');
             
         }
         if($(window).width() < 1200 && $(window).width() > 992) {
@@ -1067,7 +1133,7 @@ $(document).ready(function() {
             $('.music').height(diff2);
 
                 $('.fa-bars').css('display', 'none');
-                $('.menubutton').css('opacity', '1');
+                $('.menuholder').css('display', 'inline-block');
             
         }
 
@@ -1081,7 +1147,7 @@ $(document).ready(function() {
             $('.music').height(diff2);
 
                 $('.fa-bars').css('display', 'none');
-                $('.menubutton').css('opacity', '1');
+                $('.menuholder').css('display', 'inline-block');
             
         }
 
@@ -1095,7 +1161,7 @@ $(document).ready(function() {
             $('.music').height(diff2);
 
                 $('.fa-bars').css('display', 'none');
-                $('.menubutton').css('opacity', '1');
+                $('.menuholder').css('display', 'inline-block');
             
         }
 
@@ -1110,7 +1176,7 @@ $(document).ready(function() {
 
             if($('.menubutton').is(':visible')) {
                 $('.fa-bars').css('display', 'inline-block');
-                $('.menubutton').css('opacity', '0');
+                $('.menuholder').css('display', 'none');
             }
         }
 
@@ -1125,7 +1191,7 @@ $(document).ready(function() {
 
             if($('.menubutton').is(':visible')) {
                 $('.fa-bars').css('display', 'inline-block');
-                $('.menubutton').css('opacity', '0');
+                $('.menuholder').css('display', 'none');
             }
         }
 
