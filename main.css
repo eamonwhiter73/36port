@@ -41,6 +41,26 @@ a {
 	cursor: pointer;
 }
 
+.social {
+	position: absolute;
+	background-color: rgba(96, 18, 24, 0.98);
+	left: 0;
+	bottom: 60%;
+	z-index:99997;
+	display: block;
+	text-align: left;
+	padding-top: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 2px;
+	color: #FFF1E4;
+	font-size: 28px;
+}
+
+.fb, .lin, .twit {
+	display: block;
+}
+
 .barscover {
 	position: absolute;
 	background-color: rgba(96, 18, 24, 1);
@@ -54,7 +74,7 @@ a {
 	position: absolute;
 	background-color: rgb(63,54,47);
 	right: -44.5%;
-	z-index:99998;
+	z-index:99997;
 	display: none;
 	text-align: justify;
 	padding-top: 72px;
@@ -85,6 +105,16 @@ a {
 }
 
 .resnavbut {
+	line-height: 52px;
+	text-align: left;
+	font-family: 'Avenir';
+	font-weight: 500;
+	z-index: 99999;
+	font-size: 24px;
+	color: #FFF1E4;
+}
+
+#projectbuttonres {
 	line-height: 52px;
 	text-align: left;
 	font-family: 'Avenir';
@@ -186,15 +216,17 @@ a {
 	line-height: 48px;
 	height: 47px;
 	display: inline-block;
-	margin-top: 4px;
+	margin-top: 5px;
 }
 
 .fp-controlArrow.fp-prev {
     border-color: transparent rgb(96, 18, 24) transparent transparent;
+    left: 8%;
 }
 
 .fp-controlArrow.fp-next {
     border-color: transparent transparent transparent rgb(96, 18, 24);
+    right: 8%;
 }
 
 .fp-slidesNav ul li a span {
@@ -645,7 +677,7 @@ height: 100%;
 
 .updownnav {
 	position: fixed;
-	top: 500px;
+	top: 82%;
 	background-color: rgba(96, 18, 24, 0.9);
 	padding-right: 2.5%;
 	border-style: solid;
@@ -811,9 +843,9 @@ height: 100%;
 }
 
 .techholder {
-	position: relative;
+	position: absolute;
 	height: 10%;
-	top: 92%;
+	top: 103%;
 	z-index: 2;
 	padding-top: 1%;
 }
@@ -825,12 +857,12 @@ height: 100%;
 	font-weight: 700;
 	color: #6F282A;
 	background-color: #D4B79E;
-	top: 92.5%;
+	top: 105%;
 	height: 28px;
 }
 
 .techused>p {
-	line-height: 28px;
+	line-height: 50px;
 }
 
 .techused:before {
@@ -838,7 +870,7 @@ height: 100%;
 	position: absolute;
 	height: 3px;
 	width: 10%;
-	top: 12px;
+	top: 76%;
 	left: -10%;
 	background-color: #6F282A;
 }
@@ -848,56 +880,56 @@ height: 100%;
 	position: absolute;
 	height: 3px;
 	width: 13%;
-	top: 12px;
+	top: 76%;
 	left: 60%;
 	background-color: #6F282A;
 }
 
 .expressimg {
-  width: 100%;
+  max-width: 75%;
 }
 
 .expmagadj {
-  width: 100%;
+  max-width: 75%;
 }
 
 .mongodbimg {
-  width: 100%;
+  max-width: 75%;
 }
 
 .angularimg {
-  width: 100%;
+  max-width: 75%;
 }
 
 .nodeimg {
-  width: 100%;
+  max-width: 75%;
 }
 
 .mongadjust {
 }
 
 .gmapadj {
-	width: 100%;
+	max-width: 75%;
 }
 
 .parseadj {
-	width: 100%;
+	max-width: 75%;
 }
 
 .wordpressimg {
-  width: 100%;
+  	max-width: 75%;
 }
 
 .phpimg {
-  width: 100%;
+    max-width: 75%;
 }
 
 .mysqlimg {
-  width: 100%;
+ 	max-width: 75%;
 }
 
 .bootstrapimg {
-  width: 100%;
+  max-width: 75%;
 }
 
 .mongoholder {
@@ -1344,27 +1376,27 @@ height: 100%;
 	}
 
 	.techholder {
-		position: relative;
+		position: absolute;
 		height: 10%;
-		top: 92%;
+		top: 103%;
 		z-index: 2;
-		padding-top: 1vh;
+		padding-top: 1%;
 	}
 
 	.techused {
-		top: 93.2%;
+		top: 105%;
 		font-size: 1.5vw;
 		height: 28px;
 	}
 
 	.techused>p {
-		line-height: 28px;		
+		line-height: 44px;		
 	}
 
 	.techused:after {
 		left: 79%;
 		width: 21%;
-		top: 12px;
+		top: 74%;
 	}
 
 	.techused:before {
@@ -1372,7 +1404,7 @@ height: 100%;
 		position: absolute;
 		height: 3px;
 		width: 15%;
-		top: 12px;
+		top: 74%;
 		left: -15%;
 		background-color: #6F282A;
 	}
@@ -1622,7 +1654,7 @@ height: 100%;
 
 	.updownnav {
 		position: fixed;
-		top: 500px;
+		top: 550px;
 		background-color: rgba(96, 18, 24, 0.9);
 		/*padding-left: 0.4%;*/
 		padding-bottom: 100px;
@@ -1689,12 +1721,13 @@ height: 100%;
 	}
 
 	.techused>p {
-		line-height: 17px;		
+		line-height: 22px;		
 	}
 
 	.techused:after {
 		left: 71%;
 		width: 35%;
+		top: 64%;
 	}
 
 	.techused:before {
@@ -1702,7 +1735,7 @@ height: 100%;
 		position: absolute;
 		height: 3px;
 		width: 13%;
-		top: 45%;
+		top: 64%;
 		left: -13%;
 		background-color: #6F282A;
 	}
@@ -2033,7 +2066,7 @@ height: 100%;
 
 	#downa {
 		position: absolute;
-		margin-top: 100px;
+		margin-top: 70px;
 		right: 17%;
 		-ms-transform: scale(1.8); /* IE 9 */
 		-webkit-transform: scale(1.8); /* Safari */
@@ -2042,12 +2075,12 @@ height: 100%;
 
 	.updownnav {
 		position: fixed;
-		top: 490px;
+		top: 560px;
 		background-color: rgba(96, 18, 24, 0.9);
 		border-style: solid;
 		border-width: 2px;
 		border-color: #C8A589;
-		padding-bottom: 140px;
+		padding-bottom: 110px;
 		padding-right: 0;
 		right: 5px;
 		/*-ms-transform: rotate(90deg); /* IE 9 */
@@ -3442,7 +3475,7 @@ height: 100%;
 	}
 
 	.bio {
-		font-size: 7pt;
+		font-size: 10.4px;
 		padding-left: 5px;
 		padding-right: 5px;
 		padding-bottom: 0px;
