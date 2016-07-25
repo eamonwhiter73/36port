@@ -341,11 +341,16 @@ $(document).ready(function() {
             }, 1000, 'linear');
 
             if($(window).width() > 1199) {
-                var hack = $('.hackskilladj').height();
+                //var hack = $('.hackskilladj').height();
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 100;
+                var hack = $('.hackskilladj').height(diffhack);
                 var hard = $('.hardware').height();
-                var soft = $('.software').height();
-                var diff1 = hack - hard - 28;
-                var diff2 = hack - soft - 28;
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 173;
+                var diff2 = row - soft - titlepouth - 173;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
@@ -355,14 +360,23 @@ $(document).ready(function() {
                     if($('.resnav').is(':visible')) {
                         $('.resnav').css({'display': 'none', 'left':'-44.45%'});
                     }
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 100;
+                var hack = $('.forborderskills').height(diffhack);
                 
             }
-            if($(window).width() < 1200 && $(window).width() > 992) {
-                var hack = $('.hackskilladj').height();
+            if($(window).width() < 1200 && $(window).width() > 991) {
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 97;
+                var hack = $('.hackskilladj').height(diffhack);
                 var hard = $('.hardware').height();
-                var soft = $('.software').height();
-                var diff1 = hack - hard - 25;
-                var diff2 = hack - soft - 25;
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 168;
+                var diff2 = row - soft - titlepouth - 168;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
@@ -372,15 +386,25 @@ $(document).ready(function() {
                     if($('.resnav').is(':visible')) {
                         $('.resnav').css({'display': 'none', 'left':'-44.45%'});
                     }
+
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 96;
+                var hack = $('.forborderskills').height(diffhack);
                 
             }
 
-            if($(window).width() < 993 && $(window).width() > 767) {
-                var hack = $('.hackskilladj').height();
+            if($(window).width() < 992 && $(window).width() > 767) {
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 36;
+                var hack = $('.hackskilladj').height(diffhack);
                 var hard = $('.hardware').height();
-                var soft = $('.software').height();
-                var diff1 = hack - hard - 21;
-                var diff2 = hack - soft - 21;
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 107;
+                var diff2 = row - soft - titlepouth - 107;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
@@ -390,14 +414,24 @@ $(document).ready(function() {
                     if($('.resnav').is(':visible')) {
                         $('.resnav').css({'display': 'none', 'left':'-44.45%'});
                     }
+
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 36;
+                var hack = $('.forborderskills').height(diffhack);
             }
 
             if($(window).width() < 768 && $(window).width() > 480) {
-                var hack = $('.hackskilladj').height();
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 36;
+                var hack = $('.hackskilladj').height(diffhack);
                 var hard = $('.hardware').height();
-                var soft = $('.software').height();
-                var diff1 = hack - hard - 18;
-                var diff2 = hack - soft - 18;
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 107;
+                var diff2 = row - soft - titlepouth - 107;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
@@ -412,11 +446,15 @@ $(document).ready(function() {
             }
 
             if($(window).width() < 481 && $(window).width() > 320) {
-                var hack = $('.hackskilladj').height();
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 126;
+                var hack = $('.hackskilladj').height(diffhack);
                 var hard = $('.hardware').height();
-                var soft = $('.software').height();
-                var diff1 = hack - hard - 15;
-                var diff2 = hack - soft - 15;
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 197;
+                var diff2 = row - soft - titlepouth - 197;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
@@ -596,42 +634,107 @@ $(document).ready(function() {
             }, 1000, 'linear');
 
             if($(window).width() > 1199) {
-                var hack = $('.hackskilladj').height();
+                //var hack = $('.hackskilladj').height();
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 100;
+                var hack = $('.hackskilladj').height(diffhack);
                 var hard = $('.hardware').height();
-                var soft = $('.software').height();
-                var diff1 = hack - hard - 21;
-                var diff2 = hack - soft - 21;
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 173;
+                var diff2 = row - soft - titlepouth - 173;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
+
+                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                    $('.fa-bars').css('display', 'none');
+                    $('.menuholder').css('display', 'inline-block');
+                    if($('.resnav').is(':visible')) {
+                        $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                    }
+
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 100;
+                var hack = $('.forborderskills').height(diffhack);
+                
             }
-            if($(window).width() < 1200 && $(window).width() > 992) {
-                var hack = $('.hackskilladj').height();
+            if($(window).width() < 1200 && $(window).width() > 991) {
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 97;
+                var hack = $('.hackskilladj').height(diffhack);
                 var hard = $('.hardware').height();
-                var soft = $('.software').height();
-                var diff1 = hack - hard - 25;
-                var diff2 = hack - soft - 25;
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 168;
+                var diff2 = row - soft - titlepouth - 168;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
+
+                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                    $('.fa-bars').css('display', 'none');  
+                    $('.menuholder').css('display', 'inline-block');
+                    if($('.resnav').is(':visible')) {
+                        $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                    }
+
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 96;
+                var hack = $('.forborderskills').height(diffhack);
+                
             }
 
-            if($(window).width() < 993 && $(window).width() > 767) {
-                var hack = $('.hackskilladj').height();
+            if($(window).width() < 992 && $(window).width() > 767) {
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 38;
+                var hack = $('.hackskilladj').height(diffhack);
                 var hard = $('.hardware').height();
-                var soft = $('.software').height();
-                var diff1 = hack - hard - 21;
-                var diff2 = hack - soft - 21;
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 106;
+                var diff2 = row - soft - titlepouth - 106;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
+
+                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                $('.fa-bars').css('display', 'none');  
+                $('.menuholder').css('display', 'inline-block');
+                if($('.resnav').is(':visible')) {
+                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                }
+
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 36;
+                var hack = $('.forborderskills').height(diffhack);
             }
 
             if($(window).width() < 768 && $(window).width() > 480) {
-                var hack = $('.hackskilladj').height();
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 38;
+                var hack = $('.hackskilladj').height(diffhack);
                 var hard = $('.hardware').height();
-                var soft = $('.software').height();
-                var diff1 = hack - hard - 18;
-                var diff2 = hack - soft - 18;
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 110;
+                var diff2 = row - soft - titlepouth - 110;
                 $('.art').height(diff1);
                 $('.music').height(diff2);
+
+                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                    $('.fa-bars').css('display', 'none');                    
+                    $('.menuholder').css('display', 'inline-block');
+                    if($('.resnav').is(':visible')) {
+                        $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                    }
             }
 
             if($(window).width() < 481 && $(window).width() > 320) {
@@ -1182,13 +1285,18 @@ $(document).ready(function() {
     //$('.scrollbar-dynamic').isolatedScroll();
     $('.scrollbar-dynamic').scrollbar();
 
-    $(window).resize(function() {
+    $(window).resize(function() { /***** MAKE NOTHING HAPPEN ON RESIZE????****/
         if($(window).width() > 1199) {
-            var hack = $('.hackskilladj').height();
+            //var hack = $('.hackskilladj').height();
+            var row = $('#skills').height();
+            var titlepouth = $('.titlepout').height();
+            var navh = $('nav').height();
+            var diffhack = row - titlepouth - navh - 100;
+            var hack = $('.hackskilladj').height(diffhack);
             var hard = $('.hardware').height();
-            var soft = $('.software').height();
-            var diff1 = hack - hard - 28;
-            var diff2 = hack - soft - 28;
+            var soft = $('.software').height();  
+            var diff1 = row - hard - titlepouth - 179;
+            var diff2 = row - soft - titlepouth - 179;
             $('.art').height(diff1);
             $('.music').height(diff2);
 
@@ -1198,14 +1306,24 @@ $(document).ready(function() {
                 if($('.resnav').is(':visible')) {
                     $('.resnav').css({'display': 'none', 'left':'-44.45%'});
                 }
+
+            var row = $('#skills').height();
+            var titlepouth = $('.titlepout').height();
+            var navh = $('nav').height();
+            var diffhack = row - titlepouth - navh - 100;
+            var hack = $('.forborderskills').height(diffhack);
             
         }
-        if($(window).width() < 1200 && $(window).width() > 992) {
-            var hack = $('.hackskilladj').height();
+        if($(window).width() < 1200 && $(window).width() > 991) {
+            var row = $('#skills').height();
+            var titlepouth = $('.titlepout').height();
+            var navh = $('nav').height();
+            var diffhack = row - titlepouth - navh - 97;
+            var hack = $('.hackskilladj').height(diffhack);
             var hard = $('.hardware').height();
-            var soft = $('.software').height();
-            var diff1 = hack - hard - 25;
-            var diff2 = hack - soft - 25;
+            var soft = $('.software').height();  
+            var diff1 = row - hard - titlepouth - 171;
+            var diff2 = row - soft - titlepouth - 171;
             $('.art').height(diff1);
             $('.music').height(diff2);
 
@@ -1216,14 +1334,23 @@ $(document).ready(function() {
                     $('.resnav').css({'display': 'none', 'left':'-44.45%'});
                 }
             
+            var row = $('#skills').height();
+            var titlepouth = $('.titlepout').height();
+            var navh = $('nav').height();
+            var diffhack = row - titlepouth - navh - 95;
+            var hack = $('.forborderskills').height(diffhack);
         }
 
-        if($(window).width() < 993 && $(window).width() > 767) {
-            var hack = $('.hackskilladj').height();
+        if($(window).width() < 992 && $(window).width() > 767) {
+            var row = $('#skills').height();
+            var titlepouth = $('.titlepout').height();
+            var navh = $('nav').height();
+            var diffhack = row - titlepouth - navh - 36;
+            var hack = $('.hackskilladj').height(diffhack);
             var hard = $('.hardware').height();
-            var soft = $('.software').height();
-            var diff1 = hack - hard - 21;
-            var diff2 = hack - soft - 21;
+            var soft = $('.software').height();  
+            var diff1 = row - hard - titlepouth - 110;
+            var diff2 = row - soft - titlepouth - 110;
             $('.art').height(diff1);
             $('.music').height(diff2);
 
@@ -1233,33 +1360,46 @@ $(document).ready(function() {
                 if($('.resnav').is(':visible')) {
                     $('.resnav').css({'display': 'none', 'left':'-44.45%'});
                 }
+
+            var row = $('#skills').height();
+            var titlepouth = $('.titlepout').height();
+            var navh = $('nav').height();
+            var diffhack = row - titlepouth - navh - 36;
+            var hack = $('.forborderskills').height(diffhack);
         }
 
         if($(window).width() < 768 && $(window).width() > 480) {
-            var hack = $('.hackskilladj').height();
-            var hard = $('.hardware').height();
-            var soft = $('.software').height();
-            var diff1 = hack - hard - 18;
-            var diff2 = hack - soft - 18;
-            $('.art').height(diff1);
-            $('.music').height(diff2);
+            var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 38;
+                var hack = $('.hackskilladj').height(diffhack);
+                var hard = $('.hardware').height();
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 110;
+                var diff2 = row - soft - titlepouth - 110;
+                $('.art').height(diff1);
+                $('.music').height(diff2);
 
-                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
-                $('.fa-bars').css('display', 'none');                    
-                $('.menuholder').css('display', 'inline-block');
-                if($('.resnav').is(':visible')) {
-                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
-                }
-
+                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                    $('.fa-bars').css('display', 'none');                    
+                    $('.menuholder').css('display', 'inline-block');
+                    if($('.resnav').is(':visible')) {
+                        $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                    }
             
         }
 
         if($(window).width() < 481 && $(window).width() > 320) {
-            var hack = $('.hackskilladj').height();
+            var row = $('#skills').height();
+            var titlepouth = $('.titlepout').height();
+            var navh = $('nav').height();
+            var diffhack = row - titlepouth - navh - 126;
+            var hack = $('.hackskilladj').height(diffhack);
             var hard = $('.hardware').height();
-            var soft = $('.software').height();
-            var diff1 = hack - hard - 15;
-            var diff2 = hack - soft - 15;
+            var soft = $('.software').height();  
+            var diff1 = row - hard - titlepouth - 197;
+            var diff2 = row - soft - titlepouth - 197;
             $('.art').height(diff1);
             $('.music').height(diff2);
 
