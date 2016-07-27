@@ -1321,6 +1321,11 @@ height: 100%;
 		height: 800px;
 		margin-top: 40px;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+		background: #D4B89B; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* Standard syntax */
 	}
 
 	.inset>textarea {
@@ -1350,10 +1355,38 @@ height: 100%;
 		padding-left: 1%;
 		padding-bottom: 1%;
 	}
+
+		.forborderskills {
+		  background: #D4B89B; /* For browsers that do not support gradients */
+		  background: -webkit-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Safari 5.1 to 6.0 */
+		  background: -o-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Opera 11.1 to 12.0 */
+		  background: -moz-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Firefox 3.6 to 15 */
+		  background: linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* Standard syntax */
+		  padding-bottom: 1%;
+		  padding-top: 1%;
+		  padding-right: 1.1%;
+		  padding-left: 1%;
+		}
+
+		.hackskilladj {
+			background: -webkit-linear-gradient(left, #C8A589 75%, #D4B79E); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(right, #C8A589 75%, #D4B79E); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(right, #C8A589 75%, #D4B79E); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(to right, #C8A589 75%, #D4B79E); /* Standard syntax */
+			padding-left: 1.2%;
+			padding-right: 1%;
+			padding-top: 1%;
+			padding-bottom: 1%;
+			margin-left: 1%;
+		}
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 1360px) and (max-width: 1919px) {
+	.inset>textarea {
+		padding-bottom: 520px;
+	}
+
 	.logophp2 {
 		margin-top: 9%;
 	}
@@ -1419,6 +1452,52 @@ height: 100%;
 
 	.imgcontadj {
 		height: 511px;
+	}
+
+	.forborderskills {
+	  background: #D4B89B; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* Standard syntax */
+	  padding-bottom: 1%;
+	  padding-top: 1%;
+	  padding-right: 1.1%;
+	  padding-left: 1%;
+	}
+
+	.hackskilladj {
+		background: -webkit-linear-gradient(left, #C8A589 75%, #D4B79E); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(right, #C8A589 75%, #D4B79E); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(right, #C8A589 75%, #D4B79E); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to right, #C8A589 75%, #D4B79E); /* Standard syntax */
+		padding-left: 1.2%;
+		padding-right: 1%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		margin-left: 1%;
+	}
+
+	.offsetadj {
+	  margin-top: 1.5%;
+	  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+	  background: #D4B89B; /* For browsers that do not support gradients */
+	  background: -webkit-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* Standard syntax */
+	  padding-bottom: 30px;
+	}
+
+	.thanks {
+		top: 2%;
+		right: 4%;
+		font-size: 3.2vw;
+		line-height: 3.3vw
+	}
+
+	.submitbut {
+		top: 95%;
 	}
 }
 
