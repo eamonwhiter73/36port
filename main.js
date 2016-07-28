@@ -59,203 +59,8 @@ $(document).ready(function() {
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
-  
-    /*$(window).load(function() {
-        if($(window).width() > 1199) {        
-            $('.titlep').fitText(0.9);
-            $('.titlepwp').fitText(0.9);
-            $('.titlepios').fitText(0.9);
-            $('.titlepskill').fitText(0.9);
-            $('.titlepcont').fitText(0.9);
-            //$('.subtitle').fitText(2.2, { maxFontSize: '18px'});
-            //$('.hacktext>p').fitText(2, { minFontSize: '14px', maxFontSize: '15px'});
-            $('.titlewp').fitText(1.8);
-            $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
-            $('.wordtext>p').fitText(0.5, { minFontSize: '16px', maxFontSize: '17px'});
-            $('.titleap').fitText(1.5);
-            $('.subtitleap').fitText(2, { minFontSize: '16px', maxFontSize: '18px'});
-            $('.pcont>p').fitText(2, { minFontSize: '15px', maxFontSize: '15px'});
-        }
 
-        if($(window).width() < 1201 && $(window).width() > 992) {
-            $('.titlep').fitText(0.9);
-            $('.titlepwp').fitText(0.9);
-            $('.titlepios').fitText(0.9);
-            $('.titlepskill').fitText(0.9);
-            $('.titlepcont').fitText(0.9);
-            //$('.subtitle').fitText(2.2, { maxFontSize: '18px'});
-            //$('.hacktext>p').fitText(2.8, { minFontSize: '14px', maxFontSize: '15px'});
-            $('.titlewp').fitText(1.8);
-            $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
-            $('.wordtext>p').fitText(0.8, { minFontSize: '15px', maxFontSize: '16.5px'});
-            $('.pcont>p').fitText(1.5, { minFontSize: '13.9px', maxFontSize: '13.9px'});
-            $('.subtitleap').fitText(2, { minFontSize: '16px', maxFontSize: '18px'});
-        }
-
-        if($(window).width() < 993 && $(window).width() > 767) {
-            $('.titlep').fitText(0.9);
-            $('.titlepwp').fitText(0.9);
-            $('.titlepios').fitText(0.9);
-            $('.titlepskill').fitText(0.9);
-            $('.titlepcont').fitText(0.9);
-            //$('.subtitle').fitText(2.7, { minFontSize: '15px'});
-            //$('.hacktext>p').fitText(2.6, { minFontSize: '12.6px', maxFontSize: '12.8px'});
-            $('.titlewp').fitText(1.6);
-            $('.subtitlewp').fitText(2, { minFontSize:'17px', maxFontSize: '19px'});
-            $('.wordtext>p').fitText(1.8, { minFontSize: '15px', maxFontSize: '15.5px'});
-            $('.pcont>p').fitText(2.4, { minFontSize: '12px', maxFontSize: '12.6px'});
-
-        }
-
-        if($(window).width() < 768 && $(window).width() > 480) {
-            $('.titlep').fitText(0.9);
-            $('.titlepwp').fitText(0.9);
-            $('.titlepios').fitText(0.9);
-            $('.titlepskill').fitText(0.9);
-            $('.titlepcont').fitText(0.7);
-            //$('.subtitle').fitText(2.7, { minFontSize: '15px'});
-            //$('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '15px'});
-            $('.titlewp').fitText(2);
-            $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
-            $('.pcont>p').fitText(1.8, { minFontSize: '11px', maxFontSize: '11.8px'});
-        }
-
-        if($(window).width() < 481) {
-            $('.titlep').fitText(0.9);
-            $('.titlepwp').fitText(0.9);
-            $('.titlepios').fitText(0.9);
-            $('.titlepskill').fitText(0.9);
-            $('.titlepcont').fitText(0.7);
-            //$('.subtitle').fitText(2.7, { minFontSize: '15px'});
-            //$('.hacktext>p').fitText(1.5, { minFontSize: '12px', maxFontSize: '12px'});
-            $('.wordtext>p').fitText(1.5, { minFontSize: '14px', maxFontSize: '14px'});
-            $('.pcont>p').fitText(3, { minFontSize: '11px', maxFontSize: '11px'});
-            $('.subtitleap').fitText(2.7, { minFontSize: '12px',  maxFontSize: '12.5px'});
-            $('.titleap').fitText(1.5);
-            $('.titlewp').fitText(1.8),
-            $('.subtitlewp').fitText(2, { maxFontSize: '17px'});
-        }
-    });
-
-    $(window).resize(function() {
-        if($(window).width() > 1199) {        
-            $('.titlep').fitText(0.9);
-            $('.titlepwp').fitText(0.9);
-            $('.titlepios').fitText(0.9);
-            $('.titlepskill').fitText(0.9);
-            $('.titlepcont').fitText(0.9);
-            //$('.subtitle').fitText(2.2, { maxFontSize: '18px'});
-            //$('.hacktext>p').fitText(2, { minFontSize: '14px', maxFontSize: '15px'});
-            $('.titlewp').fitText(1.8);
-            $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
-            $('.wordtext>p').fitText(0.5, { minFontSize: '16px', maxFontSize: '17px'});
-            $('.titleap').fitText(1.5);
-            $('.subtitleap').fitText(2, { minFontSize: '16px', maxFontSize: '18px'});
-            $('.pcont>p').fitText(2, { minFontSize: '15px', maxFontSize: '15px'});
-        }
-
-        if($(window).width() < 1201 && $(window).width() > 992) {
-            $('.titlep').fitText(0.9);
-            $('.titlepwp').fitText(0.9);
-            $('.titlepios').fitText(0.9);
-            $('.titlepskill').fitText(0.9);
-            $('.titlepcont').fitText(0.9);
-            //$('.subtitle').fitText(2.2, { maxFontSize: '18px'});
-            //$('.hacktext>p').fitText(2.8, { minFontSize: '14px', maxFontSize: '15px'});
-            $('.titlewp').fitText(1.8);
-            $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
-            $('.wordtext>p').fitText(0.8, { minFontSize: '15px', maxFontSize: '16.5px'});
-            $('.pcont>p').fitText(1.5, { minFontSize: '13.9px', maxFontSize: '13.9px'});
-            $('.subtitleap').fitText(2, { minFontSize: '16px', maxFontSize: '18px'});
-        }
-
-        if($(window).width() < 993 && $(window).width() > 767) {
-            $('.titlep').fitText(0.9);
-            $('.titlepwp').fitText(0.9);
-            $('.titlepios').fitText(0.9);
-            $('.titlepskill').fitText(0.9);
-            $('.titlepcont').fitText(0.9);
-            //$('.subtitle').fitText(2.7, { minFontSize: '15px'});
-            //$('.hacktext>p').fitText(2.6, { minFontSize: '12.6px', maxFontSize: '12.8px'});
-            $('.titlewp').fitText(1.6);
-            $('.subtitlewp').fitText(2, { minFontSize:'17px', maxFontSize: '19px'});
-            $('.wordtext>p').fitText(1.8, { minFontSize: '15px', maxFontSize: '15.5px'});
-            $('.pcont>p').fitText(2.4, { minFontSize: '12px', maxFontSize: '12.6px'});
-
-        }
-
-        if($(window).width() < 768 && $(window).width() > 480) {
-            $('.titlep').fitText(0.9);
-            $('.titlepwp').fitText(0.9);
-            $('.titlepios').fitText(0.9);
-            $('.titlepskill').fitText(0.9);
-            $('.titlepcont').fitText(0.7);
-            //$('.subtitle').fitText(2.7, { minFontSize: '15px'});
-            //$('.hacktext>p').fitText(1.2, { minFontSize: '12.6px', maxFontSize: '15px'});
-            $('.titlewp').fitText(2);
-            $('.subtitlewp').fitText(2, { maxFontSize: '20px'});
-            $('.pcont>p').fitText(1.8, { minFontSize: '11px', maxFontSize: '11.8px'});
-        }
-
-        if($(window).width() < 481) {
-            $('.titlep').fitText(0.9);
-            $('.titlepwp').fitText(0.9);
-            $('.titlepios').fitText(0.9);
-            $('.titlepskill').fitText(0.9);
-            $('.titlepcont').fitText(0.7);
-            //$('.subtitle').fitText(2.7, { minFontSize: '15px'});
-            //$('.hacktext>p').fitText(1.5, { minFontSize: '12px', maxFontSize: '12px'});
-            $('.wordtext>p').fitText(1.5, { minFontSize: '14px', maxFontSize: '14px'});
-            $('.pcont>p').fitText(3, { minFontSize: '11px', maxFontSize: '11px'});
-            $('.subtitleap').fitText(2.7, { minFontSize: '12px',  maxFontSize: '12.5px'});
-            $('.titleap').fitText(1.5);
-            $('.titlewp').fitText(1.8),
-            $('.subtitlewp').fitText(2, { maxFontSize: '17px'});
-        }
-    });*/
-
-    /*if(location.hash.slice(1) == 'thirdPage') {
-        $('nav').css({
-            'background-color': '#A10000'
-        })
-    }
-    if(location.hash.slice(1) == 'secondPage') {
-        $('nav').css({
-            'background-color': '#B24949'
-        })
-    }*/
-    /*if(location.hash.slice(1) == 'fourthPage') {
-        $('nav').css({
-            'background-color': '#aaaaaa'
-        })
-    }*/
-    /*else if(location.hash.slice(1) == 'thirdPage') {
-        $('.fp-controlArrow.fp-prev').css({
-            'border-color': 'transparent #A10000 transparent transparent'
-        })
-
-        $('.fp-controlArrow.fp-next').css({
-            'border-color': 'transparent transparent transparent #A10000'
-        })
-    }
-    else if(location.hash.slice(1) == 'secondPage'){
-        $('.fp-controlArrow.fp-prev').css({
-            'border-color': 'transparent rgb(96, 18, 24) transparent transparent'
-        })
-
-        $('.fp-controlArrow.fp-next').css({
-            'border-color': 'transparent transparent transparent rgb(96, 18, 24)'
-        })
-    }
-    else {
-        $('.fp-controlArrow.fp-prev').css({
-            'border-color': 'transparent #aaa transparent transparent'
-        })
-
-        $('.fp-controlArrow.fp-next').css({
-            'border-color': 'transparent transparent transparent #aaa'
-        })
-    }*/
+    /*MENU*/
 
     $('#projectsbutton').mouseenter(function() {
         $('.dropdown').css({
@@ -292,6 +97,8 @@ $(document).ready(function() {
             'display': 'none'
         })
     })
+
+    /*EXECUTE ON LOAD*/
 
     window.addEventListener('load', checkHash);
     
@@ -341,12 +148,11 @@ $(document).ready(function() {
             }, 1000, 'linear');
 
             if($(window).width() > 1199) {
-                //var hack = $('.hackskilladj').height();
                 var row = $('#skills').height();
                 var titlepouth = $('.titlepout').height();
                 var navh = $('nav').height();
                 var diffhack = row - titlepouth - navh - 100;
-                var hack = $('.hackskilladj').height(diffhack);
+                $('.hackskilladj').height(diffhack);
                 var hard = $('.hardware').height();
                 var soft = $('.software').height();  
                 var diff1 = row - hard - titlepouth - 173;
@@ -354,17 +160,18 @@ $(document).ready(function() {
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
-                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
-                    $('.fa-bars').css('display', 'none');
-                    $('.menuholder').css('display', 'inline-block');
-                    if($('.resnav').is(':visible')) {
-                        $('.resnav').css({'display': 'none', 'left':'-44.45%'});
-                    }
+                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                $('.fa-bars').css('display', 'none');
+                $('.menuholder').css('display', 'inline-block');
+                if($('.resnav').is(':visible')) {
+                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                }
+
                 var row = $('#skills').height();
                 var titlepouth = $('.titlepout').height();
                 var navh = $('nav').height();
                 var diffhack = row - titlepouth - navh - 100;
-                var hack = $('.forborderskills').height(diffhack);
+                $('.forborderskills').height(diffhack);
                 
             }
             if($(window).width() < 1200 && $(window).width() > 991) {
@@ -372,7 +179,7 @@ $(document).ready(function() {
                 var titlepouth = $('.titlepout').height();
                 var navh = $('nav').height();
                 var diffhack = row - titlepouth - navh - 97;
-                var hack = $('.hackskilladj').height(diffhack);
+                $('.hackskilladj').height(diffhack);
                 var hard = $('.hardware').height();
                 var soft = $('.software').height();  
                 var diff1 = row - hard - titlepouth - 168;
@@ -380,19 +187,18 @@ $(document).ready(function() {
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
-                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
-                    $('.fa-bars').css('display', 'none');  
-                    $('.menuholder').css('display', 'inline-block');
-                    if($('.resnav').is(':visible')) {
-                        $('.resnav').css({'display': 'none', 'left':'-44.45%'});
-                    }
+                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                $('.fa-bars').css('display', 'none');  
+                $('.menuholder').css('display', 'inline-block');
+                if($('.resnav').is(':visible')) {
+                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                }
 
                 var row = $('#skills').height();
                 var titlepouth = $('.titlepout').height();
                 var navh = $('nav').height();
                 var diffhack = row - titlepouth - navh - 96;
-                var hack = $('.forborderskills').height(diffhack);
-                
+                $('.forborderskills').height(diffhack);
             }
 
             if($(window).width() < 992 && $(window).width() > 767) {
@@ -400,7 +206,7 @@ $(document).ready(function() {
                 var titlepouth = $('.titlepout').height();
                 var navh = $('nav').height();
                 var diffhack = row - titlepouth - navh - 36;
-                var hack = $('.hackskilladj').height(diffhack);
+                $('.hackskilladj').height(diffhack);
                 var hard = $('.hardware').height();
                 var soft = $('.software').height();  
                 var diff1 = row - hard - titlepouth - 107;
@@ -408,18 +214,18 @@ $(document).ready(function() {
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
-                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
-                    $('.fa-bars').css('display', 'none');  
-                    $('.menuholder').css('display', 'inline-block');
-                    if($('.resnav').is(':visible')) {
-                        $('.resnav').css({'display': 'none', 'left':'-44.45%'});
-                    }
+                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                $('.fa-bars').css('display', 'none');  
+                $('.menuholder').css('display', 'inline-block');
+                if($('.resnav').is(':visible')) {
+                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                }
 
                 var row = $('#skills').height();
                 var titlepouth = $('.titlepout').height();
                 var navh = $('nav').height();
                 var diffhack = row - titlepouth - navh - 36;
-                var hack = $('.forborderskills').height(diffhack);
+                $('.forborderskills').height(diffhack);
             }
 
             if($(window).width() < 768 && $(window).width() > 480) {
@@ -427,7 +233,7 @@ $(document).ready(function() {
                 var titlepouth = $('.titlepout').height();
                 var navh = $('nav').height();
                 var diffhack = row - titlepouth - navh - 36;
-                var hack = $('.hackskilladj').height(diffhack);
+                $('.hackskilladj').height(diffhack);
                 var hard = $('.hardware').height();
                 var soft = $('.software').height();  
                 var diff1 = row - hard - titlepouth - 107;
@@ -435,14 +241,12 @@ $(document).ready(function() {
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
-                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
-                    $('.fa-bars').css('display', 'none');                    
-                    $('.menuholder').css('display', 'inline-block');
-                    if($('.resnav').is(':visible')) {
-                        $('.resnav').css({'display': 'none', 'left':'-44.45%'});
-                    }
-
-                
+                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                $('.fa-bars').css('display', 'none');                    
+                $('.menuholder').css('display', 'inline-block');
+                if($('.resnav').is(':visible')) {
+                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                }  
             }
 
             if($(window).width() < 481 && $(window).width() > 320) {
@@ -450,7 +254,7 @@ $(document).ready(function() {
                 var titlepouth = $('.titlepout').height();
                 var navh = $('nav').height();
                 var diffhack = row - titlepouth - navh - 126;
-                var hack = $('.hackskilladj').height(diffhack);
+                $('.hackskilladj').height(diffhack);
                 var hard = $('.hardware').height();
                 var soft = $('.software').height();  
                 var diff1 = row - hard - titlepouth - 197;
@@ -466,7 +270,7 @@ $(document).ready(function() {
             }
 
             if($(window).width() < 321) {
-                var hack = $('.hackskilladj').height();
+                $('.hackskilladj').height();
                 var hard = $('.hardware').height();
                 var soft = $('.software').height();
                 var diff1 = hack - hard - 13;
@@ -482,38 +286,7 @@ $(document).ready(function() {
             }
         }
 
-        if($(window).width() > 1199) {
-            $('.fa-bars').css('display', 'none');
-            $('.menubutton').css('opacity', '1');
-        }
-
-        if($(window).width() < 1200 && $(window).width() > 992) {
-            $('.fa-bars').css('display', 'none');
-            $('.menubutton').css('opacity', '1');
-        }
-
-        if($(window).width() < 993 && $(window).width() > 767) {
-            $('.fa-bars').css('display', 'none');
-            $('.menubutton').css('opacity', '1');
-        }
-        if($(window).width() < 768 && $(window).width() > 480) {
-            $('.fa-bars').css('display', 'none');
-            $('.menubutton').css('opacity', '1');      
-        }
-
-        if($(window).width() < 481 && $(window).width() > 320) {
-            if($('.menubutton').is(':visible')) {
-                $('.fa-bars').css('display', 'inline-block');
-                $('.menubutton').css('opacity', '0');
-            }
-        }
-
-        if($(window).width() < 321) {
-            if($('.menubutton').is(':visible')) {
-                $('.fa-bars').css('display', 'inline-block');
-                $('.menubutton').css('opacity', '0');
-            }
-        }
+        /*TRANSISIONS*/
 
         if(location.hash.slice(1) == 'secondPage' || location.hash.substr(1) == 'secondPage/1' || location.hash.substr(1) == 'secondPage/2'){
             $('.forborderhack').css({ 'right': '', 'left': '-500px' }).stop().animate({
@@ -549,9 +322,10 @@ $(document).ready(function() {
                 right: '+=10%',
                 opacity: '1'
             }, 2000)
-
         }
     }
+
+    /*EXECUTE WHEN PAGE SWITCHED TO FROM OTHER PAGE*/
     
     $(window).on('hashchange',function(){
         var y = 0;
@@ -647,12 +421,12 @@ $(document).ready(function() {
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
-                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
-                    $('.fa-bars').css('display', 'none');
-                    $('.menuholder').css('display', 'inline-block');
-                    if($('.resnav').is(':visible')) {
-                        $('.resnav').css({'display': 'none', 'left':'-44.45%'});
-                    }
+                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                $('.fa-bars').css('display', 'none');
+                $('.menuholder').css('display', 'inline-block');
+                if($('.resnav').is(':visible')) {
+                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                }
 
                 var row = $('#skills').height();
                 var titlepouth = $('.titlepout').height();
@@ -674,12 +448,12 @@ $(document).ready(function() {
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
-                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
-                    $('.fa-bars').css('display', 'none');  
-                    $('.menuholder').css('display', 'inline-block');
-                    if($('.resnav').is(':visible')) {
-                        $('.resnav').css({'display': 'none', 'left':'-44.45%'});
-                    }
+                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                $('.fa-bars').css('display', 'none');  
+                $('.menuholder').css('display', 'inline-block');
+                if($('.resnav').is(':visible')) {
+                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                }
 
                 var row = $('#skills').height();
                 var titlepouth = $('.titlepout').height();
@@ -729,12 +503,12 @@ $(document).ready(function() {
                 $('.art').height(diff1);
                 $('.music').height(diff2);
 
-                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
-                    $('.fa-bars').css('display', 'none');                    
-                    $('.menuholder').css('display', 'inline-block');
-                    if($('.resnav').is(':visible')) {
-                        $('.resnav').css({'display': 'none', 'left':'-44.45%'});
-                    }
+                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                $('.fa-bars').css('display', 'none');                    
+                $('.menuholder').css('display', 'inline-block');
+                if($('.resnav').is(':visible')) {
+                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                }
             }
 
             if($(window).width() < 481 && $(window).width() > 320) {
@@ -757,6 +531,147 @@ $(document).ready(function() {
                 $('.music').height(diff2);
             }
         }
+
+        /*RESIZE*/
+
+        $(window).resize(function() {
+            if($(window).width() > 1199) {
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 100;
+                var hack = $('.hackskilladj').height(diffhack);
+                var hard = $('.hardware').height();
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 179;
+                var diff2 = row - soft - titlepouth - 179;
+                $('.art').height(diff1);
+                $('.music').height(diff2);
+
+                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                $('.fa-bars').css('display', 'none');
+                $('.menuholder').css('display', 'inline-block');
+                if($('.resnav').is(':visible')) {
+                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                }
+
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 100;
+                var hack = $('.forborderskills').height(diffhack);
+            }
+            if($(window).width() < 1200 && $(window).width() > 991) {
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 97;
+                var hack = $('.hackskilladj').height(diffhack);
+                var hard = $('.hardware').height();
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 171;
+                var diff2 = row - soft - titlepouth - 171;
+                $('.art').height(diff1);
+                $('.music').height(diff2);
+
+                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                $('.fa-bars').css('display', 'none');  
+                $('.menuholder').css('display', 'inline-block');
+                if($('.resnav').is(':visible')) {
+                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                }
+                
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 95;
+                var hack = $('.forborderskills').height(diffhack);
+            }
+
+            if($(window).width() < 992 && $(window).width() > 767) {
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 36;
+                var hack = $('.hackskilladj').height(diffhack);
+                var hard = $('.hardware').height();
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 110;
+                var diff2 = row - soft - titlepouth - 110;
+                $('.art').height(diff1);
+                $('.music').height(diff2);
+
+                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                $('.fa-bars').css('display', 'none');  
+                $('.menuholder').css('display', 'inline-block');
+                if($('.resnav').is(':visible')) {
+                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                }
+
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 36;
+                var hack = $('.forborderskills').height(diffhack);
+            }
+
+            if($(window).width() < 768 && $(window).width() > 480) {
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 38;
+                var hack = $('.hackskilladj').height(diffhack);
+                var hard = $('.hardware').height();
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 110;
+                var diff2 = row - soft - titlepouth - 110;
+                $('.art').height(diff1);
+                $('.music').height(diff2);
+
+                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
+                $('.fa-bars').css('display', 'none');                    
+                $('.menuholder').css('display', 'inline-block');
+                if($('.resnav').is(':visible')) {
+                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
+                }  
+            }
+
+            if($(window).width() < 481 && $(window).width() > 320) {
+                var row = $('#skills').height();
+                var titlepouth = $('.titlepout').height();
+                var navh = $('nav').height();
+                var diffhack = row - titlepouth - navh - 126;
+                var hack = $('.hackskilladj').height(diffhack);
+                var hard = $('.hardware').height();
+                var soft = $('.software').height();  
+                var diff1 = row - hard - titlepouth - 197;
+                var diff2 = row - soft - titlepouth - 197;
+                $('.art').height(diff1);
+                $('.music').height(diff2);
+
+                if($('.menubutton').is(':visible')) {
+                    $('.fa-bars').css('display', 'inline-block');
+                    $('.fa-bars').css('color', '#FFF1E4');
+                    $('.menuholder').css('display', 'none');
+                }
+            }
+
+            if($(window).width() < 321) {
+                var hack = $('.hackskilladj').height();
+                var hard = $('.hardware').height();
+                var soft = $('.software').height();
+                var diff1 = hack - hard - 13;
+                var diff2 = hack - soft - 13;
+                $('.art').height(diff1);
+                $('.music').height(diff2);
+
+                if($('.menubutton').is(':visible')) {
+                    $('.fa-bars').css('display', 'inline-block');
+                    $('.fa-bars').css('color', '#FFF1E4');
+                    $('.menuholder').css('display', 'none');
+                }
+            }
+        });
 
         if(location.hash.slice(1) == 'secondPage' || location.hash.substr(1) == 'secondPage/1' || location.hash.substr(1) == 'secondPage/2'){
             setTimeout(function(){
@@ -795,17 +710,7 @@ $(document).ready(function() {
         }
     });
 
-    $('.read').click(function() {
-        $('.readpanel').css({
-            "display": "block"
-        })
-    });
-
-    $('.closemine').click(function() {
-        $('.readpanel').css({
-            "display": "none"
-        })
-    });
+    /*MENU HASHCHANGE*/
 
     $('#projectsbutton').mouseenter(function() {
         $('.apex-dn').css({
@@ -865,7 +770,7 @@ $(document).ready(function() {
         }) 
     });
 
-    $('#leftg').on('click', function() {
+    /*$('#leftg').on('click', function() {
         console.log('in rotate left');
         if($('.hackaboximgcont:visible').prev().is('.hackaboximgcont')) {
             $('.hackaboximgcont:visible').prev().css('display', 'block');  
@@ -874,9 +779,9 @@ $(document).ready(function() {
         else {
             console.log('nothing before it');
         }
-    });
+    });*/
 
-    var active = false;
+    /*var active = false;
 
     $('#rightg').on('click', function() {
         if (active) {
@@ -893,87 +798,15 @@ $(document).ready(function() {
             else {
                 console.log('nothing before it');
             }
-            /*$('.hackaboximgcont:visible').next().css({
-                'opacity': '0',
-                'position': 'absolute',
-                'left': '25%',
-                'display': 'block'
-            });
-            $('.hackaboximgcont:visible').next().animate({
-                opacity: '1',
-                left: '-=25%'
-            }, 200, function(){
-                $('.hackaboximgcont:visible').prev().css('display', 'none');
-                $('.hackaboximgcont:visible').css('position', 'relative');
-                active = false;
-            })*/
-            //$('.hackaboximgcont:visible').next().css('display', 'block');
         }
         else {
             console.log('nothing after it');
         }
 
  
-    });
-
-    /*$('#leftgw').on('click', function() {
-        console.log('in rotate left');
-        if($('.hackaboximgcont:visible').prev().is('.hackaboximgcont')) {
-            $('.hackaboximgcont:visible').prev().css('display', 'block');  
-            $('.hackaboximgcont:visible').next().css('display', 'none');
-        }
-        else if($('.hackaboximgcont:visible').prev().is('.wpcont')) {
-            $('.hackaboximgcont:visible').prev().css('display', 'block');  
-            $('.wpcont:visible').next().css('display', 'none');
-        } 
-        else {
-            console.log('nothing before it');
-        }
-    });
-    $('#rightgw').on('click', function() {
-        if (active) {
-            return;
-        }
-        console.log('in rotate right');
-        if($('.wpcont:visible').next().is('.hackaboximgcont')) {
-            active = true;
-            $('.wpcont:visible').next().css({
-                'opacity': '0',
-                'position': 'absolute',
-                'left': '25%',
-                'display': 'block'
-            });
-            $('.wpcont:visible').next().animate({
-                opacity: '1',
-                left: '-=25%'
-            }, 200, function(){
-                $('.hackaboximgcont:visible').prev().css('display', 'none');
-                $('.hackaboximgcont:visible').css('position', 'relative');
-                active = false;
-            })
-        }
-        else if($('.hackaboximgcont:visible').next().is('.hackaboximgcont')) {
-
-            active = true;
-            $('.hackaboximgcont:visible').next().css({
-                'opacity': '0',
-                'position': 'absolute',
-                'left': '25%',
-                'display': 'block'
-            });
-            $('.hackaboximgcont:visible').next().animate({
-                opacity: '1',
-                left: '-=25%'
-            }, 200, function(){
-                $('.hackaboximgcont:visible').prev().css('display', 'none');
-                $('.hackaboximgcont:visible').css('position', 'relative');
-                active = false;
-            })
-        }
-        else {
-            console.log('nothing after it');
-        }
     });*/
+
+    /*RESPONSIVE NAV*/
     
     $('.fa-bars').click(function() {
         $('.dropin').css('display', 'none');
@@ -1019,6 +852,8 @@ $(document).ready(function() {
             $('.fp-controlArrow.fp-prev').css('display', 'block');
         });
     });
+
+    /*BIO*/
 
     console.log($('.bio').css('display'));
     $('#bio').click(function() {
@@ -1068,6 +903,8 @@ $(document).ready(function() {
             });
         }
     })
+
+    /*ARROWS*/
 
     $('#leftg').on('click', function() {
         console.log('in rotate left');
@@ -1144,47 +981,24 @@ $(document).ready(function() {
         }
     })
 
-    $.fn.isolatedScroll = function() {
-        this.bind('mousewheel DOMMouseScroll', function (e) {
-            var delta = e.wheelDelta || (e.originalEvent && e.originalEvent.wheelDelta) || -e.detail,
-                bottomOverflow = this.scrollTop + $(this).outerHeight() - this.scrollHeight >= 0,
-                topOverflow = this.scrollTop <= 0;
-
-            if ((delta < 0 && bottomOverflow) || (delta > 0 && topOverflow)) {
-                e.preventDefault();
-            }
-        });
-    return this;
-    };
-
-    $.fn.scrollGuard = function() {
-      return this
-        .on( 'wheel', function ( e ) {
-          var $this = $(this);
-          if (e.originalEvent.deltaY < 0) {
-            /* scrolling up */
-            return ($this.scrollTop() > 0);
-          } else {
-            /* scrolling down */
-            return ($this.scrollTop() + $this.innerHeight() < $this[0].scrollHeight);
-          }
-        })
-      ;
-    };
+    /*UPDOWNNAV*/
 
     var arrayslidese = ['secondPage/1', 'secondPage/2'];
     var arrayanchors = ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'];
 
-    console.log(location.hash.substr(1));
-
     $('#upa').click(function() {
+        console.log(window.location.href);
+
+        var link = document.location.href.split('/');
+        console.log(link[0]+'//'+link[2]);
+
         var current = location.hash.substr(1);
         if(current=='') {
-            window.location = 'http://example.dev/#firstPage';
+            window.location = link[0]+'//'+link[2]+'/#firstPage';
             return;
         }
         else if(current.indexOf('/') > -1) {
-            window.location = 'http://example.dev/#firstPage'
+            window.location = link[0]+'//'+link[2]+'/#firstPage'
             return;
         }
         else {
@@ -1193,22 +1007,23 @@ $(document).ready(function() {
             console.log(next);
             
             if(!next) {
-                window.location = 'http://example.dev/#firstPage';
+                window.location = link[0]+'//'+link[2]+'/#firstPage';
                 return;
             }
 
-            window.location = 'http://example.dev/#' + next;
+            window.location = link[0]+'//'+link[2]+'/#' + next;
         }
     })
 
     $('#downa').click(function() {
+        var link = document.location.href.split('/');
         var current = location.hash.substr(1);    
         if(current=='') {
-            window.location = 'http://example.dev/#secondPage';
+            window.location = link[0]+'//'+link[2]+'/#secondPage';
             return;
         }
         else if(current.indexOf('/') > -1) {
-            window.location = 'http://example.dev/#thirdPage';
+            window.location = link[0]+'//'+link[2]+'/#thirdPage';
             return;
         }
         else {
@@ -1216,12 +1031,14 @@ $(document).ready(function() {
             var next = arrayanchors[thisindex + 1];
             console.log(next);
             if(!next) {
-                window.location = 'http://example.dev/#fourthPage';
+                window.location = link[0]+'//'+link[2]+'/#fourthPage';
                 return;
             }
-            window.location = 'http://example.dev/#' + next;
+            window.location = link[0]+'//'+link[2]+'/#' + next;
         }
     })
+
+    /*RESPONSIVE NAV*/
 
     $('#fullpage').not('.resnav .fa-bars').click(function() {
         $('.resnav').css({'display': 'none', 'left':'-44.45%'});
@@ -1243,187 +1060,5 @@ $(document).ready(function() {
         $('.bio').css({'display': 'none', 'right':'-44.45%'});
     })
 
-    /*$('.scrollbar-dynamic').on('wheel', function(e){
-        var eo = e.originalEvent;
-        e.preventDefault;
-        console.log('recorded swipe');
-        $.fn.fullpage.setMouseWheelScrolling(false);
-        $.fn.fullpage.setAllowScrolling(false);
-
-
-    });
-
-            if ($('#hackabox:not(.scrollbar-dynamic)').is(':hover')) {
-            $.fn.fullpage.setMouseWheelScrolling(true);
-            $.fn.fullpage.setAllowScrolling(true);
-        }
-        
-        /*var bodyvar = $('body'),
-            height = bodyvar.height(),
-            scrollHeight = bodyvar.get(0).scrollHeight;*/
-
-
-        /*bodyvar.off("mousewheel").on("mousewheel", function (event) {
-          var blockScrolling = this.scrollTop === scrollHeight - height && event.deltaY < 0 || this.scrollTop === 0 && event.deltaY > 0;
-          return !blockScrolling;
-        });*/
-
-        /*if(Math.abs(eo.wheelDeltaY) < 10 && Math.abs(eo.wheelDeltaX) > 2){
-          e.preventDefault();
-
-          if(eo.wheelDeltaX < -100 && !scope.item.swipedLeft){
-              // swipe left
-          }
-
-          if(eo.wheelDeltaX > 100 && scope.item.swipedLeft){
-              // swipe right
-          }
-        
-      });*/
-    //$('.scrollbar-dynamic').scrollGuard();
-
-    //$('.scrollbar-dynamic').isolatedScroll();
     $('.scrollbar-dynamic').scrollbar();
-
-    $(window).resize(function() { /***** MAKE NOTHING HAPPEN ON RESIZE????****/
-        if($(window).width() > 1199) {
-            //var hack = $('.hackskilladj').height();
-            var row = $('#skills').height();
-            var titlepouth = $('.titlepout').height();
-            var navh = $('nav').height();
-            var diffhack = row - titlepouth - navh - 100;
-            var hack = $('.hackskilladj').height(diffhack);
-            var hard = $('.hardware').height();
-            var soft = $('.software').height();  
-            var diff1 = row - hard - titlepouth - 179;
-            var diff2 = row - soft - titlepouth - 179;
-            $('.art').height(diff1);
-            $('.music').height(diff2);
-
-                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
-                $('.fa-bars').css('display', 'none');
-                $('.menuholder').css('display', 'inline-block');
-                if($('.resnav').is(':visible')) {
-                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
-                }
-
-            var row = $('#skills').height();
-            var titlepouth = $('.titlepout').height();
-            var navh = $('nav').height();
-            var diffhack = row - titlepouth - navh - 100;
-            var hack = $('.forborderskills').height(diffhack);
-            
-        }
-        if($(window).width() < 1200 && $(window).width() > 991) {
-            var row = $('#skills').height();
-            var titlepouth = $('.titlepout').height();
-            var navh = $('nav').height();
-            var diffhack = row - titlepouth - navh - 97;
-            var hack = $('.hackskilladj').height(diffhack);
-            var hard = $('.hardware').height();
-            var soft = $('.software').height();  
-            var diff1 = row - hard - titlepouth - 171;
-            var diff2 = row - soft - titlepouth - 171;
-            $('.art').height(diff1);
-            $('.music').height(diff2);
-
-                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
-                $('.fa-bars').css('display', 'none');  
-                $('.menuholder').css('display', 'inline-block');
-                if($('.resnav').is(':visible')) {
-                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
-                }
-            
-            var row = $('#skills').height();
-            var titlepouth = $('.titlepout').height();
-            var navh = $('nav').height();
-            var diffhack = row - titlepouth - navh - 95;
-            var hack = $('.forborderskills').height(diffhack);
-        }
-
-        if($(window).width() < 992 && $(window).width() > 767) {
-            var row = $('#skills').height();
-            var titlepouth = $('.titlepout').height();
-            var navh = $('nav').height();
-            var diffhack = row - titlepouth - navh - 36;
-            var hack = $('.hackskilladj').height(diffhack);
-            var hard = $('.hardware').height();
-            var soft = $('.software').height();  
-            var diff1 = row - hard - titlepouth - 110;
-            var diff2 = row - soft - titlepouth - 110;
-            $('.art').height(diff1);
-            $('.music').height(diff2);
-
-                $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
-                $('.fa-bars').css('display', 'none');  
-                $('.menuholder').css('display', 'inline-block');
-                if($('.resnav').is(':visible')) {
-                    $('.resnav').css({'display': 'none', 'left':'-44.45%'});
-                }
-
-            var row = $('#skills').height();
-            var titlepouth = $('.titlepout').height();
-            var navh = $('nav').height();
-            var diffhack = row - titlepouth - navh - 36;
-            var hack = $('.forborderskills').height(diffhack);
-        }
-
-        if($(window).width() < 768 && $(window).width() > 480) {
-            var row = $('#skills').height();
-                var titlepouth = $('.titlepout').height();
-                var navh = $('nav').height();
-                var diffhack = row - titlepouth - navh - 38;
-                var hack = $('.hackskilladj').height(diffhack);
-                var hard = $('.hardware').height();
-                var soft = $('.software').height();  
-                var diff1 = row - hard - titlepouth - 110;
-                var diff2 = row - soft - titlepouth - 110;
-                $('.art').height(diff1);
-                $('.music').height(diff2);
-
-                    $('.fa-bars').css('color', 'rgba(96, 18, 24, 1)');
-                    $('.fa-bars').css('display', 'none');                    
-                    $('.menuholder').css('display', 'inline-block');
-                    if($('.resnav').is(':visible')) {
-                        $('.resnav').css({'display': 'none', 'left':'-44.45%'});
-                    }
-            
-        }
-
-        if($(window).width() < 481 && $(window).width() > 320) {
-            var row = $('#skills').height();
-            var titlepouth = $('.titlepout').height();
-            var navh = $('nav').height();
-            var diffhack = row - titlepouth - navh - 126;
-            var hack = $('.hackskilladj').height(diffhack);
-            var hard = $('.hardware').height();
-            var soft = $('.software').height();  
-            var diff1 = row - hard - titlepouth - 197;
-            var diff2 = row - soft - titlepouth - 197;
-            $('.art').height(diff1);
-            $('.music').height(diff2);
-
-            if($('.menubutton').is(':visible')) {
-                $('.fa-bars').css('display', 'inline-block');
-                $('.fa-bars').css('color', '#FFF1E4');
-                $('.menuholder').css('display', 'none');
-            }
-        }
-
-        if($(window).width() < 321) {
-            var hack = $('.hackskilladj').height();
-            var hard = $('.hardware').height();
-            var soft = $('.software').height();
-            var diff1 = hack - hard - 13;
-            var diff2 = hack - soft - 13;
-            $('.art').height(diff1);
-            $('.music').height(diff2);
-
-            if($('.menubutton').is(':visible')) {
-                $('.fa-bars').css('display', 'inline-block');
-                $('.fa-bars').css('color', '#FFF1E4');
-                $('.menuholder').css('display', 'none');
-            }
-        }
-    });
 });

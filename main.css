@@ -886,9 +886,9 @@ height: 100%;
 	content: "";
 	position: absolute;
 	height: 3px;
-	width: 13%;
+	width: 16%;
 	top: 76%;
-	left: 60%;
+	left: 57%;
 	background-color: #6F282A;
 }
 
@@ -942,6 +942,7 @@ height: 100%;
 .mongoholder {
 	z-index: 2;
 	position: relative;
+	padding-right: 22%;
 }
 
 .mongoholdernode {
@@ -1533,6 +1534,7 @@ height: 100%;
 		padding-bottom: 1%;
 		position: relative;
 	    overflow: hidden;
+	    height: 400px;
 	}
 
 	.hackskilladj {
