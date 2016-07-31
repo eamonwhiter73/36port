@@ -1223,6 +1223,10 @@ height: 100%;
 	.logo1 {
 	}
 
+	.logo {
+		font-size: 2vw;
+	}
+
 	.hackaboximgcont {
 		padding-bottom: 600px;
 		background-size: 150%;
@@ -1318,7 +1322,7 @@ height: 100%;
 	}
 
 	.offsetadj {
-		height: 800px;
+		height: 700px;
 		margin-top: 40px;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 		background: #D4B89B; /* For browsers that do not support gradients */
@@ -1329,7 +1333,7 @@ height: 100%;
 	}
 
 	.inset>textarea {
-		padding-bottom: 520px;
+		padding-bottom: 420px;
 	}
 
 	.thanks {
@@ -1340,7 +1344,7 @@ height: 100%;
 	}
 
 	.submitbut {
-		top: 770px;
+		top: 670px;
 	}
 
 	.hacktexthack {
@@ -1391,7 +1395,7 @@ height: 100%;
 /* Landscape tablets and medium desktops */
 @media (min-width: 1360px) and (max-width: 1919px) {
 	.inset>textarea {
-		padding-bottom: 520px;
+		padding-bottom: 420px;
 	}
 
 	.logophp2 {
@@ -1399,6 +1403,11 @@ height: 100%;
 
 	.logo1 {
 	}
+
+	.logo {
+		font-size: 2vw;
+	}
+
 
 	.hackaboximgcont {
 		padding-bottom: 500px;
@@ -1496,9 +1505,9 @@ height: 100%;
 
 	.thanks {
 		top: 2%;
-		right: 4%;
-		font-size: 3.2vw;
-		line-height: 3.3vw
+		right: 7%;
+		font-size: 2.7vw;
+		line-height: 2.8vw
 	}
 
 	.submitbut {
@@ -1841,9 +1850,9 @@ height: 100%;
 	}
 
 	.offsetadj {
-		padding: 2vh;
-		margin-top: 3vh;
-		height: 70vh;
+		padding: 1%;
+		margin-top: 3%;
+		height: 626px;
 		box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
 	}
 
@@ -1974,6 +1983,19 @@ height: 100%;
 		/*transform: rotate(90deg);*/
 		z-index: 99998;
 		box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.5);
+	}
+
+	.inset>textarea {
+	    width: 100%; 
+	    padding-bottom: 370px;
+	}
+
+	.submitbut {
+		position: absolute;
+		top: 95%;
+		margin-bottom: 3px;
+		margin-top: 3px;
+
 	}
 }
 
