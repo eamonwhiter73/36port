@@ -370,7 +370,7 @@ a:hover {
    -webkit-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.5);
    box-shadow:         inset 2px 2px 2px rgba(0,0,0,0.5);
    padding: 1.4%;
-   margin-bottom: 3%;
+   margin-bottom: 0;
    position: relative;
 }
 
@@ -387,7 +387,7 @@ a:hover {
     padding-bottom: 205px;
 }
 
-.label {
+.labely {
 	position: relative;
 	color: #6F282A;
 	font-size: 14.5px;
@@ -666,6 +666,7 @@ height: 100%;
 	border-style: solid;
 	border-width: 2px;
 	border-color: #C8A589;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 #upa {
@@ -1227,13 +1228,18 @@ height: 100%;
 		font-size: 2vw;
 	}
 
+	.fb, .lin, .twit {
+		text-align: center;
+	}
+
 	.hackaboximgcont {
 		padding-bottom: 600px;
 		background-size: 150%;
 	}
 
 	.arrowscont {
-		top: 782px;
+		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+		top: 787px;
 	}
 
 	.demo>p {
@@ -1333,13 +1339,13 @@ height: 100%;
 	}
 
 	.inset>textarea {
-		padding-bottom: 420px;
+		padding-bottom: 395px;
 	}
 
 	.thanks {
 		margin-top: 2%;
-		font-size: 2.8vw;
-		line-height: 2.9vw;
+		font-size: 3.0vw;
+		line-height: 3.1vw;
 		right: 6%;
 	}
 
@@ -1390,12 +1396,36 @@ height: 100%;
 		display: none;
 		height: 19%;
 	}
+
+	.labelyname {
+		margin-top: 3%;
+	}
+
+	.labelyother {
+		margin-top: 3%;
+	}
+
+	.labelymessage {
+		margin-top: 2%;
+	}
+
+	.inset {
+		margin-top: -3%;
+	}
+	
+	.insetadj {
+		margin-top: -2%;
+	}
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 1360px) and (max-width: 1919px) {
 	.inset>textarea {
-		padding-bottom: 420px;
+		padding-bottom: 400px;
+	}
+
+	.fb, .lin, .twit {
+		text-align: center;
 	}
 
 	.logophp2 {
@@ -1409,8 +1439,9 @@ height: 100%;
 	}
 
 	.hackaboximgcont {
-		padding-bottom: 500px;
+		height: 522px;
 		background-size: 155%;
+		min-height: 522px;
 	}
 
 	.wpcont {
@@ -1418,7 +1449,8 @@ height: 100%;
 	}
 
 	.arrowscont {
-		top: 677px;
+		top: 688px;
+		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 	}
 
 	.demo>p {
@@ -1426,15 +1458,16 @@ height: 100%;
 	}
 
 	.techused {
-		top: 705px;
+		top: 730px;
+		font-size: 20.5px;
 	}
 
 	.techholder {
-		top: 688px;
+		top: 713px;
 	}
 
 	.forborderhack {
-	  padding-bottom: 650px;
+	  min-height: 552px;		
 	  background: #D4B89B; /* For browsers that do not support gradients */
 	  background: -webkit-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Safari 5.1 to 6.0 */
 	  background: -o-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Opera 11.1 to 12.0 */
@@ -1447,7 +1480,7 @@ height: 100%;
 	}
 
 	.hacktext {
-		height: 540px;
+		height: 552px;
 	}
 
 	.hacktexthack {
@@ -1499,14 +1532,14 @@ height: 100%;
 	  background: -o-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Opera 11.1 to 12.0 */
 	  background: -moz-linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* For Firefox 3.6 to 15 */
 	  background: linear-gradient(-90deg, #C8A589 86%, #D4B79E); /* Standard syntax */
-	  padding-bottom: 30px;
+	  padding-bottom: 45px;
 	}
 
 	.thanks {
 		top: 2%;
-		right: 7%;
-		font-size: 2.7vw;
-		line-height: 2.8vw
+		right: 4%;
+		font-size: 3.2vw;
+		line-height: 3.3vw
 	}
 
 	.submitbut {
@@ -1519,10 +1552,34 @@ height: 100%;
 		height: 19%;
 		padding-top: 3%;
 	}
+
+	.labelyname {
+		margin-top: 3%;
+	}
+
+	.labelyother {
+		margin-top: 3%;
+	}
+
+	.labelymessage {
+		margin-top: 2%;
+	}
+
+	.inset {
+		margin-top: -3%;
+	}
+	
+	.insetadj {
+		margin-top: -2%;
+	}
 }
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) and (max-width: 1359px) {
+	.inset>textarea {
+		padding-bottom: 198px;
+	}
+
 	.hackaboximg {
 		display: block;
 	}
@@ -1537,6 +1594,27 @@ height: 100%;
 
 	.wpsmall {
 		display: none;
+	}
+
+	.techused {
+		top: 574px;
+	}
+
+	.techolder {
+		top: 560px;
+	}
+
+	.arrowscont {
+		position: absolute;
+		top: 540px;
+		background-color: rgba(96, 18, 24, 0.9);
+		padding-bottom: 0.2%; 
+		padding-left: 1.4%; 
+		padding-right: 1.4%;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #C8A589;
+		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 	}
 
 	.hacktext {
@@ -1608,10 +1686,44 @@ height: 100%;
 	.fademe {
 		display: none;
 	}
+
+	.labelyname {
+		margin-top: 0;
+	}
+
+	.labelyother {
+		margin-top: 3%;
+	}
+
+	.labelymessage {
+		margin-top: 2%;
+	}
+
+	.inset {
+		margin-top: -3%;
+	}
+	
+	.insetadj {
+		margin-top: -2%;
+	}
+
+	.submitbut {
+		top: 94%;
+	}
+
+	.fb, .lin, .twit {
+		font-size: 20px;
+		text-align: center;
+	}
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+	.fb, .lin, .twit {
+		font-size: 20px;
+		text-align: center;
+	}
+
 	.programmer {
 		position: relative;
 		font-family: 'Work Sans', sans-serif;
@@ -1672,6 +1784,7 @@ height: 100%;
 
 	.arrowscont {
 		top: 535px;
+		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 	}
 
 	.hackaboximgcont {
@@ -1984,22 +2097,53 @@ height: 100%;
 		box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.5);
 	}
 
+	.labelyname {
+		margin-top: 0;
+	}
+
+	.labelyother {
+		margin-top: 3%;
+	}
+
+	.labelymessage {
+		margin-top: 2%;
+	}
+
+	.inset {
+		margin-top: -4%;
+	}
+	
+	.insetadj {
+		margin-top: -3%;
+	}
+
+
 	.inset>textarea {
 	    width: 100%; 
-	    padding-bottom: 370px;
+	    padding-bottom: 350px;
 	}
 
 	.submitbut {
 		position: absolute;
-		top: 95%;
+		top: 94%;
 		margin-bottom: 3px;
 		margin-top: 3px;
 
+	}
+
+	.thanks {
+		margin-top: 2%;
 	}
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+	.fb, .lin, .twit {
+		font-size: 19px;
+		padding-left: 1.5px;
+		text-align: center;
+	}
+
 	.logo {
 		font-family: 'Satisfy', cursive;
 		color: #FFF1E4;
@@ -2025,13 +2169,33 @@ height: 100%;
 
 	.inset>textarea {
 	    width: 100%; 
-	    padding-bottom: 210px;
+	    padding-bottom: 185px;
 	}
 
 	.submitbut {
 		position: absolute;
 		top: 92.5%;
 		margin: 1%;
+	}
+
+	.labelyname {
+		margin-top: 0;
+	}
+
+	.labelyother {
+		margin-top: 3%;
+	}
+
+	.labelymessage {
+		margin-top: 2%;
+	}
+
+	.inset {
+		margin-top: -4%;
+	}
+	
+	.insetadj {
+		margin-top: -3%;
 	}
 
 	.techholder {
@@ -2161,6 +2325,7 @@ height: 100%;
 		border-style: solid;
 		border-width: 2px;
 		border-color: #C8A589;
+		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 	}
 
 
@@ -2265,6 +2430,7 @@ height: 100%;
 	    float: right;
 	    margin-right: 1%;
 	    margin-bottom: 1%;
+	    margin-top: 3%;
 	}
 
 	.forborderskills {
@@ -2559,7 +2725,7 @@ height: 100%;
 
 	.inset>textarea {
 	    width: 100%; 
-	    padding-bottom: 190px;
+	    padding-bottom: 175px;
 	}
 
 	.crumbmine {
@@ -2688,7 +2854,7 @@ height: 100%;
 	    -webkit-transform: rotate(-10deg); /* Safari */
 	    transform: rotate(-10deg);
 	    float: right;
-	    margin-top: 1%;
+	    margin-top: 3%;
 	}
 
 
@@ -2985,6 +3151,28 @@ height: 100%;
 		width: 100%;
 		position: relative;
 	}
+
+	.labelyname {
+		margin-top: 0;
+	}
+
+	.labelyother {
+		margin-top: 3%;
+	}
+
+	.labelymessage {
+		margin-top: 2%;
+	}
+
+	.inset {
+		margin-top: -4%;
+	}
+	
+	.insetadj {
+		margin-top: -3%;
+	}
+
+
 }
 
 /* Portrait phones and smaller */
@@ -3139,7 +3327,7 @@ height: 100%;
 	    transform: rotate(-10deg);
 	    float: right;
 	    margin-right: 2%;
-	    margin-top: 6%;
+	    margin-top: 9%;
 	}
 
 	.hacktext {
@@ -3444,6 +3632,34 @@ height: 100%;
 		padding-bottom: 0px;
 		padding-top: 60px;
 	}
+
+	.offsetadj {
+		padding-bottom: 40px;
+	}
+
+	.labelyname {
+		margin-top: 1%;
+	}
+
+	.labelyother {
+		margin-top: 3%;
+	}
+
+	.labelymessage {
+		margin-top: 2%;
+	}
+
+	.inset {
+		margin-top: -5%;
+	}
+	
+	.insetadj {
+		margin-top: -4%;
+	}
+
+	.inset>textarea {
+		padding-bottom: 168px;
+	}
 }
 
 @media (max-width: 320px) {
@@ -3496,8 +3712,28 @@ height: 100%;
 	}*/
 
 	.inset>textarea {
-		padding-bottom: 90px;
+		padding-bottom: 65px;
 		border-radius: 0;
+	}
+
+	.labelyname {
+		margin-top: 2%;
+	}
+
+	.labelyother {
+		margin-top: 3%;
+	}
+
+	.labelymessage {
+		margin-top: 2%;
+	}
+
+	.inset {
+		margin-top: -10%;
+	}
+	
+	.insetadj {
+		margin-top: -6%;
 	}
 
 	.inset>input {
@@ -3508,6 +3744,7 @@ height: 100%;
 		position: absolute;
 		top: 88%;
 		margin-top: 1%;
+		z-index: 99999;
 	}
 
 	.logo {
@@ -3551,7 +3788,7 @@ height: 100%;
 
 
 	.thanks {
-		margin-top: 11%;
+		margin-top: 15%;
 		line-height: 24px;
 		margin-right: 1%;
 		font-size: 17.5px;
@@ -3876,5 +4113,12 @@ height: 100%;
 
 	.skillsub {
 		font-size: 2.3vw;
+	}
+}
+
+@media screen and (max-width: 1919px) and (min-width: 1523px) {
+	.hackaboximgcont {
+		height: 515px;
+		min-height: 515px;
 	}
 }
