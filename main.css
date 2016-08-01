@@ -4096,6 +4096,19 @@ height: 100%;
 		padding-bottom: 0px;
 		padding-top: 60px;
 	}
+
+	.resnavbut {
+		font-size: 16px;
+	}
+
+	#projectbuttonres {
+		font-size: 16px;
+	}
+
+	.dropin {
+		font-size: 14px;
+		line-height: 30px;
+	}
 }
 
 @media screen and (max-width: 693px) and (min-width: 591px) {
