@@ -841,16 +841,6 @@ height: 100%;
 	font-size: 14px;
 }
 
-.hacktext>p:last-child {
-    font-family: 'Avenir';
-    text-align: justify;
-	color: #FAE6D5;
-	position: relative;
-	margin-bottom: 1%;
-	font-size: 14px;
-	margin-bottom: -13%;
-}
-
 .techholder {
 	position: absolute;
 	top: 556px;
@@ -1368,6 +1358,10 @@ height: 100%;
 		padding-bottom: 1%;
 	}
 
+	.hacktext>p {
+		font-size: 20px;
+	}
+
 	.forborderskills {
 	  background: #D4B89B; /* For browsers that do not support gradients */
 	  background: -webkit-linear-gradient(-90deg, #C8A589 50%, #D4B79E); /* For Safari 5.1 to 6.0 */
@@ -1418,12 +1412,24 @@ height: 100%;
 	.insetadj {
 		margin-top: -2%;
 	}
+
+	.subtitle {
+		font-size: 26px;
+	}
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 1360px) and (max-width: 1919px) {
 	.inset>textarea {
 		padding-bottom: 400px;
+	}
+
+	.subtitle {
+		font-size: 24px;
+	}
+
+	.hacktext>p {
+		font-size: 18px;
 	}
 
 	.fb, .lin, .twit {
