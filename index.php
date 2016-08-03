@@ -62,7 +62,7 @@
 				<div class="row">
 					<div class='barscover col-lg-2 col-md-3 col-sm-2 hidden-xs'></div>
 					<i class="fa fa-bars" aria-hidden="true"></i>
-					<div class="logo col-lg-6 col-lg-offset-8 col-md-6 col-md-offset-8 col-sm-8 col-sm-offset-4 col-xs-10 col-xs-offset-4">Eamon White</div>
+					<a href='http://eamondev.com'><div class="logo col-lg-6 col-lg-offset-8 col-md-6 col-md-offset-8 col-sm-8 col-sm-offset-4 col-xs-10 col-xs-offset-4">Eamon White</div></a>
 					<div class='menuholder col-lg-14 col-md-14 col-sm-20 col-xs-20'>
 						<a href="#firstPage" class="menubutton  col-lg-7 col-md-7 col-sm-7">HOME</a>
 						<a id='projectsbutton' class="menubutton  col-lg-7 col-md-8 col-sm-7">PROJECTS<div class="apex-dn"></div></a>
