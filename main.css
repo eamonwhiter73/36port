@@ -1439,6 +1439,10 @@ height: 100%;
 	    margin-top: 1%;
 	    text-decoration: underline;
 	}
+
+	.homejumbo {
+		margin-top: 235px;
+	}
 }
 
 /* Landscape tablets and medium desktops */

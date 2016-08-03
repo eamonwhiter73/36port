@@ -1177,14 +1177,20 @@ $(document).ready(function() {
 
     console.log(location.hash.substr(1));
 
+    var url =  window.location.href;
+    var domain = url.replace('http://','').replace('https://','').split(/[/?#]/)[0];
+
+    console.log(domain);
+
+
     $('#upa').click(function() {
         var current = location.hash.substr(1);
         if(current=='') {
-            window.location = 'http://eamondev.com/#firstPage';
+            window.location = 'http://'+domain+'/#firstPage';
             return;
         }
         else if(current.indexOf('/') > -1) {
-            window.location = 'http:/eamondev.com/#firstPage'
+            window.location = 'http://'+domain+'/#firstPage'
             return;
         }
         else {
@@ -1193,22 +1199,22 @@ $(document).ready(function() {
             console.log(next);
             
             if(!next) {
-                window.location = 'http://eamondev.com/#firstPage';
+                window.location = 'http://'+domain+'/#firstPage';
                 return;
             }
 
-            window.location = 'http://eamondev.com/#' + next;
+            window.location = 'http://'+domain+'/#' + next;
         }
     })
 
     $('#downa').click(function() {
         var current = location.hash.substr(1);    
         if(current=='') {
-            window.location = 'http://eamondev.com/#secondPage';
+            window.location = 'http://'+domain+'/#secondPage';
             return;
         }
         else if(current.indexOf('/') > -1) {
-            window.location = 'http://eamondev.com/#thirdPage';
+            window.location = 'http://'+domain+'/#thirdPage';
             return;
         }
         else {
@@ -1216,10 +1222,10 @@ $(document).ready(function() {
             var next = arrayanchors[thisindex + 1];
             console.log(next);
             if(!next) {
-                window.location = 'http://eamondev.com/#fourthPage';
+                window.location = 'http://'+domain+'/#fourthPage';
                 return;
             }
-            window.location = 'http://eamondev.com/#' + next;
+            window.location = 'http://'+domain+'/#' + next;
         }
     })
 
