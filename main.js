@@ -1180,11 +1180,11 @@ $(document).ready(function() {
     $('#upa').click(function() {
         var current = location.hash.substr(1);
         if(current=='') {
-            window.location = 'http://example.dev/#firstPage';
+            window.location = 'http://eamondev.com/#firstPage';
             return;
         }
         else if(current.indexOf('/') > -1) {
-            window.location = 'http://example.dev/#firstPage'
+            window.location = 'http:/eamondev.com/#firstPage'
             return;
         }
         else {
@@ -1193,22 +1193,22 @@ $(document).ready(function() {
             console.log(next);
             
             if(!next) {
-                window.location = 'http://example.dev/#firstPage';
+                window.location = 'http://eamondev.com/#firstPage';
                 return;
             }
 
-            window.location = 'http://example.dev/#' + next;
+            window.location = 'http://eamondev.com/#' + next;
         }
     })
 
     $('#downa').click(function() {
         var current = location.hash.substr(1);    
         if(current=='') {
-            window.location = 'http://example.dev/#secondPage';
+            window.location = 'http://eamondev.com/#secondPage';
             return;
         }
         else if(current.indexOf('/') > -1) {
-            window.location = 'http://example.dev/#thirdPage';
+            window.location = 'http://eamondev.com/#thirdPage';
             return;
         }
         else {
@@ -1216,10 +1216,10 @@ $(document).ready(function() {
             var next = arrayanchors[thisindex + 1];
             console.log(next);
             if(!next) {
-                window.location = 'http://example.dev/#fourthPage';
+                window.location = 'http://eamondev.com/#fourthPage';
                 return;
             }
-            window.location = 'http://example.dev/#' + next;
+            window.location = 'http://eamondev.com/#' + next;
         }
     })
 

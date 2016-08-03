@@ -26,16 +26,17 @@
 
 	<!--TEXT-->
 	<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400|Yantramanav:100,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Corben:700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,900,700,500,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Courgette|Berkshire+Swash|Rubik:400,900' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,900,800,700,600,500' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Passion+One:400,500,600,700' rel='stylesheet' type='text/css'><!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+	<link href='https://fonts.googleapis.com/css?family=Passion+One:400,500,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Lato:400,700,900' rel='stylesheet' type='text/css'>
+	<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
 	<!--<script src="vendors/jquery.easings.min.js"></script>-->
 
 
@@ -54,8 +55,8 @@
 	}(document, 'script', 'facebook-jssdk'));</script>
 	<div class="container-fluid">
 		<div class="row">
-			<div class='bio col-lg-16 col-md-16 col-sm-16 col-xs-22'>
-				<p>Hi, my name is Eamon White - I am 30 years old, and living outside of Boston, MA. I’m a freelance programmer, specializing in app development and web development, but I am open to exploring any platform. I enjoy learning new frameworks/languages/APIs; I am able to learn new things quickly. I have been interested in computers ever since my family bought its first one in 1995. It was a Hewlett Packard, I learned how to use it immediately to play games, but I soon became curious with what was going on in the background. My early days were spent on MSDOS, and then the early GUI based Windows operations systems. Any problem that arose I was able to figure out how to fix - and I learned a lot this way. By age 15, I was able to build computers, and I learned a lot about networking through renting game servers and dealing with various network issues that I encountered. I also enjoy music, art, riding my bike, and spending time with friends.</p>
+			<div class='bio col-lg-9 col-md-15 col-sm-16 col-xs-22'>
+				<p>Hi, my name is Eamon White - I am 30 years old, and living outside of Boston, MA. I’m a freelance programmer, specializing in app development and web development, but I am open to exploring any platform. I enjoy learning new frameworks/languages/APIs; I am able to learn new things quickly. I have been interested in computers ever since my family bought its first one in 1995. It was a Hewlett Packard, I learned how to use it immediately to play games, but I soon became curious with what was going on in the background. My early days were spent on MSDOS, and then the early GUI based Windows operating systems. Any problems that arose, I figured out how to fix - and I learned a lot this way. To this day, I'm fairly certain that I have never been beaten by a computer problem. By age 15, I was able to build computers, and I learned a lot about networking through renting game servers and dealing with various network issues that I encountered. I also enjoy music, art, riding my bike, and spending time with friends.</p>
 			</div>	
 			<nav class="navbar navbar-fixed-top">
 				<div class="row">
@@ -108,7 +109,7 @@
 									<div class="titlep col-lg-13 col-lg-offset-15 col-md-13 col-md-offset-15 col-sm-13 col-sm-offset-15 col-xs-16 col-xs-offset-10">HACKABOX</div>
 								</div>
 								<div class='forborder forborderhack col-lg-9 col-lg-offset-6 col-md-9 col-md-offset-6 col-sm-10 col-sm-offset-5 col-xs-28 col-xs-offset-4'>
-									<a class='col-lg-36 col-md-36 col-sm-36 col-xs-36 hackaboximgcont inlineblock'>
+									<a href='http://hackabox-eamonbenproject.rhcloud.com/' target='_blank' class='col-lg-36 col-md-36 col-sm-36 col-xs-36 hackaboximgcont inlineblock'>
 										<div class='demo'><p>DEMO</p></div>
 										<img class='hackaboximgsmall' src='images/hackaboxquery700.png'>
 									</a>
@@ -142,7 +143,7 @@
 						    		<div class = "subtitle">Challenges:</div><p>Building a forum from scratch with AngularJS for the frontend, and Node/MongoDB for the backend.</p>
 						    		<div class = "subtitle">Learned:</div><p>I further developed my AngularJS and other MEAN tech skills. I had to go very in depth with AngularJS for the forum; learning more about factories, services, and directives, as well as acquiring a better understand of javascript animation.</p>
 						    		<div class = "subtitle">More:</div>
-						    		<p>This site is a simple MEAN stack site, born out of an idea I had to create a gaming platform using a Raspberry Pi (computer). The name I gave to the project was "Hackabox." A MEAN stack consists of the technologies represented by the logos below. MongoDB (database), ExpressJS, AngularJS, and NodeJS. I made a forum, taking advantage of cool Angular directives such as ng-repeat. I also created a fully functional user system. You can sign up, and then log in with your credentials, and the username you are logged in with will appear on your posts (as well as the date and time). I created a "fade-in" angular directive, which makes your post fade-in after you post. That animation also uses CSS (the angular directive adds and removes a css class). There is also an animation I created in the menu. The little wireframe square is an image I made in photoshop, and I am rotating it with another angular directive. It is responsive. You can click on the image, and it will bring you to a demo - feel free to create a user and use the forum, everything that is available on the demo is fully functional (including a MongoDB backend).</p>
+						    		<p>This site is a simple MEAN stack site, born out of an idea I had to create a gaming platform using a Raspberry Pi (computer). The name I gave to the project was "Hackabox." A MEAN stack consists of the technologies represented by the logos below. MongoDB (database), ExpressJS, AngularJS, and NodeJS. I made a forum, taking advantage of cool Angular directives such as ng-repeat. I also created a fully functional user system. You can sign up, and then log in with your credentials, and the username you are logged in with will appear on your posts (as well as the date and time). I created a "fade-in" angular directive, which makes your post fade-in after you post. That animation also uses CSS (the angular directive adds and removes a css class). There is also an animation I created in the menu. The little wireframe square is an image I made in photoshop, and I am rotating it with another angular directive. It is responsive. You can click on the image, and it will bring you to a demo - it is hosted for free, so it may take up to 30 seconds to load. Feel free to create a user and use the forum, everything that is available on the demo is fully functional (including a MongoDB backend).</p>
 						    	</div>
 
 						    	<div class="techused col-lg-26 col-lg-offset-9 col-md-19 col-md-offset-9 col-sm-21 col-sm-offset-8 col-xs-28 col-xs-offset-9 hidden-xs"><p>TECHNOLOGIES USED</p></div>
@@ -172,7 +173,7 @@
 									<div class="titlepwp col-lg-13 col-lg-offset-15 col-md-13 col-md-offset-15 col-sm-13 col-sm-offset-15 col-xs-16 col-xs-offset-10">FIRST CONTACT</div>
 								</div>
 								<div class='forborder forborderhack col-lg-9 col-lg-offset-6 col-md-9 col-md-offset-6 col-sm-10 col-sm-offset-5 col-xs-28 col-xs-offset-4'>
-									<a class='col-lg-36 col-md-36 col-sm-36 col-xs-36 wpcont'>
+									<a href='http://wptheme.demos.x10host.com/' target='_blank' class='col-lg-36 col-md-36 col-sm-36 col-xs-36 wpcont'>
 										<div class='demo'><p>DEMO</p></div>
 										<img class='hackaboximgsmall' src='images/themeboximg700.png'>
 									</a>
@@ -333,16 +334,16 @@
 							    		<div class='col-lg-36 col-md-36 col-sm-36 col-xs-35 smallimgcont changesmallmarg block hardware fademe'>
 								    		<div class='skillsub col-lg-36 col-md-36 col-sm-36 col-xs-36'>HARDWARE</div>
 								    		<ul class='justify col-lg-36 col-md-36 col-sm-36 col-xs-36'>
-								    			<li>I own a Raspberry Pi (a small, inexpensive computer) which I have some experience with. I have installed two different Linux based operating systems onto it.</li>
-								    			<li>I own an Arduino - I've done many of their starter projects and I would like to explore further. With a few sensors I was able to make an optical theremin.</li>
-								    			<li>I can build and repair computers. I have been interested in computers since I was around 10. I built my first compuer when I was 15.</li>
+								    			<li>I own a Raspberry Pi (a small, inexpensive computer) which I have some experience with. I have installed two different Linux based operating systems onto it. Originally, I wanted to turn it into an inexpensive gaming platform.</li>
+								    			<li>I own an Arduino - I've done many of the Arduino starter projects, attaining a basic understanding of how the wiring, sensors, and code work. With a few sensors I was able to make an optical theremin.</li>
+								    			<li>I can build and repair computers. I have been interested in computers since I was about 9. I built my first computer when I was 15, when my friend and I tried to start a computer company. We built two or three computers for people.</li>
 								    		<ul>
 										</div>
 										<div class='col-lg-36 col-md-36 col-sm-36 col-xs-35 smallimgcont changesmallmarg block art fademe'>
 								    	<div class='skillsub col-lg-36 col-md-36 col-sm-36 col-xs-36'>ART</div>
-									    	<ul class='justify col-lg-36 col-md-36 col-sm-36 col-xs-36'>
-								    			<li>I oil paint, always on canvas, and I like to sketch with a pencil as well.</li>
-								    			<li>I am proficient in Photoshop and I can do design work.</li>
+									    	<ul class='justify scrollbar-dynamic col-lg-36 col-md-36 col-sm-36 col-xs-36' style='padding-left: 5px; padding-right: 5px; padding-top: 0; padding-bottom: 0;'>
+								    			<li>I learned how to oil paint, and sketch at my highschool, The Roxbury Latin School. While I was there I took four years of art, and I have completed around 20-30 works since then.</li>
+								    			<li>I am proficient in Photoshop and I can do graphic design work.</li>
 								    		<ul>
 										</div>
 									</div>
@@ -350,16 +351,16 @@
 										<div class='col-lg-36 col-md-36 col-sm-36 col-xs-35 smallimgcont changesmallmarg block software fademe'>
 									    	<div class='skillsub col-lg-36 col-md-36 col-sm-36 col-xs-36'>SOFTWARE</div>
 									    	<ul class='justify col-lg-36 col-md-36 col-sm-36 col-xs-36'>
-								    			<li>I am familliar with all the technologies in the grid to the left, they are mostly related to Web Development - which is my strongest area at the moment.</li>
-								    			<li>Aside from web development oriented languages, I also know Java (the first language I learned) and Objective-C</li>
-								    			<li>I use Objective-C mainly to build native iOS apps. I've worked on a handful of projects, so I have some decent experience, and I believe I could build out most ideas to look and feel as they were intended.</li>
+								    			<li>I am familliar with all the technologies in the grid to the left, they are mostly related to Web Development.</li>
+								    			<li>Aside from web development oriented languages, I also know Java, the first language I learned, and Objective-C, which I picked up while making iOS apps.</li>
+								    			<li>I use Objective-C mainly to build native iOS apps. I've worked on a handful of projects, and I am able to develop most ideas into something that looks and feels as it was intended.</li>
 								    		<ul>
 										</div>
 										<div class='col-lg-36 col-md-36 col-sm-36 col-xs-35 smallimgcont changesmallmarg block music fademe'>
 									    	<div class='skillsub col-lg-36 col-md-36 col-sm-36 col-xs-36'>MUSIC</div>
-									    	<ul class='justify col-lg-36 col-md-36 col-sm-36 col-xs-36'>
-								    			<li>I play guitar, primarily acoustic, and the drums. I am self-taught at both.</li>
-								    			<li>I have done alot of sound engineering on my own, recording songs I would write. I used Pro Tools primarily, with a Digi002 preamp, and some condenser and dynamic microphones.</li>
+									    	<ul class='justify scrollbar-dynamic col-lg-36 col-md-36 col-sm-36 col-xs-36' style='padding-left: 5px; padding-right: 5px; padding-top: 0; padding-bottom: 0;'>
+								    			<li>I play guitar, primarily acoustic, and the drums. I am self-taught at both. I started two bands over the course of about 10 years, but I am no longer in one now.</li>
+								    			<li>I have done alot of sound engineering on my own, recording songs I wrote. I used Pro Tools primarily, with a Digi002 preamp, and some condenser and dynamic microphones. I also have experience with Ableton, I have written a few songs using that.</li>
 								    		<ul>
 										</div>
 									</div>
@@ -368,6 +369,26 @@
 						</div>
 					</div>
 				</div>
+
+				<?php 
+					if(isset($_POST['submit'])){
+					    $to = "eamon@eamondev.com"; // this is your Email address
+					    $from = $_POST['email']; // this is the sender's Email address
+					    $name = $_POST['name'];
+					    $subject = "Form submission";
+					    $subject2 = "Copy of your form submission";
+					    $message = $name . " wrote the following:" . "\n\n" . $_POST['comment'];
+					    $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['comment'];
+
+					    $headers = "From:" . $from;
+					    $headers2 = "From:" . $to;
+					    mail($to,$subject,$message,$headers);
+					    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+					    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+					    // You can also use header('Location: thank_you.php'); to redirect to another page.
+				    }
+				?>
+
 				<div class="section" id="contact">
 					<div class='container-fluid'>
 						<!--<div class='margincoloringl'></div>-->
@@ -376,12 +397,12 @@
 								<div class="titlepcont col-lg-13 col-lg-offset-15 col-md-13 col-md-offset-15 col-sm-13 col-sm-offset-15 col-xs-16 col-xs-offset-14">CONTACT</div>
 							</div>
 							<div class='forborder offsetadj col-lg-20 col-lg-offset-8 col-md-20 col-md-offset-8 col-sm-20 col-sm-offset-8 col-xs-28 col-xs-offset-4'>
-								<form action="action_page.php" method="post">
+								<form action="" method="post">
 									<div class="thanks">Thanks for<br>your inquiry!</div>
 									<div class="contactsect col-lg-22 col-md-22 col-sm-22 col-xs-22">
 										<div class="labely labelyname">NAME</div><br>
 										<div class="inset col-lg-36 col-md-36 col-sm-36 col-xs-36">
-											<input type="text" name="fullname" size="46">
+											<input type="text" name="name" size="46">
 										</div>
 									</div>
 									<div class="contactsect col-lg-22 col-md-22 col-sm-22 col-xs-22">
@@ -393,13 +414,14 @@
 									<div class="contactsect col-lg-36 col-md-36 col-sm-36 col-xs-36">
 										<div class="labely labelymessage">MESSAGE</div><br>
 										<div class="inset insetadj col-lg-36 col-md-36 col-sm-36 col-xs-36">
-											<textarea></textarea>
+											<textarea name='comment'></textarea>
 										</div>
 									</div>
 									<br>
 									<div class='submitbut col-lg-32 col-md-32 col-sm-32 col-xs-32'>
-										<input type="submit" value="Submit">
+										<input type="submit" name="submit" value="Submit">
 									</div>
+									<input type="hidden" name="redirect" value="http://www.eamondev.com/#secondPage"> 
 								</form>
 							</div>
 						</div>
@@ -408,12 +430,12 @@
 			</div>
 			<div class="social col-lg-1 col-md-1 col-sm-1 hidden-xs">
 				<div data-href="http://example.dev" data-layout="button_count" data-size="small" data-mobile-iframe="true">
-					<a class="fb-xfbml-parse-ignore fb col-lg-36 col-md-36 col-sm-36 hidden-xs" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fexample.dev%2F">
+					<a class="fb-xfbml-parse-ignore fb col-lg-36 col-md-36 col-sm-36 hidden-xs" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Feamondev.com%2F">
 						<i class="fa fa-facebook-official" aria-hidden="true"></i>
 					</a>
 				</div>
 				
-				<a href='https://www.linkedin.com/cws/share?url=http://www.example.com' target='_blank' class="lin col-lg-36 col-md-36 col-sm-36 hidden-xs">
+				<a href='https://www.linkedin.com/cws/share?url=http://www.eamondev.com' target='_blank' class="lin col-lg-36 col-md-36 col-sm-36 hidden-xs">
 					<i class="fa fa-linkedin-square" aria-hidden="true"></i>
 				</a>
 				<a href="https://twitter.com/share" class='twit col-lg-36 col-md-36 col-sm-36 hidden-xs' target='_blank' data-show-count="false">
@@ -421,10 +443,10 @@
 				</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 			<div class="updownnav col-lg-1 col-lg-offset-34 col-md-1 col-md-offset-34 col-sm-2 col-sm-offset-33 hidden-xs">
-				<a class='inlineblock tancolor col-lg-26 col-lg-offset-0 col-md-36 col-md-offset-0 col-sm-31 col-sm-offset-5 col-xs-36 hidden-xs' id="upa">
+				<a class='inlineblock tancolor col-lg-27 col-lg-offset-0 col-md-36 col-md-offset-0 col-sm-31 col-sm-offset-5 col-xs-36 hidden-xs' id="upa">
 					<i class="fa fa-arrow-circle-up leftglyph" aria-hidden="true"></i>
 				</a>
-				<a class='inlineblock tancolor col-lg-26 col-lg-offset-0 col-md-36 col-md-offset-0 col-sm-24 col-sm-offset-11 col-xs-36 hidden-xs' id="downa">
+				<a class='inlineblock tancolor col-lg-27 col-lg-offset-0 col-md-36 col-md-offset-0 col-sm-24 col-sm-offset-11 col-xs-36 hidden-xs' id="downa">
 					<i class="fa fa-arrow-circle-down rightglyph" aria-hidden="true"></i>
 				</a>
 			</div>

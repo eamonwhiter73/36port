@@ -91,7 +91,7 @@ a {
 	padding-right: 20px;
 	padding-bottom: 10px;
 	color: #FFF1E4;
-	font-style: "Avenir";
+	font-family: 'Lato', sans-serif;
 	font-size: 14px;
 	box-shadow: -1px 1px 0.5px 1px rgba(0,0,0,0.7);
 }
@@ -108,7 +108,7 @@ a {
 	padding-right: 20px;
 	padding-bottom: 10px;
 	color: #FFF1E4;
-	font-style: "Avenir";
+	font-family: 'Lato', sans-serif;
 	font-size: 14px;
 	box-shadow: 0px 1px 0.6px 1px rgba(0,0,0,0.7);
 }
@@ -116,7 +116,7 @@ a {
 .resnavbut {
 	line-height: 52px;
 	text-align: left;
-	font-family: 'Avenir';
+	font-family: 'Lato', sans-serif;
 	font-weight: 500;
 	z-index: 99999;
 	font-size: 24px;
@@ -126,7 +126,7 @@ a {
 #projectbuttonres {
 	line-height: 52px;
 	text-align: left;
-	font-family: 'Avenir';
+	font-family: 'Lato', sans-serif;
 	font-weight: 500;
 	z-index: 99999;
 	font-size: 24px;
@@ -263,7 +263,7 @@ a:hover {
 .menubutton {
 	line-height: 52px;
 	text-align: center;
-	font-family: 'Avenir';
+	font-family: 'Lato', sans-serif;
 	font-weight: 500;
 	z-index: 99999;
 	font-size: 15px;
@@ -288,7 +288,7 @@ a:hover {
 
 .dropdownbutton {
 	/*padding: 12px 0px 12px 12px;*/
-	font-family: 'Avenir';
+	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	font-size: 12px;
 	height: 32px;
@@ -391,7 +391,7 @@ a:hover {
 	position: relative;
 	color: #6F282A;
 	font-size: 14.5px;
-	font-family: 'Avenir';
+	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	padding-left: 0;
 }
@@ -430,7 +430,7 @@ height: 100%;
 }
 
 .pcont>p {
-	font-family: 'Avenir';	
+	font-family: 'Lato', sans-serif;	
 	font-size: 14px;
 	text-align: justify;
 	color: black;
@@ -477,13 +477,13 @@ height: 100%;
 }
 
 .subtitleap {
-	font-family: 'Avenir';
+	font-family: 'Lato', sans-serif;
 	font-size: 15px;
 	color: #aaaaaa;
 }
 
 .titleap {
-	font-family: 'Avenir';
+	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	text-align: center;
 	color: #aaaaaa;
@@ -731,7 +731,7 @@ height: 100%;
 	border-width: 1px;
 	border-color: #D4B89B;
 	text-align: center;
-	font-family: 'Avenir', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-size: 12.2px;
 	font-weight: 700;
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
@@ -742,8 +742,8 @@ height: 100%;
 	margin-left: 1px;
 	margin-top: 2px;
 	float: left;
-	font-size: 14px;
-	line-height: 16px;
+	font-size: 13px;
+	line-height: 15px;
 	padding: 1%;
 }
 
@@ -818,7 +818,7 @@ height: 100%;
 
 .closemine {
 	color: #fff;
-	font-family: 'Avenir';
+	font-family: 'Lato', sans-serif;
 	font-size: 14px;
 	position: absolute;
 	top: 1%;
@@ -833,7 +833,7 @@ height: 100%;
 }
 
 .hacktext>p {
-    font-family: 'Avenir';
+    font-family: 'Lato', sans-serif;
     text-align: justify;
 	color: #FAE6D5;
 	position: relative;
@@ -850,7 +850,7 @@ height: 100%;
 
 .techused {
 	position: absolute;
-	font-family: 'Avenir';
+	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	font-weight: 700;
 	color: #6F282A;
@@ -942,7 +942,7 @@ height: 100%;
 }
 
 .wordtext>p {
-    font-family: 'Avenir';
+    font-family: 'Lato', sans-serif;
 	font-size: 14px;
 	text-align: justify;
 	color: white;
@@ -953,7 +953,7 @@ height: 100%;
 }
 
 .titlepout {
-    font-family: 'Avenir';
+    font-family: 'Lato', sans-serif;
     font-weight: 900;
 	font-size: 20px;
 	text-align: center;
@@ -1104,14 +1104,14 @@ height: 100%;
 }
 
 .titlewp {
-    font-family: 'Avenir';
+    font-family: 'Lato', sans-serif;
 	font-size: 3vw;
 	text-align: center;
 	color: #A10000;	
 }
 
 .subtitle {
-    font-family: 'Avenir';
+    font-family: 'Lato', sans-serif;
     font-weight: 900;
 	font-size: 16px;
 	color: #6F282A;
@@ -1120,7 +1120,7 @@ height: 100%;
 .skillsub {
 	text-align: center;
 	font-size: 16px;
-	font-family: 'Avenir';
+	font-family: 'Lato', sans-serif;
     font-weight: 900;
 	color: #6F282A;
 	margin-bottom: 1%;
@@ -1164,7 +1164,7 @@ height: 100%;
 
 .justify {
 	text-align: justify;
-    font-family: 'Avenir';
+    font-family: 'Lato', sans-serif;
     font-weight: 100;
     color: #FFF1E4;
     list-style: none;
@@ -1187,7 +1187,7 @@ height: 100%;
 }
 
 .subtitlewp {
-    font-family: 'Avenir';
+    font-family: 'Lato', sans-serif;
 	font-size: 16px;
 	color: #A10000;
 	position: relative;
@@ -1225,6 +1225,10 @@ height: 100%;
 	.hackaboximgcont {
 		padding-bottom: 600px;
 		background-size: 150%;
+	}
+
+	.bgsize {
+		background-size: 230%;
 	}
 
 	.arrowscont {
@@ -1359,7 +1363,7 @@ height: 100%;
 	}
 
 	.hacktext>p {
-		font-size: 20px;
+		font-size: 19px;
 	}
 
 	.forborderskills {
@@ -1415,6 +1419,25 @@ height: 100%;
 
 	.subtitle {
 		font-size: 26px;
+	}
+
+	.changesmallmarg {
+	    margin-top: 2px;
+	    float: left;
+	    font-size: 19px;
+	    line-height: 21px;
+	    padding: 1%;
+	}
+
+	.skillsub {
+	    text-align: center;
+	    font-size: 24px;
+	    font-family: 'Lato', sans-serif;
+	    font-weight: 900;
+	    color: #6F282A;
+	    margin-bottom: 1%;
+	    margin-top: 1%;
+	    text-decoration: underline;
 	}
 }
 
@@ -1582,12 +1605,30 @@ height: 100%;
 	.insetadj {
 		margin-top: -2%;
 	}
+
+	.changesmallmarg {
+	    font-size: 19px;
+	    line-height: 21px;
+	}
+
+	.skillsub {
+	    font-size: 24px;
+	}
 }
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) and (max-width: 1359px) {
 	.inset>textarea {
 		padding-bottom: 198px;
+	}
+
+	.changesmallmarg {
+	    font-size: 13.9px;
+	    line-height: 15.9px;
+	}
+
+	.skillsub {
+	    font-size: 18px;
 	}
 
 	.hackaboximg {
@@ -1949,8 +1990,8 @@ height: 100%;
 		margin-left: 2px;
 		margin-top: 2px;
 		float: left;
-		line-height: 16px;
-		font-size: 14px;
+		line-height: 14.5px;
+		font-size: 12.5px;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 	}
 
@@ -2166,7 +2207,7 @@ height: 100%;
 	.menubutton {
 	    line-height: 52px;
 	    text-align: center;
-	    font-family: 'Avenir';
+	    font-family: 'Lato', sans-serif;
 	    z-index: 99999;
 	    font-size: 1.6vmax;
 	    padding-left: 3.1%;
@@ -2363,8 +2404,8 @@ height: 100%;
 	.changesmallmarg {
 		float: left;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
-		font-size: 11.6px;
-		line-height: 14.6px;
+		font-size: 11px;
+		line-height: 13px;
 		margin-left: 0;
 		margin-top: 0;
 		margin-left: 2px;
@@ -2703,7 +2744,7 @@ height: 100%;
 	.menubutton {
 	    line-height: 52px;
 	    text-align: center;
-	    font-family: 'Avenir';
+	    font-family: 'Lato', sans-serif;
 	    z-index: 99999;
 	    font-size: 1.99vw;
 	    padding-top: 18px;
@@ -2747,7 +2788,7 @@ height: 100%;
 
 	.closemine {
 		color: #fff;
-		font-family: 'Avenir';
+		font-family: 'Lato', sans-serif;
 		font-size: 14px;
 		position: absolute;
 		top: 1vh;
@@ -2893,7 +2934,7 @@ height: 100%;
 		border-color: #D4B89B;
 		text-align: center;
 		background-color: rgba(0,0,0,0);
-		font-family: 'Avenir';
+		font-family: 'Lato', sans-serif;
 		font-size: 12px;
 		font-weight: 700;
 		color: rgba(96, 18, 24, 1);
@@ -3230,7 +3271,7 @@ height: 100%;
 	.menubutton {
 	    line-height: 52px;
 	    text-align: center;
-	    font-family: 'Avenir';
+	    font-family: 'Lato', sans-serif;
 	    z-index: 99999;
 		font-size: 2.3vw;
 	    padding-top: 21px;
@@ -3287,7 +3328,7 @@ height: 100%;
 
 	.closemine {
 		color: #fff;
-		font-family: 'Avenir';
+		font-family: 'Lato', sans-serif;
 		font-size: 14px;
 		position: absolute;
 		top: 1vh;
@@ -3362,9 +3403,9 @@ height: 100%;
 	.changesmallmarg {
 		margin-bottom: 1%;
 		float: left;
-		font-size: 2.27vw;
+		font-size: 2.15vw;
 		box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
-		line-height: 2.57vw;
+		line-height: 2.45vw;
 		margin-left: 0;
 	}
 
@@ -3805,8 +3846,8 @@ height: 100%;
 	}
 
 	.changesmallmarg {
-		line-height: 9px;
-		font-size: 7.5px;
+		line-height: 8.4px;
+		font-size: 6.9px;
 		margin-left: 1%;
 	}
 
@@ -3889,7 +3930,7 @@ height: 100%;
 
 	.closemine {
 		color: #fff;
-		font-family: 'Avenir';
+		font-family: 'Lato', sans-serif;
 		font-size: 14px;
 		position: absolute;
 		top: 1vh;
@@ -4053,14 +4094,14 @@ height: 100%;
 	}
 
 	.fp-controlArrow.fp-prev {
-	    left: 15px;
+	    left: 8px;
 	    width: 0;
 	    border-width: 18.2px 18.9px 18.2px 0;
 	    border-color: transparent rgb(96, 18, 24) transparent transparent;
 	}
 
 	.fp-controlArrow.fp-next {
-	    right: 15px;
+	    right: 8px;
 	    border-width: 18.9px 0 18.9px 18.2px;
 	    border-color: transparent transparent transparent rgb(96, 18, 24);
 	}
